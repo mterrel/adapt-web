@@ -1,24 +1,33 @@
 {
   "docs": {
     "Getting Started": [
-        "getting_started/index",
-        "getting_started/00_overview",
-        "getting_started/01_install",
-        "getting_started/02_run",
-        "getting_started/03_update",
-        "getting_started/04_cleanup",
-        "getting_started/05_more_info"
+      "getting_started/index",
+      "getting_started/00_overview",
+      "getting_started/01_install",
+      "getting_started/02_run",
+      "getting_started/03_update",
+      "getting_started/04_cleanup",
+      "getting_started/05_more_info"
     ],
     "Tutorial: Adapt Concepts": [
-        "tutorial_concepts/index",
-        "tutorial_concepts/setup",
-        "tutorial_concepts/project",
-        "tutorial_concepts/spec",
-        "tutorial_concepts/style",
-        "tutorial_concepts/run",
-        "tutorial_concepts/connect",
-        "tutorial_concepts/updating",
-        "tutorial_concepts/destroying"
+      "tutorial_concepts/index",
+      "tutorial_concepts/setup",
+      "tutorial_concepts/project",
+      "tutorial_concepts/spec",
+      "tutorial_concepts/style",
+      "tutorial_concepts/run",
+      "tutorial_concepts/connect",
+      "tutorial_concepts/updating",
+      "tutorial_concepts/destroying"
+    ],
+    "Core API Reference": [
+      "api/core-overview",
+      "api/core/core"
+    ],
+    "Cloud API Reference": [
+      "api/cloud-overview",
+      "api/cloud/cloud",
+      "api/cloud/cloud.docker"
     ]
   }
 }

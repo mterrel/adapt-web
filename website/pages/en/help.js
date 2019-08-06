@@ -6,33 +6,91 @@
  */
 
 const React = require('react');
+const classNames = require('classnames');
+const { Container } = require('../../core/CompLibrary.js');
+const { GitHubStar, GitterLink } = require('adapt-web-components');
 
-const CompLibrary = require('../../core/CompLibrary.js');
+function Columns(props) {
+  const cols = props.columns;
+  if (!Array.isArray(cols) || cols.length !== 3) {
+    throw new Error(`Proprty 'columns' must be an array of size 3`);
+  }
+  const blockClasses = classNames('blockElement', props.className, {
+    threeByGridBlock: true,
+  })
 
-const Container = CompLibrary.Container;
-const GridBlock = CompLibrary.GridBlock;
+  return (
+    <div className="gridBlock">
+      {cols.map(renderCol)}
+    </div>
+  )
+
+  function renderTitle(title) {
+    if (!title) return null;
+    return <h2>{title}</h2>;
+  }
+
+  function renderCol(col) {
+    return (
+      <div className={blockClasses} key={col.title}>
+        <div className="blockContent">
+          {renderTitle(col.title)}
+          {col.content}
+        </div>
+      </div>
+    );
+  }
+}
 
 function Help(props) {
   const {config: siteConfig, language = ''} = props;
-  const {baseUrl, docsUrl} = siteConfig;
+  const {baseUrl, docsUrl, issueUrl} = siteConfig;
   const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
   const langPart = `${language ? `${language}/` : ''}`;
-  const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
+  const docLink = (text, doc) => (
+    <a href={`${baseUrl}${docsPart}${langPart}${doc}`}>{text}</a>
+  );
 
-  const supportLinks = [
+  const helpColumns = [
     {
-      content: `Learn more using the [documentation on this site.](${docUrl(
-        'doc1.html',
-      )})`,
-      title: 'Browse Docs',
+      title: 'Browse the Docs',
+      content: (
+        <div>
+          Find what you're looking for in our documentation and tutorials:
+          <ul>
+            <li>{docLink('Get started', 'getting_started')} with Adapt</li>
+            <li>Learn about Adapt concepts in
+              the {docLink('Concepts Tutorial', 'tutorial_concepts')}</li>
+            <li>Look at the complete {docLink('Core', 'api/core-overview')} or
+              {' '}
+              {docLink('Cloud', 'api/cloud-overview')} API References</li>
+          </ul>
+        </div>
+      )
     },
     {
-      content: 'Ask questions about the documentation and project',
-      title: 'Join the community',
+      title: 'Ask Questions',
+      content: (
+        <div>
+          Let us know if you haven't found the answers you're looking for!
+          <ul>
+            <li>Chat with us on the <GitterLink config={siteConfig} /></li>
+            <li><a href={issueUrl}>File an issue</a> on GitHub</li>
+          </ul>
+        </div>
+      )
     },
     {
-      content: "Find out what's new with this project",
-      title: 'Stay up to date',
+      title: 'Join the Community',
+      content: (
+        <div>
+          Get involved and keep up with the latest Adapt news:
+          <ul>
+            <li>Give Adapt a <GitHubStar config={siteConfig} className="inline-button" /> on GitHub</li>
+            <li>Follow the <a href="https://unbounded.systems/blog">Unbounded Blog</a></li>
+          </ul>
+        </div>
+      )
     },
   ];
 
@@ -43,8 +101,7 @@ function Help(props) {
           <header className="postHeader">
             <h1>Need help?</h1>
           </header>
-          <p>This project is maintained by a dedicated group of people.</p>
-          <GridBlock contents={supportLinks} layout="threeColumn" />
+          <Columns columns={helpColumns} />
         </div>
       </Container>
     </div>

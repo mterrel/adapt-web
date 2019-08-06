@@ -32,7 +32,7 @@ If you don't already have Docker on your system, you can find info about install
 
 ## Where to get help
 
-[![Gitter](https://badges.gitter.im/UnboundedSystems/Adapt.svg)](https://gitter.im/UnboundedSystems/Adapt)
+<a href="https://gitter.im/UnboundedSystems/Adapt"><img class="remove-margin" src="https://badges.gitter.im/UnboundedSystems/Adapt.svg" alt="Chat on Gitter" /></a>
 
 Join us on our [Gitter channel](https://gitter.im/UnboundedSystems/Adapt) to ask questions or to give us your feedback and suggestions.
 

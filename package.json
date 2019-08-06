@@ -1,0 +1,8 @@
+{
+    "name": "adapt-web-root",
+    "private": true,
+    "workspaces": [
+        "adapt-web-components",
+        "website"
+    ]
+}

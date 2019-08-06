@@ -1,4 +1,22 @@
-/* your custom css */
+sup {
+    vertical-align: super;
+    font-size: 70%;
+}
+
+.mainContainer a {
+    color: #82407f;
+}
+.mainContainer a:hover {
+    text-decoration: underline;
+}
+
+.remove-margin {
+    margin: inherit;
+}
+
+.inline-button {
+    vertical-align: middle;
+}
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
