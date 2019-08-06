@@ -4,5 +4,8 @@
     "workspaces": [
         "adapt-web-components",
         "website"
-    ]
+    ],
+    "scripts": {
+        "build": "(cd adapt-web-components && npm run build) && (cd website && npm run build)"
+    }
 }
