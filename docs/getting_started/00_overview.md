@@ -1,5 +1,5 @@
 ---
-id: 00_overview
+id: overview
 title: "MovieDB App Overview"
 ---
 

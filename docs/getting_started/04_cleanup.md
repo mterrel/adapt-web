@@ -1,5 +1,5 @@
 ---
-id: 04_cleanup
+id: cleanup
 title: "Clean Up"
 ---
 <!-- DOCTOC SKIP -->

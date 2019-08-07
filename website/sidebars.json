@@ -2,12 +2,12 @@
   "docs": {
     "Getting Started": [
       "getting_started/index",
-      "getting_started/00_overview",
-      "getting_started/01_install",
-      "getting_started/02_run",
-      "getting_started/03_update",
-      "getting_started/04_cleanup",
-      "getting_started/05_more_info"
+      "getting_started/overview",
+      "getting_started/install",
+      "getting_started/run",
+      "getting_started/update",
+      "getting_started/cleanup",
+      "getting_started/more_info"
     ],
     "Tutorial: Adapt Concepts": [
       "tutorial_concepts/index",

@@ -1,5 +1,5 @@
 ---
-id: 05_more_info
+id: more_info
 title: "More Information"
 ---
 <!-- DOCTOC SKIP -->
@@ -36,7 +36,7 @@ Available starters include:
 
 To learn more about Adapt:
 * [Adapt User Guide](../user/index.md)
-* [Adapt Core API Reference](../api/core/index.md)
-* [Adapt Cloud Library API Reference](../api/cloud/index.md)
+* [Adapt Core API Reference](../api/core/overview)
+* [Adapt Cloud Library API Reference](../api/cloud/overview)
 * [Concepts: Comparing Adapt and React](../comparing_react/index.md) (Advanced)
 

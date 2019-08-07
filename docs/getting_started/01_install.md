@@ -1,5 +1,5 @@
 ---
-id: 01_install
+id: install
 title: "Install Adapt"
 ---
 

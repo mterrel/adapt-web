@@ -1,5 +1,5 @@
 ---
-id: 02_run
+id: run
 title: "Create and Run - Hello World App"
 ---
 
