@@ -1,0 +1,15 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+default:
+  image: unboundedsystems/node-testimg:v2.0.1
+
+test:
+  stage: test
+  only:
+    - branches
+    - web
+    - triggers
+  script:
+    - yarn
+    - yarn run build
