@@ -8,10 +8,12 @@
     "publish-gh-pages": "docusaurus-publish",
     "write-translations": "docusaurus-write-translations",
     "version": "docusaurus-version",
-    "rename-version": "docusaurus-rename-version"
+    "rename-version": "docusaurus-rename-version",
+    "link-check": "broken-link-checker -r --filter-level 3 --exclude https://github.com/unboundedsystems/adapt --exclude livereload --exclude localhost:8080 http://localhost:3000"
   },
   "devDependencies": {
     "adapt-web-components": "^0.0.1",
+    "broken-link-checker": "^0.7.8",
     "docusaurus": "^1.12.0"
   }
 }
