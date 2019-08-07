@@ -1,5 +1,5 @@
 ---
-id: cloud-overview
+id: overview
 title: Adapt Cloud API Overview
 ---
 

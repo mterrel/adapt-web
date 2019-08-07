@@ -25,9 +25,14 @@
       "api/core/core"
     ],
     "Cloud API Reference": [
-      "api/cloud-overview",
+      "api/cloud/overview",
       "api/cloud/cloud",
-      "api/cloud/cloud.docker"
+      "api/cloud/cloud.aws",
+      "api/cloud/cloud.docker",
+      "api/cloud/cloud.http",
+      "api/cloud/cloud.k8s",
+      "api/cloud/cloud.nginx",
+      "api/cloud/cloud.postgres"
     ]
   }
 }
