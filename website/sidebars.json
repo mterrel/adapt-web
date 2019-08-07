@@ -38,7 +38,8 @@
       "comparing_react/index"
     ],
     "Contributing to Adapt": [
-      "developer/setup"
+      "developer/setup",
+      "developer/writing-docs"
     ]
   }
 }
