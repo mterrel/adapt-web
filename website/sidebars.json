@@ -36,6 +36,9 @@
     ],
     "Advanced Guides": [
       "comparing_react/index"
+    ],
+    "Contributing to Adapt": [
+      "developer/setup"
     ]
   }
 }
