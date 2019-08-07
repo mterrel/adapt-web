@@ -61,9 +61,9 @@ function Help(props) {
             <li>{docLink('Get started', 'getting_started')} with Adapt</li>
             <li>Learn about Adapt concepts in
               the {docLink('Concepts Tutorial', 'tutorial_concepts')}</li>
-            <li>Look at the complete {docLink('Core', 'api/core-overview')} or
+            <li>Look at the complete {docLink('Core', 'api/core/overview')} or
               {' '}
-              {docLink('Cloud', 'api/cloud-overview')} API References</li>
+              {docLink('Cloud', 'api/cloud/overview')} API References</li>
           </ul>
         </div>
       )

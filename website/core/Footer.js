@@ -56,10 +56,10 @@ class Footer extends React.Component {
             <a href={this.docUrl('tutorial_concepts')}>
               Concepts Tutorial
             </a>
-            <a href={this.docUrl('api/core-overview')}>
+            <a href={this.docUrl('api/core/overview')}>
               Core API Reference
             </a>
-            <a href={this.docUrl('api/cloud-overview')}>
+            <a href={this.docUrl('api/cloud/overview')}>
               Cloud API Reference
             </a>
           </div>
