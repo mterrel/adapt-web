@@ -1,7 +1,12 @@
 ---
-id: core-overview
+id: overview
 title: Adapt Core API Overview
 ---
+
+This overview is a short summary of the most often-used APIs from the Adapt Core library.
+It's arranged into sections based on the type of task each API is typically associated with.
+
+For the complete list of all APIs, start at the [top level exports](./core) for @adpt/core.
 
 ## Writing Adapt Specifications
 
@@ -60,4 +65,4 @@ title: Adapt Core API Overview
 
 ### Complete API Reference
 
-- [@adpt/core](core/core.md)
+- [@adpt/core](core)
