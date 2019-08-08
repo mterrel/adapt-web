@@ -6,6 +6,6 @@
         "website"
     ],
     "scripts": {
-        "build": "(cd adapt-web-components && npm run build) && (cd website && npm run build)"
+        "start": "cd website && yarn run start"
     }
 }
