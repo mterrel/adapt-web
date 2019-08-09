@@ -21,10 +21,10 @@ export declare function concatStyles(...styles: jsx.AdaptElement[]): jsx.AdaptEl
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  styles | <code>jsx.AdaptElement[]</code> |  |
+|  styles | <code>jsx.AdaptElement[]</code> | Zero or more Style elements, each containing style rules. |
 
 <b>Returns:</b>
 
 `jsx.AdaptElement`
 
-{<!-- -->jsx.AdaptElement<!-- -->} A new Style element containing the concatenation of all of the rules from the passed in Style elements.
+A new Style element containing the concatenation of all of the rules from the passed in Style elements.

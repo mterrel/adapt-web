@@ -23,8 +23,8 @@ export declare function ruleNoRematch(info: StyleBuildInfo, elem: jsx.AdaptEleme
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  info | <code>StyleBuildInfo</code> |  |
-|  elem | <code>jsx.AdaptElement</code> |  |
+|  info | <code>StyleBuildInfo</code> | The second argument to a rule callback function. This indicates which rule to ignore matches of. |
+|  elem | <code>jsx.AdaptElement</code> | The element that should not match the specified rule. |
 
 <b>Returns:</b>
 
