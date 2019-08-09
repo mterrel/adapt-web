@@ -11,5 +11,4 @@ test:
     - web
     - triggers
   script:
-    - yarn
-    - yarn run build
+    - make test
