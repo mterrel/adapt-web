@@ -23,16 +23,26 @@ Example:
 USAGE
 }
 
+# Print an error message in red to stderr
 function error {
     printf "\n\033[01;31mERROR: $*\033[m\n\n" >&2
 }
 
+# Echo a command, then run it
 function run {
     printf "\n$*\n"
     $@
 }
 
+# Call grep, but always return success error code
+# Useful when running with bash 'set -e'.
+function Grep {
+    grep "$@" || true
+}
 
+# Check that we're in the root directory of the adapt-web repo
+# FIXME: This only checks that we're in the root directory of *some* git
+# repo instead of the adapt-web repo.
 if [[ $(pwd) != $(git rev-parse --show-toplevel) ]]; then
     error MUST be run from the root of the adapt-web repo.
     usage
@@ -108,7 +118,7 @@ run git reset
 run git add docs/
 
 # Check for changes outside the docs directory
-UNSTAGED=$(git status --porcelain | grep -v '^. ')
+UNSTAGED=$(git status --porcelain | Grep -v '^. ')
 if [[ -n $UNSTAGED ]]; then
     error Cannot commit adapt-web with changes outside the docs directory
     run git status
@@ -116,7 +126,7 @@ if [[ -n $UNSTAGED ]]; then
 fi
 
 # Check for any changes to commit
-STAGED=$(git status --porcelain | grep '^. ')
+STAGED=$(git status --porcelain | Grep '^. ')
 if [[ -z ${STAGED} ]]; then
     printf "\nNo changes to commit\n"
     exit 0
