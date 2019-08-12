@@ -14,7 +14,7 @@ Locally builds a docker image
 <b>Signature:</b>
 
 ```typescript
-export declare class LocalDockerImage extends Action<LocalDockerImageProps, LocalDockerImageState> implements DockerImageInstance 
+export declare class LocalDockerImage extends Action<LocalDockerImageProps, LocalDockerImageState> implements DockerPushableImageInstance 
 ```
 
 ## Constructors
@@ -27,24 +27,17 @@ export declare class LocalDockerImage extends Action<LocalDockerImageProps, Loca
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [defaultProps](./cloud.docker.localdockerimage.defaultprops.md) | <code>static</code> | <code>{</code><br/><code>        options: {};</code><br/><code>    }</code> |  |
-|  [deployedWhen](./cloud.docker.localdockerimage.deployedwhen.md) |  | <code>(goalStatus: GoalStatus) =&gt; true &#124; import(&quot;@adpt/core/dist/src/deploy/deploy_types&quot;).Waiting</code> |  |
-|  [image\_](./cloud.docker.localdockerimage.image_.md) |  | <code>ImageInfo</code> |  |
-|  [image](./cloud.docker.localdockerimage.image.md) |  | <code>ImageInfo &#124; undefined</code> |  |
-|  [imagePropsJson\_](./cloud.docker.localdockerimage.imagepropsjson_.md) |  | <code>string</code> |  |
-|  [imagePropsJson](./cloud.docker.localdockerimage.imagepropsjson.md) |  | <code>string</code> |  |
-|  [options\_](./cloud.docker.localdockerimage.options_.md) |  | <code>DockerBuildOptions</code> |  |
+|  [defaultProps](./cloud.docker.localdockerimage.defaultprops.md) | <code>static</code> | <code>{</code><br/><code>        options: {</code><br/><code>            forceRm: boolean;</code><br/><code>        };</code><br/><code>    }</code> |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [action(op, \_ctx)](./cloud.docker.localdockerimage.action.md) |  |  |
 |  [buildComplete()](./cloud.docker.localdockerimage.buildcomplete.md) |  |  |
-|  [initialState()](./cloud.docker.localdockerimage.initialstate.md) |  |  |
+|  [image()](./cloud.docker.localdockerimage.image.md) |  |  |
 |  [latestImage()](./cloud.docker.localdockerimage.latestimage.md) |  |  |
+|  [pushTo(registryUrl, newTag)](./cloud.docker.localdockerimage.pushto.md) |  |  |
 |  [ready()](./cloud.docker.localdockerimage.ready.md) |  |  |
-|  [shouldAct(op)](./cloud.docker.localdockerimage.shouldact.md) |  |  |
 
 ## Remarks
 

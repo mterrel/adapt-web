@@ -14,9 +14,9 @@ Docker image name and optional tag in the form `name` or `name:tag`<!-- -->.
 <b>Signature:</b>
 
 ```typescript
-nameTag?: string;
+nameTag?: NameTagString;
 ```
 
 ## Remarks
 
-The image name is also known as "Repository" or "Repo".
+See [docker.NameTagString](./cloud.docker.nametagstring.md)

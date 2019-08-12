@@ -116,5 +116,5 @@ hide_title: true
 |  [ObserveForStatus](./core.observeforstatus.md) |  |
 |  [PartialFinalDomElement](./core.partialfinaldomelement.md) |  |
 |  [PropsType](./core.propstype.md) |  |
-|  [SFCBuildProps](./core.sfcbuildprops.md) |  |
-|  [SFCDeclProps](./core.sfcdeclprops.md) |  |
+|  [SFCBuildProps](./core.sfcbuildprops.md) | Helper type for declaring the props available to use \*\*inside\*\* the body of your function component. |
+|  [SFCDeclProps](./core.sfcdeclprops.md) | Helper type for declaring the props argument of a function component. (The type that users of your component will see.) |

@@ -21,5 +21,5 @@ export interface ImageInfo
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [id](./cloud.docker.imageinfo.id.md) | <code>string</code> | Docker image ID, in the form <code>algorithm:hex</code>. |
-|  [nameTag](./cloud.docker.imageinfo.nametag.md) | <code>string</code> | Docker image name and optional tag in the form <code>name</code> or <code>name:tag</code>. |
+|  [id](./cloud.docker.imageinfo.id.md) | <code>ImageIdString</code> | Docker image ID, in the form <code>algorithm:hex</code>. |
+|  [nameTag](./cloud.docker.imageinfo.nametag.md) | <code>NameTagString</code> | Docker image name and optional tag in the form <code>name</code> or <code>name:tag</code>. |

@@ -41,7 +41,11 @@ hide_title: true
 |  Interface | Description |
 |  --- | --- |
 |  [ComputeProps](./cloud.computeprops.md) |  |
+|  [Config](./cloud.config.md) | Config for [ContainerStatus](./cloud.containerstatus.md) |
 |  [ConnectToInstance](./cloud.connecttoinstance.md) | Components that provide a service, such as a database service or API service, can implement this interface in order to supply all the information required to connect to the service. |
+|  [ContainerLabels](./cloud.containerlabels.md) | Labels for a [Container](./cloud.container.md) |
+|  [ContainerNetwork](./cloud.containernetwork.md) | Network for [ContainerStatus](./cloud.containerstatus.md) |
+|  [ContainerNetworkSettings](./cloud.containernetworksettings.md) | NetworkSettings for [ContainerStatus](./cloud.containerstatus.md) |
 |  [ContainerProps](./cloud.containerprops.md) | Props for the [Container](./cloud.container.md) component. |
 |  [ContainerState](./cloud.containerstate.md) | State information for a [Container](./cloud.container.md)<!-- -->. |
 |  [ContainerStatus](./cloud.containerstatus.md) | Status of a [Container](./cloud.container.md)<!-- -->. |

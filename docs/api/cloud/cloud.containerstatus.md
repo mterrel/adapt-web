@@ -23,7 +23,7 @@ export interface ContainerStatus
 |  --- | --- | --- |
 |  [AppArmorProfile](./cloud.containerstatus.apparmorprofile.md) | <code>string</code> |  |
 |  [Args](./cloud.containerstatus.args.md) | <code>string[]</code> |  |
-|  [Config](./cloud.containerstatus.config.md) | <code>FIXME_NeedsProperType</code> |  |
+|  [Config](./cloud.containerstatus.config.md) | <code>Config</code> |  |
 |  [Created](./cloud.containerstatus.created.md) | <code>string</code> |  |
 |  [Driver](./cloud.containerstatus.driver.md) | <code>string</code> |  |
 |  [ExecIDs](./cloud.containerstatus.execids.md) | <code>string</code> |  |
@@ -36,7 +36,7 @@ export interface ContainerStatus
 |  [MountLabel](./cloud.containerstatus.mountlabel.md) | <code>string</code> |  |
 |  [Mounts](./cloud.containerstatus.mounts.md) | <code>FIXME_NeedsProperType[]</code> |  |
 |  [Name](./cloud.containerstatus.name.md) | <code>string</code> |  |
-|  [NetworkSettings](./cloud.containerstatus.networksettings.md) | <code>FIXME_NeedsProperType</code> |  |
+|  [NetworkSettings](./cloud.containerstatus.networksettings.md) | <code>ContainerNetworkSettings</code> |  |
 |  [Node](./cloud.containerstatus.node.md) | <code>FIXME_NeedsProperType</code> |  |
 |  [Path](./cloud.containerstatus.path.md) | <code>string</code> |  |
 |  [ProcessLabel](./cloud.containerstatus.processlabel.md) | <code>string</code> |  |

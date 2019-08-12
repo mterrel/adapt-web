@@ -9,6 +9,8 @@ hide_title: true
 
 ## SFCBuildProps type
 
+Helper type for declaring the props available to use \*\*inside\*\* the body of your function component.
+
 <b>Signature:</b>
 
 ```typescript
@@ -20,3 +22,17 @@ export declare type SFCBuildProps<Props, Defaults extends object = object> = {
     [K in Exclude<OptionalPropertiesT<Props>, keyof Defaults>]?: Props[K];
 } & BuiltinProps;
 ```
+
+## Remarks
+
+This helper type can be used to create the type of the "build props", which are the props available inside the body of your function component when your component is built by Adapt. The type of "build props" in a function component are different than the type that the user sees because Adapt deals with setting the values of some props automatically when a component gets built.
+
+This helper should \*\*only\*\* be used to describe the type of a function component's props \*\*inside\*\* the function body.
+
+It should typically be used along with [SFCDeclProps](./core.sfcdeclprops.md)<!-- -->. See the example usage of both helper types in [SFCDeclProps](./core.sfcdeclprops.md)<!-- -->.
+
+Type parameters:
+
+`Props` - The object type that describes the props your function component takes, not including any [BuiltinProps](./core.builtinprops.md)<!-- -->. For props that your component requires, but has valid defaults set in `defaultProps`<!-- -->, those properties should be required (not optional) in `Props`<!-- -->.
+
+`Defaults` - (optional) The object type of your component's `defaultProps`<!-- -->.

@@ -20,17 +20,12 @@ Abstract component representing a [Docker](https://docker.com) image that can be
 export declare abstract class DockerImage extends Component<DockerImageProps> implements DockerImageInstance 
 ```
 
-## Properties
-
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [image](./cloud.docker.dockerimage.image.md) |  | <code>ImageInfo &#124; undefined</code> | <b><i>(BETA)</i></b> |
-
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [latestImage()](./cloud.docker.dockerimage.latestimage.md) |  | <b><i>(BETA)</i></b> |
+|  [image()](./cloud.docker.dockerimage.image.md) |  | <b><i>(BETA)</i></b> Returns information about the version of the Docker image that reflects the current set of props for the component. |
+|  [latestImage()](./cloud.docker.dockerimage.latestimage.md) |  | <b><i>(BETA)</i></b> Returns information about the most current version of the Docker image that has completed building, even if that version does not reflect the current set of props for the component. |
 
 ## Remarks
 

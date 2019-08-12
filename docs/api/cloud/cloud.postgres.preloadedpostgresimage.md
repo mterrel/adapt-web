@@ -29,4 +29,6 @@ export declare function PreloadedPostgresImage(props: PreloadedPostgresImageProp
 
 ## Remarks
 
+Implements [docker.DockerImageInstance](./cloud.docker.dockerimageinstance.md)<!-- -->.
+
 See [postgres.PreloadedPostgresImageProps](./cloud.postgres.preloadedpostgresimageprops.md)

@@ -12,5 +12,5 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-NetworkSettings: FIXME_NeedsProperType;
+NetworkSettings: ContainerNetworkSettings;
 ```

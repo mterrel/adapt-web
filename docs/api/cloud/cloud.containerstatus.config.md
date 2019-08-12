@@ -12,5 +12,5 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-Config: FIXME_NeedsProperType;
+Config: Config;
 ```

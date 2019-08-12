@@ -13,6 +13,8 @@ hide_title: true
 
 ```typescript
 static defaultProps: {
-        options: {};
+        options: {
+            forceRm: boolean;
+        };
     };
 ```

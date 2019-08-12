@@ -17,14 +17,10 @@ Components that provide a Docker image can implement this interface to allow oth
 export interface DockerImageInstance 
 ```
 
-## Properties
-
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [image](./cloud.docker.dockerimageinstance.image.md) | <code>ImageInfo &#124; undefined</code> | Returns information about the version of the Docker image that reflects the current set of props for the component. |
-
 ## Methods
 
 |  Method | Description |
 |  --- | --- |
+|  [image()](./cloud.docker.dockerimageinstance.image.md) | Returns information about the version of the Docker image that reflects the current set of props for the component. |
 |  [latestImage()](./cloud.docker.dockerimageinstance.latestimage.md) | Returns information about the most current version of the Docker image that has completed building, even if that version does not reflect the current set of props for the component. |
+|  [pushTo(registryUrl, newTag)](./cloud.docker.dockerimageinstance.pushto.md) | Pushes the image returned by <code>latestImage</code> to a Docker registry. |

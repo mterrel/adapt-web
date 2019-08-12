@@ -12,6 +12,8 @@ hide_title: true
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
+Returns information about the most current version of the Docker image that has completed building, even if that version does not reflect the current set of props for the component.
+
 <b>Signature:</b>
 
 ```typescript
@@ -20,3 +22,7 @@ latestImage(): ImageInfo | undefined;
 <b>Returns:</b>
 
 `ImageInfo | undefined`
+
+## Remarks
+
+Returns undefined if no image has ever been built by this component.

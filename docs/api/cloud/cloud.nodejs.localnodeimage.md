@@ -29,4 +29,6 @@ export declare function LocalNodeImage(props: LocalNodeImageProps): Adapt.AdaptE
 
 ## Remarks
 
+Implements [docker.DockerImageInstance](./cloud.docker.dockerimageinstance.md)<!-- -->.
+
 See [nodejs.LocalNodeImageProps](./cloud.nodejs.localnodeimageprops.md)<!-- -->.

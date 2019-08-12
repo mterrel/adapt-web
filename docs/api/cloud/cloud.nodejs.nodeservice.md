@@ -63,6 +63,6 @@ Returns the port number of the NetworkService, once it is known.
 
 Instance properties:
 
-- image:  \| undefined
+- image: [docker.ImageInfo](./cloud.docker.imageinfo.md) \| undefined
 
 Information about the successfully built image, once it has been built.
