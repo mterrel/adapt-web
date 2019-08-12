@@ -32,6 +32,7 @@
       "api/cloud/cloud.http",
       "api/cloud/cloud.k8s",
       "api/cloud/cloud.nginx",
+      "api/cloud/cloud.nodejs",
       "api/cloud/cloud.postgres"
     ],
     "Advanced Guides": [
