@@ -4,12 +4,12 @@
   "scripts": {
     "examples": "docusaurus-examples",
     "start": "docusaurus-start",
-    "build": "./build.sh",
+    "build": "./scripts/build.sh",
     "publish-gh-pages": "docusaurus-publish",
     "write-translations": "docusaurus-write-translations",
     "version": "docusaurus-version",
     "rename-version": "docusaurus-rename-version",
-    "link-check": "broken-link-checker -r --filter-level 3 --exclude https://github.com/unboundedsystems/adapt --exclude livereload --exclude localhost:8080 http://localhost:3000"
+    "test": "./scripts/link-check.sh"
   },
   "devDependencies": {
     "adapt-web-components": "^0.0.1",

@@ -34,6 +34,7 @@ build: awc-build website-build
 .PHONY: build
 
 test: build
+	cd website && yarn run test
 .PHONY: test
 
 clean:
