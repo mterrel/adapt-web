@@ -19,7 +19,7 @@ export declare class ProjectRunError extends CustomError
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(projectError, projectStack, fullStack)](./core.projectrunerror.(constructor).md) |  | Constructs a new instance of the <code>ProjectRunError</code> class |
+|  [(constructor)(projectError, projectStack, fullStack)](./core.projectrunerror._constructor_.md) |  | Constructs a new instance of the <code>ProjectRunError</code> class |
 
 ## Properties
 

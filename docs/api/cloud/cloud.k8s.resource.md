@@ -19,7 +19,7 @@ export declare class Resource extends PrimitiveComponent<ResourceProps>
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(props)](./cloud.k8s.resource.(constructor).md) |  |  |
+|  [(constructor)(props)](./cloud.k8s.resource._constructor_.md) |  |  |
 
 ## Properties
 

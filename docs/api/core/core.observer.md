@@ -19,7 +19,7 @@ export declare class Observer<QueryData extends object = any> extends Component<
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(props)](./core.observer.(constructor).md) |  | Constructs a new instance of the <code>Observer</code> class |
+|  [(constructor)(props)](./core.observer._constructor_.md) |  | Constructs a new instance of the <code>Observer</code> class |
 
 ## Properties
 

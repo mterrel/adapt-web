@@ -19,7 +19,7 @@ export declare class ProjectBuildError extends UserError
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(domXml)](./core.projectbuilderror.(constructor).md) |  | Constructs a new instance of the <code>ProjectBuildError</code> class |
+|  [(constructor)(domXml)](./core.projectbuilderror._constructor_.md) |  | Constructs a new instance of the <code>ProjectBuildError</code> class |
 
 ## Properties
 

@@ -19,4 +19,4 @@ export declare class BuildNotImplemented extends CustomError
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(message)](./core.buildnotimplemented.(constructor).md) |  | Constructs a new instance of the <code>BuildNotImplemented</code> class |
+|  [(constructor)(message)](./core.buildnotimplemented._constructor_.md) |  | Constructs a new instance of the <code>BuildNotImplemented</code> class |

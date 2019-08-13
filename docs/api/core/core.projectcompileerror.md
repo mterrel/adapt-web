@@ -19,4 +19,4 @@ export declare class ProjectCompileError extends CustomError
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(msg)](./core.projectcompileerror.(constructor).md) |  | Constructs a new instance of the <code>ProjectCompileError</code> class |
+|  [(constructor)(msg)](./core.projectcompileerror._constructor_.md) |  | Constructs a new instance of the <code>ProjectCompileError</code> class |

@@ -21,7 +21,7 @@ export declare class LocalDockerImage extends Action<LocalDockerImageProps, Loca
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(props)](./cloud.docker.localdockerimage.(constructor).md) |  |  |
+|  [(constructor)(props)](./cloud.docker.localdockerimage._constructor_.md) |  |  |
 
 ## Properties
 

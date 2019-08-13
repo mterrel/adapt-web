@@ -19,7 +19,7 @@ export declare abstract class Component<Props extends object = {}, State extends
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(props)](./core.component.(constructor).md) |  | Constructs a new instance of the <code>Component</code> class |
+|  [(constructor)(props)](./core.component._constructor_.md) |  | Constructs a new instance of the <code>Component</code> class |
 
 ## Properties
 

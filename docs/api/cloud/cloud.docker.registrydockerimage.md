@@ -21,7 +21,7 @@ export declare class RegistryDockerImage extends Action<RegistryDockerImageProps
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(props)](./cloud.docker.registrydockerimage.(constructor).md) |  |  |
+|  [(constructor)(props)](./cloud.docker.registrydockerimage._constructor_.md) |  |  |
 
 ## Methods
 

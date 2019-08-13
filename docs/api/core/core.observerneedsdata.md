@@ -19,4 +19,4 @@ export declare class ObserverNeedsData extends CustomError
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(message)](./core.observerneedsdata.(constructor).md) |  | Constructs a new instance of the <code>ObserverNeedsData</code> class |
+|  [(constructor)(message)](./core.observerneedsdata._constructor_.md) |  | Constructs a new instance of the <code>ObserverNeedsData</code> class |

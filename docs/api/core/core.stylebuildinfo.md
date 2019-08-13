@@ -19,6 +19,5 @@ export interface StyleBuildInfo extends BuildId
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [\[$matchInfoReg\]](./core.stylebuildinfo.[$matchinforeg].md) | <code>MatchInfoReg</code> |  |
 |  [origBuild](./core.stylebuildinfo.origbuild.md) | <code>jsx.SFC</code> |  |
 |  [origElement](./core.stylebuildinfo.origelement.md) | <code>any</code> |  |
