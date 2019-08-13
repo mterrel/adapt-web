@@ -72,7 +72,7 @@ push-docs-master: test
 	./push-docs.sh $(REPO_ROOT) master
 .PHONY: push-docs-master
 
-start-docker: node_modules/.install-success
+preview: node_modules/.install-success
 	printf "\n\nRunning Docusaurus server on http://localhost:3000\n\n"
 	docker run --rm -it -p35729:35729 -p3000:3000 --name docs -v $$(pwd):/app -w /app unboundedsystems/node-testimg:v2.0.1 yarn start
-.PHONY: start-docker
+.PHONY: preview
