@@ -106,6 +106,12 @@ const siteConfig = {
   markdownOptions: {
     html: true,
   },
+  gaTrackingId: "UA-83531203-3",
+  gaGtag: true,
+  scrollToTop: true,
+  scrollToTopOptions: {
+    backgroundColor: 'rgba(81,40,79,.5)'
+  },
   repoUrl,
   issueUrl,
   gitterUrl,
