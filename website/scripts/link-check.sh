@@ -37,7 +37,6 @@ runServer() {
 checkLinkCommand() {
     # NOTE(mark): Remove exclude for github page once it's public
     broken-link-checker -r --filter-level 3 \
-        --exclude https://github.com/unboundedsystems/adapt \
         --exclude localhost:8080 \
         --exclude localhost:3000 \
         http://localhost:${SERVER_PORT}
