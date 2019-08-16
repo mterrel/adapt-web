@@ -22,8 +22,8 @@ const users = [
 
 const repoUrl = 'https://github.com/unboundedsystems/adapt';
 const gitterUrl = 'https://gitter.im/UnboundedSystems/Adapt';
-const issueUrl = repoUrl + 'issues/new';
-const forkUrl = repoUrl + 'fork';
+const issueUrl = repoUrl + '/issues/new';
+const forkUrl = repoUrl + '/fork';
 
 const siteConfig = {
   title: 'Unbounded Adapt', // Title for your website.
