@@ -1,6 +1,26 @@
 {
     "name": "adapt-web-root",
+    "description": "Documentation website for Adapt by Unbounded Systems",
+    "license": "Apache-2.0",
+    "homepage": "https://adapt.unbounded.systems",
+    "author": "Unbounded Systems",
+    "contributors": [
+      {
+        "name": "Manish Vachharajani",
+        "email": "manishv@unbounded.systems",
+        "url": "https://twitter.com/mvachhar"
+      },
+      {
+        "name": "Mark Terrel",
+        "email": "mark@unbounded.systems",
+        "url": "https://twitter.com/mterrel"
+      }
+    ],
     "private": true,
+    "repository": "gitlab:unboundedsystems/adapt-web",
+    "bugs": {
+        "url": "https://gitlab.com/unboundedsystems/adapt-web/issues"
+    },
     "workspaces": [
         "adapt-web-components",
         "website"

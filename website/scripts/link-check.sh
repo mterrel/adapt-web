@@ -14,11 +14,20 @@ checkServer() {
 }
 
 runServer() {
+    local i
     echo Starting server
+
+    # Wait for about 90 sec
+    i=90
 
     docusaurus-start --no-watch --port ${SERVER_PORT} &
     SERVER_PID=$!
     while ! checkServer ; do
+        if [[ i -le 0 ]]; then
+            echo ERRROR: Server did not become ready
+            exit 1
+        fi
+        ((i=i-1))
         echo Waiting on server...
         sleep 1
     done
@@ -28,7 +37,6 @@ runServer() {
 checkLinkCommand() {
     # NOTE(mark): Remove exclude for github page once it's public
     broken-link-checker -r --filter-level 3 \
-        --exclude https://github.com/unboundedsystems/adapt \
         --exclude localhost:8080 \
         --exclude localhost:3000 \
         http://localhost:${SERVER_PORT}
