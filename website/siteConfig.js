@@ -108,6 +108,10 @@ const siteConfig = {
   },
   gaTrackingId: "UA-83531203-3",
   gaGtag: true,
+  algolia: {
+    apiKey: '9927876eb8171c3357e612bd20e41a9a',
+    indexName: 'unbounded_adapt',
+  },
   scrollToTop: true,
   scrollToTopOptions: {
     backgroundColor: 'rgba(81,40,79,.5)'
