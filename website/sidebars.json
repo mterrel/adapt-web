@@ -40,7 +40,9 @@
     ],
     "Contributing to Adapt": [
       "developer/setup",
-      "developer/writing-docs"
+      "developer/writing-docs",
+      "developer/branches",
+      "developer/release"
     ]
   }
 }
