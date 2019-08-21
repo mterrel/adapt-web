@@ -12,5 +12,7 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-export declare type ResourceProps = ResourcePod | ResourceService | ResourceCR;
+export declare type ResourceProps = {
+    key: string;
+} & (ResourcePod | ResourceService | ResourceCR);
 ```

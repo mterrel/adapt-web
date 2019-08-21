@@ -33,3 +33,4 @@ export * from "./PreloadedPostgresImage";
 |  Interface | Description |
 |  --- | --- |
 |  [PreloadedPostgresImageProps](./cloud.postgres.preloadedpostgresimageprops.md) | Props for [postgres.PreloadedPostgresImage()](./cloud.postgres.preloadedpostgresimage.md) |
+|  [TestPostgresProps](./cloud.postgres.testpostgresprops.md) |  |

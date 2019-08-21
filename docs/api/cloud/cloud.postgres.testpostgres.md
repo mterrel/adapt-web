@@ -14,17 +14,14 @@ A component suitable for creating test scenarios that creates a simple, temporar
 <b>Signature:</b>
 
 ```typescript
-export declare function TestPostgres(props: {
-    mockDataPath: string;
-    mockDbName: string;
-}): Adapt.AdaptElement<Adapt.AnyProps>;
+export declare function TestPostgres(props: SFCDeclProps<TestPostgresProps>): Adapt.AdaptElement<Adapt.AnyProps>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  props | <code>{</code><br/><code>    mockDataPath: string;</code><br/><code>    mockDbName: string;</code><br/><code>}</code> |  |
+|  props | <code>SFCDeclProps&lt;TestPostgresProps&gt;</code> |  |
 
 <b>Returns:</b>
 

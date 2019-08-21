@@ -21,6 +21,7 @@ export interface DockerBuildOptions extends DockerGlobalOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
+|  [deployID](./cloud.docker.dockerbuildoptions.deployid.md) | <code>string</code> | If set, will add a Docker LABEL with the DeployID. |
 |  [forceRm](./cloud.docker.dockerbuildoptions.forcerm.md) | <code>boolean</code> |  |
 |  [imageName](./cloud.docker.dockerbuildoptions.imagename.md) | <code>string</code> |  |
 |  [imageTag](./cloud.docker.dockerbuildoptions.imagetag.md) | <code>string</code> |  |

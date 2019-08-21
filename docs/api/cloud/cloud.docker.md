@@ -16,6 +16,7 @@ Docker library for Adapt.
 ```typescript
 export * from "./DockerImage";
 export * from "./DockerContainer";
+export * from "./labels";
 export * from "./LocalDockerImage";
 export * from "./LocalDockerRegistry";
 export * from "./RegistryDockerImage";

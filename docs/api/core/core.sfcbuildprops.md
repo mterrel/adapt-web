@@ -20,7 +20,7 @@ export declare type SFCBuildProps<Props, Defaults extends object = object> = {
     [K in Exclude<RequiredPropertiesT<Props>, keyof Defaults>]: Props[K];
 } & {
     [K in Exclude<OptionalPropertiesT<Props>, keyof Defaults>]?: Props[K];
-} & BuiltinProps;
+} & Required<BuiltinProps>;
 ```
 
 ## Remarks
