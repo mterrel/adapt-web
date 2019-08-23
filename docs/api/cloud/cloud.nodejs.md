@@ -16,6 +16,7 @@ The library for [Node.js](https://nodejs.org) for Adapt.
 ```typescript
 export * from "./NodeService";
 export * from "./LocalNodeImage";
+export * from "./ReactApp";
 //# sourceMappingURL=index.d.ts.map
 ```
 
@@ -26,6 +27,7 @@ export * from "./LocalNodeImage";
 |  [default(props)](./cloud.nodejs.default.md) | A partially abstract component that builds Node.js source code into a Container and exposes a NetworkService. |
 |  [LocalNodeImage(props)](./cloud.nodejs.localnodeimage.md) | Locally builds a docker image for a [Node.js](https://www.nodejs.org) program. |
 |  [NodeService(props)](./cloud.nodejs.nodeservice.md) | A partially abstract component that builds Node.js source code into a Container and exposes a NetworkService. |
+|  [ReactApp(props)](./cloud.nodejs.reactapp.md) | A partially abstract component that builds [ReactJS](https://reactjs.org) source code and serves the resulting files via an [http.HttpServer](./cloud.http.httpserver.md)<!-- -->. |
 
 ## Interfaces
 
@@ -34,3 +36,4 @@ export * from "./LocalNodeImage";
 |  [LocalNodeImageProps](./cloud.nodejs.localnodeimageprops.md) | Props for [nodejs.LocalNodeImage()](./cloud.nodejs.localnodeimage.md) |
 |  [NodeImageBuildOptions](./cloud.nodejs.nodeimagebuildoptions.md) | Options controlling how the Docker image is built in [nodejs.LocalNodeImage()](./cloud.nodejs.localnodeimage.md)<!-- -->. |
 |  [NodeServiceProps](./cloud.nodejs.nodeserviceprops.md) | Props for [nodejs.NodeService()](./cloud.nodejs.nodeservice.md)<!-- -->. |
+|  [ReactAppProps](./cloud.nodejs.reactappprops.md) | Props for [nodejs.ReactApp()](./cloud.nodejs.reactapp.md)<!-- -->. |
