@@ -28,6 +28,12 @@ export declare function useConnectTo(connectTo: Handle | Handle[], xform?: (e: E
 
 `Environment | undefined`
 
+Merged [Environment](./cloud.environment.md) with variables provided by `connectTo` components, or undefined
+
 ## Remarks
+
+Note that this is a hook, and so on first run this will return undefined. After a full build, a state update will trigger a rebuild, at which point the returned Environment will begin to be populated with the variables as the various components are ready to provide them. However, it can take multiple turns of the build-deploy loop to get all the variables.
+
+Moreover, just because a component returns connection information in a variable does not mean it is ready to accept traffic at that time. Components that use this hook to get connection information for other services must be prepared for those services to be temporarily unavailable.
 
 See [renameEnvVars()](./cloud.renameenvvars.md) as a function that is useful as an `xform` argument.
