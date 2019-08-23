@@ -23,7 +23,3 @@ export interface EnvPair
 |  --- | --- | --- |
 |  [name](./cloud.envpair.name.md) | <code>string</code> |  |
 |  [value](./cloud.envpair.value.md) | <code>string</code> |  |
-
-## Remarks
-
-See the [Docker API Reference](https://docs.docker.com/engine/api/v1.40/#operation/ContainerCreate) for more information.
