@@ -31,10 +31,12 @@ hide_title: true
 |  [handles()](./cloud.handles.md) |  |
 |  [isContainerElement(el)](./cloud.iscontainerelement.md) | Function to check whether an  is an abstract [Container](./cloud.container.md)<!-- -->. |
 |  [isNetworkServiceElement(el)](./cloud.isnetworkserviceelement.md) |  |
+|  [lookupEnvVar(e, name)](./cloud.lookupenvvar.md) | Find the value of an environment variable in an [Environment](./cloud.environment.md) |
 |  [mergeEnvPairs(envs)](./cloud.mergeenvpairs.md) | Combine multiple [Environment](./cloud.environment.md) objects into a single array of [EnvPair](./cloud.envpair.md) objects. Returns <code>undefined</code> if there are no <code>Environment</code> objects provided. |
 |  [mergeEnvSimple(envs)](./cloud.mergeenvsimple.md) | Combine multiple [Environment](./cloud.environment.md) objects into a single [EnvSimple](./cloud.envsimple.md) object. Returns <code>undefined</code> if there are no <code>Environment</code> objects provided. |
 |  [renameEnvVars(e, mapping)](./cloud.renameenvvars.md) | Renames all variables in <code>e</code> based on <code>mapping</code> |
 |  [targetPort(elemOrProps)](./cloud.targetport.md) |  |
+|  [updateEnvVars(e, upd)](./cloud.updateenvvars.md) | Updates the names and/or values of variables in an [Environment](./cloud.environment.md) |
 |  [useConnectTo(connectTo, xform)](./cloud.useconnectto.md) | Hook that will build an [Environment](./cloud.environment.md) object from components that comply with [ConnectToInstance](./cloud.connecttoinstance.md) |
 |  [useLatestImageFrom(source)](./cloud.uselatestimagefrom.md) | <b><i>(BETA)</i></b> Hook function to translate an [ImageId](./cloud.imageid.md) (which can be either a Handle or an image name string) into an image name string. |
 

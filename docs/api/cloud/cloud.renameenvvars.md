@@ -30,4 +30,4 @@ export declare function renameEnvVars(e: Environment, mapping: {
 
 `Environment`
 
-An [Environment](./cloud.environment.md) object with all variables renamed according to `mapping`
+A new [Environment](./cloud.environment.md) object with all variables renamed according to `mapping`
