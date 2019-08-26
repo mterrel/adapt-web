@@ -1,5 +1,5 @@
 ---
-id: core.component.(constructor)
+id: core.component._constructor_
 title: "Component.(constructor)"
 hide_title: true
 ---

@@ -1,5 +1,5 @@
 ---
-id: core.projectcompileerror.(constructor)
+id: core.projectcompileerror._constructor_
 title: "ProjectCompileError.(constructor)"
 hide_title: true
 ---
