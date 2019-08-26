@@ -1,5 +1,5 @@
 ---
-id: core.buildnotimplemented.(constructor)
+id: core.buildnotimplemented._constructor_
 title: "BuildNotImplemented.(constructor)"
 hide_title: true
 ---

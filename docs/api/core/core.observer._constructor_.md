@@ -1,5 +1,5 @@
 ---
-id: core.observer.(constructor)
+id: core.observer._constructor_
 title: "Observer.(constructor)"
 hide_title: true
 ---

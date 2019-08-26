@@ -1,5 +1,5 @@
 ---
-id: cloud.docker.localdockerimage.(constructor)
+id: cloud.docker.localdockerimage._constructor_
 title: "docker.LocalDockerImage.(constructor)"
 hide_title: true
 ---

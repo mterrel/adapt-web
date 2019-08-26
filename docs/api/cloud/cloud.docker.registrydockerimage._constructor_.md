@@ -1,5 +1,5 @@
 ---
-id: cloud.docker.registrydockerimage.(constructor)
+id: cloud.docker.registrydockerimage._constructor_
 title: "docker.RegistryDockerImage.(constructor)"
 hide_title: true
 ---

@@ -1,5 +1,5 @@
 ---
-id: core.observerneedsdata.(constructor)
+id: core.observerneedsdata._constructor_
 title: "ObserverNeedsData.(constructor)"
 hide_title: true
 ---

@@ -1,5 +1,5 @@
 ---
-id: cloud.k8s.resource.(constructor)
+id: cloud.k8s.resource._constructor_
 title: "k8s.Resource.(constructor)"
 hide_title: true
 ---
