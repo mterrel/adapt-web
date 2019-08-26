@@ -44,8 +44,8 @@ export interface ContainerConfig
 |  [docker\_host](./cloud.ansible.containerconfig.docker_host.md) | <code>string</code> |  |
 |  [domainname](./cloud.ansible.containerconfig.domainname.md) | <code>string</code> |  |
 |  [entrypoint](./cloud.ansible.containerconfig.entrypoint.md) | <code>FIXME_NeedsProperType</code> |  |
-|  [env](./cloud.ansible.containerconfig.env.md) | <code>{</code><br/><code>        [key: string]: string;</code><br/><code>    }</code> |  |
 |  [env\_file](./cloud.ansible.containerconfig.env_file.md) | <code>string</code> |  |
+|  [env](./cloud.ansible.containerconfig.env.md) | <code>{</code><br/><code>        [key: string]: string;</code><br/><code>    }</code> |  |
 |  [etc\_hosts](./cloud.ansible.containerconfig.etc_hosts.md) | <code>{</code><br/><code>        [hostname: string]: string;</code><br/><code>    }</code> |  |
 |  [exposed\_ports](./cloud.ansible.containerconfig.exposed_ports.md) | <code>FIXME_NeedsProperType</code> |  |
 |  [force\_kill](./cloud.ansible.containerconfig.force_kill.md) | <code>boolean</code> |  |
@@ -64,10 +64,10 @@ export interface ContainerConfig
 |  [links](./cloud.ansible.containerconfig.links.md) | <code>string[]</code> |  |
 |  [log\_driver](./cloud.ansible.containerconfig.log_driver.md) | <code>string</code> |  |
 |  [mac\_address](./cloud.ansible.containerconfig.mac_address.md) | <code>string</code> |  |
-|  [memory](./cloud.ansible.containerconfig.memory.md) | <code>string</code> |  |
 |  [memory\_reservation](./cloud.ansible.containerconfig.memory_reservation.md) | <code>FIXME_NeedsProperType</code> |  |
 |  [memory\_swap](./cloud.ansible.containerconfig.memory_swap.md) | <code>FIXME_NeedsProperType</code> |  |
 |  [memory\_swappiness](./cloud.ansible.containerconfig.memory_swappiness.md) | <code>FIXME_NeedsProperType</code> |  |
+|  [memory](./cloud.ansible.containerconfig.memory.md) | <code>string</code> |  |
 |  [name](./cloud.ansible.containerconfig.name.md) | <code>string</code> |  |
 |  [network\_mode](./cloud.ansible.containerconfig.network_mode.md) | <code>string</code> |  |
 |  [networks](./cloud.ansible.containerconfig.networks.md) | <code>FIXME_NeedsProperType[]</code> |  |
@@ -82,9 +82,9 @@ export interface ContainerConfig
 |  [purge\_networks](./cloud.ansible.containerconfig.purge_networks.md) | <code>boolean</code> |  |
 |  [read\_only](./cloud.ansible.containerconfig.read_only.md) | <code>boolean</code> |  |
 |  [recreate](./cloud.ansible.containerconfig.recreate.md) | <code>boolean</code> |  |
-|  [restart](./cloud.ansible.containerconfig.restart.md) | <code>boolean</code> |  |
 |  [restart\_policy](./cloud.ansible.containerconfig.restart_policy.md) | <code>&quot;no&quot; &#124; &quot;on-failure&quot; &#124; &quot;always&quot; &#124; &quot;unless-stopped&quot;</code> |  |
 |  [restart\_retries](./cloud.ansible.containerconfig.restart_retries.md) | <code>FIXME_NeedsProperType</code> |  |
+|  [restart](./cloud.ansible.containerconfig.restart.md) | <code>boolean</code> |  |
 |  [security\_opts](./cloud.ansible.containerconfig.security_opts.md) | <code>FIXME_NeedsProperType</code> |  |
 |  [shm\_size](./cloud.ansible.containerconfig.shm_size.md) | <code>FIXME_NeedsProperType</code> |  |
 |  [ssl\_version](./cloud.ansible.containerconfig.ssl_version.md) | <code>FIXME_NeedsProperType</code> |  |
@@ -93,9 +93,9 @@ export interface ContainerConfig
 |  [stop\_timeout](./cloud.ansible.containerconfig.stop_timeout.md) | <code>FIXME_NeedsProperType</code> |  |
 |  [sysctls](./cloud.ansible.containerconfig.sysctls.md) | <code>FIXME_NeedsProperType</code> |  |
 |  [timeout](./cloud.ansible.containerconfig.timeout.md) | <code>number</code> |  |
-|  [tls](./cloud.ansible.containerconfig.tls.md) | <code>boolean</code> |  |
 |  [tls\_hostname](./cloud.ansible.containerconfig.tls_hostname.md) | <code>string</code> |  |
 |  [tls\_verify](./cloud.ansible.containerconfig.tls_verify.md) | <code>boolean</code> |  |
+|  [tls](./cloud.ansible.containerconfig.tls.md) | <code>boolean</code> |  |
 |  [tmpfs](./cloud.ansible.containerconfig.tmpfs.md) | <code>FIXME_NeedsProperType</code> |  |
 |  [trust\_image\_content](./cloud.ansible.containerconfig.trust_image_content.md) | <code>boolean</code> |  |
 |  [tty](./cloud.ansible.containerconfig.tty.md) | <code>boolean</code> |  |
@@ -104,6 +104,6 @@ export interface ContainerConfig
 |  [userns\_mode](./cloud.ansible.containerconfig.userns_mode.md) | <code>FIXME_NeedsProperType</code> |  |
 |  [uts](./cloud.ansible.containerconfig.uts.md) | <code>FIXME_NeedsProperType</code> |  |
 |  [volume\_driver](./cloud.ansible.containerconfig.volume_driver.md) | <code>FIXME_NeedsProperType</code> |  |
-|  [volumes](./cloud.ansible.containerconfig.volumes.md) | <code>string[]</code> |  |
 |  [volumes\_from](./cloud.ansible.containerconfig.volumes_from.md) | <code>string[]</code> |  |
+|  [volumes](./cloud.ansible.containerconfig.volumes.md) | <code>string[]</code> |  |
 |  [working\_dir](./cloud.ansible.containerconfig.working_dir.md) | <code>string</code> |  |

@@ -19,7 +19,7 @@ export interface Common
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [become](./cloud.ansible.common.become.md) | <code>string</code> |  |
 |  [become\_method](./cloud.ansible.common.become_method.md) | <code>string</code> |  |
+|  [become](./cloud.ansible.common.become.md) | <code>string</code> |  |
 |  [name](./cloud.ansible.common.name.md) | <code>string</code> |  |
 |  [vars](./cloud.ansible.common.vars.md) | <code>Vars</code> |  |
