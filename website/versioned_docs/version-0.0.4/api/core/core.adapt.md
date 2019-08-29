@@ -66,21 +66,17 @@ export { internal, };
 |  [AllOf(h, deps)](./core.adapt.allof.md) |  |
 |  [AnyOf(h, deps)](./core.adapt.anyof.md) |  |
 |  [buildPrinter()](./core.adapt.buildprinter.md) |  |
-|  [callInstanceMethod(hand, def, methodName, args)](./core.adapt.callinstancemethod.md) | <b><i>(BETA)</i></b> Immediately call method on instance pointed to by handle |
-|  [callNextInstanceMethod(hand, def, methodName, args)](./core.adapt.callnextinstancemethod.md) | <b><i>(BETA)</i></b> Immediately call a method on the successor instance of the one pointed to by handle. |
+|  [callInstanceMethod(hand, def, methodName, args)](./core.callinstancemethod.md) | <b><i>(BETA)</i></b> Immediately call method on instance pointed to by handle |
+|  [callNextInstanceMethod(hand, def, methodName, args)](./core.callnextinstancemethod.md) | <b><i>(BETA)</i></b> Immediately call a method on the successor instance of the one pointed to by handle. |
 |  [createDeployment(options)](./core.adapt.createdeployment.md) |  |
-|  [createHookInfo()](./core.adapt.createhookinfo.md) |  |
-|  [currentContext()](./core.adapt.currentcontext.md) |  |
 |  [destroyDeployment(optionsIn)](./core.adapt.destroydeployment.md) |  |
 |  [domActiveElems(diff)](./core.adapt.domactiveelems.md) | Given a DomDiff, generated from an old and new DOM, returns an Array of the Elements that will be active if this DomDiff is deployed. That means all of the Elements in the new DOM plus the deleted Elements from the old DOM. |
 |  [domDiff(oldDom, newDom, idFunc)](./core.adapt.domdiff.md) |  |
 |  [domForEach(dom, f)](./core.adapt.domforeach.md) |  |
 |  [domMap(dom, f)](./core.adapt.dommap.md) |  |
 |  [fetchStatus(options)](./core.adapt.fetchstatus.md) |  |
-|  [finishHooks()](./core.adapt.finishhooks.md) |  |
-|  [getInstanceValue(hand, def, field, optionsIn)](./core.adapt.getinstancevalue.md) | <b><i>(BETA)</i></b> Get the value of a field on an element instance |
 |  [goalToInProgress(stat)](./core.adapt.goaltoinprogress.md) |  |
-|  [hasInstanceMethod(name, skip)](./core.adapt.hasinstancemethod.md) |  |
+|  [hasInstanceMethod(name, skip)](./core.hasinstancemethod.md) |  |
 |  [isDeployStatus(val)](./core.adapt.isdeploystatus.md) |  |
 |  [isDomErrorElement(element)](./core.adapt.isdomerrorelement.md) |  |
 |  [isFinalStatus(ds)](./core.adapt.isfinalstatus.md) |  |
@@ -91,22 +87,20 @@ export { internal, };
 |  [listDeployments(options)](./core.adapt.listdeployments.md) |  |
 |  [logElements(msg, elements, logger)](./core.adapt.logelements.md) |  |
 |  [None()](./core.adapt.none.md) |  |
-|  [notReplacedByStyle()](./core.adapt.notreplacedbystyle.md) |  |
 |  [Only(h, dep)](./core.adapt.only.md) |  |
 |  [registerPlugin(plugin)](./core.adapt.registerplugin.md) |  |
-|  [startHooks(context)](./core.adapt.starthooks.md) |  |
 |  [toDeployStatus(stat)](./core.adapt.todeploystatus.md) |  |
 |  [updateDeployment(options)](./core.adapt.updatedeployment.md) |  |
-|  [useAsync(f, initial)](./core.adapt.useasync.md) |  |
-|  [useBuildHelpers()](./core.adapt.usebuildhelpers.md) |  |
-|  [useDependsOn(f)](./core.adapt.usedependson.md) |  |
-|  [useDeployedWhen(f)](./core.adapt.usedeployedwhen.md) |  |
-|  [useImperativeMethods(create)](./core.adapt.useimperativemethods.md) |  |
-|  [useInstanceValue(hand, initial, field)](./core.adapt.useinstancevalue.md) | <b><i>(BETA)</i></b> Get the value of field from the instance referenced by handled instance. |
-|  [useMethod(hand, initial, method, args)](./core.adapt.usemethod.md) | Call an instance method on the Element that <code>hand</code> refers to. |
-|  [useMethodFrom(hand, methodName, defaultVal, args)](./core.adapt.usemethodfrom.md) |  |
-|  [useReadyFrom(targetHand)](./core.adapt.usereadyfrom.md) |  |
-|  [useState(init)](./core.adapt.usestate.md) |  |
+|  [useAsync(f, initial)](./core.useasync.md) |  |
+|  [useBuildHelpers()](./core.usebuildhelpers.md) |  |
+|  [useDependsOn(f)](./core.usedependson.md) |  |
+|  [useDeployedWhen(f)](./core.usedeployedwhen.md) |  |
+|  [useImperativeMethods(create)](./core.useimperativemethods.md) |  |
+|  [useInstanceValue(hand, initial, field)](./core.useinstancevalue.md) | <b><i>(BETA)</i></b> Get the value of field from the instance referenced by handled instance. |
+|  [useMethod(hand, initial, method, args)](./core.usemethod.md) | Call an instance method on the Element that <code>hand</code> refers to. |
+|  [useMethodFrom(hand, methodName, defaultVal, args)](./core.usemethodfrom.md) |  |
+|  [useReadyFrom(targetHand)](./core.usereadyfrom.md) |  |
+|  [useState(init)](./core.usestate.md) |  |
 
 ## Interfaces
 
@@ -117,8 +111,7 @@ export { internal, };
 |  [ActionChange](./core.adapt.actionchange.md) | Describes the effect an Action has on an Element type and detail here explain how the Action affects this specific element, which may or may not be different than the action. For example, an Action that performs a modify on a CloudFormation stack may cause certain Elements to be created and deleted within that Action. |
 |  [ActionInfo](./core.adapt.actioninfo.md) | Describes the overall effect that an Action is performing. type and detail here explain what the Action is doing overall, not how it affects any particular Element. |
 |  [ActOptions](./core.adapt.actoptions.md) |  |
-|  [AnyMethods](./core.adapt.anymethods.md) |  |
-|  [BuildContext](./core.adapt.buildcontext.md) |  |
+|  [AnyMethods](./core.anymethods.md) |  |
 |  [BuildOpAscend](./core.adapt.buildopascend.md) |  |
 |  [BuildOpBuildDeferred](./core.adapt.buildopbuilddeferred.md) |  |
 |  [BuildOpDefer](./core.adapt.buildopdefer.md) |  |
@@ -139,9 +132,7 @@ export { internal, };
 |  [ExecuteOptions](./core.adapt.executeoptions.md) |  |
 |  [ExecutionPlan](./core.adapt.executionplan.md) |  |
 |  [ExecutionPlanOptions](./core.adapt.executionplanoptions.md) |  |
-|  [GetInstanceValueOptions](./core.adapt.getinstancevalueoptions.md) |  |
 |  [GroupProps](./core.adapt.groupprops.md) |  |
-|  [HookInfo](./core.adapt.hookinfo.md) |  |
 |  [ListOptions](./core.adapt.listoptions.md) |  |
 |  [ListResponse](./core.adapt.listresponse.md) |  |
 |  [Observed](./core.adapt.observed.md) |  |
@@ -176,7 +167,6 @@ export { internal, };
 |  --- | --- |
 |  [And](./core.adapt.and.md) |  |
 |  [defaultDomDiffId](./core.adapt.defaultdomdiffid.md) |  |
-|  [defaultGetInstanceValueOptions](./core.adapt.defaultgetinstancevalueoptions.md) |  |
 |  [Edge](./core.adapt.edge.md) |  |
 |  [False](./core.adapt.false.md) |  |
 |  [Identity](./core.adapt.identity.md) |  |
@@ -194,7 +184,6 @@ export { internal, };
 |  [BoolVal](./core.adapt.boolval.md) |  |
 |  [BuildListener](./core.adapt.buildlistener.md) |  |
 |  [BuildOp](./core.adapt.buildop.md) |  |
-|  [CombinedState](./core.adapt.combinedstate.md) |  |
 |  [Defaultize](./core.adapt.defaultize.md) |  |
 |  [Dependency](./core.adapt.dependency.md) |  |
 |  [DependsOn](./core.adapt.dependson.md) |  |
@@ -210,8 +199,7 @@ export { internal, };
 |  [PluginKey](./core.adapt.pluginkey.md) |  |
 |  [PluginModules](./core.adapt.pluginmodules.md) |  |
 |  [RelationOp](./core.adapt.relationop.md) |  |
-|  [SetState](./core.adapt.setstate.md) |  |
-|  [StateInfo](./core.adapt.stateinfo.md) |  |
-|  [StateUpdater](./core.adapt.stateupdater.md) |  |
-|  [UseStateInit](./core.adapt.usestateinit.md) |  |
+|  [SetState](./core.setstate.md) |  |
+|  [StateUpdater](./core.stateupdater.md) |  |
+|  [UseStateInit](./core.usestateinit.md) |  |
 |  [WaitStatus](./core.adapt.waitstatus.md) |  |
