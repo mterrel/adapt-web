@@ -12,7 +12,7 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-export declare function rule<P = jsx.AnyProps>(override?: BuildOverride<P>): Rule<P>;
+export declare function rule<P = AnyProps>(override?: BuildOverride<P>): Rule<P>;
 ```
 
 ## Parameters

@@ -14,7 +14,7 @@ See [k8s.k8sContainerProps()](./cloud.k8s.k8scontainerprops.md)<!-- -->.
 <b>Signature:</b>
 
 ```typescript
-export declare type FromContainerProps = ReplaceT<abs.ContainerProps, {
+export declare type FromContainerProps = ReplaceT<AbsContainerProps, {
     image: string;
 }> & BuiltinProps;
 ```

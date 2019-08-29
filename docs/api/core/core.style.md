@@ -12,7 +12,7 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-export declare class Style extends jsx.Component<StyleProps> 
+export declare class Style extends Component<StyleProps> 
 ```
 
 ## Methods

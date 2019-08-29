@@ -12,7 +12,7 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-export declare function createElement<Props extends object>(ctor: string | FunctionComponentTyp<Props> | ClassComponentTyp<Props, AnyState>, props: ExcludeInterface<Props, tySup.Children<any>> & Partial<BuiltinProps>, ...children: tySup.ChildType<Props>[]): AdaptElement;
+export declare function createElement<Props extends object>(ctor: string | FunctionComponentTyp<Props> | ClassComponentTyp<Props, AnyState>, props: ExcludeInterface<Props, Children<any>> & Partial<BuiltinProps>, ...children: ChildType<Props>[]): AdaptElement;
 ```
 
 ## Parameters
@@ -20,8 +20,8 @@ export declare function createElement<Props extends object>(ctor: string | Funct
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  ctor | <code>string &#124; FunctionComponentTyp&lt;Props&gt; &#124; ClassComponentTyp&lt;Props, AnyState&gt;</code> |  |
-|  props | <code>ExcludeInterface&lt;Props, tySup.Children&lt;any&gt;&gt; &amp; Partial&lt;BuiltinProps&gt;</code> |  |
-|  children | <code>tySup.ChildType&lt;Props&gt;[]</code> |  |
+|  props | <code>ExcludeInterface&lt;Props, Children&lt;any&gt;&gt; &amp; Partial&lt;BuiltinProps&gt;</code> |  |
+|  children | <code>ChildType&lt;Props&gt;[]</code> |  |
 
 <b>Returns:</b>
 

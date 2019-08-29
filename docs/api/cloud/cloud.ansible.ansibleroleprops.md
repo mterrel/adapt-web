@@ -12,7 +12,7 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-export interface AnsibleRoleProps 
+export interface AnsibleRoleProps extends WithChildren 
 ```
 
 ## Properties

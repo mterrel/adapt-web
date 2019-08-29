@@ -12,5 +12,5 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-deployedWhen: (goalStatus: Adapt.GoalStatus, helpers: Adapt.DeployHelpers) => Promise<Adapt.WaitStatus>;
+deployedWhen: (goalStatus: Adapt.GoalStatus, helpers: Adapt.DeployHelpers) => Promise<true | Adapt.Waiting | Adapt.Waiting[]>;
 ```

@@ -12,16 +12,16 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-export declare function findElementsInDom(stylesIn: StyleList | jsx.AdaptElement | null, dom: jsx.AdaptElementOrNull): jsx.AdaptElement[];
+export declare function findElementsInDom(stylesIn: StyleList | AdaptElement | null, dom: AdaptElementOrNull): AdaptElement[];
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  stylesIn | <code>StyleList &#124; jsx.AdaptElement &#124; null</code> |  |
-|  dom | <code>jsx.AdaptElementOrNull</code> |  |
+|  stylesIn | <code>StyleList &#124; AdaptElement &#124; null</code> |  |
+|  dom | <code>AdaptElementOrNull</code> |  |
 
 <b>Returns:</b>
 
-`jsx.AdaptElement[]`
+`AdaptElement[]`

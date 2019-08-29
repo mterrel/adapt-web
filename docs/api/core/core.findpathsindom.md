@@ -12,15 +12,15 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-export declare function findPathsInDom(stylesIn: StyleList | jsx.AdaptElement | null, dom: jsx.AdaptElementOrNull): DomPath[];
+export declare function findPathsInDom(stylesIn: StyleList | AdaptElement | null, dom: AdaptElementOrNull): DomPath[];
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  stylesIn | <code>StyleList &#124; jsx.AdaptElement &#124; null</code> |  |
-|  dom | <code>jsx.AdaptElementOrNull</code> |  |
+|  stylesIn | <code>StyleList &#124; AdaptElement &#124; null</code> |  |
+|  dom | <code>AdaptElementOrNull</code> |  |
 
 <b>Returns:</b>
 

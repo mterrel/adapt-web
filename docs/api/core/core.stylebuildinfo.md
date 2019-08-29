@@ -9,6 +9,8 @@ hide_title: true
 
 ## StyleBuildInfo interface
 
+Informational object provided to the callback of a [rule()](./core.rule.md)<!-- -->.
+
 <b>Signature:</b>
 
 ```typescript
@@ -19,5 +21,5 @@ export interface StyleBuildInfo extends BuildId
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [origBuild](./core.stylebuildinfo.origbuild.md) | <code>jsx.SFC</code> |  |
+|  [origBuild](./core.stylebuildinfo.origbuild.md) | <code>SFC</code> |  |
 |  [origElement](./core.stylebuildinfo.origelement.md) | <code>any</code> |  |

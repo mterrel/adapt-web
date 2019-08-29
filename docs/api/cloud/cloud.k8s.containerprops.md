@@ -14,7 +14,7 @@ Props for [k8s.Container()](./cloud.k8s.container.md)<!-- -->.
 <b>Signature:</b>
 
 ```typescript
-export interface ContainerProps extends SFCDeclProps<abs.ContainerProps> 
+export interface ContainerProps extends SFCDeclProps<AbsContainerProps> 
 ```
 
 ## Properties

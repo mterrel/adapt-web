@@ -58,6 +58,8 @@ hide_title: true
 |  [EnvSimple](./cloud.envsimple.md) | A set of environment variables for a [Container](./cloud.container.md)<!-- -->, expressed as a single object with keys and associated values. |
 |  [ExtendedHandle](./cloud.extendedhandle.md) |  |
 |  [ExternalDockerHostProps](./cloud.externaldockerhostprops.md) |  |
+|  [HandlesCreate](./cloud.handlescreate.md) |  |
+|  [HandlesIndex](./cloud.handlesindex.md) |  |
 |  [Links](./cloud.links.md) | Network links to create for a [Container](./cloud.container.md)<!-- -->. |
 |  [NetworkServiceProps](./cloud.networkserviceprops.md) |  |
 |  [PortBinding](./cloud.portbinding.md) | A set of ports to be bound for a [Container](./cloud.container.md)<!-- -->. |

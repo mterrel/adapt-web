@@ -14,17 +14,17 @@ Concatenate all of the rules of the given Style elements together into a single 
 <b>Signature:</b>
 
 ```typescript
-export declare function concatStyles(...styles: jsx.AdaptElement[]): jsx.AdaptElement;
+export declare function concatStyles(...styles: AdaptElement[]): AdaptElement;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  styles | <code>jsx.AdaptElement[]</code> | Zero or more Style elements, each containing style rules. |
+|  styles | <code>AdaptElement[]</code> | Zero or more Style elements, each containing style rules. |
 
 <b>Returns:</b>
 
-`jsx.AdaptElement`
+`AdaptElement`
 
 A new Style element containing the concatenation of all of the rules from the passed in Style elements.

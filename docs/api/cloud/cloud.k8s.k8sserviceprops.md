@@ -12,14 +12,14 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-export declare function k8sServiceProps(abstractProps: abs.NetworkServiceProps & BuiltinProps): ServiceSpec;
+export declare function k8sServiceProps(abstractProps: NetworkServiceProps & BuiltinProps): ServiceSpec;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  abstractProps | <code>abs.NetworkServiceProps &amp; BuiltinProps</code> |  |
+|  abstractProps | <code>NetworkServiceProps &amp; BuiltinProps</code> |  |
 
 <b>Returns:</b>
 

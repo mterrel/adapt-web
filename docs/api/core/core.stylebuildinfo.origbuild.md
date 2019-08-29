@@ -12,5 +12,5 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-origBuild: jsx.SFC;
+origBuild: SFC;
 ```

@@ -16,7 +16,7 @@ This works by copying the set of all rules that have already matched successfull
 <b>Signature:</b>
 
 ```typescript
-export declare function ruleNoRematch(info: StyleBuildInfo, elem: jsx.AdaptElement): jsx.AdaptElement<jsx.AnyProps>;
+export declare function ruleNoRematch(info: StyleBuildInfo, elem: AdaptElement): AdaptElement<AnyProps>;
 ```
 
 ## Parameters
@@ -24,8 +24,8 @@ export declare function ruleNoRematch(info: StyleBuildInfo, elem: jsx.AdaptEleme
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  info | <code>StyleBuildInfo</code> | The second argument to a rule callback function. This indicates which rule to ignore matches of. |
-|  elem | <code>jsx.AdaptElement</code> | The element that should not match the specified rule. |
+|  elem | <code>AdaptElement</code> | The element that should not match the specified rule. |
 
 <b>Returns:</b>
 
-`jsx.AdaptElement<jsx.AnyProps>`
+`AdaptElement<AnyProps>`
