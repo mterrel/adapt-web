@@ -22,9 +22,11 @@ export declare function Postgres(): null;
 
 ## Remarks
 
+Implements the [ConnectToInstance](./cloud.connecttoinstance.md) interface.
+
 Instance methods:
 
-- connectEnv(): Environment \| undefined
+- `connectEnv(): Environment | undefined`
 
 Returns the set of environment variables that have all the information needed for a Postgres client to connect to this database. The returned environment variables are named such that some common Postgres clients can use them directly:
 
@@ -35,3 +37,5 @@ Returns the set of environment variables that have all the information needed fo
 `PGUSER`<!-- -->: Username to use to authenticate to the database server or service.
 
 `PGPASSWORD`<!-- -->: Password to use to authenticate to the database server or service.
+
+Note that because this component is an abstract component, `connectEnv` always returns `undefined`<!-- -->. This abstract component should be replaced (using a style sheet) with a non-abstract component, such as [postgres.TestPostgres()](./cloud.postgres.testpostgres.md) that will provide its own implementation of `connectEnv`<!-- -->.

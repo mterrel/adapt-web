@@ -14,11 +14,11 @@ Handles for services that this component connects to.
 <b>Signature:</b>
 
 ```typescript
-connectTo: Handle | Handle[];
+connectTo: Handle<ConnectToInstance> | Handle<ConnectToInstance>[];
 ```
 
 ## Remarks
 
-The referenced service components should implement the [ConnectToInstance](./cloud.connecttoinstance.md) interface. The Node Container will be started with the combined set of environment variables that are provided by all of the referenced components' [ConnectToInstance.connectEnv()](./cloud.connecttoinstance.connectenv.md) methods, in addition to those provided via the [nodejs.NodeServiceProps.deps](./cloud.nodejs.nodeserviceprops.deps.md) prop.
+The referenced service components must implement the [ConnectToInstance](./cloud.connecttoinstance.md) interface. The Node Container will be started with the combined set of environment variables that are provided by all of the referenced components' [connectEnv](./cloud.connecttoinstance.connectenv.md) methods.
 
 In case of environment variable naming conflicts among those in from the `connectTo` prop, the value from the handle with the highest index in the `connectTo` array will take precedence. In case of naming conflicts between `connectTo` and `env`<!-- -->, the value in `env` will take precedence.

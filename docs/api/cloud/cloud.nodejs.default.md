@@ -21,7 +21,7 @@ export declare function NodeService(props: SFCDeclProps<NodeServiceProps, typeof
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  props | <code>SFCDeclProps&lt;NodeServiceProps, typeof defaultProps&gt;</code> |  |
+|  props | <code>SFCDeclProps&lt;NodeServiceProps, typeof defaultProps&gt;</code> | See [nodejs.NodeServiceProps](./cloud.nodejs.nodeserviceprops.md) |
 
 <b>Returns:</b>
 
@@ -53,14 +53,14 @@ The [NetworkService](./cloud.networkservice.md) and [Container](./cloud.containe
 
 Instance methods:
 
-- hostname(): string \| undefined
+- `hostname(): string | undefined`
 
 Returns the hostname of the NetworkService, once it is known.
 
-- port(): number \| undefined
+- `port(): number | undefined`
 
 Returns the port number of the NetworkService, once it is known.
 
-- image(): [docker.ImageInfo](./cloud.docker.imageinfo.md) \| undefined
+- `image():` [docker.ImageInfo](./cloud.docker.imageinfo.md) \| `undefined`
 
 Information about the successfully built image, once it has been built.
