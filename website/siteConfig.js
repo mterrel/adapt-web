@@ -70,6 +70,10 @@ const siteConfig = {
     ]
   },
   */
+  stylesheets: [
+    'https://fonts.googleapis.com/css?family=Roboto&display=swap',
+    'https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap',
+  ],
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Unbounded Systems`,
