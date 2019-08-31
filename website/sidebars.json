@@ -1,5 +1,8 @@
 {
   "docs": {
+    "Overview": [
+      "index"
+    ],
     "Getting Started": [
       "getting_started/index",
       "getting_started/overview",
