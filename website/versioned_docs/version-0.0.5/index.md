@@ -1,26 +1,45 @@
 ---
 id: version-0.0.5-index
-title: Adapt Documentation
+title: Welcome to Adapt
 original_id: index
 ---
 <!-- DOCTOC SKIP -->
-
-## Welcome to Adapt
 
 Adapt is the easiest way to reliably and repeatably deploy your apps anywhere -- to your laptop, a Kubernetes cluster, your favorite cloud, or anywhere else. Adapt specifications look like [ReactJS](https://reactjs.org) apps, but instead of rendering browser DOM elements like input, or div, Adapt specifications render to DOM elements like AWS EC2 instances, Lambdas, Kubernetes Pods, or any other building block for your application architecture.  If you are already familiar with React, many of the concepts will look familiar. If not, don't worry, knowledge of React isn't required to start using Adapt.
 
 ## Getting Started
 For a new project, you can get started without knowing much about Adapt by using a starter.  The [Getting Started Guide](https://adapt.unbounded.systems/docs/getting_started) will walk through installing Adapt and deploying a starter project.
-```shell
-adapt new <starter> <project directory> #Create a new project from a starter
-adapt run --deployID <myID> #Create a new deployment of the starter project
-... #write some code
-adapt update <myID> #Update the running deployment
+```bash
+# Create a new project from a starter
+adapt new <starter> <project directory>
+# Create a new deployment of the starter project
+adapt run --deployID <myID>
+# Write some code
+  ...
+# Update the running deployment
+adapt update <myID>
 ```
 
 Deploy a sample application with a [React](https://reactjs.org) front-end, a [Node.js](https://nodejs.org) API server, and a [Postgres](https://postgresql.org) database, along with a static file server and a URL router:
 
-![Adapt in action](assets/getting_started/adapt-demo-scaled.gif)
+<div class="term center-block">
+    <div class="term-header">
+        <button class="term-header-button term-header-button-close"></button>
+        <button class="term-header-button term-header-button-minimize"></button>
+        <button class="term-header-button term-header-button-expand"></button>
+        <div class="term-header-title">
+            <span>Unbounded Adapt</span>
+        </div>
+    </div>
+    <div class="term-content">
+        <!-- NOTE: Workaround for docusaurus not re-writing URLs in HTML blocks
+          -- is to use an absolute path, but this will always be the "next"
+          -- version of the image.
+          -->
+        <img src="/docs/assets/getting_started/adapt-demo-scaled.gif" alt="Adapt in action">
+    </div>
+</div>
+
 
 A snippet of the corresponding Adapt specification that the starter sets up for this example:
 ```jsx

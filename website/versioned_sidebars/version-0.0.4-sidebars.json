@@ -1,5 +1,8 @@
 {
   "version-0.0.4-docs": {
+    "Overview": [
+      "version-0.0.4-index"
+    ],
     "Getting Started": [
       "version-0.0.4-getting_started/index",
       "version-0.0.4-getting_started/overview",
