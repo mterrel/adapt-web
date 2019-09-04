@@ -22,64 +22,78 @@ sup {
     margin: auto;
 }
 
-/*
- * MacOS-like terminal styling
- */
-.term {
-    width: 100%;
-    max-width: 620px;
-    /*height: 30vw;*/
-    border-radius: 7px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.56);
-    background: #121314;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    margin-top: 2em;
-    margin-bottom: 2em;
+.homeContainer .homeWrapper {
+    justify-content: space-around;
+    align-items: center;
 }
-.term-header {
-    display: flex;
-    padding: 5px;
-    background: linear-gradient(#3b3b3b, #212121);
+
+.homeContainer .homeWrapper .logo {
+    flex: auto;
+    order: 2;
+    display: block;
 }
-.term-header-button {
-    position: relative;
-    width: 12px;
-    height: 12px;
-    margin-right: 8px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0;
+
+.homeContainer .homeWrapper .logo .logo-icon {
+    max-height: 190px;
+    max-width: 30vw;
 }
-.term-header-button-close {
-    background: #ff615a;
+.homeContainer .homeWrapper .logo .logo-text {
+    max-height: 110px;
 }
-.term-header-button-minimize {
-    background: #ffc230;
+
+.projectTitle {
+    font-family: Roboto;
+    font-weight: 900;
+    margin-top: 1em;
 }
-.term-header-button-expand {
-    background: #29cb41;
+
+.projectDescription {
+    color: #5b708b;
+    font-size: 1.2em;
+    text-align: left;
+    padding-top: .1em;
+    padding-bottom: 1.5em;
 }
-.term-header-title {
-    text-align: center;
-    color: #b7b6b7;
-    font-family: Roboto, sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    width: 100%;
-    padding-right: 60px;
+
+.intro h2 {
+    text-align: left;
 }
-.term-content {
-    padding: 10px;
-    font-size: 14px;
-    color: lightgray;
+
+a.button {
+    color: #ffffff;
+    background-color: #28aee4;
+    font-size: 19px;
+    font-weight: 700;
+    padding: 16px;
+}
+
+.highlightBackground {
+    background-color: #1685b1;
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 736px) {
+    .homeContainer .homeWrapper {
+        display: flex;
+    }
+    .homeContainer .homeWrapper .logo {
+        margin-bottom: 0px;
+    }
+    /*
+    .homeContainer .homeWrapper .logo .logo-icon {
+        max-height: 200px;
+    }
+    .homeContainer .homeWrapper .logo .logo-text {
+        max-height: 120px;
+    }
+    */
+    .homeContainer .homeWrapper .intro {
+        max-width: 400px;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -89,4 +103,7 @@ sup {
 }
 
 @media only screen and (min-width: 1500px) {
+}
+
+@media only screen and (min-width: 1200px) {
 }

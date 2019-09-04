@@ -26,8 +26,8 @@ const issueUrl = repoUrl + '/issues/new';
 const forkUrl = repoUrl + '/fork';
 
 const siteConfig = {
-  title: 'Unbounded Adapt', // Title for your website.
-  tagline: 'The easiest way to deploy your app',
+  title: 'Adapt',
+  tagline: 'React for your infrastructure.',
 
   url: 'https://adapt.unbounded.systems',
   baseUrl: '/', // Base URL for your project */
@@ -53,7 +53,7 @@ const siteConfig = {
 
   /* Colors for website */
   colors: {
-    primaryColor: '#51284F',
+    primaryColor: '#28aee4',
     secondaryColor: '#6E3E6C',
   },
 
