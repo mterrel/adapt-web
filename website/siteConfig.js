@@ -47,8 +47,8 @@ const siteConfig = {
   //users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/logo.svg',
-  footerIcon: 'img/logo.svg',
+  headerIcon: 'img/logo_white.svg',
+  footerIcon: 'img/logo_white.svg',
   favicon: 'img/favicon.ico',
 
   /* Colors for website */
@@ -94,8 +94,8 @@ const siteConfig = {
   cleanUrl: true,
 
   // Open Graph and Twitter card images.
-  ogImage: 'img/logo.svg',
-  twitterImage: 'img/logo.svg',
+  ogImage: 'img/logo_stacked.svg',
+  twitterImage: 'img/logo_stacked.svg',
 
   // For sites with a sizable amount of content, set collapsible to true.
   // Expand/collapse the links and subcategories under categories.
