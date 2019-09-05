@@ -21,5 +21,6 @@ export interface NodeImageBuildOptions extends DockerBuildOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
+|  [buildArgs](./cloud.nodejs.nodeimagebuildoptions.buildargs.md) | <code>Environment</code> | Environment variables that should be present during docker build |
 |  [packageManager](./cloud.nodejs.nodeimagebuildoptions.packagemanager.md) | <code>&quot;npm&quot; &#124; &quot;yarn&quot; &#124; string</code> | Package manager to use in build steps in the generated Dockerfile that builds [nodejs.LocalNodeImage()](./cloud.nodejs.localnodeimage.md)<!-- -->. |
 |  [runNpmScripts](./cloud.nodejs.nodeimagebuildoptions.runnpmscripts.md) | <code>string &#124; string[]</code> | Scripts that are defined in your [package.json file](https://docs.npmjs.com/files/package.json) that should be run during the image build. |

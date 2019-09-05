@@ -14,6 +14,7 @@ hide_title: true
 ```typescript
 static defaultProps: {
         options: {
+            dockerHost: string | undefined;
             forceRm: boolean;
         };
     };

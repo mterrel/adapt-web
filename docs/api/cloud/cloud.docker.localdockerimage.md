@@ -27,7 +27,7 @@ export declare class LocalDockerImage extends Action<LocalDockerImageProps, Loca
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [defaultProps](./cloud.docker.localdockerimage.defaultprops.md) | <code>static</code> | <code>{</code><br/><code>        options: {</code><br/><code>            forceRm: boolean;</code><br/><code>        };</code><br/><code>    }</code> |  |
+|  [defaultProps](./cloud.docker.localdockerimage.defaultprops.md) | <code>static</code> | <code>{</code><br/><code>        options: {</code><br/><code>            dockerHost: string &#124; undefined;</code><br/><code>            forceRm: boolean;</code><br/><code>        };</code><br/><code>    }</code> |  |
 
 ## Methods
 
