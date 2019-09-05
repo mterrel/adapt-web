@@ -3,11 +3,17 @@ sup {
     font-size: 70%;
 }
 
+.mainContainer {
+    padding-bottom: 0;
+}
 .mainContainer a {
-    color: #82407f;
+    color: #1685b1;
 }
 .mainContainer a:hover {
     text-decoration: underline;
+}
+.mainContainer .highlightBackground a {
+    color: #ffffff;
 }
 
 .remove-margin {
@@ -67,8 +73,29 @@ a.button {
     padding: 16px;
 }
 
+.blockLarge h2 {
+    font-size: 30px;
+    color: #596d88;
+}
+.blockLarge .blockContentItem {
+    font-size: 24px;
+    color: #8496ae;
+}
+
 .highlightBackground {
     background-color: #1685b1;
+}
+
+.darkBackground {
+    background-color: #e2e7e9;
+}
+
+.container.darkBackground .wrapper .blockLarge h1,
+.container.darkBackground .wrapper .blockLarge h2 {
+    color: #49596f;
+}
+.container.darkBackground .wrapper .blockLarge .blockContentItem {
+    color: #596d88;
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {

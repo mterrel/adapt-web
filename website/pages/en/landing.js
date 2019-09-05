@@ -5,14 +5,13 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+const { GridBlock, CodeWindow }= require('adapt-web-components');
 const React = require('react');
-const classNames = require('classnames');
 
 const CompLibrary = require('../../core/CompLibrary.js');
 
 const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
-const GridBlock = CompLibrary.GridBlock;
 
 const SiteConfig = React.createContext({});
 
@@ -41,15 +40,6 @@ const ProjectDesc = () => (
 );
 
 const Logo = () => (
-  <div className="logo">
-    <img
-      alt="Adapt Logo"
-      src={`${useSiteConfig().baseUrl}img/logo_stacked.svg`}
-      />
-  </div>
-);
-
-const Logo2 = () => (
   <div className="logo">
     <img
       className="logo-icon"
@@ -103,7 +93,7 @@ const HomeSplash = ({ language = '' }) => {
 
   return (
     <SplashContainer>
-      <Logo2 />
+      <Logo />
       <div className="intro">
         <ProjectTitle />
         <ProjectDesc />
@@ -117,10 +107,10 @@ const HomeSplash = ({ language = '' }) => {
 
 /**
  * @param {Object}   props
- * @param {string=}  props.background
+ * @param {'dark'|'highlight'|'light'=}  props.background
  * @param {any}      props.children
  * @param {string=}  props.id
- * @param {string=}  props.layout
+ * @param {'twoColumn'|'threeColumn'|'fourColumn'=}  props.layout
  */
 const Block = ({ background, children, id, layout }) => (
   <Container
@@ -135,70 +125,96 @@ const Block = ({ background, children, id, layout }) => (
   </Container>
 );
 
-const FeatureCallout = () => (
-  <div
-    className="productShowcaseSection paddingBottom"
-    style={{textAlign: 'center'}}>
-    <h2>Feature Callout</h2>
-    <MarkdownBlock>These are features of this project</MarkdownBlock>
-  </div>
-);
 
-const TryOut = () => (
-  <Block id="try" background='highlight'>
-    {[
-      {
-        content:
-          'To make your landing page more attractive, use illustrations! Check out ' +
-          '[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. ' +
-          'The illustrations you see on this page are from unDraw.',
-        image: `${useSiteConfig().baseUrl}img/undraw_code_review.svg`,
-        imageAlign: 'left',
-        title: 'Wonderful SVG Illustrations',
-      },
-    ]}
-  </Block>
-);
-
-const Description = () => (
-  <Block background="dark">
-    {[
-      {
-        content:
-          'This is another description of how this project is useful',
-        image: `${useSiteConfig().baseUrl}img/undraw_note_list.svg`,
-        imageAlign: 'right',
-        title: 'Description',
-      },
-    ]}
-  </Block>
-);
-
-const LearnHow = () => (
+const ExampleSpec = () => (
   <CodeWindow lang='jsx' slim={true} title="index.tsx">
-{`import { NodeService, ReactApp } from "@adpt/cloud/nodejs";
+{`import Adapt from "@adpt/core";
+import { NodeService, ReactApp } from "@adpt/cloud/nodejs";
 import { Postgres } from "@adpt/cloud/postgres";
-import Adapt, { Group, handle } from "@adpt/core";
 
 function MyApp() {
-  const pg = handle();
+  const pg = Adapt.handle();
 
   return (
-    <Group>
+    <Adapt.Group>
       <ReactApp srcDir="../frontend" />
-
       <NodeService srcDir="../backend" connectTo={pg} />
       <Postgres handle={pg} />
-    </Group>
+    </Adapt.Group>
   );
 }
 `}
   </CodeWindow>
 );
 
+const DeployExample = () => (
+  <CodeWindow lang='bash' slim={false}>
+{`# Install adapt
+npm install -g @adpt/cli
 
-const Features = () => (
-  <Block layout="fourColumn">
+# Create a new app from a starter template
+adapt new hello-react-node-postgres ./myapp
+
+# Deploy to Kubernetes
+cd myapp/deploy
+adapt run k8s
+`}
+  </CodeWindow>
+);
+
+/**
+ * @param {Object}    props
+ * @param {'light'|'dark'|'highlight'=}    props.background
+ */
+const DeployYourFirst = ({ background }) => (
+  <Block id="deploy" background={background} >
+    {[
+      {
+        title: 'Deploy your first app in seconds',
+        content: [
+`Create a complete app architecture from scratch using one of our starter
+templates.
+
+Or easily deploy your existing app using Adapt.`,
+        ],
+        className: "blockLarge",
+      },
+      {
+        content: <DeployExample />
+      }
+    ]}
+  </Block>
+);
+
+/**
+ * @param {Object}    props
+ * @param {'light'|'dark'|'highlight'=}    props.background
+ */
+const InfraMadeEasy = ({ background }) => (
+  <Block id="components" background={background} >
+    {[
+      {
+        content: <ExampleSpec />
+      },
+      {
+        title: 'Infrastructure made easy',
+        content:
+`Define your infrastructure using React-like components.
+
+Choose components from the Adapt cloud library or easily
+customize or create your own.`,
+        className: "blockLarge",
+      }
+    ]}
+  </Block>
+)
+
+/**
+ * @param {Object}    props
+ * @param {'light'|'dark'|'highlight'=}    props.background
+ */
+const Features = ({ background }) => (
+  <Block layout="threeColumn" background={background}>
     {[
       {
         title: 'Infrastructure as Code',
@@ -271,41 +287,14 @@ const Showcase = ({ language }) => {
   );
 };
 
-const codeBlock = (code, lang = '') => '```' + `${lang}\n${code.trimEnd()}\n` + '```';
-
-/**
- * @param {Object}    props
- * @param {string}    props.children
- * @param {string=}   props.lang
- * @param {boolean=}  props.slim
- * @param {string=}   props.title
- */
-const CodeWindow = ({ children, lang = '', slim = false, title = '' }) => (
-  <div className="term center-block term-background-codeblock">
-      <div className="term-header">
-          <button className="term-header-button term-header-button-close"></button>
-          <button className="term-header-button term-header-button-minimize"></button>
-          <button className="term-header-button term-header-button-expand"></button>
-          <div className="term-header-title">
-              <span>{title}</span>
-          </div>
-      </div>
-      <div className={classNames("term-content", { slim })}>
-        <MarkdownBlock>{codeBlock(children, lang)}</MarkdownBlock>
-      </div>
-  </div>
-);
-
 const Index = ({ config, language = '' }) => (
   <SiteConfig.Provider value={config} >
     <div>
       <HomeSplash language={language} />
       <div className="mainContainer">
-        <Features />
-        <LearnHow />
-        <TryOut />
-        <Description />
-        <Showcase language={language} />
+        <Features background="highlight" />
+        <DeployYourFirst />
+        <InfraMadeEasy background="dark" />
       </div>
     </div>
   </SiteConfig.Provider>

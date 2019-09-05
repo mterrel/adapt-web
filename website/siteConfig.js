@@ -54,7 +54,7 @@ const siteConfig = {
   /* Colors for website */
   colors: {
     primaryColor: '#28aee4',
-    secondaryColor: '#6E3E6C',
+    secondaryColor: '#1685b1',
   },
 
   /* Custom fonts for website */
@@ -118,7 +118,7 @@ const siteConfig = {
   },
   scrollToTop: true,
   scrollToTopOptions: {
-    backgroundColor: 'rgba(81,40,79,.5)'
+    backgroundColor: 'rgba(40, 174, 228, 0.5)'
   },
   repoUrl,
   issueUrl,
