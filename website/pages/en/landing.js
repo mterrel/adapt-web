@@ -13,6 +13,12 @@ const CompLibrary = require('../../core/CompLibrary.js');
 const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
 
+
+/*
+ * Common components for the home page
+ */
+
+
 const SiteConfig = React.createContext({});
 
 /**
@@ -27,6 +33,46 @@ const SiteConfig = React.createContext({});
 // @ts-ignore
 const useSiteConfig = () => React.useContext(SiteConfig);
 
+/**
+ * @param {Object}   props
+ * @param {any}      props.children
+ * @param {string}   props.href
+ * @param {string=}  props.target
+ */
+const Button = ({ href, target, children }) => (
+  <div className="pluginWrapper buttonWrapper">
+    <a className="button" href={href} target={target}>
+      {children}
+    </a>
+  </div>
+);
+
+/**
+ * @param {Object}   props
+ * @param {'dark'|'highlight'|'light'=}  props.background
+ * @param {any}      props.children
+ * @param {string=}  props.id
+ * @param {'twoColumn'|'threeColumn'|'fourColumn'=}  props.layout
+ */
+const Block = ({ background, children, id, layout }) => (
+  <Container
+    padding={['bottom', 'top']}
+    id={id}
+    background={background}>
+    <GridBlock
+      align="center"
+      contents={children}
+      layout={layout}
+    />
+  </Container>
+);
+
+
+/*
+ * HomeSplash
+ */
+
+
 const ProjectTitle = () => (
   <h2 className="projectTitle">
     {useSiteConfig().tagline}
@@ -35,7 +81,7 @@ const ProjectTitle = () => (
 
 const ProjectDesc = () => (
   <div className="projectDescription">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Create and deploy full-stack apps to any infrastructure using the power of React.
   </div>
 );
 
@@ -70,20 +116,6 @@ const PromoSection = props => (
   </div>
 );
 
-/**
- * @param {Object}   props
- * @param {any}      props.children
- * @param {string}   props.href
- * @param {string=}  props.target
- */
-const Button = ({ href, target, children }) => (
-  <div className="pluginWrapper buttonWrapper">
-    <a className="button" href={href} target={target}>
-      {children}
-    </a>
-  </div>
-);
-
 const HomeSplash = ({ language = '' }) => {
   const config = useSiteConfig();
   const { baseUrl, docsUrl } = config;
@@ -105,109 +137,6 @@ const HomeSplash = ({ language = '' }) => {
   );
 }
 
-/**
- * @param {Object}   props
- * @param {'dark'|'highlight'|'light'=}  props.background
- * @param {any}      props.children
- * @param {string=}  props.id
- * @param {'twoColumn'|'threeColumn'|'fourColumn'=}  props.layout
- */
-const Block = ({ background, children, id, layout }) => (
-  <Container
-    padding={['bottom', 'top']}
-    id={id}
-    background={background}>
-    <GridBlock
-      align="center"
-      contents={children}
-      layout={layout}
-    />
-  </Container>
-);
-
-
-const ExampleSpec = () => (
-  <CodeWindow lang='jsx' slim={true} title="index.tsx">
-{`import Adapt from "@adpt/core";
-import { NodeService, ReactApp } from "@adpt/cloud/nodejs";
-import { Postgres } from "@adpt/cloud/postgres";
-
-function MyApp() {
-  const pg = Adapt.handle();
-
-  return (
-    <Adapt.Group>
-      <ReactApp srcDir="../frontend" />
-      <NodeService srcDir="../backend" connectTo={pg} />
-      <Postgres handle={pg} />
-    </Adapt.Group>
-  );
-}
-`}
-  </CodeWindow>
-);
-
-const DeployExample = () => (
-  <CodeWindow lang='bash' slim={false}>
-{`# Install adapt
-npm install -g @adpt/cli
-
-# Create a new app from a starter template
-adapt new hello-react-node-postgres ./myapp
-
-# Deploy to Kubernetes
-cd myapp/deploy
-adapt run k8s
-`}
-  </CodeWindow>
-);
-
-/**
- * @param {Object}    props
- * @param {'light'|'dark'|'highlight'=}    props.background
- */
-const DeployYourFirst = ({ background }) => (
-  <Block id="deploy" background={background} >
-    {[
-      {
-        title: 'Deploy your first app in seconds',
-        content: [
-`Create a complete app architecture from scratch using one of our starter
-templates.
-
-Or easily deploy your existing app using Adapt.`,
-        ],
-        className: "blockLarge",
-      },
-      {
-        content: <DeployExample />
-      }
-    ]}
-  </Block>
-);
-
-/**
- * @param {Object}    props
- * @param {'light'|'dark'|'highlight'=}    props.background
- */
-const InfraMadeEasy = ({ background }) => (
-  <Block id="components" background={background} >
-    {[
-      {
-        content: <ExampleSpec />
-      },
-      {
-        title: 'Infrastructure made easy',
-        content:
-`Define your infrastructure using React-like components.
-
-Choose components from the Adapt cloud library or easily
-customize or create your own.`,
-        className: "blockLarge",
-      }
-    ]}
-  </Block>
-)
 
 /**
  * @param {Object}    props
@@ -257,35 +186,147 @@ app test case or an entire data center.
   </Block>
 );
 
-const Showcase = ({ language }) => {
-  const { baseUrl, title, users } = useSiteConfig();
-  if ((users || []).length === 0) {
-    return null;
-  }
 
-  const showcase = users
-    .filter(user => user.pinned)
-    .map(user => (
-      <a href={user.infoLink} key={user.infoLink}>
-        <img src={user.image} alt={user.caption} title={user.caption} />
-      </a>
-    ));
+const DeployExample = () => (
+  <div className='deployExample'>
+    <CodeWindow lang='bash' slim={false}>
+{`# Install adapt
+npm install -g @adpt/cli
 
-  const pageUrl = page => baseUrl + (language ? `${language}/` : '') + page;
+# Create a new app from a starter template
+adapt new hello-react-node-postgres ./myapp
+cd myapp/deploy
+
+# Deploy to Kubernetes using "k8s" style sheet
+adapt run k8s
+`}
+    </CodeWindow>
+    <div className="caption">
+
+      Create a new microservice app from a template, then deploy it with a
+      single command.
+    </div>
+  </div>
+);
+
+/**
+ * @param {Object}    props
+ * @param {'light'|'dark'|'highlight'=}    props.background
+ */
+const DeployYourFirst = ({ background }) => (
+  <Block id="deploy" background={background} >
+    {[
+      {
+        title: 'Deploy your first app in seconds',
+        content: [
+`Create a complete app architecture from scratch using one of our starter
+templates.
+
+Or use Adapt's powerful declarative language to describe and deploy your
+existing app.`,
+        ],
+        className: "blockLarge",
+      },
+      {
+        content: <DeployExample />
+      }
+    ]}
+  </Block>
+);
+
+
+const ExampleSpec = () => (
+  <div className="exampleSpec">
+    <CodeWindow lang='jsx' slim={true} title="index.tsx">
+{`import Adapt from "@adpt/core";
+import { NodeService, ReactApp } from "@adpt/cloud/nodejs";
+import { Postgres } from "@adpt/cloud/postgres";
+
+function MyApp() {
+  const pg = Adapt.handle();
 
   return (
-    <div className="productShowcaseSection paddingBottom">
-      <h2>Who is Using This?</h2>
-      <p>This project is used by all these people</p>
-      <div className="logos">{showcase}</div>
-      <div className="more-users">
-        <a className="button" href={pageUrl('users.html')}>
-          More {title} Users
-        </a>
-      </div>
-    </div>
+    <Adapt.Group>
+      <ReactApp srcDir="../frontend" />
+      <NodeService srcDir="../backend" connectTo={pg} />
+      <Postgres handle={pg} />
+    </Adapt.Group>
   );
-};
+}
+`}
+    </CodeWindow>
+    <div className="caption">
+      Adapt description to deploy a full-stack microservice app, including
+      React UI, Node.js API service, and Postgres database.
+    </div>
+  </div>
+);
+
+/**
+ * @param {Object}    props
+ * @param {'light'|'dark'|'highlight'=}    props.background
+ */
+const InfraMadeEasy = ({ background }) => (
+  <Block id="components" background={background} >
+    {[
+      {
+        content: <ExampleSpec />
+      },
+      {
+        title: 'Infrastructure made easy',
+        content:
+`Define your infrastructure using simple, yet powerful components.
+
+Choose components from the Adapt cloud library or easily
+customize or create your own.`,
+        className: "blockLarge",
+      }
+    ]}
+  </Block>
+);
+
+const StylesExample = () => (
+  <div className='stylesExample'>
+    <CodeWindow lang='bash' slim={false}>
+{`# "laptop" style sheet deploys directly to Docker
+adapt run laptop
+
+# "k8s" style sheet deploys to shared Kubernetes
+adapt run k8s
+
+# "aws-prod" style sheet deploys to AWS
+adapt run aws-prod
+`}
+    </CodeWindow>
+    <div className="caption">
+      Map your app onto different technologies and environments with
+      style sheets.
+    </div>
+  </div>
+);
+
+/**
+ * @param {Object}    props
+ * @param {'light'|'dark'|'highlight'=}    props.background
+ */
+const Styles = ({ background }) => (
+  <Block id="styles" background={background} >
+    {[
+      {
+        title: `One app architecture. Multiple environments.`,
+        content:
+`Adapt style sheets let you run your app on your laptop's Docker for
+development, on shared Kubernetes for testing, and AWS for production.
+`,
+        className: "blockLarge",
+      },
+      {
+        content: <StylesExample />
+      },
+    ]}
+  </Block>
+);
+
 
 const logoPath = "/img/tech_logos";
 const techLogos = [
@@ -324,6 +365,10 @@ const techLogos = [
     soon: true,
   },
   {
+    alt: 'JavaScript',
+    file: 'js.svg',
+  },
+  {
     alt: 'Golang',
     file: 'go.png',
     soon: true,
@@ -338,20 +383,19 @@ const WorksWith = ({ background }) => (
   <Block id="works_with" background={background} >
     {[
       {
-        title: 'Works with all your favorite technologies',
-        content:
-          `Adapt can deploy apps written in any language to your favorite cloud provider,
-to your laptop, or to your own data center.
-
-Or to all of those at once.`,
-        className: "blockLarge",
+        content: <LogoShowcase logos={techLogos} pathPrefix={logoPath} />
       },
       {
-        content: <LogoShowcase logos={techLogos} pathPrefix={logoPath} />
-      }
+        title: 'Works with all your favorite technologies',
+        content:
+`Adapt can deploy apps written in any language to your favorite cloud provider,
+to your laptop, or to your own data center.`,
+        className: "blockLarge",
+      },
     ]}
   </Block>
 );
+
 
 const Index = ({ config, language = '' }) => (
   <SiteConfig.Provider value={config} >
@@ -360,7 +404,8 @@ const Index = ({ config, language = '' }) => (
       <div className="mainContainer">
         <Features background="highlight" />
         <DeployYourFirst />
-        <InfraMadeEasy background="dark" />
+        <InfraMadeEasy />
+        <Styles background="dark" />
         <WorksWith />
       </div>
     </div>

@@ -51,18 +51,27 @@ sup {
     font-family: Roboto;
     font-weight: 900;
     margin-top: 1em;
+    overflow-wrap: normal;
+    font-size: 60px;
 }
 
 .projectDescription {
     color: #5b708b;
-    font-size: 1.2em;
+    font-size: 28px;
     text-align: left;
     padding-top: .1em;
     padding-bottom: 1.5em;
 }
 
-.intro h2 {
+.homeContainer .intro {
+    padding-left: 10%;
+    padding-right: 10%;
     text-align: left;
+}
+
+.homeContainer .logo {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 a.button {
@@ -89,8 +98,9 @@ a.button {
     color: #596d88;
 }
 .blockLarge .blockContentItem {
-    font-size: 24px;
+    font-size: 25px;
     color: #8496ae;
+    line-height: 1.4;
 }
 
 .highlightBackground {
@@ -99,14 +109,19 @@ a.button {
 
 .darkBackground {
     background-color: #e2e7e9;
+    color: #596d88;
 }
 
 .container.darkBackground .wrapper .blockLarge h1,
+.container.darkBackground .wrapper .blockLarge,
 .container.darkBackground .wrapper .blockLarge h2 {
     color: #49596f;
 }
-.container.darkBackground .wrapper .blockLarge .blockContentItem {
-    color: #596d88;
+
+.caption {
+    color: #8496ae;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .logo-showcase-wrapper {
@@ -136,6 +151,7 @@ a.button {
     font-size: .7em;
 }
 
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
@@ -147,10 +163,11 @@ a.button {
         margin-bottom: 0px;
     }
     .homeContainer .homeWrapper .intro {
-        max-width: 400px;
+        max-width: 50vw;
         padding-top: 2em;
         padding-bottom: 2em;
-        padding-left: 2em;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .gridBlock .twoByGridBlock {
@@ -162,6 +179,12 @@ a.button {
 
     .logo-showcase {
         width: 50vw;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .homeContainer .homeWrapper .intro {
+        max-width: 500px;
     }
 }
 
