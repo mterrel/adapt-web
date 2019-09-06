@@ -73,6 +73,7 @@ const siteConfig = {
   stylesheets: [
     'https://fonts.googleapis.com/css?family=Roboto&display=swap',
     'https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap',
+    'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'
   ],
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
@@ -86,7 +87,11 @@ const siteConfig = {
 
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: [],
+  scripts: [
+    'https://code.jquery.com/jquery-1.11.0.min.js',
+    'https://code.jquery.com/jquery-migrate-1.2.1.min.js',
+    'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js',
+  ],
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',

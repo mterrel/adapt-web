@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const { GridBlock, CodeWindow }= require('adapt-web-components');
+const { CodeWindow, GridBlock, LogoShowcase } = require('adapt-web-components');
 const React = require('react');
 
 const CompLibrary = require('../../core/CompLibrary.js');
@@ -35,7 +35,7 @@ const ProjectTitle = () => (
 
 const ProjectDesc = () => (
   <div className="projectDescription">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   </div>
 );
 
@@ -45,12 +45,12 @@ const Logo = () => (
       className="logo-icon"
       alt="Adapt Logo"
       src={`${useSiteConfig().baseUrl}img/logo_color.svg`}
-      />
+    />
     <img
       className="logo-text"
       alt="Adapt"
       src={`${useSiteConfig().baseUrl}img/adapt_text.svg`}
-      />
+    />
   </div>
 );
 
@@ -76,7 +76,7 @@ const PromoSection = props => (
  * @param {string}   props.href
  * @param {string=}  props.target
  */
-const Button = ({ href, target, children })=> (
+const Button = ({ href, target, children }) => (
   <div className="pluginWrapper buttonWrapper">
     <a className="button" href={href} target={target}>
       {children}
@@ -98,7 +98,7 @@ const HomeSplash = ({ language = '' }) => {
         <ProjectTitle />
         <ProjectDesc />
         <PromoSection>
-          <Button href="#try">Get Started &gt;</Button>
+          <Button href={docUrl('getting_started')}>Get Started &gt;</Button>
         </PromoSection>
       </div>
     </SplashContainer>
@@ -220,7 +220,7 @@ const Features = ({ background }) => (
         title: 'Infrastructure as Code',
         image: `${useSiteConfig().baseUrl}img/undraw_react.svg`,
         imageAlign: 'top',
-        content: 
+        content:
 `No, really. **ACTUAL** code.
 
 Just like React, Adapt specs are written in JavaScript, using
@@ -287,6 +287,72 @@ const Showcase = ({ language }) => {
   );
 };
 
+const logoPath = "/img/tech_logos";
+const techLogos = [
+  {
+    alt: 'Amazon Web Services',
+    file: 'aws.svg',
+  },
+  {
+    alt: 'React',
+    file: 'react.png',
+  },
+  {
+    alt: 'Docker',
+    file: 'docker.png',
+  },
+  {
+    alt: 'Kubernetes',
+    file: 'kubernetes.svg',
+  },
+  {
+    alt: 'AWS Lambda',
+    file: 'lambda.svg',
+    soon: true,
+  },
+  {
+    alt: 'NodeJS',
+    file: 'nodejs.svg',
+  },
+  {
+    alt: 'TypeScript',
+    file: 'typescript.svg',
+  },
+  {
+    alt: 'Google Cloud',
+    file: 'google_cloud.png',
+    soon: true,
+  },
+  {
+    alt: 'Golang',
+    file: 'go.png',
+    soon: true,
+  },
+];
+
+/**
+ * @param {Object}    props
+ * @param {'light'|'dark'|'highlight'=}    props.background
+ */
+const WorksWith = ({ background }) => (
+  <Block id="works_with" background={background} >
+    {[
+      {
+        title: 'Works with all your favorite technologies',
+        content:
+          `Adapt can deploy apps written in any language to your favorite cloud provider,
+to your laptop, or to your own data center.
+
+Or to all of those at once.`,
+        className: "blockLarge",
+      },
+      {
+        content: <LogoShowcase logos={techLogos} pathPrefix={logoPath} />
+      }
+    ]}
+  </Block>
+);
+
 const Index = ({ config, language = '' }) => (
   <SiteConfig.Provider value={config} >
     <div>
@@ -295,6 +361,7 @@ const Index = ({ config, language = '' }) => (
         <Features background="highlight" />
         <DeployYourFirst />
         <InfraMadeEasy background="dark" />
+        <WorksWith />
       </div>
     </div>
   </SiteConfig.Provider>

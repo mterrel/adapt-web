@@ -73,6 +73,17 @@ a.button {
     padding: 16px;
 }
 
+.blockContent {
+    height: 100%;
+}
+.blockContentItem {
+    height: 100%;
+}
+
+.blockLarge {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .blockLarge h2 {
     font-size: 30px;
     color: #596d88;
@@ -98,6 +109,33 @@ a.button {
     color: #596d88;
 }
 
+.logo-showcase-wrapper {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.logo-showcase {
+    width: 100vw;
+    max-width: 550px;
+}
+.logo-slide {
+    padding: 0 1%;
+    height: 100%;
+    position: relative;
+}
+.slick-initialized .slick-track {
+    display: flex;
+    align-items: center;
+}
+
+.comingSoon {
+    opacity: 0.4;
+}
+.comingSoon::after {
+    content: "*upcoming release";
+    font-size: .7em;
+}
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
@@ -108,29 +146,36 @@ a.button {
     .homeContainer .homeWrapper .logo {
         margin-bottom: 0px;
     }
-    /*
-    .homeContainer .homeWrapper .logo .logo-icon {
-        max-height: 200px;
-    }
-    .homeContainer .homeWrapper .logo .logo-text {
-        max-height: 120px;
-    }
-    */
     .homeContainer .homeWrapper .intro {
         max-width: 400px;
         padding-top: 2em;
         padding-bottom: 2em;
+        padding-left: 2em;
+    }
+
+    .gridBlock .twoByGridBlock {
+        flex-basis: 50%;
+    }
+    .gridBlock .twoByGridBlock.blockLarge {
+        flex-basis: 40%;
+    }
+
+    .logo-showcase {
+        width: 50vw;
     }
 }
 
 @media only screen and (max-width: 1023px) {
 }
 
+@media only screen and (min-width: 1200px) {
+}
+
 @media only screen and (min-width: 1400px) {
 }
 
 @media only screen and (min-width: 1500px) {
-}
-
-@media only screen and (min-width: 1200px) {
+    .logo-showcase {
+        max-width: 700px;
+    }
 }
