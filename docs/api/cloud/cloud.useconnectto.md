@@ -14,7 +14,7 @@ Hook that will build an [Environment](./cloud.environment.md) object from compon
 <b>Signature:</b>
 
 ```typescript
-export declare function useConnectTo(connectTo: Handle | Handle[], xform?: (e: Environment | undefined) => Environment): Environment | undefined;
+export declare function useConnectTo(connectTo: Handle | Handle[], xform?: (e: Environment) => Environment): Environment | undefined;
 ```
 
 ## Parameters
@@ -22,7 +22,7 @@ export declare function useConnectTo(connectTo: Handle | Handle[], xform?: (e: E
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  connectTo | <code>Handle &#124; Handle[]</code> | A handle or array of handles that point to components that implement [ConnectToInstance](./cloud.connecttoinstance.md) |
-|  xform | <code>(e: Environment &#124; undefined) =&gt; Environment</code> | A method that can transform the provided environment before it is returned |
+|  xform | <code>(e: Environment) =&gt; Environment</code> | A method that can transform the provided environment before it is returned |
 
 <b>Returns:</b>
 

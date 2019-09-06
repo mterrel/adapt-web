@@ -12,7 +12,7 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-export declare abstract class HttpServer extends PrimitiveComponent<HttpServerProps> 
+export declare abstract class HttpServer extends Component<HttpServerProps> 
 ```
 
 ## Properties

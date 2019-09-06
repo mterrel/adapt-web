@@ -61,7 +61,7 @@ hide_title: true
 |  [noTransform(val)](./core.notransform.md) |  |
 |  [registerObserver(obs, nameIn)](./core.registerobserver.md) |  |
 |  [rule(override)](./core.rule.md) |  |
-|  [ruleNoRematch(info, elem)](./core.rulenorematch.md) | User API function that can be used in a style rule build function to mark the props of the passed in element such that the rule associated with the info parameter will not match against the specified element.<!-- -->This works by copying the set of all rules that have already matched successfully against the original element (origElement) specified in the info parameter onto the passed in elem. Returns the passed in elem as a convenience. Does not create a new element. |
+|  [ruleNoRematch(info, elem)](./core.rulenorematch.md) | Marks an element returned by a style rule to not rematch that rule. |
 |  [serializeDom(root, options)](./core.serializedom.md) |  |
 |  [stack(stackName, root, style)](./core.stack.md) |  |
 |  [throwObserverErrors(results)](./core.throwobservererrors.md) |  |
