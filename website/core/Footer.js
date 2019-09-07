@@ -7,6 +7,8 @@
 
 const React = require('react');
 const { GitHubLink, GitHubStar, GitterButton, Twitter } = require('adapt-web-components');
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 function BlogLink(props) {
   const config = props.config;
@@ -19,6 +21,27 @@ function BlogLink(props) {
   }
   return null;
 }
+
+const Credits = () => (
+  <section className="credits">
+    <div />
+    <div className="madeWith">
+      Made with <FontAwesomeIcon className="heart" icon={faHeart} /> in&nbsp;Denver
+    </div>
+    <div className="unbounded">
+      <div className="copyright">
+        Copyright © {new Date().getFullYear()}
+        <br/>
+        <a href="https://unbounded.systems">Unbounded&nbsp;Systems</a>
+      </div>
+      <div className="logo">
+        <a href="https://unbounded.systems">
+          <img alt="Unbounded Systems Logo" src="/img/unbounded_white.svg" />
+        </a>
+      </div>
+    </div>
+  </section>
+);
 
 class Footer extends React.Component {
   docUrl(doc, language) {
@@ -75,7 +98,7 @@ class Footer extends React.Component {
           </div>
         </section>
 
-        <section className="copyright">{this.props.config.copyright}</section>
+        <Credits />
       </footer>
     );
   }
