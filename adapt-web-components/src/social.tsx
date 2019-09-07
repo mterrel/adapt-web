@@ -1,4 +1,5 @@
 import React from "react";
+
 import classNames from "classnames";
 
 export interface SiteConfig {
@@ -31,7 +32,14 @@ export function GitHubStar(props: GitHubStarProps) {
   const src = `https://ghbtns.com/github-btn.html?` +
     `user=${props.config.organizationName}&repo=${props.config.projectName}` +
     `&type=star${url}`;
-  return <iframe className={props.className} src={src} scrolling="0" { ...size } />;
+  return (
+    <iframe
+      className={classNames(props.className, "githubStar")}
+      src={src}
+      scrolling="0"
+      { ...size }
+     />
+  );
 }
 GitHubStar.defaultProps = {
   large: false,
