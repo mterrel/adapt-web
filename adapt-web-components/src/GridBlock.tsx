@@ -32,6 +32,8 @@ export interface ContentBlock {
 }
 
 export const GridBlock = (props: GridBlockProps) => {
+    let key = 0;
+    const getKey = () => (++key).toString();
 
     // The Remarkable component doesn't propagate any props (like className)
     // through, but it does allow specifying a wrapper container so we can
@@ -78,7 +80,7 @@ export const GridBlock = (props: GridBlockProps) => {
             renderBlockImage(block.image, block.imageLink, block.imageAlt);
 
         return (
-            <div className={blockClasses} key={block.title}>
+            <div className={blockClasses} key={block.title || getKey()} >
                 {topLeftImage}
                 <div className="blockContent">
                     {renderBlockTitle(block.title)}

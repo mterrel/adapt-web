@@ -51,7 +51,10 @@ export const LogoShowcase = (props: LogoShowcaseProps) => {
         <div className="logo-showcase-wrapper">
             <div className="logo-showcase center-block">
                 {props.logos.map((logo) =>
-                    <div className={classNames("logo-slide", { comingSoon: logo.soon })} >
+                    <div
+                      className={classNames("logo-slide", { comingSoon: logo.soon })}
+                      key={logo.file}
+                    >
                         <img src={prefix + logo.file} />
                     </div>
                 )}
