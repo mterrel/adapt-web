@@ -25,6 +25,31 @@ const gitterUrl = 'https://gitter.im/UnboundedSystems/Adapt';
 const issueUrl = repoUrl + '/issues/new';
 const forkUrl = repoUrl + '/fork';
 
+const shadeOf = (base, { l = base.l, a = 100 } = {}) =>
+  `hsla(${base.h}, ${base.s}%, ${l}%, ${a}%)`
+
+const baseColor = {
+  h: 197,
+  s: 78,
+  l: 53
+};
+
+const headingBase = {
+  h: 214,
+  s: 21,
+  l: 44
+};
+
+const colors = {
+  primaryColor: shadeOf(baseColor),
+  secondaryColor: shadeOf(baseColor, { l: 39 }),
+  scrollToTopColor: shadeOf(baseColor, { a: 50 }),
+
+  headingColor: shadeOf(headingBase),
+  subheadingColor: shadeOf(headingBase, { l: 60 }),
+  headingDarkColor: shadeOf(headingBase, { l: 36 }),
+};
+
 const siteConfig = {
   title: 'Adapt',
   tagline: 'React for your infrastructure.',
@@ -52,10 +77,7 @@ const siteConfig = {
   favicon: 'img/favicon.ico',
 
   /* Colors for website */
-  colors: {
-    primaryColor: '#28aee4',
-    secondaryColor: '#1685b1',
-  },
+  colors,
 
   /* Custom fonts for website */
   /*
@@ -123,7 +145,7 @@ const siteConfig = {
   },
   scrollToTop: true,
   scrollToTopOptions: {
-    backgroundColor: 'rgba(40, 174, 228, 0.5)'
+    backgroundColor: colors.scrollToTopColor,
   },
   repoUrl,
   issueUrl,

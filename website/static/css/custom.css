@@ -7,7 +7,7 @@ sup {
     padding-bottom: 0;
 }
 .mainContainer a {
-    color: #1685b1;
+    color: $secondaryColor;
 }
 .mainContainer a:hover {
     text-decoration: underline;
@@ -56,11 +56,11 @@ sup {
 }
 
 .projectDescription {
-    color: #5b708b;
     font-size: 28px;
     text-align: left;
     padding-top: .1em;
     padding-bottom: 1.5em;
+    color: $headingColor;
 }
 
 .homeContainer .intro {
@@ -76,10 +76,10 @@ sup {
 
 a.button {
     color: #ffffff;
-    background-color: #28aee4;
     font-size: 19px;
     font-weight: 700;
     padding: 16px;
+    background-color: $primaryColor;
 }
 
 .blockContent {
@@ -95,33 +95,33 @@ a.button {
 }
 .blockLarge h2 {
     font-size: 30px;
-    color: #596d88;
+    color: $headingColor;
 }
 .blockLarge .blockContentItem {
     font-size: 25px;
-    color: #8496ae;
     line-height: 1.4;
+    color: $subheadingColor;
 }
 
 .highlightBackground {
-    background-color: #1685b1;
+    background-color: $secondaryColor;
 }
 
 .darkBackground {
     background-color: #e2e7e9;
-    color: #596d88;
+    color: $headingColor;
 }
 
 .container.darkBackground .wrapper .blockLarge h1,
 .container.darkBackground .wrapper .blockLarge,
 .container.darkBackground .wrapper .blockLarge h2 {
-    color: #49596f;
+    color: $headingDarkColor;
 }
 
 .caption {
-    color: #8496ae;
     padding-left: 15%;
     padding-right: 15%;
+    color: $subheadingColor;
 }
 
 .logo-showcase-wrapper {
