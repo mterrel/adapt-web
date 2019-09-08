@@ -1,5 +1,7 @@
 import React from "react";
 
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
 
 export interface SiteConfig {
@@ -45,8 +47,26 @@ GitHubStar.defaultProps = {
   large: false,
 };
 
-export function GitHubLink(props: WithCommonProps) {
-  return <a className={props.className} href={props.config.repoUrl}>GitHub</a>;
+export interface GitHubLinkProps extends WithCommonProps {
+  content: "logo" | React.ReactNode;
+}
+
+export function GitHubLink(props: GitHubLinkProps) {
+  const { className, ...rest } = props;
+  const content =
+    props.content === "logo" ? <GitHubLogo {...rest} /> :
+    props.content;
+  return <a className={className} href={props.config.repoUrl}>{content}</a>;
+}
+GitHubLink.defaultProps = {
+  content: "GitHub",
+};
+
+export function GitHubLogo(props: WithCommonProps) {
+  return <FontAwesomeIcon
+    className={classNames(props.className, "githubLogo")}
+    icon={faGithub}
+  />;
 }
 
 export function GitterButton(props: WithCommonProps) {
