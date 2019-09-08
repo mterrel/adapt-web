@@ -48,15 +48,15 @@ sup {
 }
 
 .projectTitle {
-    font-family: Roboto;
-    font-weight: 900;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
     margin-top: 1em;
     overflow-wrap: normal;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .projectDescription {
-    font-size: 28px;
+    font-size: 30px;
     text-align: left;
     padding-top: .1em;
     padding-bottom: 1.5em;
@@ -64,8 +64,8 @@ sup {
 }
 
 .homeContainer .intro {
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: left;
 }
 
@@ -130,8 +130,8 @@ sup {
     align-items: center;
 }
 .logo-showcase {
-    width: 100vw;
     max-width: 550px;
+    overflow: hidden;
 }
 .logo-slide {
     padding: 0 1%;
@@ -152,7 +152,13 @@ sup {
 }
 
 
-@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+@media only screen and (max-width: 480px) {
+    .projectTitle {
+        font-size: 40px;
+    }
+    .projectDescription {
+        font-size: 30px;
+    }
 }
 
 @media only screen and (min-width: 736px) {
@@ -166,8 +172,8 @@ sup {
         max-width: 50vw;
         padding-top: 2em;
         padding-bottom: 2em;
-        padding-left: 5%;
-        padding-right: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .gridBlock .twoByGridBlock {
@@ -184,7 +190,13 @@ sup {
 
 @media only screen and (min-width: 1000px) {
     .homeContainer .homeWrapper .intro {
-        max-width: 500px;
+        max-width: 430px;
+    }
+    .projectTitle {
+        font-size: 60px;
+    }
+    .projectDescription {
+        font-size: 34px;
     }
 }
 

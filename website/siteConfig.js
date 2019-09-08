@@ -93,7 +93,7 @@ const siteConfig = {
   },
   */
   stylesheets: [
-    'https://fonts.googleapis.com/css?family=Roboto&display=swap',
+    'https://fonts.googleapis.com/css?family=Work+Sans:700&display=swap',
     'https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap',
     'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'
   ],

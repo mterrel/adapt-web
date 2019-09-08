@@ -66,3 +66,19 @@
     max-width: 620px;
     background: #121314;
 }
+
+@media only screen and (max-width: 735px) {
+    .term-header-button {
+        width: 10px;
+        height: 10px;
+    }
+    .term-content {
+        font-size: 11px;
+    }
+    .term-content pre {
+        margin-bottom: 0px;
+    }
+    .term-content code {
+        padding: 0;
+    }
+}
