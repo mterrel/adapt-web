@@ -399,7 +399,7 @@ to your laptop, or to your own data center.`,
 
 const Index = ({ config, language = '' }) => (
   <SiteConfig.Provider value={config} >
-    <div>
+    <div className="home">
       <HomeSplash language={language} />
       <div className="mainContainer">
         <Features background="highlight" />
