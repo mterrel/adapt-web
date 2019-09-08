@@ -3,6 +3,15 @@ sup {
     font-size: 70%;
 }
 
+.navigationSlider .github > * {
+    vertical-align: middle;
+}
+
+.navigationSlider .githubLogo {
+    height:22px;
+    margin-right: 5px;
+}
+
 .mainContainer {
     padding-bottom: 0;
 }

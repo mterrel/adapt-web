@@ -8,6 +8,9 @@
 // See https://docusaurus.io/docs/site-config for all the possible
 // site configuration options.
 
+const React = require('react');
+const { GitHubLogo } = require('adapt-web-components');
+
 // List of projects/orgs using your project for the users page.
 const users = [
   {
@@ -64,7 +67,7 @@ const siteConfig = {
   headerLinks: [
     {doc: 'getting_started/index', label: 'Docs'},
     {page: 'help', label: 'Help'},
-    {href: repoUrl, label: "GitHub"},
+    {href: repoUrl, label: githubHeader(this)},
     //{blog: true, label: 'Blog'},
   ],
 
@@ -152,5 +155,14 @@ const siteConfig = {
   gitterUrl,
   forkUrl,
 };
+
+function githubHeader(config) {
+  return React.createElement('div', { className: 'github' }, [
+    React.createElement(GitHubLogo, { config, key: 'logo' }),
+    React.createElement('span', { key: 'text' },
+      'GitHub'
+    )
+  ]);
+}
 
 module.exports = siteConfig;
