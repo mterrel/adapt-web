@@ -1,0 +1,182 @@
+/*
+ * Home Splash
+ */
+.homeContainer .homeWrapper {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.homeContainer .homeWrapper .logo {
+    flex: auto;
+    order: 2;
+    display: block;
+}
+
+.homeContainer .homeWrapper .logo .logo-icon {
+    max-height: 190px;
+    max-width: 30vw;
+}
+
+.homeContainer .homeWrapper .logo .logo-text {
+    max-height: 110px;
+}
+
+.homeContainer .projectTitle {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    margin-top: 1em;
+    overflow-wrap: normal;
+    font-size: 50px;
+}
+
+.homeContainer .projectDescription {
+    font-size: 30px;
+    text-align: left;
+    padding-top: .1em;
+    padding-bottom: 1.5em;
+    color: $headingColor;
+}
+
+@media only screen and (max-width: 480px) {
+    .projectTitle {
+        font-size: 40px;
+    }
+    .projectDescription {
+        font-size: 30px;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .projectTitle {
+        font-size: 60px;
+    }
+    .projectDescription {
+        font-size: 34px;
+    }
+}
+
+.homeContainer .intro {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+}
+
+.homeContainer .logo {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+@media only screen and (min-width: 736px) {
+    .homeContainer .homeWrapper {
+        display: flex;
+    }
+    .homeContainer .homeWrapper .logo {
+        margin-bottom: 0px;
+    }
+    .homeContainer .homeWrapper .intro {
+        max-width: 50vw;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .homeContainer .homeWrapper .intro {
+        max-width: 430px;
+    }
+}
+
+/*
+ * Content blocks
+ */
+.home a.button {
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 700;
+    padding: 16px;
+    background-color: $primaryColor;
+}
+
+.home .blockContent {
+    height: 100%;
+}
+.home .blockContentItem {
+    height: 100%;
+}
+
+.home .blockLarge {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.home .blockLarge h2 {
+    font-size: 30px;
+    color: $headingColor;
+}
+.home .blockLarge .blockContentItem {
+    font-size: 25px;
+    line-height: 1.4;
+    color: $subheadingColor;
+}
+
+.container.darkBackground .wrapper .blockLarge h1,
+.container.darkBackground .wrapper .blockLarge,
+.container.darkBackground .wrapper .blockLarge h2 {
+    color: $headingDarkColor;
+}
+
+@media only screen and (min-width: 736px) {
+    .gridBlock .twoByGridBlock {
+        flex-basis: 50%;
+    }
+    .gridBlock .twoByGridBlock.blockLarge {
+        flex-basis: 40%;
+    }
+}
+
+/*
+ * Logo Showcase
+ */
+.home .caption {
+    padding-left: 15%;
+    padding-right: 15%;
+    color: $subheadingColor;
+}
+
+.logo-showcase-wrapper {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.logo-showcase {
+    max-width: 550px;
+    overflow: hidden;
+}
+.logo-slide {
+    padding: 0 1%;
+    height: 100%;
+    position: relative;
+}
+.slick-initialized .slick-track {
+    display: flex;
+    align-items: center;
+}
+
+.comingSoon {
+    opacity: 0.4;
+}
+.comingSoon::after {
+    content: "*upcoming release";
+    font-size: .7em;
+}
+
+@media only screen and (min-width: 1500px) {
+    .logo-showcase {
+        max-width: 700px;
+    }
+}
+@media only screen and (min-width: 736px) {
+    .logo-showcase {
+        width: 50vw;
+    }
+}

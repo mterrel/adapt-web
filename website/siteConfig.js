@@ -37,20 +37,29 @@ const baseColor = {
   l: 53
 };
 
-const headingBase = {
-  h: 214,
-  s: 21,
-  l: 44
+const black = {
+  h: 0,
+  s: 0,
+  l: 0,
 };
 
 const colors = {
   primaryColor: shadeOf(baseColor),
-  secondaryColor: shadeOf(baseColor, { l: 39 }),
+  secondaryColor: shadeOf(baseColor),
+  primaryDarkerColor: shadeOf(baseColor, { l: 44 }),
+
+  // Nav header
+  searchPlaceholderColor: shadeOf(black, { l: 75 }),
+  headerColor: shadeOf(black, { l: 60 }),
+
   scrollToTopColor: shadeOf(baseColor, { a: 50 }),
 
-  headingColor: shadeOf(headingBase),
-  subheadingColor: shadeOf(headingBase, { l: 60 }),
-  headingDarkColor: shadeOf(headingBase, { l: 36 }),
+  darkBgColor: shadeOf(black, { l: 92 }),
+
+  // Text headings
+  headingColor: shadeOf(black, { l: 20 }),
+  headingDarkColor: shadeOf(black, { l: 20 }),
+  subheadingColor: shadeOf(black, { l: 40 }),
 };
 
 const siteConfig = {
@@ -75,7 +84,7 @@ const siteConfig = {
   //users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/logo_white.svg',
+  headerIcon: 'img/logo_color.svg',
   footerIcon: 'img/logo_white.svg',
   favicon: 'img/favicon.ico',
 
