@@ -25,7 +25,7 @@ export interface ContentBlock {
     className?: string;
     content?: React.ElementType | React.ElementType[];
     /** Path of the image */
-    image?: string;
+    image?: string | React.ElementType;
     imageAlt?: string;
     imageAlign?: "top" | "left" | "bottom" | "right";
     imageLink?: string;
@@ -93,7 +93,15 @@ export const GridBlock = (props: GridBlockProps) => {
         );
     }
 
-    function renderBlockImage(image: string | undefined,
+    function imageElement(image: string | React.ElementType,
+        imageAlt: string | undefined) {
+
+        return typeof image === "string" ?
+            <img src={image} alt={imageAlt} /> :
+            image;
+    }
+
+    function renderBlockImage(image: string | React.ElementType | undefined,
         imageLink: string | undefined, imageAlt: string | undefined) {
         if (!image) {
             return null;
@@ -102,12 +110,10 @@ export const GridBlock = (props: GridBlockProps) => {
         return (
             <div className="blockImage">
                 {imageLink ? (
-                    <a href={imageLink}>
-                        <img src={image} alt={imageAlt} />
-                    </a>
+                    <a href={imageLink}>{imageElement(image, imageAlt)}</a>
                 ) : (
-                        <img src={image} alt={imageAlt} />
-                    )}
+                    imageElement(image, imageAlt)
+                )}
             </div>
         );
     }
