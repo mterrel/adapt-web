@@ -1,32 +1,43 @@
-.fixedHeaderContainer a {
-    color: $headerColor;
-}
+/*
+ * Header nav
+ */
 
 .fixedHeaderContainer {
     background: white;
 }
 
+.fixedHeaderContainer a {
+    color: $primaryColor;
+}
+
+/* Version number text */
+.fixedHeaderContainer header h3 {
+    color: $primaryColor;
+}
+
 .navigationSlider .slidingNav ul li a {
     color: white;
     font-size: 100%;
+    font-weight: 600;
 }
 
 .navigationSlider .slidingNav ul li > a:focus,
 .navigationSlider .slidingNav ul li > a:hover,
 .navigationSlider .slidingNav ul li.siteNavItemActive > a,
 .navigationSlider .slidingNav ul li.siteNavGroupActive > a {
-    background-color: $primaryDarkerColor;
+    background-color: $primaryColor;
 }
 
 .navigationSlider .slidingNav ul li a:hover,
 .navigationSlider .slidingNav ul li.siteNavItemActive a,
 .navigationSlider .slidingNav ul li.siteNavGroupActive a {
-    color: $headingColor;
+    color: $darkBlueTextColor;
 }
 
 @media only screen and (min-width: 1024px) {
     .navigationSlider .slidingNav ul li a {
         color: $headerColor;
+        font-weight: 500;
     }
 
     .navigationSlider .slidingNav ul li > a:focus,
@@ -80,3 +91,17 @@ input::placeholder {
     position: relative;
     top: 5px;
 }
+
+/*
+ * Left side nav
+ */
+ .toc .toggleNav ul li.navListItemActive a {
+     color: $blueTextOnWhiteColor;
+ }
+
+ /*
+  * Right side nav
+  */
+  .onPageNav .toc-headings > li > a.active {
+     color: $blueTextOnWhiteColor;
+  }

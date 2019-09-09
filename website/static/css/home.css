@@ -90,6 +90,10 @@
 /*
  * Content blocks
  */
+.home .caption {
+    font-size: 100%;
+}
+
 .home a.button {
     color: #ffffff;
     font-size: 19px;
@@ -144,12 +148,6 @@
 /*
  * Logo Showcase
  */
-.home .caption {
-    padding-left: 15%;
-    padding-right: 15%;
-    color: $subheadingColor;
-}
-
 .logo-showcase-wrapper {
     display: flex;
     height: 100%;

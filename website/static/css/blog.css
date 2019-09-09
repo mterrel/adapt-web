@@ -1,0 +1,21 @@
+.blog-recent::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.blogSocialSection {
+    padding: 15px 0;
+}
+
+.blogContainer blockquote {
+    background-color: white;
+    border: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 140%;
+}
+
+.blogContainer .youtube {
+    margin: auto;
+}

@@ -43,10 +43,17 @@ const black = {
   l: 0,
 };
 
+// A darker version of baseColor with enough contrast (> 4.5) to be used for
+// text on a white background.
+const blueTextOnWhiteColor = shadeOf(baseColor, { l: 37 });
+
+// A darker version of baseColor with enough contrast (> 4.5) to be used for
+// text on a baseColor background (i.e. dark blue text on baseColor blue).
+const darkBlueTextColor = shadeOf(baseColor, { l: 20 });
+
 const colors = {
   primaryColor: shadeOf(baseColor),
-  secondaryColor: shadeOf(baseColor),
-  primaryDarkerColor: shadeOf(baseColor, { l: 44 }),
+  secondaryColor: blueTextOnWhiteColor,
 
   // Nav header
   searchPlaceholderColor: shadeOf(black, { l: 75 }),
@@ -55,6 +62,11 @@ const colors = {
   scrollToTopColor: shadeOf(baseColor, { a: 50 }),
 
   darkBgColor: shadeOf(black, { l: 92 }),
+
+  // Text
+  bodyTextColor: shadeOf(black, { l: 30 }),
+  blueTextOnWhiteColor,
+  darkBlueTextColor,
 
   // Text headings
   headingColor: shadeOf(black, { l: 20 }),
@@ -92,20 +104,17 @@ const siteConfig = {
   colors,
 
   /* Custom fonts for website */
-  /*
   fonts: {
-    myFont: [
-      "Times New Roman",
-      "Serif"
+    bodyFont: [
+      "Open Sans",
+      "Helvetica Neue",
+      "Helvetica",
+      "Arial",
+      "sans-serif",
     ],
-    myOtherFont: [
-      "-apple-system",
-      "system-ui"
-    ]
   },
-  */
   stylesheets: [
-    'https://fonts.googleapis.com/css?family=Work+Sans:700&display=swap',
+    'https://fonts.googleapis.com/css?family=Work+Sans:700|Open+Sans:400,400i,600,700&display=swap',
     'https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap',
     'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'
   ],
@@ -131,6 +140,10 @@ const siteConfig = {
   onPageNav: 'separate',
   // No .html extensions for paths.
   cleanUrl: true,
+
+  // Button to share on twitter on blog pages
+  twitter: true,
+  blogSidebarCount: 'ALL',
 
   // Open Graph and Twitter card images.
   ogImage: 'img/logo_stacked.svg',
