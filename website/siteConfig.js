@@ -106,12 +106,20 @@ const siteConfig = {
   /* Custom fonts for website */
   fonts: {
     bodyFont: [
-      "Open Sans",
-      "Helvetica Neue",
-      "Helvetica",
-      "Arial",
-      "sans-serif",
+      'Open Sans',
+      'Helvetica Neue',
+      'Helvetica',
+      'Arial',
+      'sans-serif',
     ],
+    codeFont: [
+      'Source Code Pro',
+      'Menlo',
+      'Monaco',
+      'Consolas',
+      'Courier New',
+      'monospace',
+    ]
   },
   stylesheets: [
     'https://fonts.googleapis.com/css?family=Work+Sans:700|Open+Sans:400,400i,600,700&display=swap',

@@ -5,6 +5,7 @@ body {
 
 code {
     white-space: pre;
+    font-family: $codeFont;
 }
 
 .caption {
