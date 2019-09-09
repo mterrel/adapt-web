@@ -3,8 +3,7 @@
 import React from "react";
 
 import classNames from "classnames";
-// tslint:disable-next-line: no-var-requires no-submodule-imports
-const MarkdownBlock = require("docusaurus/lib/core/MarkdownBlock");
+let MarkdownBlock: any;
 
 const codeBlock = (code: string, lang = "") =>
     "```" + `${lang}\n${code.trimEnd()}\n` + "```";
@@ -18,6 +17,11 @@ export interface CodeWindowProps {
 
 export const CodeWindow = (props: CodeWindowProps) => {
     const { children, lang, slim, title } = props;
+
+    // Load this late to avoid circular require dependencies through siteConfig.js
+    // and renderMarkdown.js
+    // tslint:disable-next-line: no-var-requires no-submodule-imports
+    if (!MarkdownBlock) MarkdownBlock = require("docusaurus/lib/core/MarkdownBlock");
 
     return (
         <div className="term center-block term-background-codeblock">

@@ -9,8 +9,7 @@
 import classNames from "classnames";
 import React from "react";
 
-// tslint:disable-next-line: no-var-requires no-submodule-imports
-const Remarkable = require("docusaurus/lib/core/Remarkable");
+let Remarkable: any;
 
 export interface GridBlockProps {
     align: "left" | "center" | "right";
@@ -32,6 +31,11 @@ export interface ContentBlock {
 }
 
 export const GridBlock = (props: GridBlockProps) => {
+    // Load this late to avoid circular require dependencies through siteConfig.js
+    // and renderMarkdown.js
+    // tslint:disable-next-line: no-var-requires no-submodule-imports
+    if (!Remarkable) Remarkable = require("docusaurus/lib/core/Remarkable");
+
     let key = 0;
     const getKey = () => (++key).toString();
 
