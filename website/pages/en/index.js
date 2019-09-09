@@ -5,12 +5,12 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const { CodeWindow, GridBlock, LogoShowcase } = require('adapt-web-components');
 const React = require('react');
 
-const { faCloud, faCode } = require("@fortawesome/free-solid-svg-icons");
+const { faChevronRight, faCloud, faCode } = require("@fortawesome/free-solid-svg-icons");
 const { faReact } = require("@fortawesome/free-brands-svg-icons");
 const { FontAwesomeIcon } = require("@fortawesome/react-fontawesome");
+const { CodeWindow, GridBlock, LogoShowcase } = require('adapt-web-components');
 
 const CompLibrary = require('../../core/CompLibrary.js');
 
@@ -134,7 +134,10 @@ const HomeSplash = ({ language = '' }) => {
         <ProjectTitle />
         <ProjectDesc />
         <PromoSection>
-          <Button href={docUrl('getting_started')}>Get Started &gt;</Button>
+          <Button href={docUrl('getting_started')}>
+            <span>Get Started</span>
+            <FontAwesomeIcon className="buttonArrow" icon={faChevronRight} />
+          </Button>
         </PromoSection>
       </div>
     </SplashContainer>
