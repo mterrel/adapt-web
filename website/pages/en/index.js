@@ -8,6 +8,10 @@
 const { CodeWindow, GridBlock, LogoShowcase } = require('adapt-web-components');
 const React = require('react');
 
+const { faCloud, faCode } = require("@fortawesome/free-solid-svg-icons");
+const { faReact } = require("@fortawesome/free-brands-svg-icons");
+const { FontAwesomeIcon } = require("@fortawesome/react-fontawesome");
+
 const CompLibrary = require('../../core/CompLibrary.js');
 
 const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
@@ -143,11 +147,11 @@ const HomeSplash = ({ language = '' }) => {
  * @param {'light'|'dark'|'highlight'=}    props.background
  */
 const Features = ({ background }) => (
-  <Block layout="threeColumn" background={background}>
+  <Block id="features" layout="threeColumn" background={background}>
     {[
       {
         title: 'Infrastructure as Code',
-        image: `${useSiteConfig().baseUrl}img/undraw_react.svg`,
+        image: <FontAwesomeIcon icon={faCode} />,
         imageAlign: 'top',
         content:
 `No, really. **ACTUAL** code.
@@ -161,7 +165,7 @@ uses components like \`<Container>\` and \`<EC2Instance>\`.
       },
       {
         title: 'Declarative',
-        image: `${useSiteConfig().baseUrl}img/undraw_react.svg`,
+        image: <FontAwesomeIcon icon={faCloud} />,
         imageAlign: 'top',
         content:
 `Adapt specifications are declarative.
@@ -173,7 +177,7 @@ your infrastructure to the desired state.
       },
       {
         title: 'Component-based',
-        image: `${useSiteConfig().baseUrl}img/undraw_react.svg`,
+        image: <FontAwesomeIcon icon={faReact} />,
         imageAlign: 'top',
         content:
 `Easily build encapsulated components that manage parts of your app or

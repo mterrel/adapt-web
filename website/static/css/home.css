@@ -135,6 +135,13 @@
 }
 
 /*
+ * Features
+ */
+#features .blockImage {
+    height: 80px;
+}
+
+/*
  * Logo Showcase
  */
 .home .caption {
