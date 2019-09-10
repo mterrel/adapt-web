@@ -6,7 +6,7 @@ import React from "react";
 const Safe = require("react-safe").default;
 
 const slickInit = `
-  $(document).ready(function(){
+  $(document).ready(function() {
     $('.logo-showcase').slick({
       autoplay: true,
       accessibility: false,
@@ -15,7 +15,7 @@ const slickInit = `
       pauseOnFocus: false,
       pauseOnHover: false,
       slidesToShow: 3,
-      speed: 4000,
+      speed: 2000,
       touchMove: false,
       autoplaySpeed: 0,
       cssEase: 'linear',
