@@ -7,7 +7,7 @@
 
 const React = require('react');
 
-const { faChevronRight, faCloud, faCode } = require("@fortawesome/free-solid-svg-icons");
+const { faChevronRight, faCloudUploadAlt, faCode } = require("@fortawesome/free-solid-svg-icons");
 const { faReact } = require("@fortawesome/free-brands-svg-icons");
 const { FontAwesomeIcon } = require("@fortawesome/react-fontawesome");
 const { CodeWindow, GridBlock, LogoShowcase } = require('adapt-web-components');
@@ -153,40 +153,45 @@ const Features = ({ background }) => (
   <Block id="features" layout="threeColumn" background={background}>
     {[
       {
-        title: 'Infrastructure as Code',
-        image: <FontAwesomeIcon icon={faCode} />,
-        imageAlign: 'top',
-        content:
-`No, really. **ACTUAL** code.
-
-Just like React, Adapt specs are written in JavaScript, using
-easy-to-understand [TSX or JSX](https://reactjs.org/docs/introducing-jsx.html)
-syntax.
-But instead of using components like \`<button>\` and \`<div>\`, Adapt
-uses components like \`<Container>\` and \`<EC2Instance>\`.
-`
-      },
-      {
-        title: 'Declarative',
-        image: <FontAwesomeIcon icon={faCloud} />,
-        imageAlign: 'top',
-        content:
-`Adapt specifications are declarative.
-You describe the state you want your app or your infrastructure to be in,
-not how it should get there.
-Adapt takes care of computing the minimal set of changes required to get
-your infrastructure to the desired state.
-`
-      },
-      {
-        title: 'Component-based',
+        title: 'Full-stack React',
         image: <FontAwesomeIcon icon={faReact} />,
         imageAlign: 'top',
         content:
-`Easily build encapsulated components that manage parts of your app or
-infrastructure or use components from existing libraries.
-Then compose those components to build anything from a simple end-to-end
-app test case or an entire data center.
+`Build and deploy your entire app architecture using the power and simplicity
+of [React's](https://reactjs.org) declarative component model and
+[JSX](https://reactjs.org/docs/introducing-jsx.html).
+
+Stop trying to stitch together infrastructure using
+YAML and crippled template languages.
+Adapt lets you connect your \`<ReactApp>\` UI to your \`<NodeService>\`
+API and \`<Postgres>\` database.
+`
+      },
+      {
+        title: 'Deploy and Update with Ease',
+        image: <FontAwesomeIcon icon={faCloudUploadAlt} />,
+        imageAlign: 'top',
+        content:
+`Whether your app is a simple website or a complex microservice
+architecture that integrates with multiple external services,
+deploying is as simple as \`adapt run\`. 
+
+When you make a change to your code or app description, \`adapt update\`
+analyzes the changes and dependencies to only build and update the affected
+components.
+`
+      },
+      {
+        title: 'Dev, Test, and Prod',
+        image: <FontAwesomeIcon icon={faCode} />,
+        imageAlign: 'top',
+        content:
+`Deploy to basic containers on your laptop. Set up elaborate end-to-end
+testing with pre-populated databases in Kubernetes. Or deploy with full
+redundancy and scaling using cloud services.
+
+Describe your app once, then use Adapt style sheets to target as many
+environments, clouds, and infrastructure technologies as you need.
 `
       },
     ]}
