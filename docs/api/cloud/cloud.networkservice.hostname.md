@@ -14,8 +14,15 @@ Returns the hostname of the NetworkService, once it is known.
 <b>Signature:</b>
 
 ```typescript
-hostname(): string | undefined;
+hostname(scope: NetworkScope): string | undefined;
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  scope | <code>NetworkScope</code> |  |
+
 <b>Returns:</b>
 
 `string | undefined`

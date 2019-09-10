@@ -23,6 +23,12 @@ hide_title: true
 |  [NetworkService](./cloud.networkservice.md) | An abstract component that represents a network service. |
 |  [Service](./cloud.service.md) | An abstract component that represents a group of components that implements a service. Note that this is not necessarily a network service, but will often be. |
 
+## Enumerations
+
+|  Enumeration | Description |
+|  --- | --- |
+|  [NetworkScope](./cloud.networkscope.md) | <b><i>(BETA)</i></b> Type for various network address scopes |
+
 ## Functions
 
 |  Function | Description |
@@ -61,6 +67,7 @@ hide_title: true
 |  [HandlesCreate](./cloud.handlescreate.md) |  |
 |  [HandlesIndex](./cloud.handlesindex.md) |  |
 |  [Links](./cloud.links.md) | Network links to create for a [Container](./cloud.container.md)<!-- -->. |
+|  [NetworkServiceInstance](./cloud.networkserviceinstance.md) | <b><i>(BETA)</i></b> Interface for components that expose Network Services via hostname and port |
 |  [NetworkServiceProps](./cloud.networkserviceprops.md) |  |
 |  [PortBinding](./cloud.portbinding.md) | A set of ports to be bound for a [Container](./cloud.container.md)<!-- -->. |
 |  [ServiceProps](./cloud.serviceprops.md) |  |

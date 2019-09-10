@@ -14,7 +14,7 @@ An abstract component that represents a network service.
 <b>Signature:</b>
 
 ```typescript
-export declare abstract class NetworkService extends PrimitiveComponent<NetworkServiceProps> 
+export declare abstract class NetworkService extends PrimitiveComponent<NetworkServiceProps> implements NetworkServiceInstance 
 ```
 
 ## Properties
@@ -27,5 +27,5 @@ export declare abstract class NetworkService extends PrimitiveComponent<NetworkS
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [hostname()](./cloud.networkservice.hostname.md) |  | Returns the hostname of the NetworkService, once it is known. |
+|  [hostname(scope)](./cloud.networkservice.hostname.md) |  | Returns the hostname of the NetworkService, once it is known. |
 |  [port()](./cloud.networkservice.port.md) |  | Returns the port number of the NetworkService, once it is known. |

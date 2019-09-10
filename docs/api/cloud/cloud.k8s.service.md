@@ -9,6 +9,8 @@ hide_title: true
 
 ## k8s.Service() function
 
+Native Kubernetes Service resource
+
 <b>Signature:</b>
 
 ```typescript
@@ -24,3 +26,7 @@ export declare function Service(propsIn: SFCDeclProps<ServiceProps, typeof defau
 <b>Returns:</b>
 
 `Adapt.AdaptElement<Adapt.AnyProps>`
+
+## Remarks
+
+Implements the [NetworkServiceInstance](./cloud.networkserviceinstance.md) interface.

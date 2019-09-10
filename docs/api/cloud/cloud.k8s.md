@@ -41,7 +41,7 @@ export { K8sPlugin, createK8sPlugin, resourceElementToName, registerResourceKind
 |  [isResourceFinalElement(e)](./cloud.k8s.isresourcefinalelement.md) |  |
 |  [k8sContainerProps(abstractProps, k8sProps)](./cloud.k8s.k8scontainerprops.md) | Low level utility function to translate from the abstract [Container](./cloud.container.md) component props ([ContainerProps](./cloud.containerprops.md)<!-- -->) to [k8s.K8sContainerProps](./cloud.k8s.k8scontainerprops.md) to be used in a [k8s.K8sContainer](./cloud.k8s.k8scontainer.md)<!-- -->. |
 |  [k8sServiceProps(abstractProps)](./cloud.k8s.k8sserviceprops.md) |  |
-|  [Service(propsIn)](./cloud.k8s.service.md) |  |
+|  [Service(propsIn)](./cloud.k8s.service.md) | Native Kubernetes Service resource |
 
 ## Interfaces
 
