@@ -79,7 +79,7 @@ const siteConfig = {
   title: 'Adapt',
   tagline: 'React for your infrastructure.',
 
-  url: 'https://adapt.unbounded.systems',
+  url: 'https://adaptjs.org',
   baseUrl: '/', // Base URL for your project */
 
   projectName: 'adapt',
