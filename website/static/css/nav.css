@@ -1,0 +1,107 @@
+/*
+ * Header nav
+ */
+
+.fixedHeaderContainer {
+    background: white;
+}
+
+.fixedHeaderContainer a {
+    color: $primaryColor;
+}
+
+/* Version number text */
+.fixedHeaderContainer header h3 {
+    color: $primaryColor;
+}
+
+.navigationSlider .slidingNav ul li a {
+    color: white;
+    font-size: 100%;
+    font-weight: 600;
+}
+
+.navigationSlider .slidingNav ul li > a:focus,
+.navigationSlider .slidingNav ul li > a:hover,
+.navigationSlider .slidingNav ul li.siteNavItemActive > a,
+.navigationSlider .slidingNav ul li.siteNavGroupActive > a {
+    background-color: $primaryColor;
+}
+
+.navigationSlider .slidingNav ul li a:hover,
+.navigationSlider .slidingNav ul li.siteNavItemActive a,
+.navigationSlider .slidingNav ul li.siteNavGroupActive a {
+    color: $darkBlueTextColor;
+}
+
+@media only screen and (min-width: 1024px) {
+    .navigationSlider .slidingNav ul li a {
+        color: $headerColor;
+        font-weight: 500;
+    }
+
+    .navigationSlider .slidingNav ul li > a:focus,
+    .navigationSlider .slidingNav ul li > a:hover,
+    .navigationSlider .slidingNav ul li.siteNavItemActive > a,
+    .navigationSlider .slidingNav ul li.siteNavGroupActive > a {
+        background: none;
+    }
+
+    .navigationSlider .slidingNav ul li a:hover,
+    .navigationSlider .slidingNav ul li.siteNavItemActive a,
+    .navigationSlider .slidingNav ul li.siteNavGroupActive a {
+        color: $headingColor;
+    }
+}
+
+.reactNavSearchWrapper input#search_input_react {
+    color: $headingColor;
+    background-color: hsl(0, 0%, 92%);
+}
+
+.navSearchWrapper:before {
+    border-color: $searchPlaceholderColor;
+}
+
+.navSearchWrapper:after {
+    background-color: $searchPlaceholderColor;
+}
+
+input::-webkit-input-placeholder {
+    color: $searchPlaceholderColor;
+}
+  
+input::-moz-placeholder {
+    color: $searchPlaceholderColor;
+}
+  
+input::placeholder {
+    color: $searchPlaceholderColor;
+} 
+
+.navigationSlider .slidingNav ul {
+    align-items: baseline;
+}
+.navigationSlider .github {
+    margin-top: -5px;
+}
+.navigationSlider .githubLogo {
+    height:22px;
+    margin-right: 5px;
+    position: relative;
+    top: 5px;
+}
+
+/*
+ * Left side nav
+ */
+ .toc .toggleNav ul li.navListItemActive a {
+     color: $blueTextOnWhiteColor;
+ }
+
+ /*
+  * Right side nav
+  */
+  .onPageNav .toc-headings > li > a.active {
+     color: $blueTextOnWhiteColor;
+  }

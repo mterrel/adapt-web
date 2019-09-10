@@ -27,5 +27,8 @@
     ],
     "scripts": {
         "start": "cd website && yarn run start"
+    },
+    "resolutions": {
+        "gaze": "unboundedsystems/gaze#stack_size_fix"
     }
 }

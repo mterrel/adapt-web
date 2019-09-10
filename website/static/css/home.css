@@ -1,0 +1,252 @@
+/*
+ * Home Splash
+ */
+.homeContainer .homeWrapper {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.homeContainer .homeWrapper .logo {
+    flex: auto;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeContainer .homeWrapper .logo .logo-icon {
+    max-height: 190px;
+    max-width: 50%;
+}
+
+.homeContainer .homeWrapper .logo .logo-text {
+    max-height: 110px;
+}
+
+.homeContainer .homeWrapper .projectTitle {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    margin-top: 1em;
+    overflow-wrap: normal;
+    font-size: 1em;
+}
+
+.homeContainer .homeWrapper .projectDescription {
+    font-size: .6em;
+    text-align: left;
+    padding-top: .1em;
+    padding-bottom: 1.5em;
+    color: $headingColor;
+}
+
+.homeContainer .homeWrapper .intro {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+    font-size: 10vw;
+}
+
+.homeContainer .homeWrapper .logo {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+@media only screen and (min-width: 600px) {
+    .homeContainer .homeWrapper .intro {
+        font-size: 60px;
+    }
+}
+@media only screen and (min-width: 736px) {
+    .homeContainer .homeWrapper {
+        display: flex;
+    }
+    .homeContainer .homeWrapper .logo {
+        margin-bottom: 0px;
+    }
+    .homeContainer .homeWrapper .intro {
+        font-size: 6vw;
+        max-width: 50vw;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .homeContainer .homeWrapper .intro {
+        max-width: 430px;
+        font-size: 60px;
+    }
+    .homeContainer .homeWrapper .logo .logo-icon {
+        max-width: 60%;
+    }
+}
+
+
+/*
+ * Content blocks
+ */
+.home .caption {
+    font-size: 100%;
+}
+
+.home a.button {
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 700;
+    padding: 16px;
+    background-color: $primaryColor;
+}
+
+.home .blockContent {
+    height: 100%;
+}
+.home .blockContentItem {
+    height: 100%;
+}
+
+.home .blockLarge {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.home .blockLarge h2 {
+    font-size: 30px;
+    color: $headingColor;
+}
+.home .blockLarge .blockContentItem {
+    font-size: 25px;
+    line-height: 1.4;
+    color: $subheadingColor;
+}
+
+.container.lightBackground .wrapper .blockLarge h1,
+.container.lightBackground .wrapper .blockLarge,
+.container.lightBackground .wrapper .blockLarge h2 {
+    color: $headingDarkColor;
+}
+
+@media only screen and (min-width: 736px) {
+    .gridBlock > * {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .gridBlock .twoByGridBlock {
+        flex-basis: 50%;
+    }
+    .gridBlock .twoByGridBlock.blockLarge {
+        flex-basis: 40%;
+    }
+}
+
+/*
+ * Features
+ */
+#features .blockImage {
+    height: 80px;
+}
+
+#features .blockContentItem {
+    font-size: 110%;
+}
+
+#features .blockContent > h2 > div {
+    min-height: 2.5em;
+}
+
+#features code {
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 1500px) {
+    #features h2 {
+        font-size: 170%;
+    }
+    #features .blockContentItem {
+        font-size: 125%;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    #features .blockElement {
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px;
+    }
+    #features .blockImage {
+        margin-bottom: 0px;
+    }
+    #features h2 {
+        margin-top: 10px;
+    }
+}
+
+/*
+ * Code blocks
+ */
+@media only screen and (max-width: 735px) {
+    .home .term-content {
+        font-size: 2.7vw;
+    }
+}
+
+/*
+ * Logo Showcase
+ */
+.logo-showcase-wrapper {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.logo-showcase {
+    max-width: 550px;
+    overflow: hidden;
+}
+.logo-slide {
+    padding: 0 1%;
+    height: 100%;
+    position: relative;
+}
+.slick-initialized .slick-track {
+    display: flex;
+    align-items: center;
+}
+
+.comingSoon {
+    opacity: 0.4;
+}
+.comingSoon::after {
+    content: "*upcoming release";
+    font-size: .7em;
+}
+
+@media only screen and (min-width: 1500px) {
+    .logo-showcase {
+        max-width: 700px;
+    }
+}
+@media only screen and (min-width: 736px) {
+    .logo-showcase {
+        width: 50vw;
+    }
+}
+
+/*
+ * Get Started CTA
+ */
+#get_started {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#get_started .wrapper {
+    text-align: center;
+}
+
+#get_started .buttonWrapper {
+    display: inline-block;
+}
+
+#get_started .cta {
+    font-size: 200%;
+}

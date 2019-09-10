@@ -1,4 +1,7 @@
 import React from "react";
+
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
 
 export interface SiteConfig {
@@ -31,14 +34,45 @@ export function GitHubStar(props: GitHubStarProps) {
   const src = `https://ghbtns.com/github-btn.html?` +
     `user=${props.config.organizationName}&repo=${props.config.projectName}` +
     `&type=star${url}`;
-  return <iframe className={props.className} src={src} scrolling="0" { ...size } />;
+  return (
+    <iframe
+      className={classNames(props.className, "githubStar")}
+      src={src}
+      scrolling="0"
+      { ...size }
+     />
+  );
 }
 GitHubStar.defaultProps = {
   large: false,
 };
 
-export function GitHubLink(props: WithCommonProps) {
-  return <a className={props.className} href={props.config.repoUrl}>GitHub</a>;
+export interface GitHubLinkProps extends WithCommonProps {
+  content: "logo" | React.ReactNode;
+}
+
+export function GitHubLink(props: GitHubLinkProps) {
+  const { className, ...rest } = props;
+  const content =
+    props.content === "logo" ? <GitHubLogo {...rest} /> :
+    props.content;
+  return (
+    <a
+      className={classNames(className, "githubLink")}
+      href={props.config.repoUrl}>
+      {content}
+    </a>
+  );
+}
+GitHubLink.defaultProps = {
+  content: "GitHub",
+};
+
+export function GitHubLogo(props: WithCommonProps) {
+  return <FontAwesomeIcon
+    className={classNames(props.className, "githubLogo")}
+    icon={faGithub}
+  />;
 }
 
 export function GitterButton(props: WithCommonProps) {

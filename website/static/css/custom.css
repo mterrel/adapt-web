@@ -1,13 +1,39 @@
+body {
+    font-family: $bodyFont;
+    color: $bodyTextColor;
+}
+
+code {
+    white-space: pre;
+    font-family: $codeFont;
+}
+
+.caption {
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: auto;
+    text-align: center;
+    font-size: 90%;
+    margin-bottom: 1.2em;
+    color: $subheadingColor;
+}
+
 sup {
     vertical-align: super;
     font-size: 70%;
 }
-
+.mainContainer {
+    padding-bottom: 0;
+}
 .mainContainer a {
-    color: #82407f;
+    color: $blueTextOnWhiteColor;
+    font-weight: 600;
 }
 .mainContainer a:hover {
     text-decoration: underline;
+}
+.mainContainer .highlightBackground a {
+    color: #ffffff;
 }
 
 .remove-margin {
@@ -22,71 +48,27 @@ sup {
     margin: auto;
 }
 
-/*
- * MacOS-like terminal styling
- */
-.term {
-    width: 100%;
-    max-width: 620px;
-    /*height: 30vw;*/
-    border-radius: 7px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.56);
-    background: #121314;
+.highlightBackground {
+    color: #ffffff;
+    background-color: $primaryColor;
+}
+
+.lightBackground {
+    background-color: $lightBgColor;
+    color: $headingColor;
+}
+
+.darkBackground {
+    background-color: $darkBgColor;
+    color: white;
+}
+
+.buttonArrow {
+    height: 23px;
+    margin-left: 8px;
+}
+
+.home .button {
     display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
-.term-header {
-    display: flex;
-    padding: 5px;
-    background: linear-gradient(#3b3b3b, #212121);
-}
-.term-header-button {
-    position: relative;
-    width: 12px;
-    height: 12px;
-    margin-right: 8px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0;
-}
-.term-header-button-close {
-    background: #ff615a;
-}
-.term-header-button-minimize {
-    background: #ffc230;
-}
-.term-header-button-expand {
-    background: #29cb41;
-}
-.term-header-title {
-    text-align: center;
-    color: #b7b6b7;
-    font-family: Roboto, sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    width: 100%;
-    padding-right: 60px;
-}
-.term-content {
-    padding: 10px;
-    font-size: 14px;
-    color: lightgray;
-}
-
-@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
-}
-
-@media only screen and (min-width: 1024px) {
-}
-
-@media only screen and (max-width: 1023px) {
-}
-
-@media only screen and (min-width: 1400px) {
-}
-
-@media only screen and (min-width: 1500px) {
+    align-items: center;
 }
