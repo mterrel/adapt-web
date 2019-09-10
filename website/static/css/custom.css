@@ -53,9 +53,14 @@ sup {
     background-color: $primaryColor;
 }
 
+.lightBackground {
+    background-color: $lightBgColor;
+    color: $headingColor;
+}
+
 .darkBackground {
     background-color: $darkBgColor;
-    color: $headingColor;
+    color: white;
 }
 
 .buttonArrow {

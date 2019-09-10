@@ -37,6 +37,15 @@ const SiteConfig = React.createContext({});
 // @ts-ignore
 const useSiteConfig = () => React.useContext(SiteConfig);
 
+const useDocUrl = (language) => {
+  const config = useSiteConfig();
+  const { baseUrl, docsUrl } = config;
+  const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
+  const langPart = `${language ? `${language}/` : ''}`;
+  const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
+  return docUrl;
+};
+
 /**
  * @param {Object}   props
  * @param {any}      props.children
@@ -121,11 +130,7 @@ const PromoSection = props => (
 );
 
 const HomeSplash = ({ language = '' }) => {
-  const config = useSiteConfig();
-  const { baseUrl, docsUrl } = config;
-  const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
-  const langPart = `${language ? `${language}/` : ''}`;
-  const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
+  const docUrl = useDocUrl(language);
 
   return (
     <SplashContainer>
@@ -400,7 +405,7 @@ const WorksWith = ({ background }) => (
       {
         title: 'Works with all your favorite technologies',
         content:
-`Adapt can deploy apps written in any language to your favorite cloud provider,
+`Adapt deploys apps written in any language to your favorite cloud provider,
 to your laptop, or to your own data center.`,
         className: "blockLarge",
       },
@@ -408,6 +413,22 @@ to your laptop, or to your own data center.`,
   </Block>
 );
 
+/**
+ * @param {Object}    props
+ * @param {'light'|'dark'|'highlight'=}    props.background
+ * @param {string}    props.language
+ */
+const GetStarted = ({ background, language }) => (
+  <Container
+    id='get_started'
+    background={background}>
+    <p className='cta'>Deploy your first app with Adapt</p>
+    <Button href={useDocUrl(language)('getting_started')}>
+      <span>Get Started</span>
+      <FontAwesomeIcon className='buttonArrow' icon={faChevronRight} />
+    </Button>
+  </Container>
+);
 
 const Index = ({ config, language = '' }) => (
   <SiteConfig.Provider value={config} >
@@ -417,8 +438,9 @@ const Index = ({ config, language = '' }) => (
         <Features background="highlight" />
         <DeployYourFirst />
         <InfraMadeEasy />
-        <Styles background="dark" />
+        <Styles background="light" />
         <WorksWith />
+        <GetStarted background="highlight" language={language} />
       </div>
     </div>
   </SiteConfig.Provider>

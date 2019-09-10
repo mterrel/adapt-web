@@ -123,9 +123,9 @@
     color: $subheadingColor;
 }
 
-.container.darkBackground .wrapper .blockLarge h1,
-.container.darkBackground .wrapper .blockLarge,
-.container.darkBackground .wrapper .blockLarge h2 {
+.container.lightBackground .wrapper .blockLarge h1,
+.container.lightBackground .wrapper .blockLarge,
+.container.lightBackground .wrapper .blockLarge h2 {
     color: $headingDarkColor;
 }
 
@@ -220,4 +220,24 @@
     .logo-showcase {
         width: 50vw;
     }
+}
+
+/*
+ * Get Started CTA
+ */
+#get_started {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#get_started .wrapper {
+    text-align: center;
+}
+
+#get_started .buttonWrapper {
+    display: inline-block;
+}
+
+#get_started .cta {
+    font-size: 200%;
 }

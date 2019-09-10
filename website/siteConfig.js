@@ -61,7 +61,8 @@ const colors = {
 
   scrollToTopColor: shadeOf(baseColor, { a: 50 }),
 
-  darkBgColor: shadeOf(black, { l: 92 }),
+  lightBgColor: shadeOf(black, { l: 92 }),
+  darkBgColor: shadeOf(black, { l: 30 }),
 
   // Text
   bodyTextColor: shadeOf(black, { l: 30 }),
