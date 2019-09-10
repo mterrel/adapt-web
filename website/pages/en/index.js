@@ -162,14 +162,14 @@ const Features = ({ background }) => (
         image: <FontAwesomeIcon icon={faReact} />,
         imageAlign: 'top',
         content:
-`Build and deploy your entire app architecture using the power and simplicity
-of [React's](https://reactjs.org) declarative component model and
-[JSX](https://reactjs.org/docs/introducing-jsx.html).
+`Stop trying to stitch together shell scripts, YAML files, and crippled
+template languages to deploy and operate your API endpoints and microservices.
 
-Stop trying to stitch together infrastructure using
-YAML and crippled template languages.
-Adapt lets you connect your \`<ReactApp>\` UI to your \`<NodeService>\`
-API and \`<Postgres>\` database.
+Use [React’s](https://reactjs.org) declarative
+[JSX](https://reactjs.org/docs/introducing-jsx.html) syntax,
+JavaScript components, and a rich component library to build, deploy, and
+operate your \`<NodeService>\` API, connect it to \`<MongoDB>\`, or add a
+\`<GolangService>\`.
 `
       },
       {
@@ -191,12 +191,12 @@ components.
         image: <FontAwesomeIcon icon={faCode} />,
         imageAlign: 'top',
         content:
-`Deploy to basic containers on your laptop. Set up elaborate end-to-end
+`Use Adapt style sheets to customize a single app description for your
+entire workflow and all your environments.
+
+Deploy to basic containers on your laptop. Set up elaborate end-to-end
 testing with pre-populated databases in Kubernetes. Or deploy with full
 redundancy and scaling using cloud services.
-
-Describe your app once, then use Adapt style sheets to target as many
-environments, clouds, and infrastructure technologies as you need.
 `
       },
     ]}
