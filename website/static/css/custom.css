@@ -50,7 +50,7 @@ sup {
 
 .highlightBackground {
     color: #ffffff;
-    background-color: $secondaryColor;
+    background-color: $primaryColor;
 }
 
 .darkBackground {

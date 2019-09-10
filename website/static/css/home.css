@@ -130,6 +130,10 @@
 }
 
 @media only screen and (min-width: 736px) {
+    .gridBlock > * {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     .gridBlock .twoByGridBlock {
         flex-basis: 50%;
     }
@@ -143,6 +147,38 @@
  */
 #features .blockImage {
     height: 80px;
+}
+
+#features .blockContentItem {
+    font-size: 110%;
+}
+
+#features code {
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 1500px) {
+    #features h2 {
+        font-size: 170%;
+    }
+    #features .blockContentItem {
+        font-size: 125%;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    #features .blockElement {
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px;
+    }
+    #features .blockImage {
+        margin-bottom: 0px;
+    }
+    #features h2 {
+        margin-top: 10px;
+    }
 }
 
 /*
