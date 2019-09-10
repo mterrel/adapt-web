@@ -56,7 +56,13 @@ export function GitHubLink(props: GitHubLinkProps) {
   const content =
     props.content === "logo" ? <GitHubLogo {...rest} /> :
     props.content;
-  return <a className={className} href={props.config.repoUrl}>{content}</a>;
+  return (
+    <a
+      className={classNames(className, "githubLink")}
+      href={props.config.repoUrl}>
+      {content}
+    </a>
+  );
 }
 GitHubLink.defaultProps = {
   content: "GitHub",

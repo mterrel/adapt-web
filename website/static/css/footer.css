@@ -9,6 +9,16 @@
     padding-right: 0px;
 }
 
+.nav-footer .sitemap .githubLink {
+    display: inline-block;
+    vertical-align: middle;
+}
+.nav-footer .sitemap .githubStar {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
 .nav-footer .credits {
     color: rgba(255, 255, 255, 0.4);
     display: flex;
