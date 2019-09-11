@@ -75,6 +75,15 @@ const colors = {
   subheadingColor: shadeOf(black, { l: 40 }),
 };
 
+const analytics =
+  // Only insert Google Analytics in Netlify production builds
+  process.env.CONTEXT === 'production' ?
+    {
+      gaTrackingId: "UA-83531203-3",
+      gaGtag: true,
+    } :
+    {};
+
 const siteConfig = {
   title: 'Adapt',
   tagline: 'React for your infrastructure.',
@@ -171,8 +180,9 @@ const siteConfig = {
   markdownOptions: {
     html: true,
   },
-  gaTrackingId: "UA-83531203-3",
-  gaGtag: true,
+
+  ...analytics,
+
   algolia: {
     apiKey: '9927876eb8171c3357e612bd20e41a9a',
     indexName: 'unbounded_adapt',
