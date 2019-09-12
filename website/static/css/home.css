@@ -29,7 +29,7 @@
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
     margin-top: 1em;
-    overflow-wrap: normal;
+    word-wrap: normal;
     font-size: 1em;
 }
 

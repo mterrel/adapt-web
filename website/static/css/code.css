@@ -14,10 +14,13 @@ pre[class*="language-"] {
     text-align: left;
     white-space: pre;
     word-spacing: normal;
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
     word-break: normal;
     word-wrap: normal;
     line-height: 1.5;
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
     tab-size: 4;
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
     hyphens: none;
     font-family: $codeFont;
 }

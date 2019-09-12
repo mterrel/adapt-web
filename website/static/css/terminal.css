@@ -9,12 +9,15 @@
     overflow: hidden;
     margin-top: 2em;
     margin-bottom: 2em;
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
     width: fit-content;
 }
 
 .term-header {
     display: flex;
     padding: 5px;
+    background: #2b2b2b;
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
     background: linear-gradient(#3b3b3b, #212121);
 }
 
