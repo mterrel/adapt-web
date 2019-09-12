@@ -72,6 +72,9 @@ function Versions(props) {
   );
 }
 
+Versions.title = "Versions";
+Versions.description = "Documentation for released and unreleased versions of Adapt";
+
 function VersionRow(props) {
   const { config } = props;
   const prefix = props.version === versions[0] ? '' : props.version + '/';

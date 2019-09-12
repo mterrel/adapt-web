@@ -108,4 +108,7 @@ function Help(props) {
   );
 }
 
+Help.title = "Getting Help";
+Help.description = "Getting help with Adapt";
+
 module.exports = Help;
