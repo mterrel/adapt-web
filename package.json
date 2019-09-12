@@ -39,6 +39,6 @@
     },
     "browserslist": [
         "cover 93% in US",
-        "not IE <= 11"
+        "not IE < 11"
     ]
 }
