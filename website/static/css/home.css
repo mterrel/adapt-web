@@ -9,6 +9,7 @@
 .homeContainer .homeWrapper .logo {
     flex: auto;
     order: 2;
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,6 +57,7 @@
 
 @media only screen and (min-width: 736px) {
     .homeContainer .homeWrapper {
+        /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
         display: flex;
     }
 
@@ -203,6 +205,7 @@
  * Logo Showcase
  */
 .logo-showcase-wrapper {
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
     display: flex;
     height: 100%;
     align-items: center;
@@ -220,6 +223,7 @@
 }
 
 .slick-initialized .slick-track {
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
     display: flex;
     align-items: center;
 }
