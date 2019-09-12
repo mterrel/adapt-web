@@ -2,17 +2,19 @@
     padding-left: 2em;
     padding-right: 2em;
 }
+
 .nav-footer .sitemap a {
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .nav-footer .sitemap .githubLink {
     display: inline-block;
     vertical-align: middle;
 }
+
 .nav-footer .sitemap .githubStar {
     display: inline-block;
     vertical-align: middle;
@@ -21,6 +23,7 @@
 
 .nav-footer .credits {
     color: rgba(255, 255, 255, 0.4);
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
     display: flex;
     margin-left: 60px;
     margin-right: 60px;
@@ -34,14 +37,17 @@
 .madeWith {
     line-height: 18px;
 }
+
 .madeWith .heart {
     height: 18px;
+    width: 18px;
     vertical-align: middle;
 }
 
 .nav-footer .unbounded {
     font-size: 13px;
     line-height: 16px;
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -61,25 +67,27 @@
     .nav-footer .sitemap {
         align-items: center;
         text-align: center;
+        line-height: 20px;
     }
+
     .nav-footer .sitemap .nav-home {
         margin: auto;
     }
+
     .nav-footer .sitemap > div {
         margin-top: 14px;
         margin-bottom: 0;
-    }
-    .nav-footer .sitemap {
-        line-height: 20px;
     }
 
     .nav-footer .credits {
         flex-direction: column;
     }
+
     .nav-footer .unbounded {
         margin-top: 1.5em;
         justify-content: center;
     }
+
     .nav-footer .copyright {
         text-align: center;
     }

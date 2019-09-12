@@ -29,7 +29,7 @@ const issueUrl = repoUrl + '/issues/new';
 const forkUrl = repoUrl + '/fork';
 
 const shadeOf = (base, { l = base.l, a = 100 } = {}) =>
-  `hsla(${base.h}, ${base.s}%, ${l}%, ${a}%)`
+  `hsla(${base.h}, ${base.s}%, ${l}%, ${a/100})`
 
 const baseColor = {
   h: 197,

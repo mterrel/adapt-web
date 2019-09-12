@@ -9,9 +9,12 @@
 .homeContainer .homeWrapper .logo {
     flex: auto;
     order: 2;
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .homeContainer .homeWrapper .logo .logo-icon {
@@ -27,14 +30,14 @@
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
     margin-top: 1em;
-    overflow-wrap: normal;
+    word-wrap: normal;
     font-size: 1em;
 }
 
 .homeContainer .homeWrapper .projectDescription {
-    font-size: .6em;
+    font-size: 0.6em;
     text-align: left;
-    padding-top: .1em;
+    padding-top: 0.1em;
     padding-bottom: 1.5em;
     color: $headingColor;
 }
@@ -43,12 +46,9 @@
     margin-left: 10%;
     margin-right: 10%;
     text-align: left;
+    font-size: 35px;
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
     font-size: 10vw;
-}
-
-.homeContainer .homeWrapper .logo {
-    padding-left: 5%;
-    padding-right: 5%;
 }
 
 @media only screen and (min-width: 600px) {
@@ -56,15 +56,23 @@
         font-size: 60px;
     }
 }
+
 @media only screen and (min-width: 736px) {
     .homeContainer .homeWrapper {
+        /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
         display: flex;
     }
+
     .homeContainer .homeWrapper .logo {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
+
     .homeContainer .homeWrapper .intro {
+        font-size: 40px;
+        /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
         font-size: 6vw;
+        max-width: 290px;
+        /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
         max-width: 50vw;
         padding-top: 2em;
         padding-bottom: 2em;
@@ -72,16 +80,17 @@
         margin-right: 5%;
     }
 }
+
 @media only screen and (min-width: 1000px) {
     .homeContainer .homeWrapper .intro {
         max-width: 430px;
         font-size: 60px;
     }
+
     .homeContainer .homeWrapper .logo .logo-icon {
         max-width: 60%;
     }
 }
-
 
 /*
  * Content blocks
@@ -91,7 +100,7 @@
 }
 
 .home a.button {
-    color: #ffffff;
+    color: #fff;
     font-size: 19px;
     font-weight: 700;
     padding: 16px;
@@ -101,6 +110,7 @@
 .home .blockContent {
     height: 100%;
 }
+
 .home .blockContentItem {
     height: 100%;
 }
@@ -109,10 +119,12 @@
     padding-left: 20px;
     padding-right: 20px;
 }
+
 .home .blockLarge h2 {
     font-size: 30px;
     color: $headingColor;
 }
+
 .home .blockLarge .blockContentItem {
     font-size: 25px;
     line-height: 1.4;
@@ -130,9 +142,11 @@
         margin-left: 20px;
         margin-right: 20px;
     }
+
     .gridBlock .twoByGridBlock {
         flex-basis: 50%;
     }
+
     .gridBlock .twoByGridBlock.blockLarge {
         flex-basis: 40%;
     }
@@ -161,6 +175,7 @@
     #features h2 {
         font-size: 170%;
     }
+
     #features .blockContentItem {
         font-size: 125%;
     }
@@ -173,9 +188,11 @@
         margin-right: auto;
         max-width: 400px;
     }
+
     #features .blockImage {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
+
     #features h2 {
         margin-top: 10px;
     }
@@ -186,6 +203,7 @@
  */
 @media only screen and (max-width: 735px) {
     .home .term-content {
+        /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
         font-size: 2.7vw;
     }
 }
@@ -194,20 +212,25 @@
  * Logo Showcase
  */
 .logo-showcase-wrapper {
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
     display: flex;
     height: 100%;
     align-items: center;
 }
+
 .logo-showcase {
     max-width: 550px;
     overflow: hidden;
 }
+
 .logo-slide {
     padding: 0 1%;
     height: 100%;
     position: relative;
 }
+
 .slick-initialized .slick-track {
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
     display: flex;
     align-items: center;
 }
@@ -215,9 +238,10 @@
 .comingSoon {
     opacity: 0.4;
 }
+
 .comingSoon::after {
     content: "*upcoming release";
-    font-size: .7em;
+    font-size: 0.7em;
 }
 
 @media only screen and (min-width: 1500px) {
@@ -225,8 +249,10 @@
         max-width: 700px;
     }
 }
+
 @media only screen and (min-width: 736px) {
     .logo-showcase {
+        /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
         width: 50vw;
     }
 }

@@ -22,18 +22,22 @@ sup {
     vertical-align: super;
     font-size: 70%;
 }
+
 .mainContainer {
     padding-bottom: 0;
 }
+
 .mainContainer a {
     color: $blueTextOnWhiteColor;
     font-weight: 600;
 }
+
 .mainContainer a:hover {
     text-decoration: underline;
 }
+
 .mainContainer .highlightBackground a {
-    color: #ffffff;
+    color: #fff;
 }
 
 .remove-margin {
@@ -49,7 +53,7 @@ sup {
 }
 
 .highlightBackground {
-    color: #ffffff;
+    color: #fff;
     background-color: $primaryColor;
 }
 
@@ -65,10 +69,15 @@ sup {
 
 .buttonArrow {
     height: 23px;
+    width: 23px;
     margin-left: 8px;
 }
 
 .home .button {
-    display: flex;
-    align-items: center;
+    display: table;
+}
+
+.home .button > * {
+    display: table-cell;
+    vertical-align: middle;
 }
