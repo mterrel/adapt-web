@@ -5,16 +5,16 @@
     "homepage": "https://adapt.unbounded.systems",
     "author": "Unbounded Systems",
     "contributors": [
-      {
-        "name": "Manish Vachharajani",
-        "email": "manishv@unbounded.systems",
-        "url": "https://twitter.com/mvachhar"
-      },
-      {
-        "name": "Mark Terrel",
-        "email": "mark@unbounded.systems",
-        "url": "https://twitter.com/mterrel"
-      }
+        {
+            "name": "Manish Vachharajani",
+            "email": "manishv@unbounded.systems",
+            "url": "https://twitter.com/mvachhar"
+        },
+        {
+            "name": "Mark Terrel",
+            "email": "mark@unbounded.systems",
+            "url": "https://twitter.com/mterrel"
+        }
     ],
     "private": true,
     "repository": "gitlab:unboundedsystems/adapt-web",
@@ -26,9 +26,14 @@
         "website"
     ],
     "scripts": {
-        "start": "cd website && yarn run start"
+        "start": "cd website && yarn run start",
+        "lint": "stylelint website/static/**/*.css"
     },
     "resolutions": {
         "gaze": "unboundedsystems/gaze#stack_size_fix"
+    },
+    "devDependencies": {
+        "stylelint": "^10.1.0",
+        "stylelint-config-standard": "^18.3.0"
     }
 }
