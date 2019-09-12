@@ -46,6 +46,8 @@
     margin-left: 10%;
     margin-right: 10%;
     text-align: left;
+    font-size: 35px;
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
     font-size: 10vw;
 }
 
@@ -66,7 +68,11 @@
     }
 
     .homeContainer .homeWrapper .intro {
+        font-size: 40px;
+        /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
         font-size: 6vw;
+        max-width: 290px;
+        /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
         max-width: 50vw;
         padding-top: 2em;
         padding-bottom: 2em;
@@ -197,6 +203,7 @@
  */
 @media only screen and (max-width: 735px) {
     .home .term-content {
+        /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
         font-size: 2.7vw;
     }
 }
@@ -245,6 +252,7 @@
 
 @media only screen and (min-width: 736px) {
     .logo-showcase {
+        /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
         width: 50vw;
     }
 }
