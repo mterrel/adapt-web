@@ -12,6 +12,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .homeContainer .homeWrapper .logo .logo-icon {
@@ -32,9 +34,9 @@
 }
 
 .homeContainer .homeWrapper .projectDescription {
-    font-size: .6em;
+    font-size: 0.6em;
     text-align: left;
-    padding-top: .1em;
+    padding-top: 0.1em;
     padding-bottom: 1.5em;
     color: $headingColor;
 }
@@ -44,11 +46,6 @@
     margin-right: 10%;
     text-align: left;
     font-size: 10vw;
-}
-
-.homeContainer .homeWrapper .logo {
-    padding-left: 5%;
-    padding-right: 5%;
 }
 
 @media only screen and (min-width: 600px) {
@@ -63,7 +60,7 @@
     }
 
     .homeContainer .homeWrapper .logo {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 
     .homeContainer .homeWrapper .intro {
@@ -95,7 +92,7 @@
 }
 
 .home a.button {
-    color: #ffffff;
+    color: #fff;
     font-size: 19px;
     font-weight: 700;
     padding: 16px;
@@ -185,7 +182,7 @@
     }
 
     #features .blockImage {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 
     #features h2 {
@@ -233,7 +230,7 @@
 
 .comingSoon::after {
     content: "*upcoming release";
-    font-size: .7em;
+    font-size: 0.7em;
 }
 
 @media only screen and (min-width: 1500px) {

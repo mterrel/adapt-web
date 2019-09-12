@@ -61,7 +61,7 @@
 }
 
 .term-content.slim pre {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .term-content.slim code {
@@ -86,7 +86,7 @@
     }
 
     .term-content pre {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 
     .term-content code {

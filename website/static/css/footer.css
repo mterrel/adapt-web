@@ -4,10 +4,10 @@
 }
 
 .nav-footer .sitemap a {
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .nav-footer .sitemap .githubLink {
@@ -64,6 +64,7 @@
     .nav-footer .sitemap {
         align-items: center;
         text-align: center;
+        line-height: 20px;
     }
 
     .nav-footer .sitemap .nav-home {
@@ -73,10 +74,6 @@
     .nav-footer .sitemap > div {
         margin-top: 14px;
         margin-bottom: 0;
-    }
-
-    .nav-footer .sitemap {
-        line-height: 20px;
     }
 
     .nav-footer .credits {

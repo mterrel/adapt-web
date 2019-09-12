@@ -59,11 +59,11 @@
     background-color: hsl(0, 0%, 92%);
 }
 
-.navSearchWrapper:before {
+.navSearchWrapper::before {
     border-color: $searchPlaceholderColor;
 }
 
-.navSearchWrapper:after {
+.navSearchWrapper::after {
     background-color: $searchPlaceholderColor;
 }
 
