@@ -69,10 +69,15 @@ sup {
 
 .buttonArrow {
     height: 23px;
+    width: 23px;
     margin-left: 8px;
 }
 
 .home .button {
-    display: flex;
-    align-items: center;
+    display: table;
+}
+
+.home .button > * {
+    display: table-cell;
+    vertical-align: middle;
 }
