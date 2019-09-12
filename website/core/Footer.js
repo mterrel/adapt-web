@@ -26,7 +26,9 @@ const Credits = () => (
   <section className="credits">
     <div />
     <div className="madeWith">
-      Made with <FontAwesomeIcon className="heart" icon={faHeart} /> in&nbsp;Denver
+      <span>Made with </span>
+      <FontAwesomeIcon className="heart" icon={faHeart} />
+      <span> in&nbsp;Denver</span>
     </div>
     <div className="unbounded">
       <div className="copyright">

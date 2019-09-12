@@ -89,6 +89,7 @@ input::placeholder {
 
 .navigationSlider .githubLogo {
     height: 22px;
+    width: 22px;
     margin-right: 5px;
     position: relative;
     top: 5px;
