@@ -2,7 +2,9 @@
  * MacOS-like terminal styling
  */
 .term {
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
     border-radius: 7px;
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.56);
     /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
     display: flex;
@@ -28,6 +30,7 @@
     width: 12px;
     height: 12px;
     margin-right: 8px;
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;

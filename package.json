@@ -38,7 +38,7 @@
         "stylelint-no-unsupported-browser-features": "^3.0.2"
     },
     "browserslist": [
-        "cover 93% in US",
+        "cover 100% in US",
         "not IE < 11"
     ]
 }

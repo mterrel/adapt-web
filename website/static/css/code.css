@@ -9,6 +9,7 @@ code[class*="language-"],
 pre[class*="language-"] {
     color: #f8f8f2;
     background: #1f2228;
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
     font-weight: 600;
     text-align: left;
@@ -30,6 +31,7 @@ pre[class*="language-"] {
     padding: 1em;
     margin: 0.5em 0;
     overflow: auto;
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
     border-radius: 0.3em;
 }
 
@@ -41,6 +43,7 @@ pre[class*="language-"] {
 /* Inline code */
 :not(pre) > code[class*="language-"] {
     padding: 0.1em;
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
     border-radius: 0.3em;
     white-space: normal;
 }
