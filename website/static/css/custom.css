@@ -22,16 +22,20 @@ sup {
     vertical-align: super;
     font-size: 70%;
 }
+
 .mainContainer {
     padding-bottom: 0;
 }
+
 .mainContainer a {
     color: $blueTextOnWhiteColor;
     font-weight: 600;
 }
+
 .mainContainer a:hover {
     text-decoration: underline;
 }
+
 .mainContainer .highlightBackground a {
     color: #ffffff;
 }

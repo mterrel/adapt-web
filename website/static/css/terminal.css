@@ -11,11 +11,13 @@
     margin-bottom: 2em;
     width: fit-content;
 }
+
 .term-header {
     display: flex;
     padding: 5px;
     background: linear-gradient(#3b3b3b, #212121);
 }
+
 .term-header-button {
     position: relative;
     width: 12px;
@@ -25,15 +27,19 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
 }
+
 .term-header-button-close {
     background: #ff615a;
 }
+
 .term-header-button-minimize {
     background: #ffc230;
 }
+
 .term-header-button-expand {
     background: #29cb41;
 }
+
 .term-header-title {
     text-align: center;
     color: #b7b6b7;
@@ -43,6 +49,7 @@
     width: 100%;
     padding-right: 60px;
 }
+
 .term-content {
     padding: 10px;
     font-size: 14px;
@@ -56,6 +63,7 @@
 .term-content.slim pre {
     margin-bottom: 0px;
 }
+
 .term-content.slim code {
     padding: 0;
 }
@@ -72,12 +80,15 @@
         width: 10px;
         height: 10px;
     }
+
     .term-content {
         font-size: 11px;
     }
+
     .term-content pre {
         margin-bottom: 0px;
     }
+
     .term-content code {
         padding: 0;
     }
