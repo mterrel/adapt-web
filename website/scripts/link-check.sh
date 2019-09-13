@@ -3,16 +3,64 @@
 set -e
 
 SERVER_PORT=9999
+WEBSITE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
+NGINX_CONF_SRC="${WEBSITE_DIR}/scripts/static_nginx.conf"
+NGINX_CONF="${WEBSITE_DIR}/build/nginx.conf"
+WEBSITE_ROOT="${WEBSITE_DIR}/build/adapt"
 
 onExit() {
-    if [[ -n ${SERVER_PID} ]]; then
-        kill ${SERVER_PID}
+    if [[ -n "${STOP_SERVER[@]}" ]]; then
+        echo Stopping server
+        "${STOP_SERVER[@]}"
     fi
 }
 trap onExit INT TERM HUP EXIT
 
 checkServer() {
     curl --head http://localhost:${SERVER_PORT}/ >& /dev/null
+}
+
+# Replace template params in the config
+# Usage:
+#   writeConfig website_root_value server_port value
+# 
+writeConfig() {
+    CONF=$(<"${NGINX_CONF_SRC}")
+    CONF="${CONF//WEBSITE_ROOT/$1}"
+    CONF="${CONF//SERVER_PORT/$2}"
+    echo "${CONF}" > "${NGINX_CONF}"
+}
+
+nginxLocal() {
+    local NGINX
+
+    if ! which nginx >& /dev/null ; then
+        return 1; 
+    fi
+
+    writeConfig "${WEBSITE_ROOT}" "${SERVER_PORT}"
+
+    NGINX=(nginx -c "${NGINX_CONF}")
+    echo Running: ${NGINX[@]}
+    "${NGINX[@]}"
+    STOP_SERVER=(nginx -c "${NGINX_CONF}" -s quit)
+}
+
+nginxContainer() {
+    local NGINX CTR
+
+    writeConfig /www 80
+
+    NGINX=(
+        docker run --rm --name nginx-link-check -d
+        -v "${WEBSITE_ROOT}:/www:ro"
+        -v "${NGINX_CONF}:/etc/nginx/nginx.conf:ro"
+        -p ${SERVER_PORT}:80
+        nginx
+    )
+    echo Running: ${NGINX[@]}
+    CTR=$(${NGINX[@]})
+    STOP_SERVER=(docker stop "${CTR}")
 }
 
 runServer() {
@@ -22,11 +70,11 @@ runServer() {
     # Wait for about 90 sec
     i=90
 
-    docusaurus-start --no-watch --port ${SERVER_PORT} &
-    SERVER_PID=$!
+    nginxLocal || nginxContainer
+
     while ! checkServer ; do
         if [[ i -le 0 ]]; then
-            echo ERRROR: Server did not become ready
+            echo ERROR: Server did not become ready
             exit 1
         fi
         ((i=i-1))
@@ -37,7 +85,6 @@ runServer() {
 }
 
 checkLinkCommand() {
-    # NOTE(mark): Remove exclude for github page once it's public
     broken-link-checker -r --filter-level 3 \
         --exclude localhost:8080 \
         --exclude localhost:3000 \
