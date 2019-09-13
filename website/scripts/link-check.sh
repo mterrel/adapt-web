@@ -23,7 +23,7 @@ checkServer() {
 # Replace template params in the config
 # Usage:
 #   writeConfig website_root_value server_port value
-# 
+#
 writeConfig() {
     CONF=$(<"${NGINX_CONF_SRC}")
     CONF="${CONF//WEBSITE_ROOT/$1}"
@@ -35,7 +35,7 @@ nginxLocal() {
     local NGINX
 
     if ! which nginx >& /dev/null ; then
-        return 1; 
+        return 1;
     fi
 
     writeConfig "${WEBSITE_ROOT}" "${SERVER_PORT}"
