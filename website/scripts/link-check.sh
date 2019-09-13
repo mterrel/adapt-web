@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 SERVER_PORT=9999
 
 onExit() {
@@ -39,7 +41,8 @@ checkLinkCommand() {
     broken-link-checker -r --filter-level 3 \
         --exclude localhost:8080 \
         --exclude localhost:3000 \
-        http://localhost:${SERVER_PORT}
+        http://localhost:${SERVER_PORT} || \
+        echo "Link check FAILED"
 }
 
 checkLinks() {
@@ -70,6 +73,10 @@ checkLinks() {
                 # Filter out all the OK links and blank lines
                 ;;
 
+            "Link check FAILED")
+                FAILED=true
+                ;;
+
             *)
                 echo "${line}"
                 ;;
@@ -79,6 +86,9 @@ checkLinks() {
     echo "${FINISHED}"
     if [[ -n $FOUND_BROKEN ]]; then
         printf "\033[01;31m%s\033[m\n" "ERROR: Broken links found"
+        return 1
+    elif [[ -n $FAILED ]]; then 
+        printf "\033[01;31m%s\033[m\n" "ERROR: Link checking failed"
         return 1
     else
         printf "\033[01;32m%s\033[m\n" "Success! No broken links"
