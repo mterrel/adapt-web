@@ -34,7 +34,7 @@ export const GridBlock = (props: GridBlockProps) => {
     // Load this late to avoid circular require dependencies through siteConfig.js
     // and renderMarkdown.js
     // tslint:disable-next-line: no-var-requires no-submodule-imports
-    if (!Remarkable) Remarkable = require("docusaurus/lib/core/Remarkable");
+    if (!Remarkable) Remarkable = require("@unboundedsystems/docusaurus/lib/core/Remarkable");
 
     let key = 0;
     const getKey = () => (++key).toString();

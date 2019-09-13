@@ -21,7 +21,7 @@ export const CodeWindow = (props: CodeWindowProps) => {
     // Load this late to avoid circular require dependencies through siteConfig.js
     // and renderMarkdown.js
     // tslint:disable-next-line: no-var-requires no-submodule-imports
-    if (!MarkdownBlock) MarkdownBlock = require("docusaurus/lib/core/MarkdownBlock");
+    if (!MarkdownBlock) MarkdownBlock = require("@unboundedsystems/docusaurus/lib/core/MarkdownBlock");
 
     return (
         <div className="term center-block term-background-codeblock">
