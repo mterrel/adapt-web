@@ -2,7 +2,7 @@ variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
 default:
-  image: unboundedsystems/node-testimg:v2.0.1
+  image: unboundedsystems/node-testimg:v2.0.2
 
 test:
   stage: test
