@@ -13,13 +13,8 @@ hide_title: true
 
 |  Class | Description |
 |  --- | --- |
-|  [Compute](./cloud.compute.md) |  |
+|  [Compute](./cloud.compute.md) | <b><i>(BETA)</i></b> Abstract element to represent a computational resource |
 |  [Container](./cloud.container.md) | Abstract component representing a container. |
-|  [DockerHost](./cloud.dockerhost.md) |  |
-|  [ExternalDockerHost](./cloud.externaldockerhost.md) |  |
-|  [LocalCompute](./cloud.localcompute.md) |  |
-|  [LocalContainer](./cloud.localcontainer.md) |  |
-|  [LocalDockerHost](./cloud.localdockerhost.md) |  |
 |  [NetworkService](./cloud.networkservice.md) | An abstract component that represents a network service. |
 |  [Service](./cloud.service.md) | An abstract component that represents a group of components that implements a service. Note that this is not necessarily a network service, but will often be. |
 
@@ -33,24 +28,23 @@ hide_title: true
 
 |  Function | Description |
 |  --- | --- |
-|  [extendedHandle()](./cloud.extendedhandle.md) |  |
-|  [handles()](./cloud.handles.md) |  |
 |  [isContainerElement(el)](./cloud.iscontainerelement.md) | Function to check whether an  is an abstract [Container](./cloud.container.md)<!-- -->. |
-|  [isNetworkServiceElement(el)](./cloud.isnetworkserviceelement.md) |  |
+|  [isNetworkServiceElement(el)](./cloud.isnetworkserviceelement.md) | Type assertion that tests an element to see if it is a [NetworkService](./cloud.networkservice.md) |
 |  [lookupEnvVar(e, name)](./cloud.lookupenvvar.md) | Find the value of an environment variable in an [Environment](./cloud.environment.md) |
 |  [mergeEnvPairs(envs)](./cloud.mergeenvpairs.md) | Combine multiple [Environment](./cloud.environment.md) objects into a single array of [EnvPair](./cloud.envpair.md) objects. Returns <code>undefined</code> if there are no <code>Environment</code> objects provided. |
 |  [mergeEnvSimple(envs)](./cloud.mergeenvsimple.md) | Combine multiple [Environment](./cloud.environment.md) objects into a single [EnvSimple](./cloud.envsimple.md) object. Returns <code>undefined</code> if there are no <code>Environment</code> objects provided. |
 |  [renameEnvVars(e, mapping)](./cloud.renameenvvars.md) | Renames all variables in <code>e</code> based on <code>mapping</code> |
-|  [targetPort(elemOrProps)](./cloud.targetport.md) |  |
+|  [targetPort(elemOrProps)](./cloud.targetport.md) | Computes the target port that will be used for a NetworkService |
 |  [updateEnvVars(e, upd)](./cloud.updateenvvars.md) | Updates the names and/or values of variables in an [Environment](./cloud.environment.md) |
 |  [useConnectTo(connectTo, xform)](./cloud.useconnectto.md) | Hook that will build an [Environment](./cloud.environment.md) object from components that comply with [ConnectToInstance](./cloud.connecttoinstance.md) |
+|  [useConnectTo(connectTo, options)](./cloud.useconnectto_1.md) | Hook that will build an [Environment](./cloud.environment.md) object from components that comply with [ConnectToInstance](./cloud.connecttoinstance.md) |
 |  [useLatestImageFrom(source)](./cloud.uselatestimagefrom.md) | <b><i>(BETA)</i></b> Hook function to translate an [ImageId](./cloud.imageid.md) (which can be either a Handle or an image name string) into an image name string. |
 
 ## Interfaces
 
 |  Interface | Description |
 |  --- | --- |
-|  [ComputeProps](./cloud.computeprops.md) |  |
+|  [ComputeProps](./cloud.computeprops.md) | <b><i>(BETA)</i></b> Props for a [Compute](./cloud.compute.md) element |
 |  [Config](./cloud.config.md) | Config for [ContainerStatus](./cloud.containerstatus.md) |
 |  [ConnectToInstance](./cloud.connecttoinstance.md) | Components that provide a service, such as a database service or API service, can implement this interface in order to supply all the information required to connect to the service. |
 |  [ContainerLabels](./cloud.containerlabels.md) | Labels for a [Container](./cloud.container.md) |
@@ -59,29 +53,24 @@ hide_title: true
 |  [ContainerProps](./cloud.containerprops.md) | Props for the [Container](./cloud.container.md) component. |
 |  [ContainerState](./cloud.containerstate.md) | State information for a [Container](./cloud.container.md)<!-- -->. |
 |  [ContainerStatus](./cloud.containerstatus.md) | Status of a [Container](./cloud.container.md)<!-- -->. |
-|  [DockerHostProps](./cloud.dockerhostprops.md) |  |
 |  [EnvPair](./cloud.envpair.md) | A single environment variable for a [Container](./cloud.container.md)<!-- -->, expressed as an object with <code>name</code> and <code>value</code> properties. |
 |  [EnvSimple](./cloud.envsimple.md) | A set of environment variables for a [Container](./cloud.container.md)<!-- -->, expressed as a single object with keys and associated values. |
-|  [ExtendedHandle](./cloud.extendedhandle.md) |  |
-|  [ExternalDockerHostProps](./cloud.externaldockerhostprops.md) |  |
-|  [HandlesCreate](./cloud.handlescreate.md) |  |
-|  [HandlesIndex](./cloud.handlesindex.md) |  |
 |  [Links](./cloud.links.md) | Network links to create for a [Container](./cloud.container.md)<!-- -->. |
 |  [NetworkServiceInstance](./cloud.networkserviceinstance.md) | <b><i>(BETA)</i></b> Interface for components that expose Network Services via hostname and port |
-|  [NetworkServiceProps](./cloud.networkserviceprops.md) |  |
+|  [NetworkServiceProps](./cloud.networkserviceprops.md) | Props for the [NetworkService](./cloud.networkservice.md) element |
 |  [PortBinding](./cloud.portbinding.md) | A set of ports to be bound for a [Container](./cloud.container.md)<!-- -->. |
-|  [ServiceProps](./cloud.serviceprops.md) |  |
+|  [ServiceProps](./cloud.serviceprops.md) | Props for [Service](./cloud.service.md) |
+|  [UseConnectToOptions](./cloud.useconnecttooptions.md) | Options for  |
 
 ## Namespaces
 
 |  Namespace | Description |
 |  --- | --- |
-|  [ansible](./cloud.ansible.md) |  |
-|  [aws](./cloud.aws.md) |  |
+|  [aws](./cloud.aws.md) | <b><i>(BETA)</i></b> AWS library for Adapt. |
 |  [docker](./cloud.docker.md) | Docker library for Adapt. |
-|  [http](./cloud.http.md) |  |
-|  [k8s](./cloud.k8s.md) |  |
-|  [nginx](./cloud.nginx.md) |  |
+|  [http](./cloud.http.md) | Adapt components for HTTP |
+|  [k8s](./cloud.k8s.md) | Adapt components for Kubernetes |
+|  [nginx](./cloud.nginx.md) | Various Adapt Components based on [nginx](https://nginx.org) |
 |  [nodejs](./cloud.nodejs.md) | The library for [Node.js](https://nodejs.org) for Adapt. |
 |  [postgres](./cloud.postgres.md) | The [Postgres](https://www.postgresql.org) library for Adapt. |
 
@@ -92,10 +81,7 @@ hide_title: true
 |  [Command](./cloud.command.md) | A command to be used when creating a [Container](./cloud.container.md)<!-- -->. |
 |  [Environment](./cloud.environment.md) | A set of environment variables for a [Container](./cloud.container.md)<!-- -->. |
 |  [EnvPairs](./cloud.envpairs.md) | A set of environment variables for a [Container](./cloud.container.md)<!-- -->, expressed as an array of objects with <code>name</code> and <code>value</code> properties. |
-|  [Handles](./cloud.handles.md) |  |
 |  [ImageId](./cloud.imageid.md) | An image for a [Container](./cloud.container.md)<!-- -->. |
-|  [LocalComputeProps](./cloud.localcomputeprops.md) |  |
-|  [LocalContainerProps](./cloud.localcontainerprops.md) |  |
-|  [NetworkServiceScope](./cloud.networkservicescope.md) |  |
+|  [NetworkServiceScope](./cloud.networkservicescope.md) | Network service scope used by [NetworkService](./cloud.networkservice.md) |
 |  [PortDescription](./cloud.portdescription.md) | Description of a network port for a [Container](./cloud.container.md)<!-- -->. |
-|  [ServicePort](./cloud.serviceport.md) |  |
+|  [ServicePort](./cloud.serviceport.md) | Port for [NetworkService](./cloud.networkservice.md) |

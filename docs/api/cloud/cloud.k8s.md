@@ -9,6 +9,8 @@ hide_title: true
 
 ## k8s namespace
 
+Adapt components for Kubernetes
+
 <b>Signature:</b>
 
 ```typescript
@@ -27,8 +29,8 @@ export { K8sPlugin, createK8sPlugin, resourceElementToName, registerResourceKind
 |  Class | Description |
 |  --- | --- |
 |  [K8sContainer](./cloud.k8s.k8scontainer.md) | Kubernetes-specific container. |
-|  [Pod](./cloud.k8s.pod.md) |  |
-|  [Resource](./cloud.k8s.resource.md) |  |
+|  [Pod](./cloud.k8s.pod.md) | Component for Kubernetes Pods |
+|  [Resource](./cloud.k8s.resource.md) | Primitive Component recognized by the k8s plugin to represent resources |
 |  [ServiceDeployment](./cloud.k8s.servicedeployment.md) | A component for mapping a group of abstract [Container](./cloud.container.md)<!-- -->s and [NetworkService](./cloud.networkservice.md)<!-- -->s to Kubernetes [k8s.Pod](./cloud.k8s.pod.md)<!-- -->s and [k8s.K8sContainer](./cloud.k8s.k8scontainer.md)<!-- -->s. |
 
 ## Functions
@@ -37,10 +39,9 @@ export { K8sPlugin, createK8sPlugin, resourceElementToName, registerResourceKind
 |  --- | --- |
 |  [computeNamespaceFromMetadata(metadata)](./cloud.k8s.computenamespacefrommetadata.md) |  |
 |  [Container(props)](./cloud.k8s.container.md) | Component that implements the abstract [Container](./cloud.container.md) interface and translates to a Kubernetes-specific [k8s.K8sContainer](./cloud.k8s.k8scontainer.md)<!-- -->. |
-|  [isK8sContainerElement(x)](./cloud.k8s.isk8scontainerelement.md) |  |
-|  [isResourceFinalElement(e)](./cloud.k8s.isresourcefinalelement.md) |  |
+|  [isK8sContainerElement(x)](./cloud.k8s.isk8scontainerelement.md) | Tests whether an element is a [k8s.K8sContainer](./cloud.k8s.k8scontainer.md) element |
+|  [isResourceFinalElement(e)](./cloud.k8s.isresourcefinalelement.md) | Type assertion to see if an element is both a [Resource](./cloud.k8s.resource.md) and a  |
 |  [k8sContainerProps(abstractProps, k8sProps)](./cloud.k8s.k8scontainerprops.md) | Low level utility function to translate from the abstract [Container](./cloud.container.md) component props ([ContainerProps](./cloud.containerprops.md)<!-- -->) to [k8s.K8sContainerProps](./cloud.k8s.k8scontainerprops.md) to be used in a [k8s.K8sContainer](./cloud.k8s.k8scontainer.md)<!-- -->. |
-|  [k8sServiceProps(abstractProps)](./cloud.k8s.k8sserviceprops.md) |  |
 |  [Service(propsIn)](./cloud.k8s.service.md) | Native Kubernetes Service resource |
 
 ## Interfaces
@@ -58,23 +59,16 @@ export { K8sPlugin, createK8sPlugin, resourceElementToName, registerResourceKind
 |  [Kubeconfig](./cloud.k8s.kubeconfig.md) |  |
 |  [Metadata](./cloud.k8s.metadata.md) |  |
 |  [PodProps](./cloud.k8s.podprops.md) |  |
-|  [PodSpec](./cloud.k8s.podspec.md) |  |
+|  [PodSpec](./cloud.k8s.podspec.md) | Spec for for Kubernetes Pods |
 |  [ResourceBase](./cloud.k8s.resourcebase.md) |  |
 |  [ResourceCR](./cloud.k8s.resourcecr.md) |  |
 |  [ResourceInfo](./cloud.k8s.resourceinfo.md) |  |
 |  [ResourcePod](./cloud.k8s.resourcepod.md) |  |
 |  [ResourceService](./cloud.k8s.resourceservice.md) |  |
-|  [ServiceDeploymentProps](./cloud.k8s.servicedeploymentprops.md) |  |
+|  [ServiceDeploymentProps](./cloud.k8s.servicedeploymentprops.md) | Props for [k8s.ServiceDeployment](./cloud.k8s.servicedeployment.md) |
 |  [ServicePort](./cloud.k8s.serviceport.md) |  |
 |  [ServiceProps](./cloud.k8s.serviceprops.md) |  |
 |  [ServiceSpec](./cloud.k8s.servicespec.md) |  |
-
-## Variables
-
-|  Variable | Description |
-|  --- | --- |
-|  [podResourceInfo](./cloud.k8s.podresourceinfo.md) |  |
-|  [serviceResourceInfo](./cloud.k8s.serviceresourceinfo.md) |  |
 
 ## Type Aliases
 
@@ -82,6 +76,6 @@ export { K8sPlugin, createK8sPlugin, resourceElementToName, registerResourceKind
 |  --- | --- |
 |  [EnvVar](./cloud.k8s.envvar.md) |  |
 |  [FromContainerProps](./cloud.k8s.fromcontainerprops.md) | See [k8s.k8sContainerProps()](./cloud.k8s.k8scontainerprops.md)<!-- -->. |
-|  [Kind](./cloud.k8s.kind.md) |  |
+|  [Kind](./cloud.k8s.kind.md) | Kubernetes Kind |
 |  [ResourceProps](./cloud.k8s.resourceprops.md) |  |
 |  [Spec](./cloud.k8s.spec.md) |  |

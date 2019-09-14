@@ -9,6 +9,8 @@ hide_title: true
 
 ## ServiceProps interface
 
+Props for [Service](./cloud.service.md)
+
 <b>Signature:</b>
 
 ```typescript
@@ -19,4 +21,4 @@ export interface ServiceProps extends WithChildren
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [name](./cloud.serviceprops.name.md) | <code>string</code> |  |
+|  [name](./cloud.serviceprops.name.md) | <code>string</code> | Optional name for the service |

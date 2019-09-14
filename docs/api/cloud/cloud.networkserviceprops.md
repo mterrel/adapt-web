@@ -9,6 +9,8 @@ hide_title: true
 
 ## NetworkServiceProps interface
 
+Props for the [NetworkService](./cloud.networkservice.md) element
+
 <b>Signature:</b>
 
 ```typescript
@@ -19,10 +21,10 @@ export interface NetworkServiceProps extends WithChildren
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [endpoint](./cloud.networkserviceprops.endpoint.md) | <code>Handle</code> |  |
-|  [ip](./cloud.networkserviceprops.ip.md) | <code>string</code> |  |
-|  [name](./cloud.networkserviceprops.name.md) | <code>string</code> |  |
-|  [port](./cloud.networkserviceprops.port.md) | <code>ServicePort</code> |  |
-|  [protocol](./cloud.networkserviceprops.protocol.md) | <code>string</code> |  |
-|  [scope](./cloud.networkserviceprops.scope.md) | <code>NetworkServiceScope</code> |  |
-|  [targetPort](./cloud.networkserviceprops.targetport.md) | <code>ServicePort</code> |  |
+|  [endpoint](./cloud.networkserviceprops.endpoint.md) | <code>Handle</code> | Endpoint that provides the service |
+|  [ip](./cloud.networkserviceprops.ip.md) | <code>string</code> | IP address of the network service |
+|  [name](./cloud.networkserviceprops.name.md) | <code>string</code> | Name of the network service |
+|  [port](./cloud.networkserviceprops.port.md) | <code>ServicePort</code> | Port on which clients connect to this service |
+|  [protocol](./cloud.networkserviceprops.protocol.md) | <code>string</code> | Protocol used by the network service |
+|  [scope](./cloud.networkserviceprops.scope.md) | <code>NetworkServiceScope</code> | Scope of the service |
+|  [targetPort](./cloud.networkserviceprops.targetport.md) | <code>ServicePort</code> | Port on the endpoint that provides this service |

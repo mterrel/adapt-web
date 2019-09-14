@@ -9,6 +9,10 @@ hide_title: true
 
 ## aws.CFResourcePrimitive class
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+
 <b>Signature:</b>
 
 ```typescript
@@ -19,4 +23,4 @@ export declare class CFResourcePrimitive extends PrimitiveComponent<CFResourcePr
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [deployedWhen](./cloud.aws.cfresourceprimitive.deployedwhen.md) |  | <code>DeployedWhenMethod</code> |  |
+|  [deployedWhen](./cloud.aws.cfresourceprimitive.deployedwhen.md) |  | <code>DeployedWhenMethod</code> | <b><i>(BETA)</i></b> |

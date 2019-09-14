@@ -9,6 +9,8 @@ hide_title: true
 
 ## ServiceProps.name property
 
+Optional name for the service
+
 <b>Signature:</b>
 
 ```typescript

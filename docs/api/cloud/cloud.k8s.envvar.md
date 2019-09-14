@@ -9,6 +9,7 @@ hide_title: true
 
 ## k8s.EnvVar type
 
+
 <b>Signature:</b>
 
 ```typescript

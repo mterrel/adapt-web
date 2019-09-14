@@ -9,6 +9,8 @@ hide_title: true
 
 ## NetworkServiceProps.targetPort property
 
+Port on the endpoint that provides this service
+
 <b>Signature:</b>
 
 ```typescript

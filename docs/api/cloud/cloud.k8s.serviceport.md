@@ -9,6 +9,7 @@ hide_title: true
 
 ## k8s.ServicePort interface
 
+
 <b>Signature:</b>
 
 ```typescript
@@ -19,8 +20,8 @@ export interface ServicePort
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [name](./cloud.k8s.serviceport.name.md) | <code>string</code> |  |
-|  [nodePort](./cloud.k8s.serviceport.nodeport.md) | <code>number</code> |  |
-|  [port](./cloud.k8s.serviceport.port.md) | <code>number</code> |  |
-|  [protocol](./cloud.k8s.serviceport.protocol.md) | <code>string</code> |  |
-|  [targetPort](./cloud.k8s.serviceport.targetport.md) | <code>number &#124; string</code> |  |
+|  [name](./cloud.k8s.serviceport.name.md) | <code>string</code> | The name of this port within the service. |
+|  [nodePort](./cloud.k8s.serviceport.nodeport.md) | <code>number</code> | The port on each node on which this service is exposed when type=NodePort or LoadBalancer. |
+|  [port](./cloud.k8s.serviceport.port.md) | <code>number</code> | The port that will be exposed by this service. |
+|  [protocol](./cloud.k8s.serviceport.protocol.md) | <code>string</code> | The IP protocol for this port.Supports "TCP" and "UDP".Default is TCP. |
+|  [targetPort](./cloud.k8s.serviceport.targetport.md) | <code>number &#124; string</code> | Number or name of the port to access on the pods targeted by the service. |

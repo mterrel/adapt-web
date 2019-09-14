@@ -9,6 +9,8 @@ hide_title: true
 
 ## NetworkServiceProps.name property
 
+Name of the network service
+
 <b>Signature:</b>
 
 ```typescript

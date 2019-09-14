@@ -9,6 +9,8 @@ hide_title: true
 
 ## k8s.PodSpec interface
 
+Spec for for Kubernetes Pods
+
 <b>Signature:</b>
 
 ```typescript

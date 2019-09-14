@@ -9,6 +9,8 @@ hide_title: true
 
 ## NetworkServiceScope type
 
+Network service scope used by [NetworkService](./cloud.networkservice.md)
+
 <b>Signature:</b>
 
 ```typescript

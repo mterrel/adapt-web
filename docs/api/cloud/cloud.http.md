@@ -9,6 +9,8 @@ hide_title: true
 
 ## http namespace
 
+Adapt components for HTTP
+
 <b>Signature:</b>
 
 ```typescript
@@ -23,15 +25,15 @@ export * from "./UrlRouter";
 
 |  Class | Description |
 |  --- | --- |
-|  [default](./cloud.http.default.md) |  |
-|  [HttpServer](./cloud.http.httpserver.md) |  |
-|  [UrlRouter](./cloud.http.urlrouter.md) |  |
+|  [default](./cloud.http.default.md) | Abstract component for URL routing |
+|  [HttpServer](./cloud.http.httpserver.md) | Abstract component that represents an HTTP server |
+|  [UrlRouter](./cloud.http.urlrouter.md) | Abstract component for URL routing |
 
 ## Functions
 
 |  Function | Description |
 |  --- | --- |
-|  [checkUrlEndpoints(routes)](./cloud.http.checkurlendpoints.md) |  |
+|  [checkUrlEndpoints(routes)](./cloud.http.checkurlendpoints.md) | Function to check if the routes prop for [UrlRouter](./cloud.http.urlrouter.md) components is valid |
 |  [isFilesResolved(f)](./cloud.http.isfilesresolved.md) |  |
 |  [useFilesInfo(files)](./cloud.http.usefilesinfo.md) |  |
 |  [useResolvedFiles(files)](./cloud.http.useresolvedfiles.md) |  |

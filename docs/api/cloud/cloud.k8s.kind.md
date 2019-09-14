@@ -9,6 +9,8 @@ hide_title: true
 
 ## k8s.Kind type
 
+Kubernetes Kind
+
 <b>Signature:</b>
 
 ```typescript

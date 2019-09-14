@@ -9,6 +9,7 @@ hide_title: true
 
 ## http.useFilesInfo() function
 
+
 <b>Signature:</b>
 
 ```typescript

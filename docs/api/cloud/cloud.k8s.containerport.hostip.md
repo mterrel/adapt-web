@@ -9,6 +9,8 @@ hide_title: true
 
 ## k8s.ContainerPort.hostIP property
 
+What host IP to bind the external port to.
+
 <b>Signature:</b>
 
 ```typescript

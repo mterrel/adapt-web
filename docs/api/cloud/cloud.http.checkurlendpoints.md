@@ -9,6 +9,8 @@ hide_title: true
 
 ## http.checkUrlEndpoints() function
 
+Function to check if the routes prop for [UrlRouter](./cloud.http.urlrouter.md) components is valid
+
 <b>Signature:</b>
 
 ```typescript
@@ -19,8 +21,14 @@ export declare function checkUrlEndpoints(routes: UrlRouterRoute[]): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  routes | <code>UrlRouterRoute[]</code> |  |
+|  routes | <code>UrlRouterRoute[]</code> | routes from [UrlRouter](./cloud.http.urlrouter.md) props |
 
 <b>Returns:</b>
 
 `void`
+
+## Remarks
+
+Throws and error if the routes are invalid, along with specific error details in the exception
+
+This can be used by concrete implementation of [UrlRouter](./cloud.http.urlrouter.md) to check their props for validity.

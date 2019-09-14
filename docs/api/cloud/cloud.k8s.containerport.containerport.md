@@ -9,8 +9,14 @@ hide_title: true
 
 ## k8s.ContainerPort.containerPort property
 
+Number of port to expose on the pod's IP address.
+
 <b>Signature:</b>
 
 ```typescript
 containerPort: number;
 ```
+
+## Remarks
+
+This must be a valid integer port number, `0 < x < 65536`<!-- -->.

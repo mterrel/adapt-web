@@ -9,6 +9,11 @@ hide_title: true
 
 ## Compute class
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Abstract element to represent a computational resource
+
 <b>Signature:</b>
 
 ```typescript

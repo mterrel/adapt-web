@@ -9,6 +9,7 @@ hide_title: true
 
 ## k8s.EnvVarSimple interface
 
+
 <b>Signature:</b>
 
 ```typescript
@@ -19,5 +20,5 @@ export interface EnvVarSimple
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [name](./cloud.k8s.envvarsimple.name.md) | <code>string</code> |  |
-|  [value](./cloud.k8s.envvarsimple.value.md) | <code>string</code> |  |
+|  [name](./cloud.k8s.envvarsimple.name.md) | <code>string</code> | Name of the environment variable. Must be a C\_IDENTIFIER. |
+|  [value](./cloud.k8s.envvarsimple.value.md) | <code>string</code> | Variable references $(VAR\_NAME) are expanded using the previous defined environment variables in the container and any service environment variables. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR\_NAME) syntax can be escaped with a double $$, ie: $$(VAR\_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "". |

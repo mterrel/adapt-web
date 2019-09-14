@@ -9,6 +9,8 @@ hide_title: true
 
 ## k8s.isK8sContainerElement() function
 
+Tests whether an element is a [k8s.K8sContainer](./cloud.k8s.k8scontainer.md) element
+
 <b>Signature:</b>
 
 ```typescript
@@ -19,8 +21,14 @@ export declare function isK8sContainerElement(x: AdaptElement): x is AdaptElemen
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  x | <code>AdaptElement</code> |  |
+|  x | <code>AdaptElement</code> | element to test |
 
 <b>Returns:</b>
 
 `x is AdaptElement<K8sContainerProps>`
+
+`true` if element is a [k8s.K8sContainer](./cloud.k8s.k8scontainer.md)<!-- -->, `false` otherwise
+
+## Remarks
+
+Acts as a TypeScript type assertion that will assert that `x` is `AdaptElement<K8sContainerProps>`

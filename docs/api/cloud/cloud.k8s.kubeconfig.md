@@ -9,6 +9,7 @@ hide_title: true
 
 ## k8s.Kubeconfig interface
 
+
 <b>Signature:</b>
 
 ```typescript

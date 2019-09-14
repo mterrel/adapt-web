@@ -9,6 +9,8 @@ hide_title: true
 
 ## k8s.EnvVarSimple.name property
 
+Name of the environment variable. Must be a C\_IDENTIFIER.
+
 <b>Signature:</b>
 
 ```typescript

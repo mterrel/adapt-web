@@ -9,8 +9,14 @@ hide_title: true
 
 ## k8s.ServicePort.name property
 
+The name of this port within the service.
+
 <b>Signature:</b>
 
 ```typescript
 name?: string;
 ```
+
+## Remarks
+
+This must be a DNS\_LABEL. All ports within a ServiceSpec must have unique names.This maps to the Name' field in EndpointPort objects. Optional if only one ServicePort is defined on this service.

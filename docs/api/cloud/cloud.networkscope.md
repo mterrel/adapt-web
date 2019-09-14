@@ -29,4 +29,4 @@ export declare enum NetworkScope
 
 ## Remarks
 
-The details of this type are very experimental. Use the constants  and  instead of strings to reduce the chance of breakage.
+The details of this type are very experimental. Use the constants `NetworkScope.external` and `NetworkScope.default` instead of strings to reduce the chance of breakage.

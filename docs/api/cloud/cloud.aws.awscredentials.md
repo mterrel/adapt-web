@@ -9,6 +9,10 @@ hide_title: true
 
 ## aws.AwsCredentials interface
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+
 <b>Signature:</b>
 
 ```typescript
@@ -19,6 +23,6 @@ export interface AwsCredentials
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [awsAccessKeyId](./cloud.aws.awscredentials.awsaccesskeyid.md) | <code>string</code> |  |
-|  [awsRegion](./cloud.aws.awscredentials.awsregion.md) | <code>string</code> |  |
-|  [awsSecretAccessKey](./cloud.aws.awscredentials.awssecretaccesskey.md) | <code>string</code> |  |
+|  [awsAccessKeyId](./cloud.aws.awscredentials.awsaccesskeyid.md) | <code>string</code> | <b><i>(BETA)</i></b> |
+|  [awsRegion](./cloud.aws.awscredentials.awsregion.md) | <code>string</code> | <b><i>(BETA)</i></b> |
+|  [awsSecretAccessKey](./cloud.aws.awscredentials.awssecretaccesskey.md) | <code>string</code> | <b><i>(BETA)</i></b> |

@@ -9,6 +9,9 @@ hide_title: true
 
 ## aws.CFResourceProps.tagsUnsupported property
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
 Set to true if CloudFormation or the underlying AWS resource does not support tagging
 
 <b>Signature:</b>

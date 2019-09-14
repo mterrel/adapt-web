@@ -9,6 +9,11 @@ hide_title: true
 
 ## ComputeProps interface
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Props for a [Compute](./cloud.compute.md) element
+
 <b>Signature:</b>
 
 ```typescript
@@ -19,5 +24,5 @@ export interface ComputeProps extends WithChildren
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [ip](./cloud.computeprops.ip.md) | <code>string</code> |  |
-|  [name](./cloud.computeprops.name.md) | <code>string</code> |  |
+|  [ip](./cloud.computeprops.ip.md) | <code>string</code> | <b><i>(BETA)</i></b> |
+|  [name](./cloud.computeprops.name.md) | <code>string</code> | <b><i>(BETA)</i></b> |

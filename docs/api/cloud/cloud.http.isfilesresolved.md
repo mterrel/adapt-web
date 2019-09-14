@@ -9,6 +9,7 @@ hide_title: true
 
 ## http.isFilesResolved() function
 
+
 <b>Signature:</b>
 
 ```typescript

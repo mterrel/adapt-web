@@ -9,6 +9,7 @@ hide_title: true
 
 ## k8s.Spec type
 
+
 <b>Signature:</b>
 
 ```typescript

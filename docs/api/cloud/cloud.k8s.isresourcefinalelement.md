@@ -9,6 +9,8 @@ hide_title: true
 
 ## k8s.isResourceFinalElement() function
 
+Type assertion to see if an element is both a [Resource](./cloud.k8s.resource.md) and a 
+
 <b>Signature:</b>
 
 ```typescript
@@ -19,8 +21,10 @@ export declare function isResourceFinalElement(e: AdaptElement): e is FinalDomEl
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  e | <code>AdaptElement</code> |  |
+|  e | <code>AdaptElement</code> | element to test |
 
 <b>Returns:</b>
 
 `e is FinalDomElement<ResourceProps & Adapt.BuiltinProps>`
+
+`true` if e is both a FinalElement and a [Resource](./cloud.k8s.resource.md)<!-- -->, `false` otherwise

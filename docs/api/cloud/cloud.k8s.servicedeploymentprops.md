@@ -9,6 +9,8 @@ hide_title: true
 
 ## k8s.ServiceDeploymentProps interface
 
+Props for [k8s.ServiceDeployment](./cloud.k8s.servicedeployment.md)
+
 <b>Signature:</b>
 
 ```typescript

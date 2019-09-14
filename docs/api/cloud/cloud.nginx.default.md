@@ -9,6 +9,8 @@ hide_title: true
 
 ## nginx.default() function
 
+[http.HttpServer](./cloud.http.httpserver.md) implementation based on [nginx](https://nginx.org)
+
 <b>Signature:</b>
 
 ```typescript

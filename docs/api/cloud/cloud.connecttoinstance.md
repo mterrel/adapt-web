@@ -21,7 +21,7 @@ export interface ConnectToInstance
 
 |  Method | Description |
 |  --- | --- |
-|  [connectEnv()](./cloud.connecttoinstance.connectenv.md) | Supplies the set of environment variables that have all the information needed for a consumer of a service to connect to the provider. |
+|  [connectEnv(scope)](./cloud.connecttoinstance.connectenv.md) | Supplies the set of environment variables that have all the information needed for a consumer of a service to connect to the provider. |
 
 ## Remarks
 

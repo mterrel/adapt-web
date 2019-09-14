@@ -9,6 +9,8 @@ hide_title: true
 
 ## k8s.ServicePort.protocol property
 
+The IP protocol for this port.Supports "TCP" and "UDP".Default is TCP.
+
 <b>Signature:</b>
 
 ```typescript

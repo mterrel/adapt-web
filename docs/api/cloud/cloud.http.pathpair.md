@@ -9,6 +9,7 @@ hide_title: true
 
 ## http.PathPair interface
 
+
 <b>Signature:</b>
 
 ```typescript

@@ -9,6 +9,7 @@ hide_title: true
 
 ## k8s.computeNamespaceFromMetadata() function
 
+
 <b>Signature:</b>
 
 ```typescript

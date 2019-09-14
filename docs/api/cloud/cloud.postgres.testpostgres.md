@@ -33,7 +33,7 @@ Implements the [ConnectToInstance](./cloud.connecttoinstance.md) interface.
 
 Instance methods:
 
-- `connectEnv(): Environment | undefined`
+- `connectEnv(scope?: NetworkScope): Environment | undefined`
 
 Returns the set of environment variables that have all the information needed for a Postgres client to connect to this database. The returned environment variables are named such that some common Postgres clients can use them directly:
 

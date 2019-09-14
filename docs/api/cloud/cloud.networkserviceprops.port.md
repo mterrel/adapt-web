@@ -9,6 +9,8 @@ hide_title: true
 
 ## NetworkServiceProps.port property
 
+Port on which clients connect to this service
+
 <b>Signature:</b>
 
 ```typescript

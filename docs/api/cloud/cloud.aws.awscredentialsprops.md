@@ -9,6 +9,10 @@ hide_title: true
 
 ## aws.AwsCredentialsProps interface
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+
 <b>Signature:</b>
 
 ```typescript
@@ -19,6 +23,6 @@ export interface AwsCredentialsProps
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [awsAccessKeyId](./cloud.aws.awscredentialsprops.awsaccesskeyid.md) | <code>string</code> |  |
-|  [awsRegion](./cloud.aws.awscredentialsprops.awsregion.md) | <code>string</code> |  |
-|  [awsSecretAccessKey](./cloud.aws.awscredentialsprops.awssecretaccesskey.md) | <code>string</code> |  |
+|  [awsAccessKeyId](./cloud.aws.awscredentialsprops.awsaccesskeyid.md) | <code>string</code> | <b><i>(BETA)</i></b> |
+|  [awsRegion](./cloud.aws.awscredentialsprops.awsregion.md) | <code>string</code> | <b><i>(BETA)</i></b> |
+|  [awsSecretAccessKey](./cloud.aws.awscredentialsprops.awssecretaccesskey.md) | <code>string</code> | <b><i>(BETA)</i></b> |

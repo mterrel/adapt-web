@@ -9,8 +9,14 @@ hide_title: true
 
 ## k8s.ServiceSpec.healthCheckNodePort property
 
+healthCheckNodePort specifies the healthcheck nodePort for the service.
+
 <b>Signature:</b>
 
 ```typescript
 healthCheckNodePort?: number;
 ```
+
+## Remarks
+
+If not specified, HealthCheckNodePort is created by the service api backend with the allocated nodePort. Will use user-specified nodePort value if specified by the client. Only effects when Type is set to LoadBalancer and ExternalTrafficPolicy is set to Local.

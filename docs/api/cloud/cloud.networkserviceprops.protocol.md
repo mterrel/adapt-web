@@ -9,6 +9,8 @@ hide_title: true
 
 ## NetworkServiceProps.protocol property
 
+Protocol used by the network service
+
 <b>Signature:</b>
 
 ```typescript

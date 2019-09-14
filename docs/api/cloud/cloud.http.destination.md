@@ -9,6 +9,7 @@ hide_title: true
 
 ## http.Destination type
 
+
 <b>Signature:</b>
 
 ```typescript

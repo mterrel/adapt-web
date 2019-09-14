@@ -9,6 +9,7 @@ hide_title: true
 
 ## http.FilesImageResolved interface
 
+
 <b>Signature:</b>
 
 ```typescript

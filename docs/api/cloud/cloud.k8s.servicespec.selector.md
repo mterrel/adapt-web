@@ -9,8 +9,14 @@ hide_title: true
 
 ## k8s.ServiceSpec.selector property
 
+Route service traffic to pods with label keys and values matching this selector.
+
 <b>Signature:</b>
 
 ```typescript
 selector?: object;
 ```
+
+## Remarks
+
+If empty or not present, the service is assumed to have an external process managing its endpoints, which Kubernetes will not modify.Only applies to types ClusterIP, NodePort, and LoadBalancer. Ignored if type is ExternalName.More info: [https://kubernetes.io/docs/concepts/services-networking/service/](https://kubernetes.io/docs/concepts/services-networking/service/)

@@ -9,6 +9,8 @@ hide_title: true
 
 ## k8s.ContainerPort.protocol property
 
+Protocol for port. Must be UDP or TCP. Defaults to "TCP".
+
 <b>Signature:</b>
 
 ```typescript

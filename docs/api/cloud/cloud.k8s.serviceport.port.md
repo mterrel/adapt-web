@@ -9,6 +9,8 @@ hide_title: true
 
 ## k8s.ServicePort.port property
 
+The port that will be exposed by this service.
+
 <b>Signature:</b>
 
 ```typescript

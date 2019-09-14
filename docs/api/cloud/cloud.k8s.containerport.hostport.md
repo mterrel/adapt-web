@@ -9,8 +9,14 @@ hide_title: true
 
 ## k8s.ContainerPort.hostPort property
 
+Number of port to expose on the host.
+
 <b>Signature:</b>
 
 ```typescript
 hostPort?: number;
 ```
+
+## Remarks
+
+If specified, this must be a valid integer port number, `0 < x < 65536`<!-- -->. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.

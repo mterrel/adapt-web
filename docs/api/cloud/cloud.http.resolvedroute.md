@@ -9,6 +9,7 @@ hide_title: true
 
 ## http.ResolvedRoute interface
 
+
 <b>Signature:</b>
 
 ```typescript

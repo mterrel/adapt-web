@@ -9,6 +9,8 @@ hide_title: true
 
 ## http.default class
 
+Abstract component for URL routing
+
 <b>Signature:</b>
 
 ```typescript

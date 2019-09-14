@@ -9,8 +9,14 @@ hide_title: true
 
 ## k8s.ServiceSpec.clusterIP property
 
+Cluster IP for a [k8s.Service()](./cloud.k8s.service.md)
+
 <b>Signature:</b>
 
 ```typescript
 clusterIP?: string;
 ```
+
+## Remarks
+
+clusterIP is the IP address of the service and is usually assigned randomly by the master. If an address is specified manually and is not in use by others, it will be allocated to the service; otherwise, creation of the service will fail. This field can not be changed through updates. Valid values are "None", empty string (""), or a valid IP address. "None" can be specified for headless services when proxying is not required. Only applies to types ClusterIP, NodePort, and LoadBalancer. Ignored if type is ExternalName. More info: [https://kubernetes.io/docs/concepts/services-networking/service/\#virtual-ips-and-service-proxies](https://kubernetes.io/docs/concepts/services-networking/service/#virtual-ips-and-service-proxies)

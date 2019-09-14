@@ -9,6 +9,8 @@ hide_title: true
 
 ## k8s.ServiceProps.config property
 
+Legal configuration loaded from kubeconfig
+
 <b>Signature:</b>
 
 ```typescript

@@ -9,6 +9,8 @@ hide_title: true
 
 ## NetworkServiceProps.ip property
 
+IP address of the network service
+
 <b>Signature:</b>
 
 ```typescript

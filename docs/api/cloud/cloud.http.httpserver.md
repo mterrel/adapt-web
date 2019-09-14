@@ -9,6 +9,8 @@ hide_title: true
 
 ## http.HttpServer class
 
+Abstract component that represents an HTTP server
+
 <b>Signature:</b>
 
 ```typescript

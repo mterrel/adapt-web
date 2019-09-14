@@ -9,6 +9,7 @@ hide_title: true
 
 ## k8s.ContainerPort interface
 
+
 <b>Signature:</b>
 
 ```typescript
@@ -19,8 +20,8 @@ export interface ContainerPort
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [containerPort](./cloud.k8s.containerport.containerport.md) | <code>number</code> |  |
-|  [hostIP](./cloud.k8s.containerport.hostip.md) | <code>string</code> |  |
-|  [hostPort](./cloud.k8s.containerport.hostport.md) | <code>number</code> |  |
-|  [name](./cloud.k8s.containerport.name.md) | <code>string</code> |  |
-|  [protocol](./cloud.k8s.containerport.protocol.md) | <code>string</code> |  |
+|  [containerPort](./cloud.k8s.containerport.containerport.md) | <code>number</code> | Number of port to expose on the pod's IP address. |
+|  [hostIP](./cloud.k8s.containerport.hostip.md) | <code>string</code> | What host IP to bind the external port to. |
+|  [hostPort](./cloud.k8s.containerport.hostport.md) | <code>number</code> | Number of port to expose on the host. |
+|  [name](./cloud.k8s.containerport.name.md) | <code>string</code> | A unique-within-pod name for the container |
+|  [protocol](./cloud.k8s.containerport.protocol.md) | <code>string</code> | Protocol for port. Must be UDP or TCP. Defaults to "TCP". |

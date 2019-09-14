@@ -9,6 +9,7 @@ hide_title: true
 
 ## http.useResolvedFiles() function
 
+
 <b>Signature:</b>
 
 ```typescript

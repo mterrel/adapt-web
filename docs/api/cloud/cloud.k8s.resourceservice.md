@@ -9,6 +9,7 @@ hide_title: true
 
 ## k8s.ResourceService interface
 
+
 <b>Signature:</b>
 
 ```typescript

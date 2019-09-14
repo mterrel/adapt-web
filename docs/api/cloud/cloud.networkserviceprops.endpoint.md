@@ -9,6 +9,8 @@ hide_title: true
 
 ## NetworkServiceProps.endpoint property
 
+Endpoint that provides the service
+
 <b>Signature:</b>
 
 ```typescript

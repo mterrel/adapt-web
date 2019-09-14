@@ -16,3 +16,7 @@ An abstract component that represents a group of components that implements a se
 ```typescript
 export declare abstract class Service extends Component<ServiceProps, {}> 
 ```
+
+## Remarks
+
+Typical children will be [NetworkService](./cloud.networkservice.md) and [Container](./cloud.container.md) elements.

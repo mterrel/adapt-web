@@ -9,6 +9,8 @@ hide_title: true
 
 ## nginx namespace
 
+Various Adapt Components based on [nginx](https://nginx.org)
+
 <b>Signature:</b>
 
 ```typescript
@@ -21,12 +23,12 @@ export * from "./UrlRouter";
 
 |  Function | Description |
 |  --- | --- |
-|  [default(propsIn)](./cloud.nginx.default.md) |  |
-|  [HttpServer(propsIn)](./cloud.nginx.httpserver.md) |  |
-|  [UrlRouter(propsIn)](./cloud.nginx.urlrouter.md) |  |
+|  [default(propsIn)](./cloud.nginx.default.md) | [http.HttpServer](./cloud.http.httpserver.md) implementation based on [nginx](https://nginx.org) |
+|  [HttpServer(propsIn)](./cloud.nginx.httpserver.md) | [http.HttpServer](./cloud.http.httpserver.md) implementation based on [nginx](https://nginx.org) |
+|  [UrlRouter(propsIn)](./cloud.nginx.urlrouter.md) | [http.UrlRouter](./cloud.http.urlrouter.md) implementation based on [nginx](https://nginx.org) |
 
 ## Interfaces
 
 |  Interface | Description |
 |  --- | --- |
-|  [UrlRouterProps](./cloud.nginx.urlrouterprops.md) |  |
+|  [UrlRouterProps](./cloud.nginx.urlrouterprops.md) | Props for [nginx.UrlRouter()](./cloud.nginx.urlrouter.md) |

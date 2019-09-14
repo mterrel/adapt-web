@@ -9,6 +9,8 @@ hide_title: true
 
 ## k8s.EnvVarFrom.valueFrom property
 
+Source for the environment variable's value. Cannot be used if value is not empty.
+
 <b>Signature:</b>
 
 ```typescript

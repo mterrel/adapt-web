@@ -9,6 +9,8 @@ hide_title: true
 
 ## nginx.UrlRouterProps interface
 
+Props for [nginx.UrlRouter()](./cloud.nginx.urlrouter.md)
+
 <b>Signature:</b>
 
 ```typescript

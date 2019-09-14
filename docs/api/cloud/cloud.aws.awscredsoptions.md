@@ -9,6 +9,10 @@ hide_title: true
 
 ## aws.AwsCredsOptions interface
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+
 <b>Signature:</b>
 
 ```typescript
@@ -19,4 +23,4 @@ export interface AwsCredsOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [credsFile](./cloud.aws.awscredsoptions.credsfile.md) | <code>string</code> |  |
+|  [credsFile](./cloud.aws.awscredsoptions.credsfile.md) | <code>string</code> | <b><i>(BETA)</i></b> |

@@ -9,6 +9,7 @@ hide_title: true
 
 ## http.FilesInfo interface
 
+
 <b>Signature:</b>
 
 ```typescript

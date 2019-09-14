@@ -9,8 +9,14 @@ hide_title: true
 
 ## k8s.ServiceSpec.loadBalancerIP property
 
+Only applies to Service Type: LoadBalancer LoadBalancer will get created with the IP specified in this field.
+
 <b>Signature:</b>
 
 ```typescript
 loadBalancerIP?: string;
 ```
+
+## Remarks
+
+This feature depends on whether the underlying cloud-provider supports specifying the loadBalancerIP when a load balancer is created. This field will be ignored if the cloud-provider does not support the feature.

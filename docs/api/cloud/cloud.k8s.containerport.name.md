@@ -9,8 +9,14 @@ hide_title: true
 
 ## k8s.ContainerPort.name property
 
+A unique-within-pod name for the container
+
 <b>Signature:</b>
 
 ```typescript
 name?: string;
 ```
+
+## Remarks
+
+If specified, this must be an IANA\_SVC\_NAME and unique within the pod. Each named port in a pod must have a unique name. Name for the port that can be referred to by services.

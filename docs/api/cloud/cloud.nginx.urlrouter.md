@@ -9,6 +9,8 @@ hide_title: true
 
 ## nginx.UrlRouter() function
 
+[http.UrlRouter](./cloud.http.urlrouter.md) implementation based on [nginx](https://nginx.org)
+
 <b>Signature:</b>
 
 ```typescript

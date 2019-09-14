@@ -9,6 +9,8 @@ hide_title: true
 
 ## isNetworkServiceElement() function
 
+Type assertion that tests an element to see if it is a [NetworkService](./cloud.networkservice.md)
+
 <b>Signature:</b>
 
 ```typescript
@@ -19,8 +21,14 @@ export declare function isNetworkServiceElement(el: AdaptElement): el is AdaptEl
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  el | <code>AdaptElement</code> |  |
+|  el | <code>AdaptElement</code> | the element to be tested |
 
 <b>Returns:</b>
 
 `el is AdaptElement<NetworkServiceProps>`
+
+`true` if `el` is a NetworkService, `false` otherwise
+
+## Remarks
+
+Also functions as a type assertion for Typescript, so the arguments type will be adjusted to reflect that it is an `AdaptElement<NetworkServiceProps>` instead of a generic `AdaptElement`<!-- -->.

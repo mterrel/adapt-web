@@ -9,6 +9,8 @@ hide_title: true
 
 ## k8s.Pod class
 
+Component for Kubernetes Pods
+
 <b>Signature:</b>
 
 ```typescript

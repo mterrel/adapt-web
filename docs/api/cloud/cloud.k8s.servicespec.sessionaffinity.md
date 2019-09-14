@@ -9,8 +9,14 @@ hide_title: true
 
 ## k8s.ServiceSpec.sessionAffinity property
 
+Used to maintain session affinity
+
 <b>Signature:</b>
 
 ```typescript
 sessionAffinity?: string;
 ```
+
+## Remarks
+
+Supports "ClientIP" and "None".Used to maintain session affinity. Enable client IP based session affinity.Must be ClientIP or None.Defaults to None.More info: [https://kubernetes.io/docs/concepts/services-networking/service/\#virtual-ips-and-service-proxies](https://kubernetes.io/docs/concepts/services-networking/service/#virtual-ips-and-service-proxies)

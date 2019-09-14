@@ -9,8 +9,14 @@ hide_title: true
 
 ## k8s.ServiceSpec.ports property
 
+The list of ports that are exposed by this service.
+
 <b>Signature:</b>
 
 ```typescript
 ports?: ServicePort[];
 ```
+
+## Remarks
+
+More info: [https://kubernetes.io/docs/concepts/services-networking/service/\#virtual-ips-and-service-proxies](https://kubernetes.io/docs/concepts/services-networking/service/#virtual-ips-and-service-proxies) patch strategy: merge patch merge key: port

@@ -9,6 +9,8 @@ hide_title: true
 
 ## NetworkServiceProps.scope property
 
+Scope of the service
+
 <b>Signature:</b>
 
 ```typescript

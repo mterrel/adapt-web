@@ -9,6 +9,10 @@ hide_title: true
 
 ## aws.EIPAssociationProps interface
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+
 <b>Signature:</b>
 
 ```typescript
@@ -19,8 +23,8 @@ export interface EIPAssociationProps extends WithCredentials
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [AllocationId](./cloud.aws.eipassociationprops.allocationid.md) | <code>string</code> |  |
-|  [EIP](./cloud.aws.eipassociationprops.eip.md) | <code>string</code> |  |
-|  [InstanceId](./cloud.aws.eipassociationprops.instanceid.md) | <code>string &#124; Handle</code> |  |
-|  [NetworkInterfaceId](./cloud.aws.eipassociationprops.networkinterfaceid.md) | <code>string</code> |  |
-|  [PrivateIpAddress](./cloud.aws.eipassociationprops.privateipaddress.md) | <code>string</code> |  |
+|  [AllocationId](./cloud.aws.eipassociationprops.allocationid.md) | <code>string</code> | <b><i>(BETA)</i></b> |
+|  [EIP](./cloud.aws.eipassociationprops.eip.md) | <code>string</code> | <b><i>(BETA)</i></b> |
+|  [InstanceId](./cloud.aws.eipassociationprops.instanceid.md) | <code>string &#124; Handle</code> | <b><i>(BETA)</i></b> |
+|  [NetworkInterfaceId](./cloud.aws.eipassociationprops.networkinterfaceid.md) | <code>string</code> | <b><i>(BETA)</i></b> |
+|  [PrivateIpAddress](./cloud.aws.eipassociationprops.privateipaddress.md) | <code>string</code> | <b><i>(BETA)</i></b> |

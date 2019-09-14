@@ -9,6 +9,8 @@ hide_title: true
 
 ## postgres.TestPostgresProps interface
 
+Props for the [postgres.TestPostgres()](./cloud.postgres.testpostgres.md) component
+
 <b>Signature:</b>
 
 ```typescript

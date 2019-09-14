@@ -9,6 +9,7 @@ hide_title: true
 
 ## k8s.Metadata interface
 
+
 <b>Signature:</b>
 
 ```typescript

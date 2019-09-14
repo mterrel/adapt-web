@@ -9,6 +9,7 @@ hide_title: true
 
 ## http.FilesResolved type
 
+
 <b>Signature:</b>
 
 ```typescript

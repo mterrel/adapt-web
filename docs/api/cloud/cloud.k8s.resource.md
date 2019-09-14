@@ -9,6 +9,8 @@ hide_title: true
 
 ## k8s.Resource class
 
+Primitive Component recognized by the k8s plugin to represent resources
+
 <b>Signature:</b>
 
 ```typescript

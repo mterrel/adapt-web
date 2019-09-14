@@ -9,6 +9,7 @@ hide_title: true
 
 ## docker.DockerContainerStatus interface
 
+
 <b>Signature:</b>
 
 ```typescript

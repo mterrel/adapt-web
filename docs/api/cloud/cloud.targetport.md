@@ -9,6 +9,8 @@ hide_title: true
 
 ## targetPort() function
 
+Computes the target port that will be used for a NetworkService
+
 <b>Signature:</b>
 
 ```typescript
@@ -19,8 +21,10 @@ export declare function targetPort(elemOrProps: NetworkServiceProps | AdaptEleme
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  elemOrProps | <code>NetworkServiceProps &#124; AdaptElement</code> |  |
+|  elemOrProps | <code>NetworkServiceProps &#124; AdaptElement</code> | a [NetworkService](./cloud.networkservice.md) element or its props |
 
 <b>Returns:</b>
 
 `ServicePort`
+
+The target port of the [NetworkService](./cloud.networkservice.md) object

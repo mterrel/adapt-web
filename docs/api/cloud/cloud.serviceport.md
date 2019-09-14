@@ -9,6 +9,8 @@ hide_title: true
 
 ## ServicePort type
 
+Port for [NetworkService](./cloud.networkservice.md)
+
 <b>Signature:</b>
 
 ```typescript

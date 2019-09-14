@@ -9,8 +9,14 @@ hide_title: true
 
 ## k8s.ServiceSpec.publishNotReadyAddresses property
 
+publishNotReadyAddresses, when set to true, indicates that DNS implementations must publish the notReadyAddresses of subsets for the Endpoints associated with the Service.
+
 <b>Signature:</b>
 
 ```typescript
 publishNotReadyAddresses?: boolean;
 ```
+
+## Remarks
+
+The default value is false. The primary use case for setting this field is to use a StatefulSet's Headless Service to propagate SRV records for its Pods without respect to their readiness for purpose of peer discovery.

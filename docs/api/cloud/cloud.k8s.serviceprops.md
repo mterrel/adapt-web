@@ -9,6 +9,7 @@ hide_title: true
 
 ## k8s.ServiceProps interface
 
+
 <b>Signature:</b>
 
 ```typescript
@@ -19,5 +20,5 @@ export interface ServiceProps extends ServiceSpec
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [config](./cloud.k8s.serviceprops.config.md) | <code>ClusterInfo</code> |  |
+|  [config](./cloud.k8s.serviceprops.config.md) | <code>ClusterInfo</code> | Legal configuration loaded from kubeconfig |
 |  [selector](./cloud.k8s.serviceprops.selector.md) | <code>Handle &#124; object</code> |  |

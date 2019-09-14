@@ -9,6 +9,7 @@ hide_title: true
 
 ## k8s.ResourceProps type
 
+
 <b>Signature:</b>
 
 ```typescript

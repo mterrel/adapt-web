@@ -9,6 +9,7 @@ hide_title: true
 
 ## k8s.EnvVarFrom interface
 
+
 <b>Signature:</b>
 
 ```typescript
@@ -19,4 +20,4 @@ export interface EnvVarFrom
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [valueFrom](./cloud.k8s.envvarfrom.valuefrom.md) | <code>any</code> |  |
+|  [valueFrom](./cloud.k8s.envvarfrom.valuefrom.md) | <code>any</code> | Source for the environment variable's value. Cannot be used if value is not empty. |

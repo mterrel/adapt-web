@@ -14,17 +14,28 @@ Supplies the set of environment variables that have all the information needed f
 <b>Signature:</b>
 
 ```typescript
-connectEnv(): Environment | undefined;
+connectEnv(scope?: NetworkScope): Environment | undefined;
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  scope | <code>NetworkScope</code> | Scope for which connection information is desired |
+
 <b>Returns:</b>
 
 `Environment | undefined`
+
+Environment with connection information, undefined if info not yet ready.
 
 ## Remarks
 
 This may include information like network hostname(s), port(s), credentials, namespace, or any other service-specific information.
 
 In cases where the service has not been deployed yet or the connection information is not yet available for any reason, the method will return `undefined`<!-- -->.
+
+If a scope for which there will never be connection information is requested, this method should throw an appropriate error. For example if `NetworkScope.external` is requested for a service only reachable from within a cluster, this method should throw.
 
 Providers are discouraged from using environment variable names that are too generic or are likely to conflict with other environment variables that may already be in use. For example, avoid names like `HOST` and `USERNAME`<!-- -->. Instead, use names that are likely to be unique to the type of service so that a consumer can use more than one type of service without causing naming conflicts.
 

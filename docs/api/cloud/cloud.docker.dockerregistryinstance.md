@@ -9,6 +9,7 @@ hide_title: true
 
 ## docker.DockerRegistryInstance interface
 
+
 <b>Signature:</b>
 
 ```typescript

@@ -9,6 +9,10 @@ hide_title: true
 
 ## aws.EC2Props interface
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+
 <b>Signature:</b>
 
 ```typescript
@@ -19,8 +23,8 @@ export interface EC2Props extends ComputeProps, WithChildren, WithCredentials
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [imageId](./cloud.aws.ec2props.imageid.md) | <code>string</code> |  |
-|  [instanceType](./cloud.aws.ec2props.instancetype.md) | <code>string</code> |  |
-|  [securityGroups](./cloud.aws.ec2props.securitygroups.md) | <code>string[]</code> |  |
-|  [sshKeyName](./cloud.aws.ec2props.sshkeyname.md) | <code>string</code> |  |
-|  [userData](./cloud.aws.ec2props.userdata.md) | <code>string</code> |  |
+|  [imageId](./cloud.aws.ec2props.imageid.md) | <code>string</code> | <b><i>(BETA)</i></b> |
+|  [instanceType](./cloud.aws.ec2props.instancetype.md) | <code>string</code> | <b><i>(BETA)</i></b> |
+|  [securityGroups](./cloud.aws.ec2props.securitygroups.md) | <code>string[]</code> | <b><i>(BETA)</i></b> |
+|  [sshKeyName](./cloud.aws.ec2props.sshkeyname.md) | <code>string</code> | <b><i>(BETA)</i></b> |
+|  [userData](./cloud.aws.ec2props.userdata.md) | <code>string</code> | <b><i>(BETA)</i></b> |
