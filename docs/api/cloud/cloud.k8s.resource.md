@@ -14,7 +14,7 @@ Primitive Component recognized by the k8s plugin to represent resources
 <b>Signature:</b>
 
 ```typescript
-export declare class Resource extends PrimitiveComponent<ResourceProps> 
+export declare class Resource extends Action<ResourceProps> 
 ```
 
 ## Constructors
@@ -28,10 +28,13 @@ export declare class Resource extends PrimitiveComponent<ResourceProps>
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [deployedWhen](./cloud.k8s.resource.deployedwhen.md) |  | <code>(goalStatus: Adapt.GoalStatus, helpers: Adapt.DeployHelpers) =&gt; Promise&lt;true &#124; Adapt.Waiting &#124; Adapt.Waiting[]&gt;</code> |  |
+|  [manifest\_](./cloud.k8s.resource.manifest_.md) |  | <code>Manifest</code> |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
+|  [action(op, ctx)](./cloud.k8s.resource.action.md) |  |  |
+|  [shouldAct(op, ctx)](./cloud.k8s.resource.shouldact.md) |  |  |
 |  [status(observe, buildData)](./cloud.k8s.resource.status.md) |  |  |
 |  [validate()](./cloud.k8s.resource.validate.md) |  |  |
