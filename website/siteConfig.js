@@ -97,9 +97,9 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'getting_started/index', label: 'Docs'},
+    {blog: true, label: 'Blog'},
     {page: 'help', label: 'Help'},
     {href: repoUrl, label: githubHeader(this)},
-    //{blog: true, label: 'Blog'},
   ],
 
   // If you have users set above, you add it here:
@@ -162,6 +162,9 @@ const siteConfig = {
   // Button to share on twitter on blog pages
   twitter: true,
   blogSidebarCount: 'ALL',
+  blogSidebarTitle: {
+    all: 'Adapt Blog'
+  },
 
   // Open Graph and Twitter card images.
   ogImage: 'img/logo_stacked.svg',

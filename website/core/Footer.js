@@ -10,16 +10,10 @@ const { GitHubLink, GitHubStar, GitterButton, Twitter } = require('adapt-web-com
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
-function BlogLink(props) {
-  const config = props.config;
+function BlogLink({ config }) {
   if (!config) return null;
 
-  for (const link of config.headerLinks) {
-    if (link.blog) {
-      return <a href={`${config.baseUrl}blog`}>{link.label}</a>;
-    }
-  }
-  return null;
+  return <a href={`${config.baseUrl}blog`}>Adapt Blog</a>;
 }
 
 const Credits = () => (
