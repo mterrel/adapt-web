@@ -159,6 +159,9 @@ const siteConfig = {
   // No .html extensions for paths.
   cleanUrl: true,
 
+  // Twitter username for the site
+  twitterUsername: 'adaptjs',
+
   // Button to share on twitter on blog pages
   twitter: true,
   blogSidebarCount: 'ALL',
