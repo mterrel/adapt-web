@@ -33,7 +33,7 @@ Too bad!
 With proper Infrastructure as Code, you should have an abstract, reusable, component that knows how to blue-green deploy anything that meets a certain interface.
 And you should then be able to instantiate that blue-green component, and specify what you want to blue-green ([Kubernetes](https://kubernetes.io) [Pods](https://kubernetes.io/docs/concepts/workloads/pods/pod/), [AWS EC2 Instances](https://aws.amazon.com/ec2/), etc.). Just like you do in real code.
 
-We set out to address this problem head on by creating a system that lets you specify your entire application architecture with reusable library components, while still making it easy to stitch together custom components when you need them. You know, just like you do with actual code.
+We set out to address this problem head on by creating a open source system that lets you specify your entire application architecture with reusable library components, while still making it easy to stitch together custom components when you need them. You know, just like you do with actual code.
 
 We wanted these libraries to be modular, composable and reusable.
 We wanted everyone to be able to contribute components so that you can stitch the best ones together with your own to create your own unique architecture.
