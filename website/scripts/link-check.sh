@@ -88,8 +88,6 @@ checkLinkCommand() {
     broken-link-checker -r --filter-level 3 \
         --exclude localhost:8080 \
         --exclude localhost:3000 \
-        --exclude https://adaptjs.org/blog/atom.xml \
-        --exclude https://adaptjs.org/blog/feed.xml \
         http://localhost:${SERVER_PORT} || \
         echo "Link check FAILED"
 }

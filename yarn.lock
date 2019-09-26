@@ -968,10 +968,10 @@
     "@types/unist" "*"
     "@types/vfile-message" "*"
 
-"@unboundedsystems/docusaurus@1.12.0-unb.1":
-  version "1.12.0-unb.1"
-  resolved "https://registry.yarnpkg.com/@unboundedsystems/docusaurus/-/docusaurus-1.12.0-unb.1.tgz#311fc5bd0ff0656232625860f73acb1f5474b33b"
-  integrity sha512-Vjs8Wto7Jo6iBRH60QNZ5FhJydhSP3pRILKT6yhnyVLQFNcTIJgpZjCsEitMHRzMkiok9QVgTf/fbTv3yA4sOQ==
+"@unboundedsystems/docusaurus@1.12.0-unb.3":
+  version "1.12.0-unb.3"
+  resolved "https://registry.yarnpkg.com/@unboundedsystems/docusaurus/-/docusaurus-1.12.0-unb.3.tgz#9432c1e5452267a1f6037660776affc125d613e4"
+  integrity sha512-S7v/5dU2EuzmQFiUk+VM1zK3bdyT3fV0p+mfIt2pOrkqcErVMfiaSpJr7cGpW1/2gUqzk4E4qgL4BLQStgbipQ==
   dependencies:
     "@babel/core" "^7.5.5"
     "@babel/plugin-proposal-class-properties" "^7.5.5"
@@ -3474,7 +3474,7 @@ gauge@~2.7.3:
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
 
-gaze@^1.1.3, gaze@unboundedsystems/gaze#stack_size_fix:
+gaze@^1.1.3:
   version "1.1.3"
   resolved "https://codeload.github.com/unboundedsystems/gaze/tar.gz/004a0bacabdab4bd221d9ce2bf96e363025bbef6"
   dependencies:
