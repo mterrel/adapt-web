@@ -161,7 +161,7 @@ setUseBackupZone(!mainZoneAvailable);
 // ... render conditionally using the mainZoneAvailable flag
 ```
 
-You would also be able to build out components that encapsulate complex functionality, like `BlueGreen` deployment, by periodically updating the state that controls how much blue you have vs. green:
+You would also be able to build out components that encapsulate complex functionality, like blue-green deployment, by periodically updating the state that controls how much blue you have vs. green:
 
 ```tsx
 const [ blueAmount, setBlueAmount ] = useState(1);
@@ -174,9 +174,9 @@ setGreenAmount(fractionGreen);
 ```
 
 You could even monitor data from other applications.
-For example, the `BlueGreen` component could wait for a manual approval from a code review application before continuing to roll out more than 5% of systems with new code.
+For example, the `<BlueGreen>` component could wait for a manual approval from a code review application before continuing to roll out more than 5% of systems with new code.
 
-Of course, all this functionality and complexity would be available in a `BlueGreen` component from a library, much like `Sequence` in the example above, so you wouldn't have to implement complex features yourself.
+Of course, all this functionality and complexity would be available in a `<BlueGreen>` component from a library, much like `Sequence` in the example above, so you wouldn't have to implement complex features yourself.
 
 ## But wait, there's more...
 
@@ -184,11 +184,11 @@ We think that combining simple, composable, declarative specifications, along wi
 But there are other deployment challenges that Adapt addresses too.
 
 Adapt allows you to create a single application architecture specification, then use style sheets to deploy that architecture using different underlying components for each of your environments.
-For example, in your `dev` style sheet, you can replace `<Postgres>` in the above example with a `<TestPosgres>` component that starts a Docker container and preloads some test data.
+For example, in your `dev` style sheet, you can replace `<Postgres>` in the above example with a `<TestPostgres>` component that starts a Docker container and preloads some test data.
 Your `prod` style sheet replaces it with a `<PostgresProvider>` component that points to a production database that is managed outside Adapt.
 In a more complex application, you could even style in a custom version of Adapt's `<ReactApp>` component, which normally just deploys to a docker container, with one that builds the React application, pushes it to [S3](https://aws.amazon.com/s3) and uses [AWS cloud front](https://aws.amazon.com/cloudfront/) as a [CDN](https://en.wikipedia.org/wiki/Content_delivery_network).
 
-> In a more complex application, you could even style in a custom version of Adapt's `<ReactApp>` component that normally just deploys to a docker container, with one that builds the React application, pushes it to S3 and uses AWS cloud front as a [CDN].
+> In a more complex application, you could even style in a custom version of Adapt's `<ReactApp>` component that normally just deploys to a docker container, with one that builds the React application, pushes it to S3 and uses AWS cloud front as a CDN.
 
 Of course, Adapt also deals with all the typical issues you'd expect a deployment system to handle, like keeping track of each deployment's history and state, deployment logs, and as time goes on much more.
 
