@@ -187,6 +187,11 @@ const siteConfig = {
     html: true,
   },
 
+  commentSystem: {
+    type: "commento",
+    blog: true,
+  },
+
   ...analytics,
 
   algolia: {
