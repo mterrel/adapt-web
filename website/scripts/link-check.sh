@@ -7,6 +7,8 @@ WEBSITE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
 NGINX_CONF_SRC="${WEBSITE_DIR}/scripts/static_nginx.conf"
 NGINX_CONF="${WEBSITE_DIR}/build/nginx.conf"
 WEBSITE_ROOT="${WEBSITE_DIR}/build/adapt"
+SERVER_NAME="nginx-link-check"
+NET_NAME="link_check"
 
 onExit() {
     if [[ -n "${STOP_SERVER[@]}" ]]; then
@@ -16,8 +18,31 @@ onExit() {
 }
 trap onExit INT TERM HUP EXIT
 
+useDocker() {
+    docker info >& /dev/null
+}
+
 checkServer() {
     curl --head http://localhost:${SERVER_PORT}/ >& /dev/null
+}
+
+createNetwork() {
+    # Don't create if it already exists
+    docker network inspect "${NET_NAME}" >/dev/null && return
+    docker network create "${NET_NAME}"
+}
+
+selfContainer() {
+    head -1 /proc/self/cgroup | cut -d/ -f 3
+}
+
+connectToNetwork() {
+    local SELF=$(selfContainer)
+    if ! useDocker || [ -z "${SELF}" ]; then
+        return
+    fi
+
+    docker network connect "${NET_NAME}" "${SELF}" || true
 }
 
 # Replace template params in the config
@@ -27,7 +52,7 @@ checkServer() {
 writeConfig() {
     CONF=$(<"${NGINX_CONF_SRC}")
     CONF="${CONF//WEBSITE_ROOT/$1}"
-    CONF="${CONF//SERVER_PORT/$2}"
+    CONF="${CONF//SERVER_PORT/${SERVER_PORT}}"
     echo "${CONF}" > "${NGINX_CONF}"
 }
 
@@ -38,24 +63,31 @@ nginxLocal() {
         return 1;
     fi
 
-    writeConfig "${WEBSITE_ROOT}" "${SERVER_PORT}"
+    writeConfig "${WEBSITE_ROOT}"
 
     NGINX=(nginx -c "${NGINX_CONF}")
     echo Running: ${NGINX[@]}
     "${NGINX[@]}"
     STOP_SERVER=(nginx -c "${NGINX_CONF}" -s quit)
+    # Since we're running the nginx server locally, set to this
+    # container's hostname for the case that the client runs in a
+    # container too. Will be overwritten if client is also local.
+    SERVER_NAME=$(hostname)
 }
 
 nginxContainer() {
     local NGINX CTR
 
-    writeConfig /www 80
+    createNetwork
+
+    writeConfig /www
 
     NGINX=(
-        docker run --rm --name nginx-link-check -d
+        docker run --rm --name "${SERVER_NAME}" -d
         -v "${WEBSITE_ROOT}:/www:ro"
         -v "${NGINX_CONF}:/etc/nginx/nginx.conf:ro"
-        -p ${SERVER_PORT}:80
+        -p ${SERVER_PORT}:${SERVER_PORT}
+        --network "${NET_NAME}"
         nginx
     )
     echo Running: ${NGINX[@]}
@@ -85,56 +117,33 @@ runServer() {
 }
 
 checkLinkCommand() {
-    broken-link-checker -r --filter-level 3 \
-        --exclude localhost:8080 \
-        --exclude localhost:3000 \
-        http://localhost:${SERVER_PORT} || \
-        echo "Link check FAILED"
+    local CHECKER CHECKER_ARGS
+    if which muffet >& /dev/null ; then
+        CHECKER=(muffet)
+        SERVER_NAME=localhost
+    else
+        CHECKER=(
+            docker run
+            --rm
+            --network "${NET_NAME}"
+            raviqqe/muffet
+        )
+    fi
+    CHECKER_ARGS=(
+        --ignore-fragments
+        # Shared CI doesn't like default (high) concurrency
+        --concurrency 20
+        --skip-tls-verification
+        --exclude localhost:8080
+        --exclude localhost:3000
+        "http://${SERVER_NAME}:${SERVER_PORT}"
+    )
+    echo Running: ${CHECKER[@]} ${CHECKER_ARGS[@]}
+    ${CHECKER[@]} ${CHECKER_ARGS[@]}
 }
 
 checkLinks() {
-    BROKEN=()
-    while IFS= read -r line; do
-        case "${line}" in
-            "Getting links from"*)
-                # New page. Print out any errors from the previous one and
-                # reset for the next.
-                if [[ ${#BROKEN[@]} -ne 0 ]]; then
-                    echo "${CUR_PAGE}"
-                    printf "%s\n" "${BROKEN[@]}"
-                    BROKEN=()
-                fi
-                CUR_PAGE="${line}"
-                ;;
-
-            ├─BROKEN─*)
-                BROKEN+=("${line}")
-                FOUND_BROKEN=true
-                ;;
-
-            Finished*)
-                FINISHED=${line}
-                ;;
-
-            *─OK─*|"")
-                # Filter out all the OK links and blank lines
-                ;;
-
-            "Link check FAILED")
-                FAILED=true
-                ;;
-
-            *)
-                echo "${line}"
-                ;;
-        esac
-    done < <(checkLinkCommand)
-
-    echo "${FINISHED}"
-    if [[ -n $FOUND_BROKEN ]]; then
-        printf "\033[01;31m%s\033[m\n" "ERROR: Broken links found"
-        return 1
-    elif [[ -n $FAILED ]]; then 
+    if ! checkLinkCommand; then
         printf "\033[01;31m%s\033[m\n" "ERROR: Link checking failed"
         return 1
     else
@@ -144,4 +153,5 @@ checkLinks() {
 }
 
 runServer
+connectToNetwork
 checkLinks || exit 1
