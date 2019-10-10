@@ -94,7 +94,7 @@ const ProjectTitle = () => (
 
 const ProjectDesc = () => (
   <div className="projectDescription">
-    Create and deploy full-stack apps to any infrastructure using the power of React.
+    Create and deploy full&#8209;stack apps to any infrastructure using the power of React.
   </div>
 );
 
