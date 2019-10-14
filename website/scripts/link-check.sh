@@ -133,6 +133,7 @@ checkLinkCommand() {
         --ignore-fragments
         # Shared CI doesn't like default (high) concurrency
         --concurrency 20
+        --timeout 20
         --skip-tls-verification
         --exclude localhost:8080
         --exclude localhost:3000
