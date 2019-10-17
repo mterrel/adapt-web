@@ -33,7 +33,7 @@ We have fairly short timeouts on many of our end-to-end tests so we can detect i
 But now, a test that should normally take a half second would **sometimes** take 5.5 seconds.
 
 The additional 5 seconds was a great clue--5 seconds sounded like it could be a timeout of some kind.
-Armed with that hunch, we looked back through all the seeminly random test failures and found the common thread: they were all tests that initiated network requests.
+Armed with that hunch, we looked back through all the seemingly random test failures and found the common thread: they were all tests that initiated network requests.
 We also noticed a few tests that had taken even longer to fail...always in increments of 5 seconds.
 
 There weren't too many network protocols that could be involved here, so some quick Googling pointed us in the right direction.
