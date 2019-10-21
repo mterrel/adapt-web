@@ -87,12 +87,23 @@ input::placeholder {
     margin-top: -5px;
 }
 
+.navigationSlider .slidingNav .github a {
+    display: inline-block;
+}
+
 .navigationSlider .githubLogo {
     height: 22px;
     width: 22px;
-    margin-right: 5px;
     position: relative;
     top: 5px;
+    color: black;
+}
+
+.navigationSlider .githubStar {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: 2px;
 }
 
 /*
