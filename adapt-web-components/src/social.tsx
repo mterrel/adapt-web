@@ -23,28 +23,25 @@ export interface WithCommonProps extends WithSiteConfig {
 
 export interface GitHubStarProps extends WithCommonProps {
   large: boolean;
+  count: boolean;
 }
 
+//Note this requires including this <script async defer src="https://buttons.github.io/buttons.js"></script>
 export function GitHubStar(props: GitHubStarProps) {
-  let url = "";
-  if (props.large) url += "&size=large";
-  const size = props.large ?
-    { width: "75px", height: "30px" } :
-    { width: "50px", height: "20px" };
-  const src = `https://ghbtns.com/github-btn.html?` +
-    `user=${props.config.organizationName}&repo=${props.config.projectName}` +
-    `&type=star${url}`;
-  return (
-    <iframe
-      className={classNames(props.className, "githubStar")}
-      src={src}
-      scrolling="0"
-      { ...size }
-     />
-  );
+  const config: any = {};
+  config["data-icon"] = "octicon-star";
+  if (props.large) config["data-size"] = "large";
+  if (props.count) config["data-show-count"] = "true";
+  config["aria-label"] = `Star ${props.config.organizationName}/${props.config.projectName} on GitHub`;
+  config.className = classNames("github-button");
+  
+  return <div className={classNames(props.className, "githubStar")}>
+    <a href={props.config.repoUrl} {...config}>Star</a>
+  </div>;
 }
 GitHubStar.defaultProps = {
   large: false,
+  count: false
 };
 
 export interface GitHubLinkProps extends WithCommonProps {

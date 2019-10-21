@@ -9,7 +9,7 @@
 // site configuration options.
 
 const React = require('react');
-const { GitHubLogo } = require('adapt-web-components');
+const { GitHubLogo, GitHubStar } = require('adapt-web-components');
 
 // List of projects/orgs using your project for the users page.
 const users = [
@@ -84,6 +84,13 @@ const analytics =
     } :
     {};
 
+const gitHubInfo = {
+  projectName: 'adapt',
+  organizationName: 'unboundedsystems',
+  repoUrl,
+  gitterUrl
+}
+
 const siteConfig = {
   title: 'Adapt',
   tagline: 'React for your infrastructure.',
@@ -91,15 +98,14 @@ const siteConfig = {
   url: 'https://adaptjs.org',
   baseUrl: '/', // Base URL for your project */
 
-  projectName: 'adapt',
-  organizationName: 'unboundedsystems',
+  ...gitHubInfo,
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'getting_started/index', label: 'Docs'},
-    {blog: true, label: 'Blog'},
-    {page: 'help', label: 'Help'},
-    {href: repoUrl, label: githubHeader(this)},
+    { doc: 'getting_started/index', label: 'Docs' },
+    { blog: true, label: 'Blog' },
+    { page: 'help', label: 'Help' },
+    { raw: githubHeader(gitHubInfo) },
   ],
 
   // If you have users set above, you add it here:
@@ -152,6 +158,7 @@ const siteConfig = {
     'https://code.jquery.com/jquery-1.11.0.min.js',
     'https://code.jquery.com/jquery-migrate-1.2.1.min.js',
     'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js',
+    'https://buttons.github.io/buttons.js'
   ],
 
   // On page navigation for the current documentation page.
@@ -202,18 +209,15 @@ const siteConfig = {
   scrollToTopOptions: {
     backgroundColor: colors.scrollToTopColor,
   },
-  repoUrl,
   issueUrl,
-  gitterUrl,
   forkUrl,
 };
 
 function githubHeader(config) {
   return React.createElement('div', { className: 'github' }, [
-    React.createElement(GitHubLogo, { config, key: 'logo' }),
-    React.createElement('span', { key: 'text' },
-      'GitHub'
-    )
+    React.createElement("a", { key: "link", href: config.repoUrl }, [
+      React.createElement(GitHubLogo, { config, key: 'logo' })]),
+    React.createElement(GitHubStar, { config, key: 'github', count: true, large: true })
   ]);
 }
 
