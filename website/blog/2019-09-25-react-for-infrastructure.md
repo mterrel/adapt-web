@@ -7,6 +7,8 @@ authorTwitter: mvachhar
 authorImageURL: /img/profiles/manish.jpg
 ---
 
+![React Plus Logos](assets/reactplus.png)
+
 What is "Infrastructure as Code"?
 If someone checks a bunch of YAML files into a Git repository, do they suddenly become code?
 That seems more like "Infrastructure as Files" to me.

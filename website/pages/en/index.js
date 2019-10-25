@@ -390,6 +390,14 @@ const techLogos = [
     file: 'go.png',
     soon: true,
   },
+  {
+    alt: 'Redis',
+    file: 'redis.png',
+  },
+  {
+    alt: 'MongoDB',
+    file: 'mongodb.png'
+  }
 ];
 
 /**
