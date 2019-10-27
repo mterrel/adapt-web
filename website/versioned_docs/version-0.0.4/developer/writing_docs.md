@@ -10,7 +10,7 @@ original_id: writing-docs
 Adapt documentation source content is stored alongside the Adapt source code in the [`adapt` repo](https://gitlab.com/unboundedsystems/adapt), primarily in [Markdown](https://en.wikipedia.org/wiki/Markdown) files.
 Those source Markdown files, along with automatically generated API documentation files, are pushed to the [`adapt-web` repo](https://gitlab.com/unboundedsystems/adapt-web) for publishing.
 
-The `adapt-web` repo uses [Docusaurus](https://docusaurus.io/) to transform the source Markdown files into a React-based website, which is then hosted by Netlify at [https://adapt.unbounded.systems](https://adapt.unbounded.systems).
+The `adapt-web` repo uses [Docusaurus](https://docusaurus.io/) to transform the source Markdown files into a React-based website, which is then hosted by Netlify at [https://adaptjs.org](https://adaptjs.org).
 
 ## Setting up
 

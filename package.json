@@ -2,7 +2,7 @@
     "name": "adapt-web-root",
     "description": "Documentation website for Adapt by Unbounded Systems",
     "license": "Apache-2.0",
-    "homepage": "https://adapt.unbounded.systems",
+    "homepage": "https://adaptjs.org",
     "author": "Unbounded Systems",
     "contributors": [
         {
