@@ -38,6 +38,5 @@ export declare abstract class Component<Props extends object = {}, State extends
 |  --- | --- | --- |
 |  [build(helpers)](./core.component.build.md) |  |  |
 |  [initialState()](./core.component.initialstate.md) |  |  |
-|  [ready(helpers)](./core.component.ready.md) |  |  |
 |  [setState(stateUpdate)](./core.component.setstate.md) |  |  |
 |  [status(observeForStatus, buildData)](./core.component.status.md) |  |  |

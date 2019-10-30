@@ -9,7 +9,7 @@ hide_title: true
 
 ## Adapt.ActionInfo interface
 
-Describes the overall effect that an Action is performing. type and detail here explain what the Action is doing overall, not how it affects any particular Element.
+Describes the overall effect that an Action is performing.
 
 <b>Signature:</b>
 
@@ -24,3 +24,7 @@ export interface ActionInfo
 |  [changes](./core.adapt.actioninfo.changes.md) | <code>ActionChange[]</code> |  |
 |  [detail](./core.adapt.actioninfo.detail.md) | <code>string</code> |  |
 |  [type](./core.adapt.actioninfo.type.md) | <code>ChangeType</code> |  |
+
+## Remarks
+
+`type` and `detail` here explain what the Action is doing overall, not how it affects any particular Element.

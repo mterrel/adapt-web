@@ -12,18 +12,17 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-export declare abstract class Sequence extends Component<SequenceProps, SequenceState> 
+export declare class Sequence extends DeferredComponent<SequenceProps> 
 ```
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [noPlugin](./core.adapt.sequence.noplugin.md) | <code>static</code> | <code>boolean</code> |  |
+|  [deployedWhen](./core.adapt.sequence.deployedwhen.md) |  | <code>(_goalStatus: GoalStatus, helpers: DeployHelpers) =&gt; true &#124; import(&quot;../deploy&quot;).Waiting</code> |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [build(h)](./core.adapt.sequence.build.md) |  |  |
-|  [initialState()](./core.adapt.sequence.initialstate.md) |  |  |
+|  [build()](./core.adapt.sequence.build.md) |  |  |

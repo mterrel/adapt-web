@@ -12,8 +12,8 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-build(): Adapt.AdaptElement<Adapt.AnyProps> | null;
+build(): Adapt.AdaptElementOrNull;
 ```
 <b>Returns:</b>
 
-`Adapt.AdaptElement<Adapt.AnyProps> | null`
+`Adapt.AdaptElementOrNull`

@@ -19,5 +19,4 @@ export interface FunctionComponentTyp<P> extends ComponentStatic<P>
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [ready](./core.functioncomponenttyp.ready.md) | <code>(helpers: BuildHelpers) =&gt; boolean &#124; Promise&lt;boolean&gt;</code> |  |
 |  [status](./core.functioncomponenttyp.status.md) | <code>(props: P, observe: ObserveForStatus, buildData: BuildData) =&gt; Promise&lt;unknown&gt;</code> |  |

@@ -24,6 +24,7 @@ export interface ActOptions
 |  [deployOpID](./core.adapt.actoptions.deployopid.md) | <code>DeployOpID</code> |  |
 |  [dryRun](./core.adapt.actoptions.dryrun.md) | <code>boolean</code> |  |
 |  [goalStatus](./core.adapt.actoptions.goalstatus.md) | <code>GoalStatus</code> |  |
+|  [pollDelayMs](./core.adapt.actoptions.polldelayms.md) | <code>number</code> |  |
 |  [processStateUpdates](./core.adapt.actoptions.processstateupdates.md) | <code>() =&gt; Promise&lt;{</code><br/><code>        stateChanged: boolean;</code><br/><code>    }&gt;</code> |  |
 |  [taskObserver](./core.adapt.actoptions.taskobserver.md) | <code>TaskObserver</code> |  |
 |  [timeoutMs](./core.adapt.actoptions.timeoutms.md) | <code>number</code> |  |

@@ -55,7 +55,6 @@ hide_title: true
 |  [isMountedElement(val)](./core.ismountedelement.md) |  |
 |  [isMountedPrimitiveElement(elem)](./core.ismountedprimitiveelement.md) |  |
 |  [isPrimitiveElement(elem)](./core.isprimitiveelement.md) |  |
-|  [isReady(h, e)](./core.isready.md) |  |
 |  [mergeDefaultChildStatus(props, parentStatus, mgr, data, transformParentStatus)](./core.mergedefaultchildstatus.md) |  |
 |  [noStatusOnError(f)](./core.nostatusonerror.md) |  |
 |  [noTransform(val)](./core.notransform.md) |  |
@@ -77,7 +76,6 @@ hide_title: true
 |  [useMethod(hand, method)](./core.usemethod_2.md) | <b><i>(BETA)</i></b> |
 |  [useMethod(hand, initial, method, args)](./core.usemethod_3.md) | <b><i>(BETA)</i></b> |
 |  [useMethodFrom(hand, methodName, defaultVal, args)](./core.usemethodfrom.md) |  |
-|  [useReadyFrom(targetHand)](./core.usereadyfrom.md) |  |
 |  [useState(init)](./core.usestate.md) |  |
 
 ## Interfaces

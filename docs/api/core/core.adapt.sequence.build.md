@@ -12,15 +12,8 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-build(h: BuildHelpers): AdaptElement | null;
+build(): import("../jsx").AdaptElementOrNull;
 ```
-
-## Parameters
-
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  h | <code>BuildHelpers</code> |  |
-
 <b>Returns:</b>
 
-`AdaptElement | null`
+`import("../jsx").AdaptElementOrNull`

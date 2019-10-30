@@ -32,4 +32,5 @@ export interface AdaptMountedElement<P extends object = AnyProps> extends AdaptE
 
 |  Method | Description |
 |  --- | --- |
+|  [built()](./core.adaptmountedelement.built.md) |  |
 |  [status(o)](./core.adaptmountedelement.status.md) |  |

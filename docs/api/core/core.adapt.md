@@ -12,9 +12,9 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-export { AnyMethods, callInstanceMethod, callNextInstanceMethod, hasInstanceMethod, SetState, HookStateUpdater, useAsync, useBuildHelpers, useDependsOn, useDeployedWhen, useImperativeMethods, useInstanceValue, useMethod, useMethodFrom, useReadyFrom, useState, UseStateInit, } from "./hooks";
+export { AnyMethods, callInstanceMethod, callNextInstanceMethod, hasInstanceMethod, SetState, HookStateUpdater, useAsync, useBuildHelpers, useDependsOn, useDeployedWhen, useImperativeMethods, useInstanceValue, useMethod, useMethodFrom, useState, UseStateInit, } from "./hooks";
 export * from "./jsx_namespace";
-export { childrenToArray, cloneElement, createElement, Component, DeferredComponent, PrimitiveComponent, AdaptDeferredElement, AdaptElement, AdaptMountedElement, AdaptMountedPrimitiveElement, AdaptElementOrNull, AdaptPrimitiveElement, AnyProps, AnyState, BuildHelpers, ClassComponentTyp, ComponentStatic, ComponentType, DeferredClassComponentTyp, DeployInfo, ElementID, FinalDomElement, FunctionComponentTyp, GenericInstance, GenericInstanceMethods, KeyPath, BuiltinProps, ElementPredicate, PartialFinalDomElement, isApplyStyle, isFinalDomElement, isElement, isPartialFinalDomElement, isMountedElement, isMountedPrimitiveElement, isDeferredElement, isPrimitiveElement, isReady, WithChildren, PrimitiveChildType, PrimitiveClassComponentTyp, PropsType, SFC, SFCBuildProps, SFCDeclProps, } from "./jsx";
+export { childrenToArray, cloneElement, createElement, Component, DeferredComponent, PrimitiveComponent, AdaptDeferredElement, AdaptElement, AdaptMountedElement, AdaptMountedPrimitiveElement, AdaptElementOrNull, AdaptPrimitiveElement, AnyProps, AnyState, BuildHelpers, ClassComponentTyp, ComponentStatic, ComponentType, DeferredClassComponentTyp, DeployInfo, ElementID, FinalDomElement, FunctionComponentTyp, GenericInstance, GenericInstanceMethods, KeyPath, BuiltinProps, ElementPredicate, PartialFinalDomElement, isApplyStyle, isFinalDomElement, isElement, isPartialFinalDomElement, isMountedElement, isMountedPrimitiveElement, isDeferredElement, isPrimitiveElement, WithChildren, PrimitiveChildType, PrimitiveClassComponentTyp, PropsType, SFC, SFCBuildProps, SFCDeclProps, } from "./jsx";
 export * from "./builtin_components";
 export * from "./deploy";
 export { build, BuildData, buildOnce, BuildOptions, BuildOutput, BuildOutputBase, BuildOutputError, BuildOutputPartial, BuildOutputSuccess, DomPath, ProcessStateUpdates, } from "./dom";
@@ -94,8 +94,8 @@ export { internal, };
 |  --- | --- |
 |  [ActComplete](./core.adapt.actcomplete.md) |  |
 |  [Action](./core.adapt.action.md) |  |
-|  [ActionChange](./core.adapt.actionchange.md) | Describes the effect an Action has on an Element type and detail here explain how the Action affects this specific element, which may or may not be different than the action. For example, an Action that performs a modify on a CloudFormation stack may cause certain Elements to be created and deleted within that Action. |
-|  [ActionInfo](./core.adapt.actioninfo.md) | Describes the overall effect that an Action is performing. type and detail here explain what the Action is doing overall, not how it affects any particular Element. |
+|  [ActionChange](./core.adapt.actionchange.md) | Describes the effect an Action has on a specific Element |
+|  [ActionInfo](./core.adapt.actioninfo.md) | Describes the overall effect that an Action is performing. |
 |  [ActOptions](./core.adapt.actoptions.md) |  |
 |  [BuildOpAscend](./core.adapt.buildopascend.md) |  |
 |  [BuildOpBuildDeferred](./core.adapt.buildopbuilddeferred.md) |  |
@@ -130,7 +130,7 @@ export { internal, };
 |  [PluginOptions](./core.adapt.pluginoptions.md) |  |
 |  [PluginRegistration](./core.adapt.pluginregistration.md) |  |
 |  [QueryDomain](./core.adapt.querydomain.md) |  |
-|  [Relation](./core.adapt.relation.md) |  |
+|  [Relation](./core.adapt.relation.md) | Relations are used to describe the logic of when an object will be ready. |
 |  [RelationExt](./core.adapt.relationext.md) |  |
 |  [SequenceProps](./core.adapt.sequenceprops.md) |  |
 |  [StatusOptions](./core.adapt.statusoptions.md) |  |

@@ -12,5 +12,5 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-waiting: (status: string, related?: Waiting[] | undefined) => Waiting
+waiting: (status: string, related?: (Handle<import("..").GenericInstance> | Waiting)[] | undefined) => Waiting
 ```

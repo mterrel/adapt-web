@@ -14,7 +14,7 @@ Component that implements the abstract [Container](./cloud.container.md) interfa
 <b>Signature:</b>
 
 ```typescript
-export declare function Container(props: ContainerProps): Adapt.AdaptElement<Adapt.AnyProps> | null;
+export declare function Container(props: ContainerProps): Adapt.AdaptElementOrNull;
 ```
 
 ## Parameters
@@ -25,4 +25,4 @@ export declare function Container(props: ContainerProps): Adapt.AdaptElement<Ada
 
 <b>Returns:</b>
 
-`Adapt.AdaptElement<Adapt.AnyProps> | null`
+`Adapt.AdaptElementOrNull`
