@@ -5,6 +5,8 @@ authorTitle: Co-founder, Unbounded Systems
 authorURL: https://twitter.com/mvachhar
 authorTwitter: mvachhar
 authorImageURL: /img/profiles/manish.jpg
+image: blog/assets/reactplus.png
+description: "What is Infrastructure as Code? A bunch of YAML files in a git repository are not code. Here is how we get real infrastructure as code with abstraction, modularity, composability, and reusability."
 ---
 
 ![React Plus Logos](assets/reactplus.png)
