@@ -5,6 +5,8 @@ authorTitle: Co-founder, Unbounded Systems
 authorURL: https://twitter.com/mterrel
 authorTwitter: mterrel
 authorImageURL: /img/profiles/mark.jpg
+image: blog/assets/lukas-blazek-UAvYasdkzq8-unsplash.jpg
+description: "How we debugged and fixed DNS issues in our CI testing with a Docker DNS cache -- with code!"
 ---
 
 ![Alarm clock](assets/lukas-blazek-UAvYasdkzq8-unsplash.jpg)
