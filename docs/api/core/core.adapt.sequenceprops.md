@@ -9,6 +9,8 @@ hide_title: true
 
 ## Adapt.SequenceProps interface
 
+Props for [Adapt.Sequence()](./core.adapt.sequence.md)<!-- -->.
+
 <b>Signature:</b>
 
 ```typescript

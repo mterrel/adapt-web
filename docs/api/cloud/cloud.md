@@ -66,6 +66,7 @@ hide_title: true
 
 |  Namespace | Description |
 |  --- | --- |
+|  [action](./cloud.action.md) | Action library for implementing simple primitive components. |
 |  [aws](./cloud.aws.md) | <b><i>(BETA)</i></b> AWS library for Adapt. |
 |  [docker](./cloud.docker.md) | Docker library for Adapt. |
 |  [http](./cloud.http.md) | Adapt components for HTTP |

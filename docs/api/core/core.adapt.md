@@ -46,7 +46,6 @@ export { internal, };
 |  --- | --- |
 |  [DomError](./core.adapt.domerror.md) |  |
 |  [Group](./core.adapt.group.md) |  |
-|  [Sequence](./core.adapt.sequence.md) |  |
 |  [WidgetPlugin](./core.adapt.widgetplugin.md) |  |
 
 ## Enumerations
@@ -85,6 +84,7 @@ export { internal, };
 |  [None()](./core.adapt.none.md) |  |
 |  [Only(h, dep)](./core.adapt.only.md) |  |
 |  [registerPlugin(plugin)](./core.adapt.registerplugin.md) |  |
+|  [Sequence(props)](./core.adapt.sequence.md) | Component that deploys its children sequentially. |
 |  [toDeployStatus(stat)](./core.adapt.todeploystatus.md) |  |
 |  [updateDeployment(options)](./core.adapt.updatedeployment.md) |  |
 
@@ -132,7 +132,7 @@ export { internal, };
 |  [QueryDomain](./core.adapt.querydomain.md) |  |
 |  [Relation](./core.adapt.relation.md) | Relations are used to describe the logic of when an object will be ready. |
 |  [RelationExt](./core.adapt.relationext.md) |  |
-|  [SequenceProps](./core.adapt.sequenceprops.md) |  |
+|  [SequenceProps](./core.adapt.sequenceprops.md) | Props for [Adapt.Sequence()](./core.adapt.sequence.md)<!-- -->. |
 |  [StatusOptions](./core.adapt.statusoptions.md) |  |
 |  [UpdateOptions](./core.adapt.updateoptions.md) |  |
 |  [Waiting](./core.adapt.waiting.md) |  |
