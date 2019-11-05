@@ -14,7 +14,7 @@ Props for [docker.DockerContainer](./cloud.docker.dockercontainer.md)
 <b>Signature:</b>
 
 ```typescript
-export interface DockerContainerProps extends DockerGlobalOptions, Pick<ContainerProps, "autoRemove" | "portBindings" | "command" | "stopSignal"> 
+export interface DockerContainerProps extends DockerGlobalOptions, Pick<ContainerProps, "autoRemove" | "environment" | "portBindings" | "command" | "stopSignal"> 
 ```
 
 ## Properties

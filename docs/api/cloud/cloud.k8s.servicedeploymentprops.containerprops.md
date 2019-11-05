@@ -12,5 +12,5 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-containerProps?: Partial<K8sContainerProps>;
+containerProps?: Partial<OmitT<K8sContainerProps, "image">>;
 ```

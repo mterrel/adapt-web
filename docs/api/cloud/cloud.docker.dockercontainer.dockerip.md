@@ -17,7 +17,7 @@ Get the IP address of the container, optionally for a specific Docker network.
 <b>Signature:</b>
 
 ```typescript
-dockerIP(network?: string): Promise<string | undefined>;
+dockerIP(network?: string): string | undefined;
 ```
 
 ## Parameters
@@ -28,7 +28,7 @@ dockerIP(network?: string): Promise<string | undefined>;
 
 <b>Returns:</b>
 
-`Promise<string | undefined>`
+`string | undefined`
 
 ## Remarks
 

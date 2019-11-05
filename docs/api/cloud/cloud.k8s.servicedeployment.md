@@ -39,9 +39,11 @@ This component is intended to be used to replace [Container](./cloud.container.m
 
 ```tsx
 <Group>
+  <docker.RegistryDockerImage ... /> //If props.config specifies a registry
   <k8s.Pod ... >
     <k8s.K8sContainer ... />
   </k8s.Pod>
+  <docker.RegistryDockerImage ... /> //If props.config specifies a registry
   <k8s.Pod ... >
     <k8s.K8sContainer ... />
   </k8s.Pod>
