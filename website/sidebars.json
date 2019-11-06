@@ -34,9 +34,11 @@
       "api/cloud/cloud.docker",
       "api/cloud/cloud.http",
       "api/cloud/cloud.k8s",
+      "api/cloud/cloud.mongodb",
       "api/cloud/cloud.nginx",
       "api/cloud/cloud.nodejs",
-      "api/cloud/cloud.postgres"
+      "api/cloud/cloud.postgres",
+      "api/cloud/cloud.redis"
     ],
     "Advanced Guides": [
       "comparing_react/index"
