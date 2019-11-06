@@ -30,6 +30,7 @@
     "Cloud API Reference": [
       "api/cloud/overview",
       "api/cloud/cloud",
+      "api/cloud/cloud.action",
       "api/cloud/cloud.aws",
       "api/cloud/cloud.docker",
       "api/cloud/cloud.http",
