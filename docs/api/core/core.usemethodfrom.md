@@ -12,7 +12,7 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-export declare function useMethodFrom(hand: Handle, methodName: string, defaultVal?: any, ...args: any[]): void;
+export declare function useMethodFrom(hand: Handle, methodName: string, defaultVal?: any): void;
 ```
 
 ## Parameters
@@ -22,7 +22,6 @@ export declare function useMethodFrom(hand: Handle, methodName: string, defaultV
 |  hand | <code>Handle</code> |  |
 |  methodName | <code>string</code> |  |
 |  defaultVal | <code>any</code> |  |
-|  args | <code>any[]</code> |  |
 
 <b>Returns:</b>
 

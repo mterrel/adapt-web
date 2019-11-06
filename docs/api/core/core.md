@@ -75,7 +75,7 @@ hide_title: true
 |  [useMethod(hand, initial, method, args)](./core.usemethod_1.md) | <b><i>(BETA)</i></b> |
 |  [useMethod(hand, method)](./core.usemethod_2.md) | <b><i>(BETA)</i></b> |
 |  [useMethod(hand, initial, method, args)](./core.usemethod_3.md) | <b><i>(BETA)</i></b> |
-|  [useMethodFrom(hand, methodName, defaultVal, args)](./core.usemethodfrom.md) |  |
+|  [useMethodFrom(hand, methodName, defaultVal)](./core.usemethodfrom.md) |  |
 |  [useState(init)](./core.usestate.md) |  |
 
 ## Interfaces
