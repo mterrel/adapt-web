@@ -71,9 +71,11 @@ hide_title: true
 |  [docker](./cloud.docker.md) | Docker library for Adapt. |
 |  [http](./cloud.http.md) | Adapt components for HTTP |
 |  [k8s](./cloud.k8s.md) | Adapt components for Kubernetes |
+|  [mongodb](./cloud.mongodb.md) | The library for [MongoDB](https://www.mongodb.com/) for Adapt. |
 |  [nginx](./cloud.nginx.md) | Various Adapt Components based on [nginx](https://nginx.org) |
 |  [nodejs](./cloud.nodejs.md) | The library for [Node.js](https://nodejs.org) for Adapt. |
 |  [postgres](./cloud.postgres.md) | The [Postgres](https://www.postgresql.org) library for Adapt. |
+|  [redis](./cloud.redis.md) | The [Redis](https://redis.io/) library for Adapt. |
 
 ## Type Aliases
 
