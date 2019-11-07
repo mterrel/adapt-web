@@ -20,6 +20,7 @@ export * from "./Pod";
 export * from "./Service";
 export * from "./ServiceDeployment";
 export * from "./common";
+export * from "./utils";
 export { resourceElementToName, registerResourceKind } from "./manifest_support";
 //# sourceMappingURL=index.d.ts.map
 ```
@@ -42,6 +43,7 @@ export { resourceElementToName, registerResourceKind } from "./manifest_support"
 |  [isK8sContainerElement(x)](./cloud.k8s.isk8scontainerelement.md) | Tests whether an element is a [k8s.K8sContainer](./cloud.k8s.k8scontainer.md) element |
 |  [isResourceFinalElement(e)](./cloud.k8s.isresourcefinalelement.md) | Type assertion to see if an element is both a [Resource](./cloud.k8s.resource.md) and a  |
 |  [k8sContainerProps(abstractProps, k8sProps)](./cloud.k8s.k8scontainerprops.md) | Low level utility function to translate from the abstract [Container](./cloud.container.md) component props ([ContainerProps](./cloud.containerprops.md)<!-- -->) to [k8s.K8sContainerProps](./cloud.k8s.k8scontainerprops.md) to be used in a [k8s.K8sContainer](./cloud.k8s.k8scontainer.md)<!-- -->. |
+|  [makeClusterInfo(options)](./cloud.k8s.makeclusterinfo.md) | Make a [k8s.ClusterInfo](./cloud.k8s.clusterinfo.md) object suitable for use with k8s resources |
 |  [Service(propsIn)](./cloud.k8s.service.md) | Native Kubernetes Service resource |
 
 ## Interfaces
@@ -57,6 +59,7 @@ export { resourceElementToName, registerResourceKind } from "./manifest_support"
 |  [EnvVarSimple](./cloud.k8s.envvarsimple.md) |  |
 |  [K8sContainerProps](./cloud.k8s.k8scontainerprops.md) | Props for the Kubernetes-specific [k8s.K8sContainer](./cloud.k8s.k8scontainer.md) component. |
 |  [Kubeconfig](./cloud.k8s.kubeconfig.md) |  |
+|  [MakeClusterInfoOptions](./cloud.k8s.makeclusterinfooptions.md) | Options for [k8s.makeClusterInfo()](./cloud.k8s.makeclusterinfo.md) |
 |  [Metadata](./cloud.k8s.metadata.md) |  |
 |  [PodProps](./cloud.k8s.podprops.md) |  |
 |  [PodSpec](./cloud.k8s.podspec.md) | Spec for for Kubernetes Pods |

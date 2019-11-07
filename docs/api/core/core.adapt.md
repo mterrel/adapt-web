@@ -12,9 +12,9 @@ hide_title: true
 <b>Signature:</b>
 
 ```typescript
-export { AnyMethods, callInstanceMethod, callNextInstanceMethod, hasInstanceMethod, SetState, HookStateUpdater, useAsync, useBuildHelpers, useDependsOn, useDeployedWhen, useImperativeMethods, useInstanceValue, useMethod, useMethodFrom, useState, UseStateInit, } from "./hooks";
+export { AnyMethods, callInstanceMethod, callNextInstanceMethod, hasInstanceMethod, SetState, HookStateUpdater, useAsync, useBuildHelpers, useDependsOn, useDeployedWhen, UseDeployedWhenOptions, useImperativeMethods, useInstanceValue, useMethod, useMethodFrom, useState, UseStateInit, } from "./hooks";
 export * from "./jsx_namespace";
-export { childrenToArray, cloneElement, createElement, Component, DeferredComponent, PrimitiveComponent, AdaptDeferredElement, AdaptElement, AdaptMountedElement, AdaptMountedPrimitiveElement, AdaptElementOrNull, AdaptPrimitiveElement, AnyProps, AnyState, BuildHelpers, ClassComponentTyp, ComponentStatic, ComponentType, DeferredClassComponentTyp, DeployInfo, ElementID, FinalDomElement, FunctionComponentTyp, GenericInstance, GenericInstanceMethods, KeyPath, BuiltinProps, ElementPredicate, PartialFinalDomElement, isApplyStyle, isFinalDomElement, isElement, isPartialFinalDomElement, isMountedElement, isMountedPrimitiveElement, isDeferredElement, isPrimitiveElement, WithChildren, PrimitiveChildType, PrimitiveClassComponentTyp, PropsType, SFC, SFCBuildProps, SFCDeclProps, } from "./jsx";
+export { childrenToArray, cloneElement, createElement, Component, DeferredComponent, PrimitiveComponent, AdaptDeferredElement, AdaptElement, AdaptMountedElement, AdaptMountedPrimitiveElement, AdaptElementOrNull, AdaptPrimitiveElement, AnyProps, AnyState, BuildHelpers, ClassComponentTyp, ComponentStatic, ComponentType, defaultDeployedWhen, DeferredClassComponentTyp, DeployInfo, ElementID, FinalDomElement, FunctionComponentTyp, GenericInstance, GenericInstanceMethods, KeyPath, BuiltinProps, ElementPredicate, PartialFinalDomElement, isApplyStyle, isFinalDomElement, isElement, isPartialFinalDomElement, isMountedElement, isMountedPrimitiveElement, isDeferredElement, isPrimitiveElement, WithChildren, PrimitiveChildType, PrimitiveClassComponentTyp, PropsType, SFC, SFCBuildProps, SFCDeclProps, } from "./jsx";
 export * from "./builtin_components";
 export * from "./deploy";
 export { build, BuildData, buildOnce, BuildOptions, BuildOutput, BuildOutputBase, BuildOutputError, BuildOutputPartial, BuildOutputSuccess, DomPath, ProcessStateUpdates, } from "./dom";
@@ -173,7 +173,7 @@ export { internal, };
 |  [Dependency](./core.adapt.dependency.md) |  |
 |  [DependsOn](./core.adapt.dependson.md) |  |
 |  [DependsOnMethod](./core.adapt.dependsonmethod.md) |  |
-|  [DeployedWhenMethod](./core.adapt.deployedwhenmethod.md) |  |
+|  [DeployedWhenMethod](./core.adapt.deployedwhenmethod.md) | A function that gives information about whether an Element has finished deploying. |
 |  [DeployOpStatus](./core.adapt.deployopstatus.md) |  |
 |  [DeployStatusExt](./core.adapt.deploystatusext.md) |  |
 |  [DomDiffIdFunc](./core.adapt.domdiffidfunc.md) |  |

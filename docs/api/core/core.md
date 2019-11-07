@@ -41,6 +41,7 @@ hide_title: true
 |  [createStateStore(json)](./core.createstatestore.md) |  |
 |  [deepFilterElemsToPublic(o)](./core.deepfilterelemstopublic.md) |  |
 |  [defaultChildStatus(props, mgr, data)](./core.defaultchildstatus.md) |  |
+|  [defaultDeployedWhen(el)](./core.defaultdeployedwhen.md) | Creates a function that implements the default <code>deployedWhen</code> behavior for an Element. |
 |  [errorToNoStatus(err)](./core.errortonostatus.md) |  |
 |  [findElementsInDom(stylesIn, dom)](./core.findelementsindom.md) |  |
 |  [findPathsInDom(stylesIn, dom)](./core.findpathsindom.md) |  |
@@ -68,7 +69,7 @@ hide_title: true
 |  [useBuildHelpers()](./core.usebuildhelpers.md) |  |
 |  [useContext(context)](./core.usecontext.md) |  |
 |  [useDependsOn(f)](./core.usedependson.md) |  |
-|  [useDeployedWhen(f)](./core.usedeployedwhen.md) |  |
+|  [useDeployedWhen(deployedWhen, options)](./core.usedeployedwhen.md) | Hook for adding a custom <code>deployedWhen</code> method to a function component. |
 |  [useImperativeMethods(create)](./core.useimperativemethods.md) |  |
 |  [useInstanceValue(hand, initial, field)](./core.useinstancevalue.md) | <b><i>(BETA)</i></b> Get the value of field from the instance referenced by handled instance. |
 |  [useMethod(hand, method)](./core.usemethod.md) | <b><i>(BETA)</i></b> Call an instance method on the Element that <code>hand</code> refers to. |
@@ -84,7 +85,7 @@ hide_title: true
 |  --- | --- |
 |  [AdaptDeferredElement](./core.adaptdeferredelement.md) |  |
 |  [AdaptElement](./core.adaptelement.md) | An Adapt Element is an instance of an Adapt component. |
-|  [AdaptMountedElement](./core.adaptmountedelement.md) |  |
+|  [AdaptMountedElement](./core.adaptmountedelement.md) | Interface that represents an AdaptElement that has been mounted during the DOM build process. |
 |  [AdaptMountedPrimitiveElement](./core.adaptmountedprimitiveelement.md) |  |
 |  [AdaptPrimitiveElement](./core.adaptprimitiveelement.md) |  |
 |  [AnyMethods](./core.anymethods.md) |  |
@@ -127,6 +128,7 @@ hide_title: true
 |  [StyleBuildInfo](./core.stylebuildinfo.md) | Informational object provided to the callback of a [rule()](./core.rule.md)<!-- -->. |
 |  [StyleProps](./core.styleprops.md) |  |
 |  [StyleRule](./core.stylerule.md) |  |
+|  [UseDeployedWhenOptions](./core.usedeployedwhenoptions.md) | Options for the [useDeployedWhen()](./core.usedeployedwhen.md) hook. |
 |  [Variables](./core.variables.md) |  |
 |  [WithChildren](./core.withchildren.md) |  |
 

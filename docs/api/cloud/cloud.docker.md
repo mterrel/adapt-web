@@ -52,6 +52,7 @@ export * from "./types";
 |  [DockerImageProps](./cloud.docker.dockerimageprops.md) | <b><i>(BETA)</i></b> Props for [docker.DockerImage](./cloud.docker.dockerimage.md)<!-- -->. |
 |  [DockerPushableImageInstance](./cloud.docker.dockerpushableimageinstance.md) | Components that provide a Docker image can implement this interface to allow other components to get information about the Docker image and to be able to push the image to a registry. |
 |  [DockerRegistryInstance](./cloud.docker.dockerregistryinstance.md) |  |
+|  [DockerSplitRegistryInfo](./cloud.docker.dockersplitregistryinfo.md) | <b><i>(BETA)</i></b> Represents a split registry, with pushes going to external and pulls going to internal |
 |  [File](./cloud.docker.file.md) | A dynamically-created file that can be used during the build of a Docker image. |
 |  [ImageInfo](./cloud.docker.imageinfo.md) | Information about a specific instance of a Docker image, as identified by its image ID. |
 |  [LocalDockerImageProps](./cloud.docker.localdockerimageprops.md) | Props for [docker.LocalDockerImage](./cloud.docker.localdockerimage.md) |

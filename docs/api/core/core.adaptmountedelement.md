@@ -9,6 +9,8 @@ hide_title: true
 
 ## AdaptMountedElement interface
 
+Interface that represents an AdaptElement that has been mounted during the DOM build process.
+
 <b>Signature:</b>
 
 ```typescript
@@ -22,6 +24,7 @@ export interface AdaptMountedElement<P extends object = AnyProps> extends AdaptE
 |  [buildData](./core.adaptmountedelement.builddata.md) | <code>BuildData</code> |  |
 |  [dependsOn](./core.adaptmountedelement.dependson.md) | <code>DependsOnMethod</code> |  |
 |  [deployedWhen](./core.adaptmountedelement.deployedwhen.md) | <code>DeployedWhenMethod</code> |  |
+|  [deployedWhenIsTrivial](./core.adaptmountedelement.deployedwhenistrivial.md) | <code>boolean</code> | True if the Element's <code>deployedWhen</code> is considered trivial. |
 |  [id](./core.adaptmountedelement.id.md) | <code>ElementID</code> |  |
 |  [instance](./core.adaptmountedelement.instance.md) | <code>GenericInstance</code> |  |
 |  [keyPath](./core.adaptmountedelement.keypath.md) | <code>KeyPath</code> |  |
