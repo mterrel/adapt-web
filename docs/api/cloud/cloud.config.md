@@ -30,6 +30,7 @@ export interface Config
 |  [Domainname](./cloud.config.domainname.md) | <code>string</code> |  |
 |  [Entrypoint](./cloud.config.entrypoint.md) | <code>FIXME_NeedsProperType</code> |  |
 |  [Env](./cloud.config.env.md) | <code>string[]</code> |  |
+|  [ExposedPorts](./cloud.config.exposedports.md) | <code>null &#124; {</code><br/><code>        [port: string]: {};</code><br/><code>    }</code> |  |
 |  [Hostname](./cloud.config.hostname.md) | <code>string</code> |  |
 |  [Image](./cloud.config.image.md) | <code>string</code> |  |
 |  [Labels](./cloud.config.labels.md) | <code>ContainerLabels</code> |  |

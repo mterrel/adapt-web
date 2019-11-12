@@ -10,20 +10,28 @@ parent_id: api/core/core
 
 ## useMethodFrom() function
 
+Hook to create an imperative method for a component which forwards calls to another component.
+
 <b>Signature:</b>
 
 ```typescript
-export declare function useMethodFrom(hand: Handle, methodName: string, defaultVal?: any): void;
+export declare function useMethodFrom(provider: Handle | null, methodName: string, defaultVal?: any): void;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  hand | <code>Handle</code> |  |
-|  methodName | <code>string</code> |  |
-|  defaultVal | <code>any</code> |  |
+|  provider | <code>Handle &#124; null</code> | a [Handle](./core.handle.md) an Element that has method <code>methodName</code>. In the case that <code>provider</code> is <code>null</code>, then <code>defaultVal</code> will be returned. |
+|  methodName | <code>string</code> | The name that will be used for both the imperative method created on the invoking component and that will be invoked on the provider component. |
+|  defaultVal | <code>any</code> | The value that will be returned if <code>provider</code> is null or if <code>provider</code> does not reference an Element in the DOM at the time of invocation. |
 
 <b>Returns:</b>
 
 `void`
+
+## Remarks
+
+Creates an imperative method named `methodName` on the component from which this hook is invoked, which calls the imperative method of the same name on the component instance referenced by `provider`<!-- -->.
+
+When this component's method `methodName` is called by another component, typically via , if `provider` does not reference a valid Element, `defaultVal` will be returned. If `methodName` does not exist on `provider` or is not a function, an error will be thrown. Otherwise, the provider Element's `methodName` method will be invoked and its return value returned to the caller.

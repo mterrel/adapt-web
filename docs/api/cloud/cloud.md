@@ -28,6 +28,7 @@ hide_title: true
 
 |  Function | Description |
 |  --- | --- |
+|  [formatEnvVars(env)](./cloud.formatenvvars.md) | Formats an [Environment](./cloud.environment.md) for printing in human-readable format. |
 |  [isContainerElement(el)](./cloud.iscontainerelement.md) | Function to check whether an  is an abstract [Container](./cloud.container.md)<!-- -->. |
 |  [isNetworkServiceElement(el)](./cloud.isnetworkserviceelement.md) | Type assertion that tests an element to see if it is a [NetworkService](./cloud.networkservice.md) |
 |  [lookupEnvVar(e, name)](./cloud.lookupenvvar.md) | Find the value of an environment variable in an [Environment](./cloud.environment.md) |
