@@ -29,7 +29,7 @@ export interface ContainerStatus
 |  [Driver](./cloud.containerstatus.driver.md) | <code>string</code> |  |
 |  [ExecIDs](./cloud.containerstatus.execids.md) | <code>string</code> |  |
 |  [GraphDriver](./cloud.containerstatus.graphdriver.md) | <code>FIXME_NeedsProperType</code> |  |
-|  [HostConfig](./cloud.containerstatus.hostconfig.md) | <code>FIXME_NeedsProperType</code> |  |
+|  [HostConfig](./cloud.containerstatus.hostconfig.md) | <code>HostConfigStatus</code> |  |
 |  [HostnamePath](./cloud.containerstatus.hostnamepath.md) | <code>string</code> |  |
 |  [HostsPath](./cloud.containerstatus.hostspath.md) | <code>string</code> |  |
 |  [Id](./cloud.containerstatus.id.md) | <code>string</code> |  |

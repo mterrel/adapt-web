@@ -31,8 +31,9 @@ hide_title: true
 |  --- | --- |
 |  [build(root, styles, options)](./core.build.md) |  |
 |  [buildOnce(root, styles, options)](./core.buildonce.md) |  |
-|  [callInstanceMethod(hand, def, methodName, args)](./core.callinstancemethod.md) | <b><i>(BETA)</i></b> Immediately call method on instance pointed to by handle |
-|  [callNextInstanceMethod(hand, def, methodName, args)](./core.callnextinstancemethod.md) | <b><i>(BETA)</i></b> Immediately call a method on the successor instance of the one pointed to by handle. |
+|  [callFirstInstanceWithMethod(hand, def, methodName, args)](./core.callfirstinstancewithmethod.md) | <b><i>(BETA)</i></b> Search for the first built Element instance in the Handle chain of <code>hand</code> that implements method <code>methodName</code> and immediately execute it. |
+|  [callInstanceMethod(hand, def, methodName, args)](./core.callinstancemethod.md) | <b><i>(BETA)</i></b> Search for the first built Element in the handle chain of <code>hand</code> and immediately execute the instance method <code>methodName</code> on that Element's instance. |
+|  [callNextInstanceWithMethod(hand, def, methodName, args)](./core.callnextinstancewithmethod.md) | <b><i>(BETA)</i></b> Starting with the successor of <code>hand</code>, search for a built Element instance in the handle chain that implements method <code>methodName</code> and immediately execute it. |
 |  [childrenToArray(propsChildren)](./core.childrentoarray.md) |  |
 |  [cloneElement(element, props, children)](./core.cloneelement.md) |  |
 |  [concatStyles(styles)](./core.concatstyles.md) | Concatenate all of the rules of the given Style elements together into a single Style element that contains all of the rules. Always returns a new Style element and does not modify the Style element parameters. |
@@ -143,6 +144,7 @@ hide_title: true
 
 |  Variable | Description |
 |  --- | --- |
+|  [callNextInstanceMethod](./core.callnextinstancemethod.md) | Starting with the successor of <code>hand</code>, search for a built Element instance in the handle chain that implements method <code>methodName</code> and immediately execute it. |
 |  [gql](./core.gql.md) |  |
 |  [isFinalDomElement](./core.isfinaldomelement.md) |  |
 |  [isPartialFinalDomElement](./core.ispartialfinaldomelement.md) |  |

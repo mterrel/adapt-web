@@ -10,6 +10,8 @@ parent_id: api/cloud/cloud.docker
 
 ## docker.RegistryDockerImage.image() method
 
+Returns information about the version of the Docker image that reflects the current set of props for the component and has been pushed to the registry.
+
 <b>Signature:</b>
 
 ```typescript
@@ -18,3 +20,7 @@ image(): ImageInfo | undefined;
 <b>Returns:</b>
 
 `ImageInfo | undefined`
+
+## Remarks
+
+Returns undefined if the `props.imageSrc` component's `latestImage` method returns undefined (depending on the component referenced by `props.imageSrc`<!-- -->, that may indicate the source image has not been built). Also returns undefined if the current image has not yet been pushed to the registry.

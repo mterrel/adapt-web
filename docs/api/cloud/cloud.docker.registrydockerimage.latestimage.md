@@ -10,6 +10,8 @@ parent_id: api/cloud/cloud.docker
 
 ## docker.RegistryDockerImage.latestImage() method
 
+Returns information about the most current version of the Docker image that has been pushed to the registry.
+
 <b>Signature:</b>
 
 ```typescript
@@ -18,3 +20,7 @@ latestImage(): ImageInfo | undefined;
 <b>Returns:</b>
 
 `ImageInfo | undefined`
+
+## Remarks
+
+Returns undefined if no image has ever been pushed by this component.

@@ -22,6 +22,7 @@ export interface NodeServiceProps
 
 |  Property | Type | Description |
 |  --- | --- | --- |
+|  [buildOptions](./cloud.nodejs.nodeserviceprops.buildoptions.md) | <code>NodeImageBuildOptions</code> | Image build options to pass to [nodejs.LocalNodeImage()](./cloud.nodejs.localnodeimage.md)<!-- -->. |
 |  [connectTo](./cloud.nodejs.nodeserviceprops.connectto.md) | <code>Handle&lt;ConnectToInstance&gt; &#124; Handle&lt;ConnectToInstance&gt;[]</code> | Handles for services that this component connects to. |
 |  [deps](./cloud.nodejs.nodeserviceprops.deps.md) | <code>Handle &#124; Handle[]</code> | Dependencies that must be deployed before the Container image will build. |
 |  [env](./cloud.nodejs.nodeserviceprops.env.md) | <code>Environment</code> | Object containing environment variables that the Container will be started with. |

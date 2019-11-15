@@ -13,7 +13,7 @@ parent_id: api/core/core
 <b>Signature:</b>
 
 ```typescript
-export { AnyMethods, callInstanceMethod, callNextInstanceMethod, hasInstanceMethod, SetState, HookStateUpdater, useAsync, useBuildHelpers, useDependsOn, useDeployedWhen, UseDeployedWhenOptions, useImperativeMethods, useInstanceValue, useMethod, useMethodFrom, useState, UseStateInit, } from "./hooks";
+export { AnyMethods, callFirstInstanceWithMethod, callInstanceMethod, callNextInstanceMethod, callNextInstanceWithMethod, hasInstanceMethod, SetState, HookStateUpdater, useAsync, useBuildHelpers, useDependsOn, useDeployedWhen, UseDeployedWhenOptions, useImperativeMethods, useInstanceValue, useMethod, useMethodFrom, useState, UseStateInit, } from "./hooks";
 export * from "./jsx_namespace";
 export { childrenToArray, cloneElement, createElement, Component, DeferredComponent, PrimitiveComponent, AdaptDeferredElement, AdaptElement, AdaptMountedElement, AdaptMountedPrimitiveElement, AdaptElementOrNull, AdaptPrimitiveElement, AnyProps, AnyState, BuildHelpers, ClassComponentTyp, ComponentStatic, ComponentType, defaultDeployedWhen, DeferredClassComponentTyp, DeployInfo, ElementID, FinalDomElement, FunctionComponentTyp, GenericInstance, GenericInstanceMethods, KeyPath, BuiltinProps, ElementPredicate, PartialFinalDomElement, isApplyStyle, isFinalDomElement, isElement, isPartialFinalDomElement, isMountedElement, isMountedPrimitiveElement, isDeferredElement, isPrimitiveElement, WithChildren, PrimitiveChildType, PrimitiveClassComponentTyp, PropsType, SFC, SFCBuildProps, SFCDeclProps, } from "./jsx";
 export * from "./builtin_components";

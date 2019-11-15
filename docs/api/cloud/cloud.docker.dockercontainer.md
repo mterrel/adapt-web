@@ -23,6 +23,7 @@ export declare class DockerContainer extends Action<DockerContainerProps, Docker
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [defaultProps](./cloud.docker.dockercontainer.defaultprops.md) | <code>static</code> | <code>{</code><br/><code>        dockerHost: string &#124; undefined;</code><br/><code>    }</code> |  |
+|  [dependsOn](./cloud.docker.dockercontainer.dependson.md) |  | <code>DependsOnMethod</code> |  |
 
 ## Methods
 

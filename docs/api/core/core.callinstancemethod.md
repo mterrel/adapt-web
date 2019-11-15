@@ -13,7 +13,7 @@ parent_id: api/core/core
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
-Immediately call method on instance pointed to by handle
+Search for the first built Element in the handle chain of `hand` and immediately execute the instance method `methodName` on that Element's instance.
 
 <b>Signature:</b>
 
@@ -33,3 +33,11 @@ export declare function callInstanceMethod<T = any>(hand: Handle, def: T, method
 <b>Returns:</b>
 
 `T`
+
+The return value of the called instance method if `hand` is associated and there is an Element in the handle chain that has not been replaced by a style sheet rule. Otherwise, returns the default value `def`<!-- -->.
+
+## Remarks
+
+If an Element is found that satisfies the search, but method `methodName` does not exist on the Element's instance, an error is thrown.
+
+The exact check that is currently used when searching the handle chain is for mounted Elements that satisfy the predicate . In practice, this only selects Elements that are both mounted and built.
