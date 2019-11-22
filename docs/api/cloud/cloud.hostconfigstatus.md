@@ -10,7 +10,7 @@ parent_id: api/cloud/cloud
 
 ## HostConfigStatus interface
 
-PortBindings for [ContainerStatus](./cloud.containerstatus.md)
+HostConfig for [ContainerStatus](./cloud.containerstatus.md)
 
 <b>Signature:</b>
 
@@ -23,3 +23,4 @@ export interface HostConfigStatus
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [PortBindings](./cloud.hostconfigstatus.portbindings.md) | <code>PortBindingsStatus</code> |  |
+|  [RestartPolicy](./cloud.hostconfigstatus.restartpolicy.md) | <code>RestartPolicyStatus</code> |  |

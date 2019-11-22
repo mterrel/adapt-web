@@ -33,6 +33,7 @@ export interface ContainerProps
 |  [name](./cloud.containerprops.name.md) | <code>string</code> |  |
 |  [portBindings](./cloud.containerprops.portbindings.md) | <code>PortBinding</code> |  |
 |  [ports](./cloud.containerprops.ports.md) | <code>PortDescription[]</code> |  |
+|  [restartPolicy](./cloud.containerprops.restartpolicy.md) | <code>RestartPolicy</code> | The behavior to apply when the container exits. |
 |  [stdinOpen](./cloud.containerprops.stdinopen.md) | <code>boolean</code> |  |
 |  [stopSignal](./cloud.containerprops.stopsignal.md) | <code>string</code> |  |
 |  [tty](./cloud.containerprops.tty.md) | <code>boolean</code> |  |
