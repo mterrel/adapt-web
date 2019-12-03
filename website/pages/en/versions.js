@@ -13,7 +13,12 @@ const Container = CompLibrary.Container;
 
 const CWD = process.cwd();
 
-const versions = require(`${CWD}/versions.json`);
+let versions = [];
+try {
+  versions = require(`${CWD}/versions.json`);
+} catch (e) {
+  if (e.code !== 'MODULE_NOT_FOUND') throw e;
+}
 
 function Versions(props) {
   const {config } = props;
