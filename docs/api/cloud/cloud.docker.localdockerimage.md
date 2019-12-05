@@ -36,6 +36,7 @@ export declare class LocalDockerImage extends Action<LocalDockerImageProps, Loca
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [buildComplete()](./cloud.docker.localdockerimage.buildcomplete.md) |  |  |
+|  [displayName()](./cloud.docker.localdockerimage.displayname.md) |  | User-facing name to display in status messages. |
 |  [image()](./cloud.docker.localdockerimage.image.md) |  |  |
 |  [latestImage()](./cloud.docker.localdockerimage.latestimage.md) |  |  |
 |  [pushTo(registryUrl, newTag)](./cloud.docker.localdockerimage.pushto.md) |  |  |
