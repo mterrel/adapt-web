@@ -10,11 +10,23 @@ parent_id: api/core/core.adapt
 
 ## Adapt.Relation interface
 
+Relations are used to describe the logic of when an object will be ready.
+
 <b>Signature:</b>
 
 ```typescript
 export interface Relation 
 ```
+
+## Remarks
+
+Relations are primarily used to describe deployment dependencies in Adapt. They can be combined together to express boolean logic, so you can express things like "A is ready when B and C are ready":
+
+Relations should usually be created using the supplied library functions. The most commonly used Relation functions are the high-level functions. The high-level Relation functions interact with the Adapt deployment engine for determining whether components have been deployed. These functions are useful in a [Component.dependsOn](./core.component.dependson.md) method for describing what a component depends on.
+
+Examples of the more commonly used high-level Relation functions are: - `Only()` - Creates a `Relation` that is ready when a single dependency has been deployed. - `AllOf()` - Creates a `Relation` that's ready when all of a given set of dependencies have been deployed. - `AnyOf()` - Creates a `Relation` that's ready when any of a given set of dependencies have been deployed.
+
+Examples of low-level Relation functions are: - `True()` - Creates a `Relation` that's always ready. - `False()` - Creates a `Relation` will never be ready. - `And()` - Creates a `Relation` that becomes ready when all of its arguments are ready. - `Edge()` - Creates a `Relation` that checks the deployment status of an object to determine readiness.
 
 ## Properties
 

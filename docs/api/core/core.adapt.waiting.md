@@ -13,5 +13,5 @@ parent_id: api/core/core.adapt
 <b>Signature:</b>
 
 ```typescript
-waiting: (status: string, related?: Waiting[] | undefined) => Waiting
+waiting: (status: string, related?: (Handle<import("..").GenericInstance> | Waiting)[] | undefined) => Waiting
 ```

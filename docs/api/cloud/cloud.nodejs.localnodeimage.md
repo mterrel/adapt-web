@@ -15,7 +15,7 @@ Locally builds a docker image for a [Node.js](https://www.nodejs.org) program.
 <b>Signature:</b>
 
 ```typescript
-export declare function LocalNodeImage(props: LocalNodeImageProps): Adapt.AdaptElement<Adapt.AnyProps> | null;
+export declare function LocalNodeImage(props: LocalNodeImageProps): Adapt.AdaptElementOrNull;
 ```
 
 ## Parameters
@@ -26,7 +26,7 @@ export declare function LocalNodeImage(props: LocalNodeImageProps): Adapt.AdaptE
 
 <b>Returns:</b>
 
-`Adapt.AdaptElement<Adapt.AnyProps> | null`
+`Adapt.AdaptElementOrNull`
 
 ## Remarks
 

@@ -33,12 +33,14 @@ See [docker.LocalDockerImageProps](./cloud.docker.localdockerimageprops.md)<!-- 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [defaultProps](./cloud.docker.localdockerimage.defaultprops.md) | <code>static</code> | <code>{</code><br/><code>        options: {</code><br/><code>            dockerHost: string &#124;</code><br/><code>undefined;</code><br/><code>            forceRm: boolean;</code><br/><code>        };</code><br/><code>    }</code> |  |
+|  [deployedWhenIsTrivial](./cloud.docker.localdockerimage.deployedwhenistrivial.md) |  | <code>boolean</code> |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [buildComplete()](./cloud.docker.localdockerimage.buildcomplete.md) |  |  |
+|  [displayName()](./cloud.docker.localdockerimage.displayname.md) |  | User-facing name to display in status messages. |
 |  [image()](./cloud.docker.localdockerimage.image.md) |  |  |
 |  [latestImage()](./cloud.docker.localdockerimage.latestimage.md) |  |  |
 |  [pushTo(registryUrl, newTag)](./cloud.docker.localdockerimage.pushto.md) |  |  |

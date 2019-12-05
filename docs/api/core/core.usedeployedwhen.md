@@ -10,18 +10,29 @@ parent_id: api/core/core
 
 ## useDeployedWhen() function
 
+Hook for adding a custom `deployedWhen` method to a function component.
+
 <b>Signature:</b>
 
 ```typescript
-export declare function useDeployedWhen(f: DeployedWhenMethod): void;
+export declare function useDeployedWhen(deployedWhen: DeployedWhenMethod, options?: UseDeployedWhenOptions): void;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  f | <code>DeployedWhenMethod</code> |  |
+|  deployedWhen | <code>DeployedWhenMethod</code> |  |
+|  options | [<code>UseDeployedWhenOptions</code>](./core.usedeployedwhenoptions.md) |  |
 
 <b>Returns:</b>
 
 `void`
+
+## Remarks
+
+Adding a custom `deployedWhen` method to a component allows the component to directly control when the component can be considered deployed.
+
+For more information on using `deployedWhen` methods, see [Adapt.DeployedWhenMethod](./core.adapt.deployedwhenmethod.md)<!-- -->.
+
+For components that do not add a custom `deployedWhen` method, the default behavior is that a component becomes deployed when all of it's successors and children have been deployed. See [defaultDeployedWhen()](./core.defaultdeployedwhen.md) for more information.

@@ -16,12 +16,6 @@ parent_id: api/core/core.adapt
 export interface Plugin<Observations extends object = object> 
 ```
 
-## Properties
-
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [seriesActions](./core.adapt.plugin.seriesactions.md) | <code>boolean</code> |  |
-
 ## Methods
 
 |  Method | Description |

@@ -32,5 +32,5 @@ If the image does not exist in the specified registry, it will be pushed to that
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [image()](./cloud.docker.registrydockerimage.image.md) |  |  |
-|  [latestImage()](./cloud.docker.registrydockerimage.latestimage.md) |  |  |
+|  [image()](./cloud.docker.registrydockerimage.image.md) |  | Returns information about the version of the Docker image that reflects the current set of props for the component and has been pushed to the registry. |
+|  [latestImage()](./cloud.docker.registrydockerimage.latestimage.md) |  | Returns information about the most current version of the Docker image that has been pushed to the registry. |

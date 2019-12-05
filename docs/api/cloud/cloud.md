@@ -28,6 +28,7 @@ hide_title: true
 
 |  Function | Description |
 |  --- | --- |
+|  [formatEnvVars(env)](./cloud.formatenvvars.md) | Formats an [Environment](./cloud.environment.md) for printing in human-readable format. |
 |  [isContainerElement(el)](./cloud.iscontainerelement.md) | Function to check whether an <code>@adpt/core#AdaptElement</code> is an abstract [Container](./cloud.container.md)<!-- -->. |
 |  [isNetworkServiceElement(el)](./cloud.isnetworkserviceelement.md) | Type assertion that tests an element to see if it is a [NetworkService](./cloud.networkservice.md) |
 |  [lookupEnvVar(e, name)](./cloud.lookupenvvar.md) | Find the value of an environment variable in an [Environment](./cloud.environment.md) |
@@ -55,10 +56,15 @@ hide_title: true
 |  [ContainerStatus](./cloud.containerstatus.md) | Status of a [Container](./cloud.container.md)<!-- -->. |
 |  [EnvPair](./cloud.envpair.md) | A single environment variable for a [Container](./cloud.container.md)<!-- -->, expressed as an object with <code>name</code> and <code>value</code> properties. |
 |  [EnvSimple](./cloud.envsimple.md) | A set of environment variables for a [Container](./cloud.container.md)<!-- -->, expressed as a single object with keys and associated values. |
+|  [HostConfigStatus](./cloud.hostconfigstatus.md) | HostConfig for [ContainerStatus](./cloud.containerstatus.md) |
 |  [Links](./cloud.links.md) | Network links to create for a [Container](./cloud.container.md)<!-- -->. |
 |  [NetworkServiceInstance](./cloud.networkserviceinstance.md) | <b><i>(BETA)</i></b> Interface for components that expose Network Services via hostname and port |
 |  [NetworkServiceProps](./cloud.networkserviceprops.md) | Props for the [NetworkService](./cloud.networkservice.md) element |
 |  [PortBinding](./cloud.portbinding.md) | A set of ports to be bound for a [Container](./cloud.container.md)<!-- -->. |
+|  [PortBindingsStatus](./cloud.portbindingsstatus.md) | PortBindings for [ContainerStatus](./cloud.containerstatus.md) |
+|  [PortBindingStatus](./cloud.portbindingstatus.md) | PortBinding information for [ContainerStatus](./cloud.containerstatus.md) |
+|  [RestartPolicy](./cloud.restartpolicy.md) | The behavior to apply when the container exits. |
+|  [RestartPolicyStatus](./cloud.restartpolicystatus.md) | Restart policy status for [ContainerStatus](./cloud.containerstatus.md) |
 |  [ServiceProps](./cloud.serviceprops.md) | Props for [Service](./cloud.service.md) |
 |  [UseConnectToOptions](./cloud.useconnecttooptions.md) | Options for <code>useConnectTo</code> |
 
@@ -66,13 +72,16 @@ hide_title: true
 
 |  Namespace | Description |
 |  --- | --- |
+|  [action](./cloud.action.md) | Action library for implementing simple primitive components. |
 |  [aws](./cloud.aws.md) | <b><i>(BETA)</i></b> AWS library for Adapt. |
 |  [docker](./cloud.docker.md) | Docker library for Adapt. |
 |  [http](./cloud.http.md) | Adapt components for HTTP |
 |  [k8s](./cloud.k8s.md) | Adapt components for Kubernetes |
+|  [mongodb](./cloud.mongodb.md) | The library for [MongoDB](https://www.mongodb.com/) for Adapt. |
 |  [nginx](./cloud.nginx.md) | Various Adapt Components based on [nginx](https://nginx.org) |
 |  [nodejs](./cloud.nodejs.md) | The library for [Node.js](https://nodejs.org) for Adapt. |
 |  [postgres](./cloud.postgres.md) | The [Postgres](https://www.postgresql.org) library for Adapt. |
+|  [redis](./cloud.redis.md) | The [Redis](https://redis.io/) library for Adapt. |
 
 ## Type Aliases
 
@@ -84,4 +93,5 @@ hide_title: true
 |  [ImageId](./cloud.imageid.md) | An image for a [Container](./cloud.container.md)<!-- -->. |
 |  [NetworkServiceScope](./cloud.networkservicescope.md) | Network service scope used by [NetworkService](./cloud.networkservice.md) |
 |  [PortDescription](./cloud.portdescription.md) | Description of a network port for a [Container](./cloud.container.md)<!-- -->. |
+|  [RestartPolicyName](./cloud.restartpolicyname.md) | Names for [RestartPolicy](./cloud.restartpolicy.md) |
 |  [ServicePort](./cloud.serviceport.md) | Port for [NetworkService](./cloud.networkservice.md) |

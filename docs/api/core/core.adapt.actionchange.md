@@ -10,13 +10,17 @@ parent_id: api/core/core.adapt
 
 ## Adapt.ActionChange interface
 
-Describes the effect an Action has on an Element type and detail here explain how the Action affects this specific element, which may or may not be different than the action. For example, an Action that performs a modify on a CloudFormation stack may cause certain Elements to be created and deleted within that Action.
+Describes the effect an Action has on a specific Element
 
 <b>Signature:</b>
 
 ```typescript
 export interface ActionChange 
 ```
+
+## Remarks
+
+type and detail here explain how the Action affects this specific element, which may or may not be different than the action. For example, an Action that performs a modify on a CloudFormation stack may cause certain Elements to be created and deleted within that Action.
 
 ## Properties
 

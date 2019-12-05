@@ -31,8 +31,9 @@ hide_title: true
 |  --- | --- |
 |  [build(root, styles, options)](./core.build.md) |  |
 |  [buildOnce(root, styles, options)](./core.buildonce.md) |  |
-|  [callInstanceMethod(hand, def, methodName, args)](./core.callinstancemethod.md) | <b><i>(BETA)</i></b> Immediately call method on instance pointed to by handle |
-|  [callNextInstanceMethod(hand, def, methodName, args)](./core.callnextinstancemethod.md) | <b><i>(BETA)</i></b> Immediately call a method on the successor instance of the one pointed to by handle. |
+|  [callFirstInstanceWithMethod(hand, def, methodName, args)](./core.callfirstinstancewithmethod.md) | <b><i>(BETA)</i></b> Search for the first built Element instance in the Handle chain of <code>hand</code> that implements method <code>methodName</code> and immediately execute it. |
+|  [callInstanceMethod(hand, def, methodName, args)](./core.callinstancemethod.md) | <b><i>(BETA)</i></b> Search for the first built Element in the handle chain of <code>hand</code> and immediately execute the instance method <code>methodName</code> on that Element's instance. |
+|  [callNextInstanceWithMethod(hand, def, methodName, args)](./core.callnextinstancewithmethod.md) | <b><i>(BETA)</i></b> Starting with the successor of <code>hand</code>, search for a built Element instance in the handle chain that implements method <code>methodName</code> and immediately execute it. |
 |  [childrenToArray(propsChildren)](./core.childrentoarray.md) |  |
 |  [cloneElement(element, props, children)](./core.cloneelement.md) |  |
 |  [concatStyles(styles)](./core.concatstyles.md) | Concatenate all of the rules of the given Style elements together into a single Style element that contains all of the rules. Always returns a new Style element and does not modify the Style element parameters. |
@@ -41,6 +42,7 @@ hide_title: true
 |  [createStateStore(json)](./core.createstatestore.md) |  |
 |  [deepFilterElemsToPublic(o)](./core.deepfilterelemstopublic.md) |  |
 |  [defaultChildStatus(props, mgr, data)](./core.defaultchildstatus.md) |  |
+|  [defaultDeployedWhen(el)](./core.defaultdeployedwhen.md) | Creates a function that implements the default <code>deployedWhen</code> behavior for an Element. |
 |  [errorToNoStatus(err)](./core.errortonostatus.md) |  |
 |  [findElementsInDom(stylesIn, dom)](./core.findelementsindom.md) |  |
 |  [findPathsInDom(stylesIn, dom)](./core.findpathsindom.md) |  |
@@ -55,7 +57,6 @@ hide_title: true
 |  [isMountedElement(val)](./core.ismountedelement.md) |  |
 |  [isMountedPrimitiveElement(elem)](./core.ismountedprimitiveelement.md) |  |
 |  [isPrimitiveElement(elem)](./core.isprimitiveelement.md) |  |
-|  [isReady(h, e)](./core.isready.md) |  |
 |  [mergeDefaultChildStatus(props, parentStatus, mgr, data, transformParentStatus)](./core.mergedefaultchildstatus.md) |  |
 |  [noStatusOnError(f)](./core.nostatusonerror.md) |  |
 |  [noTransform(val)](./core.notransform.md) |  |
@@ -69,15 +70,14 @@ hide_title: true
 |  [useBuildHelpers()](./core.usebuildhelpers.md) |  |
 |  [useContext(context)](./core.usecontext.md) |  |
 |  [useDependsOn(f)](./core.usedependson.md) |  |
-|  [useDeployedWhen(f)](./core.usedeployedwhen.md) |  |
+|  [useDeployedWhen(deployedWhen, options)](./core.usedeployedwhen.md) | Hook for adding a custom <code>deployedWhen</code> method to a function component. |
 |  [useImperativeMethods(create)](./core.useimperativemethods.md) |  |
 |  [useInstanceValue(hand, initial, field)](./core.useinstancevalue.md) | <b><i>(BETA)</i></b> Get the value of field from the instance referenced by handled instance. |
 |  [useMethod(hand, method)](./core.usemethod.md) | <b><i>(BETA)</i></b> Call an instance method on the Element that <code>hand</code> refers to. |
 |  [useMethod(hand, initial, method, args)](./core.usemethod_1.md) | <b><i>(BETA)</i></b> |
 |  [useMethod(hand, method)](./core.usemethod_2.md) | <b><i>(BETA)</i></b> |
 |  [useMethod(hand, initial, method, args)](./core.usemethod_3.md) | <b><i>(BETA)</i></b> |
-|  [useMethodFrom(hand, methodName, defaultVal, args)](./core.usemethodfrom.md) |  |
-|  [useReadyFrom(targetHand)](./core.usereadyfrom.md) |  |
+|  [useMethodFrom(provider, methodName, defaultVal)](./core.usemethodfrom.md) | Hook to create an imperative method for a component which forwards calls to another component. |
 |  [useState(init)](./core.usestate.md) |  |
 
 ## Interfaces
@@ -86,7 +86,7 @@ hide_title: true
 |  --- | --- |
 |  [AdaptDeferredElement](./core.adaptdeferredelement.md) |  |
 |  [AdaptElement](./core.adaptelement.md) | An Adapt Element is an instance of an Adapt component. |
-|  [AdaptMountedElement](./core.adaptmountedelement.md) |  |
+|  [AdaptMountedElement](./core.adaptmountedelement.md) | Interface that represents an AdaptElement that has been mounted during the DOM build process. |
 |  [AdaptMountedPrimitiveElement](./core.adaptmountedprimitiveelement.md) |  |
 |  [AdaptPrimitiveElement](./core.adaptprimitiveelement.md) |  |
 |  [AnyMethods](./core.anymethods.md) |  |
@@ -129,6 +129,7 @@ hide_title: true
 |  [StyleBuildInfo](./core.stylebuildinfo.md) | Informational object provided to the callback of a [rule()](./core.rule.md)<!-- -->. |
 |  [StyleProps](./core.styleprops.md) |  |
 |  [StyleRule](./core.stylerule.md) |  |
+|  [UseDeployedWhenOptions](./core.usedeployedwhenoptions.md) | Options for the [useDeployedWhen()](./core.usedeployedwhen.md) hook. |
 |  [Variables](./core.variables.md) |  |
 |  [WithChildren](./core.withchildren.md) |  |
 
@@ -143,6 +144,7 @@ hide_title: true
 
 |  Variable | Description |
 |  --- | --- |
+|  [callNextInstanceMethod](./core.callnextinstancemethod.md) | Starting with the successor of <code>hand</code>, search for a built Element instance in the handle chain that implements method <code>methodName</code> and immediately execute it. |
 |  [gql](./core.gql.md) |  |
 |  [isFinalDomElement](./core.isfinaldomelement.md) |  |
 |  [isPartialFinalDomElement](./core.ispartialfinaldomelement.md) |  |

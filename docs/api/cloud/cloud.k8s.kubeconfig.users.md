@@ -13,7 +13,7 @@ parent_id: api/cloud/cloud.k8s
 <b>Signature:</b>
 
 ```typescript
-users: [{
+users: {
         name: string;
         user: {
             "client-certificate-data"?: string;
@@ -21,5 +21,5 @@ users: [{
             "username"?: string;
             "password"?: string;
         };
-    }];
+    }[];
 ```

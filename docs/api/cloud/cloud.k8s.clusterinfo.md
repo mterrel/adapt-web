@@ -23,4 +23,4 @@ export interface ClusterInfo
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [kubeconfig](./cloud.k8s.clusterinfo.kubeconfig.md) | <code>Kubeconfig</code> | Javascript object formed by parsing a valid kubeconfig file |
-|  [registryUrl](./cloud.k8s.clusterinfo.registryurl.md) | <code>string</code> | URL to which Docker images used by the cluster in <code>kubeconfig</code> should be pushed |
+|  [registryUrl](./cloud.k8s.clusterinfo.registryurl.md) | <code>string &#124;</code><br/><code>DockerSplitRegistryInfo</code> | URL or string to which Docker images used by the cluster in <code>kubeconfig</code> should be pushed and pulled |

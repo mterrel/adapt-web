@@ -10,13 +10,17 @@ parent_id: api/core/core.adapt
 
 ## Adapt.ActionInfo interface
 
-Describes the overall effect that an Action is performing. type and detail here explain what the Action is doing overall, not how it affects any particular Element.
+Describes the overall effect that an Action is performing.
 
 <b>Signature:</b>
 
 ```typescript
 export interface ActionInfo 
 ```
+
+## Remarks
+
+`type` and `detail` here explain what the Action is doing overall, not how it affects any particular Element.
 
 ## Properties
 

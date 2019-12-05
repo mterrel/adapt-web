@@ -24,6 +24,7 @@ Adapt components for HTTP
 |  Function | Description |
 |  --- | --- |
 |  [checkUrlEndpoints(routes)](./cloud.http.checkurlendpoints.md) | Function to check if the routes prop for [UrlRouter](./cloud.http.urlrouter.md) components is valid |
+|  [fileHandles(files)](./cloud.http.filehandles.md) | Returns all <code>Handle</code>s referenced by the set of <code>files</code>. |
 |  [isFilesResolved(f)](./cloud.http.isfilesresolved.md) |  |
 |  [useFilesInfo(files)](./cloud.http.usefilesinfo.md) |  |
 |  [useResolvedFiles(files)](./cloud.http.useresolvedfiles.md) |  |

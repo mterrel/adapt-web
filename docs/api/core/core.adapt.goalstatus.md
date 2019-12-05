@@ -14,7 +14,7 @@ parent_id: api/core/core.adapt
 
 ```typescript
 GoalStatus: {
-    Deployed: DeployStatus;
-    Destroyed: DeployStatus;
+    Deployed: GoalStatus;
+    Destroyed: GoalStatus;
 }
 ```

@@ -1,6 +1,6 @@
 ---
 id: core.adapt.sequence
-title: "Adapt.Sequence class"
+title: "Adapt.Sequence() function"
 hide_title: true
 parent_id: api/core/core.adapt
 ---
@@ -8,23 +8,22 @@ parent_id: api/core/core.adapt
 
 [Core API Overview](overview) &gt; [@adpt/core](./core.md) &gt; [Adapt](./core.adapt.md) &gt; [Sequence](./core.adapt.sequence.md)
 
-## Adapt.Sequence class
+## Adapt.Sequence() function
+
+Component that deploys its children sequentially.
 
 <b>Signature:</b>
 
 ```typescript
-export declare abstract class Sequence extends Component<SequenceProps, SequenceState> 
+export declare function Sequence(props: SFCDeclProps<SequenceProps>): AdaptElement<import("../jsx").AnyProps>;
 ```
 
-## Properties
+## Parameters
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [noPlugin](./core.adapt.sequence.noplugin.md) | <code>static</code> | <code>boolean</code> |  |
-
-## Methods
-
-|  Method | Modifiers | Description |
+|  Parameter | Type | Description |
 |  --- | --- | --- |
-|  [build(h)](./core.adapt.sequence.build.md) |  |  |
-|  [initialState()](./core.adapt.sequence.initialstate.md) |  |  |
+|  props | [<code>SFCDeclProps</code>](./core.sfcdeclprops.md)<code>&lt;SequenceProps&gt;</code> |  |
+
+<b>Returns:</b>
+
+[`AdaptElement`](./core.adaptelement.md)`<import("../jsx").`[`AnyProps`](./core.anyprops.md)`>`

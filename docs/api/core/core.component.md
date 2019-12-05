@@ -28,7 +28,8 @@ export declare abstract class Component<Props extends object = {}, State extends
 |  --- | --- | --- | --- |
 |  [cleanup](./core.component.cleanup.md) |  | <code>(this: this) =&gt; void</code> |  |
 |  [dependsOn](./core.component.dependson.md) |  | <code>DependsOnMethod</code> |  |
-|  [deployedWhen](./core.component.deployedwhen.md) |  | <code>DeployedWhenMethod</code> |  |
+|  [deployedWhen](./core.component.deployedwhen.md) |  | <code>DeployedWhenMethod</code> | A derived component's custom <code>deployedWhen</code> method. |
+|  [deployedWhenIsTrivial](./core.component.deployedwhenistrivial.md) |  | <code>boolean</code> | A derived component can set this flag to <code>true</code> to indicate to user interfaces that this component's status should not typically be shown to the user, unless requested. |
 |  [deployInfo](./core.component.deployinfo.md) |  | [<code>DeployInfo</code>](./core.deployinfo.md) |  |
 |  [props](./core.component.props.md) |  | <code>Props &amp; Partial&lt;</code>[<code>BuiltinProps</code>](./core.builtinprops.md)<code>&gt;</code> |  |
 |  [state](./core.component.state.md) |  | <code>Readonly&lt;State&gt;</code> |  |
@@ -39,6 +40,5 @@ export declare abstract class Component<Props extends object = {}, State extends
 |  --- | --- | --- |
 |  [build(helpers)](./core.component.build.md) |  |  |
 |  [initialState()](./core.component.initialstate.md) |  |  |
-|  [ready(helpers)](./core.component.ready.md) |  |  |
 |  [setState(stateUpdate)](./core.component.setstate.md) |  |  |
 |  [status(observeForStatus, buildData)](./core.component.status.md) |  |  |

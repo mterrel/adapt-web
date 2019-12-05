@@ -26,4 +26,3 @@ export interface ExecutionPlanOptions
 |  [deployOpID](./core.adapt.executionplanoptions.deployopid.md) | [<code>DeployOpID</code>](./core.deployopid.md) |  |
 |  [diff](./core.adapt.executionplanoptions.diff.md) | <code>DomDiff</code> |  |
 |  [goalStatus](./core.adapt.executionplanoptions.goalstatus.md) | <code>GoalStatus</code> |  |
-|  [seriesActions](./core.adapt.executionplanoptions.seriesactions.md) | <code>Action[][]</code> |  |

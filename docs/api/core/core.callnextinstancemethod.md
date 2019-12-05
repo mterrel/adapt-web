@@ -1,6 +1,6 @@
 ---
 id: core.callnextinstancemethod
-title: "callNextInstanceMethod() function"
+title: "callNextInstanceMethod variable"
 hide_title: true
 parent_id: api/core/core
 ---
@@ -8,32 +8,23 @@ parent_id: api/core/core
 
 [Core API Overview](overview) &gt; [@adpt/core](./core.md) &gt; [callNextInstanceMethod](./core.callnextinstancemethod.md)
 
-## callNextInstanceMethod() function
+## callNextInstanceMethod variable
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> Warning: This API is now obsolete.
+> 
+> Renamed to [callNextInstanceWithMethod()](./core.callnextinstancewithmethod.md)<!-- -->.
 > 
 
-Immediately call a method on the successor instance of the one pointed to by handle.
+Starting with the successor of `hand`<!-- -->, search for a built Element instance in the handle chain that implements method `methodName` and immediately execute it.
 
 <b>Signature:</b>
 
 ```typescript
-export declare function callNextInstanceMethod<T = any>(hand: Handle, def: T, methodName: string, ...args: any[]): T;
+callNextInstanceMethod: typeof callNextInstanceWithMethod
 ```
-
-## Parameters
-
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  hand | [<code>Handle</code>](./core.handle.md) |  |
-|  def | <code>T</code> |  |
-|  methodName | <code>string</code> |  |
-|  args | <code>any[]</code> |  |
-
-<b>Returns:</b>
-
-`T`
 
 ## Remarks
 
-NOTE(mark): There are a couple differences between callNextInstanceMethod and callInstanceMethod, all based on which predicate they pass to getInstanceValue, either hasInstanceMethod or notReplacedByStyle. - callInstance may use the instance from hand.mountedOrig where callNextInstance specifically skips it. - callInstance may choose an instance that does not have the requested method, even though there may be an instance that has it in the chain. - callInstance looks at buildData.successor to determine which elem to choose, but callNextInstance just relies on hand.nextMounted. I think ultimately buildData.successor can be replaced by just using hand.nextMounted everywhere. - callInstance looks at whether a successor is an ApplyStyle, callNextInstance does not. I think that we can probably move everything to use the hasInstanceMethod predicate, with the only option being whether to skip hand.mountedOrig.
+If `hand` is not associated with an Element, an error is thrown.
+
+The exact check that is currently used when searching the handle chain is mounted Elements that have an instance method `methodName`<!-- -->. Because only built Elements have an Element instance, this only selects Elements that are mounted and built and will not select Elements that have been replaced by a style sheet rule.

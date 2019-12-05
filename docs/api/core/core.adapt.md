@@ -15,7 +15,6 @@ hide_title: true
 |  --- | --- |
 |  [DomError](./core.adapt.domerror.md) |  |
 |  [Group](./core.adapt.group.md) |  |
-|  [Sequence](./core.adapt.sequence.md) |  |
 |  [WidgetPlugin](./core.adapt.widgetplugin.md) |  |
 
 ## Enumerations
@@ -54,6 +53,7 @@ hide_title: true
 |  [None()](./core.adapt.none.md) |  |
 |  [Only(h, dep)](./core.adapt.only.md) |  |
 |  [registerPlugin(plugin)](./core.adapt.registerplugin.md) |  |
+|  [Sequence(props)](./core.adapt.sequence.md) | Component that deploys its children sequentially. |
 |  [toDeployStatus(stat)](./core.adapt.todeploystatus.md) |  |
 |  [updateDeployment(options)](./core.adapt.updatedeployment.md) |  |
 
@@ -63,8 +63,8 @@ hide_title: true
 |  --- | --- |
 |  [ActComplete](./core.adapt.actcomplete.md) |  |
 |  [Action](./core.adapt.action.md) |  |
-|  [ActionChange](./core.adapt.actionchange.md) | Describes the effect an Action has on an Element type and detail here explain how the Action affects this specific element, which may or may not be different than the action. For example, an Action that performs a modify on a CloudFormation stack may cause certain Elements to be created and deleted within that Action. |
-|  [ActionInfo](./core.adapt.actioninfo.md) | Describes the overall effect that an Action is performing. type and detail here explain what the Action is doing overall, not how it affects any particular Element. |
+|  [ActionChange](./core.adapt.actionchange.md) | Describes the effect an Action has on a specific Element |
+|  [ActionInfo](./core.adapt.actioninfo.md) | Describes the overall effect that an Action is performing. |
 |  [ActOptions](./core.adapt.actoptions.md) |  |
 |  [BuildOpAscend](./core.adapt.buildopascend.md) |  |
 |  [BuildOpBuildDeferred](./core.adapt.buildopbuilddeferred.md) |  |
@@ -99,9 +99,9 @@ hide_title: true
 |  [PluginOptions](./core.adapt.pluginoptions.md) |  |
 |  [PluginRegistration](./core.adapt.pluginregistration.md) |  |
 |  [QueryDomain](./core.adapt.querydomain.md) |  |
-|  [Relation](./core.adapt.relation.md) |  |
+|  [Relation](./core.adapt.relation.md) | Relations are used to describe the logic of when an object will be ready. |
 |  [RelationExt](./core.adapt.relationext.md) |  |
-|  [SequenceProps](./core.adapt.sequenceprops.md) |  |
+|  [SequenceProps](./core.adapt.sequenceprops.md) | Props for [Adapt.Sequence()](./core.adapt.sequence.md)<!-- -->. |
 |  [StatusOptions](./core.adapt.statusoptions.md) |  |
 |  [UpdateOptions](./core.adapt.updateoptions.md) |  |
 |  [Waiting](./core.adapt.waiting.md) |  |
@@ -145,7 +145,7 @@ hide_title: true
 |  [Dependency](./core.adapt.dependency.md) |  |
 |  [DependsOn](./core.adapt.dependson.md) |  |
 |  [DependsOnMethod](./core.adapt.dependsonmethod.md) |  |
-|  [DeployedWhenMethod](./core.adapt.deployedwhenmethod.md) |  |
+|  [DeployedWhenMethod](./core.adapt.deployedwhenmethod.md) | A function that gives information about whether an Element has finished deploying. |
 |  [DeployOpStatus](./core.adapt.deployopstatus.md) |  |
 |  [DeployStatusExt](./core.adapt.deploystatusext.md) |  |
 |  [DomDiffIdFunc](./core.adapt.domdiffidfunc.md) |  |

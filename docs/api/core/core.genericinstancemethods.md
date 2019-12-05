@@ -22,3 +22,4 @@ export interface GenericInstanceMethods
 |  --- | --- | --- |
 |  [dependsOn](./core.genericinstancemethods.dependson.md) | <code>DependsOnMethod</code> |  |
 |  [deployedWhen](./core.genericinstancemethods.deployedwhen.md) | <code>DeployedWhenMethod</code> |  |
+|  [deployedWhenIsTrivial](./core.genericinstancemethods.deployedwhenistrivial.md) | <code>boolean</code> |  |

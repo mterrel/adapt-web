@@ -13,5 +13,5 @@ parent_id: api/cloud/cloud.k8s
 <b>Signature:</b>
 
 ```typescript
-containerProps?: Partial<K8sContainerProps>;
+containerProps?: Partial<OmitT<K8sContainerProps, "image">>;
 ```

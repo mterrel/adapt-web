@@ -37,6 +37,7 @@ See the [Docker API Reference](https://docs.docker.com/engine/api/v1.40/#operati
 |  [name](./cloud.containerprops.name.md) | <code>string</code> |  |
 |  [portBindings](./cloud.containerprops.portbindings.md) | [<code>PortBinding</code>](./cloud.portbinding.md) |  |
 |  [ports](./cloud.containerprops.ports.md) | [<code>PortDescription</code>](./cloud.portdescription.md)<code>[]</code> |  |
+|  [restartPolicy](./cloud.containerprops.restartpolicy.md) | [<code>RestartPolicy</code>](./cloud.restartpolicy.md) | The behavior to apply when the container exits. |
 |  [stdinOpen](./cloud.containerprops.stdinopen.md) | <code>boolean</code> |  |
 |  [stopSignal](./cloud.containerprops.stopsignal.md) | <code>string</code> |  |
 |  [tty](./cloud.containerprops.tty.md) | <code>boolean</code> |  |

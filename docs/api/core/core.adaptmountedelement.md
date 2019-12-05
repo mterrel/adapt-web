@@ -10,6 +10,8 @@ parent_id: api/core/core
 
 ## AdaptMountedElement interface
 
+Interface that represents an AdaptElement that has been mounted during the DOM build process.
+
 <b>Signature:</b>
 
 ```typescript
@@ -23,6 +25,7 @@ export interface AdaptMountedElement<P extends object = AnyProps> extends AdaptE
 |  [buildData](./core.adaptmountedelement.builddata.md) | [<code>BuildData</code>](./core.builddata.md) |  |
 |  [dependsOn](./core.adaptmountedelement.dependson.md) | <code>DependsOnMethod</code> |  |
 |  [deployedWhen](./core.adaptmountedelement.deployedwhen.md) | <code>DeployedWhenMethod</code> |  |
+|  [deployedWhenIsTrivial](./core.adaptmountedelement.deployedwhenistrivial.md) | <code>boolean</code> | True if the Element's <code>deployedWhen</code> is considered trivial. |
 |  [id](./core.adaptmountedelement.id.md) | [<code>ElementID</code>](./core.elementid.md) |  |
 |  [instance](./core.adaptmountedelement.instance.md) | [<code>GenericInstance</code>](./core.genericinstance.md) |  |
 |  [keyPath](./core.adaptmountedelement.keypath.md) | [<code>KeyPath</code>](./core.keypath.md) |  |
@@ -33,4 +36,5 @@ export interface AdaptMountedElement<P extends object = AnyProps> extends AdaptE
 
 |  Method | Description |
 |  --- | --- |
+|  [built()](./core.adaptmountedelement.built.md) |  |
 |  [status(o)](./core.adaptmountedelement.status.md) |  |

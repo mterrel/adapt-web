@@ -13,11 +13,11 @@ parent_id: api/cloud/cloud.k8s
 <b>Signature:</b>
 
 ```typescript
-contexts: [{
+contexts: {
         name: string;
         context: {
             cluster: string;
             user: string;
         };
-    }];
+    }[];
 ```

@@ -15,7 +15,7 @@ Creates a throw-away [Postgres](https://www.postgresql.org) database with preloa
 <b>Signature:</b>
 
 ```typescript
-export declare function PreloadedPostgresImage(props: PreloadedPostgresImageProps): Adapt.AdaptElement<Adapt.AnyProps> | null;
+export declare function PreloadedPostgresImage(props: PreloadedPostgresImageProps): Adapt.AdaptElementOrNull;
 ```
 
 ## Parameters
@@ -26,7 +26,7 @@ export declare function PreloadedPostgresImage(props: PreloadedPostgresImageProp
 
 <b>Returns:</b>
 
-`Adapt.AdaptElement<Adapt.AnyProps> | null`
+`Adapt.AdaptElementOrNull`
 
 ## Remarks
 

@@ -10,6 +10,8 @@ parent_id: api/core/core.adapt
 
 ## Adapt.SequenceProps interface
 
+Props for [Adapt.Sequence()](./core.adapt.sequence.md)<!-- -->.
+
 <b>Signature:</b>
 
 ```typescript

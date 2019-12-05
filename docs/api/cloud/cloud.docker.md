@@ -20,12 +20,14 @@ Docker library for Adapt.
 |  [DockerImage](./cloud.docker.dockerimage.md) | <b><i>(BETA)</i></b> Abstract component representing a [Docker](https://docker.com) image that can be used to create containers. |
 |  [LocalDockerImage](./cloud.docker.localdockerimage.md) | Locally builds a docker image |
 |  [RegistryDockerImage](./cloud.docker.registrydockerimage.md) | Represents a Docker image in a registry. |
+|  [ServiceContainerSet](./cloud.docker.servicecontainerset.md) | A component for mapping a group of abstract [Container](./cloud.container.md)<!-- -->s and [NetworkService](./cloud.networkservice.md)<!-- -->s to Docker [DockerContainer](./cloud.docker.dockercontainer.md)<!-- -->s and [docker.NetworkService()](./cloud.docker.networkservice.md)<!-- -->s. |
 
 ## Functions
 
 |  Function | Description |
 |  --- | --- |
 |  [LocalDockerRegistry(props)](./cloud.docker.localdockerregistry.md) | Runs a Docker registry in a container. |
+|  [NetworkService(props)](./cloud.docker.networkservice.md) | Docker network service component, compatible with the abstract [NetworkService](./cloud.networkservice.md) component. |
 
 ## Interfaces
 
@@ -39,11 +41,13 @@ Docker library for Adapt.
 |  [DockerImageProps](./cloud.docker.dockerimageprops.md) | <b><i>(BETA)</i></b> Props for [docker.DockerImage](./cloud.docker.dockerimage.md)<!-- -->. |
 |  [DockerPushableImageInstance](./cloud.docker.dockerpushableimageinstance.md) | Components that provide a Docker image can implement this interface to allow other components to get information about the Docker image and to be able to push the image to a registry. |
 |  [DockerRegistryInstance](./cloud.docker.dockerregistryinstance.md) |  |
+|  [DockerSplitRegistryInfo](./cloud.docker.dockersplitregistryinfo.md) | <b><i>(BETA)</i></b> Represents a split registry, with pushes going to external and pulls going to internal |
 |  [File](./cloud.docker.file.md) | A dynamically-created file that can be used during the build of a Docker image. |
 |  [ImageInfo](./cloud.docker.imageinfo.md) | Information about a specific instance of a Docker image, as identified by its image ID. |
 |  [LocalDockerImageProps](./cloud.docker.localdockerimageprops.md) | Props for [docker.LocalDockerImage](./cloud.docker.localdockerimage.md) |
 |  [LocalDockerRegistryProps](./cloud.docker.localdockerregistryprops.md) | Props for [docker.LocalDockerRegistry()](./cloud.docker.localdockerregistry.md) |
 |  [RegistryDockerImageProps](./cloud.docker.registrydockerimageprops.md) | Props for [docker.RegistryDockerImage](./cloud.docker.registrydockerimage.md) |
+|  [ServiceContainerSetProps](./cloud.docker.servicecontainersetprops.md) | Props for [docker.ServiceContainerSet](./cloud.docker.servicecontainerset.md) |
 |  [Stage](./cloud.docker.stage.md) | A stage to be added to a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/)<!-- -->. |
 
 ## Type Aliases

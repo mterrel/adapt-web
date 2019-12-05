@@ -15,7 +15,9 @@ The [Postgres](https://www.postgresql.org) library for Adapt.
 
 |  Function | Description |
 |  --- | --- |
+|  [default(props)](./cloud.postgres.default.md) | Component that represents an external provider of a Postgres database |
 |  [Postgres()](./cloud.postgres.postgres.md) | An abstract component representing a Postgres database within a Postgres server or service. |
+|  [PostgresProvider(props)](./cloud.postgres.postgresprovider.md) | Component that represents an external provider of a Postgres database |
 |  [PreloadedPostgresImage(props)](./cloud.postgres.preloadedpostgresimage.md) | Creates a throw-away [Postgres](https://www.postgresql.org) database with preloaded data. |
 |  [TestPostgres(props)](./cloud.postgres.testpostgres.md) | A component suitable for creating test scenarios that creates a simple, temporary Postgres database that loads test data from a .sql file and which implements the abstract [postgres.Postgres()](./cloud.postgres.postgres.md) interface. |
 
@@ -23,5 +25,6 @@ The [Postgres](https://www.postgresql.org) library for Adapt.
 
 |  Interface | Description |
 |  --- | --- |
+|  [PostgresProviderProps](./cloud.postgres.postgresproviderprops.md) | Props for the [postgres.PostgresProvider()](./cloud.postgres.postgresprovider.md) component |
 |  [PreloadedPostgresImageProps](./cloud.postgres.preloadedpostgresimageprops.md) | Props for [postgres.PreloadedPostgresImage()](./cloud.postgres.preloadedpostgresimage.md) |
 |  [TestPostgresProps](./cloud.postgres.testpostgresprops.md) | Props for the [postgres.TestPostgres()](./cloud.postgres.testpostgres.md) component |

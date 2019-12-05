@@ -15,7 +15,7 @@ Props for [docker.DockerContainer](./cloud.docker.dockercontainer.md)
 <b>Signature:</b>
 
 ```typescript
-export interface DockerContainerProps extends DockerGlobalOptions, Pick<ContainerProps, "autoRemove" | "portBindings" | "command" | "stopSignal"> 
+export interface DockerContainerProps extends DockerGlobalOptions, Pick<ContainerProps, "autoRemove" | "command" | "environment" | "portBindings" | "ports" | "restartPolicy" | "stopSignal"> 
 ```
 
 ## Properties
@@ -25,3 +25,4 @@ export interface DockerContainerProps extends DockerGlobalOptions, Pick<Containe
 |  [dockerHost](./cloud.docker.dockercontainerprops.dockerhost.md) | <code>string</code> | Host and port of the remote docker host to use. |
 |  [image](./cloud.docker.dockercontainerprops.image.md) | <code>ImageNameString &#124;</code><br/><code>Handle&lt;DockerImageInstance&gt;</code> | image name as a string, or a handle to a DockerImage component |
 |  [labels](./cloud.docker.dockercontainerprops.labels.md) | [<code>ContainerLabels</code>](./cloud.containerlabels.md) | Labels to apply to the container. |
+|  [networks](./cloud.docker.dockercontainerprops.networks.md) | <code>string[]</code> | Networks to connect the container to |

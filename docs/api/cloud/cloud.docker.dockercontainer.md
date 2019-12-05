@@ -27,6 +27,7 @@ See [docker.DockerContainerProps](./cloud.docker.dockercontainerprops.md)<!-- --
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [defaultProps](./cloud.docker.dockercontainer.defaultprops.md) | <code>static</code> | <code>{</code><br/><code>        dockerHost: string &#124;</code><br/><code>undefined;</code><br/><code>    }</code> |  |
+|  [dependsOn](./cloud.docker.dockercontainer.dependson.md) |  | <code>DependsOnMethod</code> |  |
 
 ## Methods
 
