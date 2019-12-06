@@ -20,8 +20,8 @@ observe(oldDom: AdaptElementOrNull, dom: AdaptElementOrNull): Promise<Observed<W
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  oldDom | <code>AdaptElementOrNull</code> |  |
-|  dom | <code>AdaptElementOrNull</code> |  |
+|  oldDom | [<code>AdaptElementOrNull</code>](./core.adaptelementornull.md) |  |
+|  dom | [<code>AdaptElementOrNull</code>](./core.adaptelementornull.md) |  |
 
 <b>Returns:</b>
 

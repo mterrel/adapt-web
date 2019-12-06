@@ -20,7 +20,7 @@ setState(stateUpdate: Partial<State> | StateUpdater<Props, State>): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  stateUpdate | <code>Partial&lt;State&gt; &#124; StateUpdater&lt;Props, State&gt;</code> |  |
+|  stateUpdate | <code>Partial&lt;State&gt; &#124;</code><br/><code></code>[<code>StateUpdater</code>](./core.stateupdater.md)<code>&lt;Props, State&gt;</code> |  |
 
 <b>Returns:</b>
 

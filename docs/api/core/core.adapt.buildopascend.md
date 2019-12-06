@@ -20,6 +20,6 @@ export interface BuildOpAscend
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [ascendFrom](./core.adapt.buildopascend.ascendfrom.md) | <code>AdaptElement</code> |  |
-|  [ascendTo](./core.adapt.buildopascend.ascendto.md) | <code>AdaptElement</code> |  |
+|  [ascendFrom](./core.adapt.buildopascend.ascendfrom.md) | [<code>AdaptElement</code>](./core.adaptelement.md) |  |
+|  [ascendTo](./core.adapt.buildopascend.ascendto.md) | [<code>AdaptElement</code>](./core.adaptelement.md) |  |
 |  [type](./core.adapt.buildopascend.type.md) | <code>&quot;ascend&quot;</code> |  |

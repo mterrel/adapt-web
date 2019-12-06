@@ -20,5 +20,5 @@ export interface BuildOpElementDone
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [elem](./core.adapt.buildopelementdone.elem.md) | <code>AdaptElement</code> |  |
+|  [elem](./core.adapt.buildopelementdone.elem.md) | [<code>AdaptElement</code>](./core.adaptelement.md) |  |
 |  [type](./core.adapt.buildopelementdone.type.md) | <code>&quot;elementDone&quot;</code> |  |

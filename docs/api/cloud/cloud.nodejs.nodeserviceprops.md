@@ -23,10 +23,10 @@ export interface NodeServiceProps
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [buildOptions](./cloud.nodejs.nodeserviceprops.buildoptions.md) | <code>NodeImageBuildOptions</code> | Image build options to pass to [nodejs.LocalNodeImage()](./cloud.nodejs.localnodeimage.md)<!-- -->. |
-|  [connectTo](./cloud.nodejs.nodeserviceprops.connectto.md) | <code>Handle&lt;ConnectToInstance&gt; &#124; Handle&lt;ConnectToInstance&gt;[]</code> | Handles for services that this component connects to. |
+|  [connectTo](./cloud.nodejs.nodeserviceprops.connectto.md) | <code>Handle&lt;</code>[<code>ConnectToInstance</code>](./cloud.connecttoinstance.md)<code>&gt; &#124;</code><br/><code>Handle&lt;</code>[<code>ConnectToInstance</code>](./cloud.connecttoinstance.md)<code>&gt;[]</code> | Handles for services that this component connects to. |
 |  [deps](./cloud.nodejs.nodeserviceprops.deps.md) | <code>Handle &#124; Handle[]</code> | Dependencies that must be deployed before the Container image will build. |
-|  [env](./cloud.nodejs.nodeserviceprops.env.md) | <code>Environment</code> | Object containing environment variables that the Container will be started with. |
+|  [env](./cloud.nodejs.nodeserviceprops.env.md) | [<code>Environment</code>](./cloud.environment.md) | Object containing environment variables that the Container will be started with. |
 |  [externalPort](./cloud.nodejs.nodeserviceprops.externalport.md) | <code>number</code> | The port that the NetworkService will expose. |
 |  [port](./cloud.nodejs.nodeserviceprops.port.md) | <code>number</code> | The port number that the Node Container will use. |
-|  [scope](./cloud.nodejs.nodeserviceprops.scope.md) | <code>NetworkServiceScope</code> | Scope within which the NetworkService will be exposed. |
+|  [scope](./cloud.nodejs.nodeserviceprops.scope.md) | [<code>NetworkServiceScope</code>](./cloud.networkservicescope.md) | Scope within which the NetworkService will be exposed. |
 |  [srcDir](./cloud.nodejs.nodeserviceprops.srcdir.md) | <code>string</code> | Root directory (which contains package.json) for the Node.js app source code. |

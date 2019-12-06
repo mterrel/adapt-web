@@ -22,7 +22,7 @@ export declare function defaultDeployedWhen(el: AdaptElement): DeployedWhenMetho
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  el | <code>AdaptElement</code> | The Element for which a default <code>deployedWhen</code> function should be created. |
+|  el | [<code>AdaptElement</code>](./core.adaptelement.md) | The Element for which a default <code>deployedWhen</code> function should be created. |
 
 <b>Returns:</b>
 

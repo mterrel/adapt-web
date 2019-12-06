@@ -24,7 +24,7 @@ export declare function useMethod<OverrideReturn, H extends Handle = Handle, Ins
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  hand | <code>Handle &#124; null</code> |  |
+|  hand | [<code>Handle</code>](./core.handle.md)<code> &#124; null</code> |  |
 |  method | <code>MethodName</code> |  |
 
 <b>Returns:</b>

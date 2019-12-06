@@ -18,11 +18,15 @@ Component to instantiate an image container with docker
 export declare class DockerContainer extends Action<DockerContainerProps, DockerContainerState> 
 ```
 
+## Remarks
+
+See [docker.DockerContainerProps](./cloud.docker.dockercontainerprops.md)<!-- -->.
+
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [defaultProps](./cloud.docker.dockercontainer.defaultprops.md) | <code>static</code> | <code>{</code><br/><code>        dockerHost: string &#124; undefined;</code><br/><code>    }</code> |  |
+|  [defaultProps](./cloud.docker.dockercontainer.defaultprops.md) | <code>static</code> | <code>{</code><br/><code>        dockerHost: string &#124;</code><br/><code>undefined;</code><br/><code>    }</code> |  |
 |  [dependsOn](./cloud.docker.dockercontainer.dependson.md) |  | <code>DependsOnMethod</code> |  |
 
 ## Methods
@@ -31,7 +35,3 @@ export declare class DockerContainer extends Action<DockerContainerProps, Docker
 |  --- | --- | --- |
 |  [dockerIP(network)](./cloud.docker.dockercontainer.dockerip.md) |  | <b><i>(BETA)</i></b> Get the IP address of the container, optionally for a specific Docker network. |
 |  [status(observe, buildData)](./cloud.docker.dockercontainer.status.md) |  |  |
-
-## Remarks
-
-See [docker.DockerContainerProps](./cloud.docker.dockercontainerprops.md)<!-- -->.

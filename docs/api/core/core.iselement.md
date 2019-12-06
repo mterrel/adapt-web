@@ -24,4 +24,4 @@ export declare function isElement<P extends object = AnyProps>(val: any): val is
 
 <b>Returns:</b>
 
-`val is AdaptElement<P>`
+`val is `[`AdaptElement`](./core.adaptelement.md)`<P>`

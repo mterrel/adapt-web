@@ -21,10 +21,10 @@ export interface Handle<I extends object = GenericInstance> extends Readonly<Par
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [associated](./core.handle.associated.md) | <code>boolean</code> |  |
-|  [mountedOrig](./core.handle.mountedorig.md) | <code>AdaptMountedElement &#124; null &#124; undefined</code> |  |
+|  [mountedOrig](./core.handle.mountedorig.md) | [<code>AdaptMountedElement</code>](./core.adaptmountedelement.md)<code> &#124;</code><br/><code>null &#124;</code><br/><code>undefined</code> |  |
 |  [name](./core.handle.name.md) | <code>string</code> |  |
-|  [origTarget](./core.handle.origtarget.md) | <code>AdaptElement &#124; null &#124; undefined</code> |  |
-|  [target](./core.handle.target.md) | <code>AdaptElement &#124; null &#124; undefined</code> |  |
+|  [origTarget](./core.handle.origtarget.md) | [<code>AdaptElement</code>](./core.adaptelement.md)<code> &#124;</code><br/><code>null &#124;</code><br/><code>undefined</code> |  |
+|  [target](./core.handle.target.md) | [<code>AdaptElement</code>](./core.adaptelement.md)<code> &#124;</code><br/><code>null &#124;</code><br/><code>undefined</code> |  |
 
 ## Methods
 

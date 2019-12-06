@@ -20,7 +20,7 @@ export declare function useContext<T>(context: Context<T>): T;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  context | <code>Context&lt;T&gt;</code> |  |
+|  context | [<code>Context</code>](./core.context.md)<code>&lt;T&gt;</code> |  |
 
 <b>Returns:</b>
 

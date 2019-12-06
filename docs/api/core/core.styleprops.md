@@ -20,4 +20,4 @@ export interface StyleProps
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [children](./core.styleprops.children.md) | <code>(AbstractComponentCtor &#124; SFC &#124; string &#124; AdaptComponentConstructor &#124; Rule)[]</code> |  |
+|  [children](./core.styleprops.children.md) | <code>(</code>[<code>AbstractComponentCtor</code>](./core.abstractcomponentctor.md)<code> &#124;</code><br/><code></code>[<code>SFC</code>](./core.sfc.md)<code> &#124;</code><br/><code>string &#124;</code><br/><code></code>[<code>AdaptComponentConstructor</code>](./core.adaptcomponentconstructor.md)<code> &#124;</code><br/><code></code>[<code>Rule</code>](./core.rule.md)<code>)[]</code> |  |

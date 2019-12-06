@@ -18,6 +18,10 @@ Represents a Docker image in a registry.
 export declare class RegistryDockerImage extends Action<RegistryDockerImageProps, State> implements DockerImageInstance 
 ```
 
+## Remarks
+
+If the image does not exist in the specified registry, it will be pushed to that registry.
+
 ## Constructors
 
 |  Constructor | Modifiers | Description |
@@ -30,7 +34,3 @@ export declare class RegistryDockerImage extends Action<RegistryDockerImageProps
 |  --- | --- | --- |
 |  [image()](./cloud.docker.registrydockerimage.image.md) |  | Returns information about the version of the Docker image that reflects the current set of props for the component and has been pushed to the registry. |
 |  [latestImage()](./cloud.docker.registrydockerimage.latestimage.md) |  | Returns information about the most current version of the Docker image that has been pushed to the registry. |
-
-## Remarks
-
-If the image does not exist in the specified registry, it will be pushed to that registry.

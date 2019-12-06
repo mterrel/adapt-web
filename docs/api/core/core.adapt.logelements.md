@@ -21,7 +21,7 @@ export declare function logElements(msg: string, elements: AdaptElement[], logge
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  msg | <code>string</code> |  |
-|  elements | <code>AdaptElement[]</code> |  |
+|  elements | [<code>AdaptElement</code>](./core.adaptelement.md)<code>[]</code> |  |
 |  logger | <code>Logger</code> |  |
 
 <b>Returns:</b>

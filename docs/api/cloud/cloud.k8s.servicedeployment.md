@@ -18,12 +18,6 @@ A component for mapping a group of abstract [Container](./cloud.container.md)<!-
 export declare class ServiceDeployment extends DeferredComponent<ServiceDeploymentProps> 
 ```
 
-## Methods
-
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [build(helpers)](./cloud.k8s.servicedeployment.build.md) |  |  |
-
 ## Remarks
 
 This component is intended to be used to replace [Container](./cloud.container.md) and [NetworkService](./cloud.networkservice.md) components that are grouped together, as the only children of a common parent in a pattern that looks like this:
@@ -62,3 +56,9 @@ An example style rule to do this is:
 
 ```
 `ServiceDeployment` also requires the `config` prop which specifies connection and authentication information for the Kubernetes cluster on which these objects should be created.
+
+## Methods
+
+|  Method | Modifiers | Description |
+|  --- | --- | --- |
+|  [build(helpers)](./cloud.k8s.servicedeployment.build.md) |  |  |

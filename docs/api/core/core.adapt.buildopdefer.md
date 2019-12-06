@@ -20,5 +20,5 @@ export interface BuildOpDefer
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [elem](./core.adapt.buildopdefer.elem.md) | <code>AdaptElement</code> |  |
+|  [elem](./core.adapt.buildopdefer.elem.md) | [<code>AdaptElement</code>](./core.adaptelement.md) |  |
 |  [type](./core.adapt.buildopdefer.type.md) | <code>&quot;defer&quot;</code> |  |

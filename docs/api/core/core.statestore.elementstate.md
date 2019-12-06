@@ -20,8 +20,8 @@ elementState(elem: StateNamespace): AnyState | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  elem | <code>StateNamespace</code> |  |
+|  elem | [<code>StateNamespace</code>](./core.statenamespace.md) |  |
 
 <b>Returns:</b>
 
-`AnyState | undefined`
+[`AnyState`](./core.anystate.md)` | undefined`

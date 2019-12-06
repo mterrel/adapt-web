@@ -26,7 +26,7 @@ export interface ContainerSpec
 |  [command](./cloud.k8s.containerspec.command.md) | <code>string[]</code> |  |
 |  [env](./cloud.k8s.containerspec.env.md) | <code>EnvVar[]</code> |  |
 |  [image](./cloud.k8s.containerspec.image.md) | <code>string</code> |  |
-|  [imagePullPolicy](./cloud.k8s.containerspec.imagepullpolicy.md) | <code>&quot;Always&quot; &#124; &quot;Never&quot; &#124; &quot;IfNotPresent&quot;</code> |  |
+|  [imagePullPolicy](./cloud.k8s.containerspec.imagepullpolicy.md) | <code>&quot;Always&quot; &#124;</code><br/><code>&quot;Never&quot; &#124;</code><br/><code>&quot;IfNotPresent&quot;</code> |  |
 |  [name](./cloud.k8s.containerspec.name.md) | <code>string</code> |  |
 |  [ports](./cloud.k8s.containerspec.ports.md) | <code>ContainerPort[]</code> |  |
 |  [tty](./cloud.k8s.containerspec.tty.md) | <code>boolean</code> |  |

@@ -24,4 +24,4 @@ export declare function noTransform(val: unknown): Status;
 
 <b>Returns:</b>
 
-`Status`
+[`Status`](./core.status.md)

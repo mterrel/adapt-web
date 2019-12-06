@@ -20,4 +20,4 @@ export interface Status extends NoStatus
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [childStatus](./core.status.childstatus.md) | <code>Status[]</code> |  |
+|  [childStatus](./core.status.childstatus.md) | [<code>Status</code>](./core.status.md)<code>[]</code> |  |

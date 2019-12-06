@@ -25,7 +25,7 @@ hostname(scope?: NetworkScope): string | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  scope | <code>NetworkScope</code> | the scope of the desired hostname ("default" cluster/internal, "external" - world accessible) |
+|  scope | [<code>NetworkScope</code>](./cloud.networkscope.md) | the scope of the desired hostname ("default" cluster/internal, "external" - world accessible) |
 
 <b>Returns:</b>
 

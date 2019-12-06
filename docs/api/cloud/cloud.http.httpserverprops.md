@@ -24,5 +24,5 @@ export interface HttpServerProps
 |  [add](./cloud.http.httpserverprops.add.md) | <code>Files[]</code> |  |
 |  [localAddRoot](./cloud.http.httpserverprops.localaddroot.md) | <code>string</code> |  |
 |  [port](./cloud.http.httpserverprops.port.md) | <code>number</code> |  |
-|  [scope](./cloud.http.httpserverprops.scope.md) | <code>NetworkServiceScope</code> |  |
+|  [scope](./cloud.http.httpserverprops.scope.md) | [<code>NetworkServiceScope</code>](./cloud.networkservicescope.md) |  |
 |  [servers](./cloud.http.httpserverprops.servers.md) | <code>VirtualServer[]</code> |  |

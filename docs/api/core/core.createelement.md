@@ -20,10 +20,10 @@ export declare function createElement<Props extends object>(ctor: string | Funct
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  ctor | <code>string &#124; FunctionComponentTyp&lt;Props&gt; &#124; ClassComponentTyp&lt;Props, AnyState&gt;</code> |  |
-|  props | <code>ExcludeInterface&lt;Props, Children&lt;any&gt;&gt; &amp; Partial&lt;BuiltinProps&gt;</code> |  |
-|  children | <code>ChildType&lt;Props&gt;[]</code> |  |
+|  ctor | <code>string &#124;</code><br/><code></code>[<code>FunctionComponentTyp</code>](./core.functioncomponenttyp.md)<code>&lt;Props&gt; &#124;</code><br/><code></code>[<code>ClassComponentTyp</code>](./core.classcomponenttyp.md)<code>&lt;Props, </code>[<code>AnyState</code>](./core.anystate.md)<code>&gt;</code> |  |
+|  props | <code>ExcludeInterface&lt;Props, </code>[<code>Children</code>](./core.children.md)<code>&lt;any&gt;&gt; &amp;</code><br/><code>Partial&lt;</code>[<code>BuiltinProps</code>](./core.builtinprops.md)<code>&gt;</code> |  |
+|  children | [<code>ChildType</code>](./core.childtype.md)<code>&lt;Props&gt;[]</code> |  |
 
 <b>Returns:</b>
 
-`AdaptElement`
+[`AdaptElement`](./core.adaptelement.md)

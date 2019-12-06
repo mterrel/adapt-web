@@ -20,7 +20,7 @@ findObserverSchema(observer: ObserverNameHolder): GraphQLSchema | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  observer | <code>ObserverNameHolder</code> |  |
+|  observer | [<code>ObserverNameHolder</code>](./core.observernameholder.md) |  |
 
 <b>Returns:</b>
 

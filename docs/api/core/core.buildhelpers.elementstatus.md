@@ -20,7 +20,7 @@ elementStatus<T = Status>(handle: Handle): Promise<T | undefined>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  handle | <code>Handle</code> |  |
+|  handle | [<code>Handle</code>](./core.handle.md) |  |
 
 <b>Returns:</b>
 

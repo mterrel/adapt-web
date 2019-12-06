@@ -22,7 +22,7 @@ export declare function Container(props: ContainerProps): Adapt.AdaptElementOrNu
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  props | <code>ContainerProps</code> |  |
+|  props | [<code>ContainerProps</code>](./cloud.containerprops.md) |  |
 
 <b>Returns:</b>
 

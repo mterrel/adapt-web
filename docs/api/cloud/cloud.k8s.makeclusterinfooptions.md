@@ -23,4 +23,4 @@ export interface MakeClusterInfoOptions
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [kubeconfig](./cloud.k8s.makeclusterinfooptions.kubeconfig.md) | <code>Kubeconfig &#124; string</code> | A Javascript Object representing a valid kubeconfig, or a YAML string, or a path to a kubeconfig file. |
-|  [registryUrl](./cloud.k8s.makeclusterinfooptions.registryurl.md) | <code>string &#124; DockerSplitRegistryInfo</code> | URL to the docker registry that this cluster uses to pull private images. |
+|  [registryUrl](./cloud.k8s.makeclusterinfooptions.registryurl.md) | <code>string &#124;</code><br/><code>DockerSplitRegistryInfo</code> | URL to the docker registry that this cluster uses to pull private images. |

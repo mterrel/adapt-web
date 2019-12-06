@@ -20,8 +20,8 @@ export declare function isMountedPrimitiveElement<P extends object>(elem: AdaptE
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  elem | <code>AdaptElement&lt;P&gt;</code> |  |
+|  elem | [<code>AdaptElement</code>](./core.adaptelement.md)<code>&lt;P&gt;</code> |  |
 
 <b>Returns:</b>
 
-`elem is AdaptMountedPrimitiveElement<P>`
+`elem is `[`AdaptMountedPrimitiveElement`](./core.adaptmountedprimitiveelement.md)`<P>`

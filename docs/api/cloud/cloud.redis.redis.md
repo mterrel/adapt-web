@@ -18,14 +18,14 @@ Abstract Redis component
 export declare abstract class Redis extends PrimitiveComponent implements ConnectToInstance 
 ```
 
+## Remarks
+
+This component is used to denote a needed [Redis](https://redis.io) service. Users should use a style sheet to subsitute a concrete Redis instance that provides the service. [redis.TestRedis()](./cloud.redis.testredis.md) is such a component, suitable for test environments.
+
+All implementations of this component should implmenent [ConnectToInstance](./cloud.connecttoinstance.md) that provides a `REDIS_URI` variable of the form `redis://<hostname>:<port>`<!-- -->.
+
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [connectEnv(\_scope)](./cloud.redis.redis.connectenv.md) |  |  |
-
-## Remarks
-
-This component is used to denote a needed [Redis](https://redis.io) service. Users should use a style sheet to subsitute a concrete Redis instance that provides the service.  is such a component, suitable for test environments.
-
-All implementations of this component should implmenent [ConnectToInstance](./cloud.connecttoinstance.md) that provides a `REDIS_URI` variable of the form `redis://<hostname>:<port>`<!-- -->.

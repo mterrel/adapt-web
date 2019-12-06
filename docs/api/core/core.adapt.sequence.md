@@ -22,8 +22,8 @@ export declare function Sequence(props: SFCDeclProps<SequenceProps>): AdaptEleme
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  props | <code>SFCDeclProps&lt;SequenceProps&gt;</code> |  |
+|  props | [<code>SFCDeclProps</code>](./core.sfcdeclprops.md)<code>&lt;SequenceProps&gt;</code> |  |
 
 <b>Returns:</b>
 
-`AdaptElement<import("../jsx").AnyProps>`
+[`AdaptElement`](./core.adaptelement.md)`<import("../jsx").`[`AnyProps`](./core.anyprops.md)`>`

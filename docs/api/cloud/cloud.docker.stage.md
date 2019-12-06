@@ -18,13 +18,6 @@ A stage to be added to a [multi-stage Docker build](https://docs.docker.com/deve
 export interface Stage 
 ```
 
-## Properties
-
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [image](./cloud.docker.stage.image.md) | <code>string</code> | The image (name + tag or digest) to use for the stage. |
-|  [name](./cloud.docker.stage.name.md) | <code>string</code> | Name for the stage |
-
 ## Remarks
 
 The stage will be added to the generated Dockerfile for the image as:
@@ -33,3 +26,10 @@ The stage will be added to the generated Dockerfile for the image as:
 FROM image as name
 
 ```
+
+## Properties
+
+|  Property | Type | Description |
+|  --- | --- | --- |
+|  [image](./cloud.docker.stage.image.md) | <code>string</code> | The image (name + tag or digest) to use for the stage. |
+|  [name](./cloud.docker.stage.name.md) | <code>string</code> | Name for the stage |

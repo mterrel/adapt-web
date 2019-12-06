@@ -21,8 +21,8 @@ export declare function hasInstanceMethod(name: string, skip?: AdaptElement | nu
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  name | <code>string</code> |  |
-|  skip | <code>AdaptElement &#124; null</code> |  |
+|  skip | [<code>AdaptElement</code>](./core.adaptelement.md)<code> &#124; null</code> |  |
 
 <b>Returns:</b>
 
-`ElementPredicate`
+[`ElementPredicate`](./core.elementpredicate.md)

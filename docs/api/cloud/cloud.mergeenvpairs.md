@@ -22,11 +22,11 @@ export declare function mergeEnvPairs(...envs: (Environment | undefined)[]): Env
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  envs | <code>(Environment &#124; undefined)[]</code> |  |
+|  envs | <code>(</code>[<code>Environment</code>](./cloud.environment.md)<code> &#124; undefined)[]</code> |  |
 
 <b>Returns:</b>
 
-`EnvPairs | undefined`
+[`EnvPairs`](./cloud.envpairs.md)` | undefined`
 
 ## Remarks
 

@@ -21,7 +21,7 @@ export interface StyleRule
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [selector](./core.stylerule.selector.md) | <code>string</code> |  |
-|  [sfc](./core.stylerule.sfc.md) | <code>BuildOverride</code> |  |
+|  [sfc](./core.stylerule.sfc.md) | [<code>BuildOverride</code>](./core.buildoverride.md) |  |
 
 ## Methods
 

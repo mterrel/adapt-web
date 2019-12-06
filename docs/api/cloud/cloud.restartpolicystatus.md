@@ -23,4 +23,4 @@ export interface RestartPolicyStatus
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [MaximumRetryCount](./cloud.restartpolicystatus.maximumretrycount.md) | <code>number</code> |  |
-|  [Name](./cloud.restartpolicystatus.name.md) | <code>&quot;no&quot; &#124; &quot;always&quot; &#124; &quot;on-failure&quot; &#124; &quot;unless-stopped&quot;</code> |  |
+|  [Name](./cloud.restartpolicystatus.name.md) | <code>&quot;no&quot; &#124;</code><br/><code>&quot;always&quot; &#124;</code><br/><code>&quot;on-failure&quot; &#124;</code><br/><code>&quot;unless-stopped&quot;</code> |  |

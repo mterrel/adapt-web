@@ -20,7 +20,7 @@ match(path: DomPath): boolean;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  path | <code>DomPath</code> |  |
+|  path | [<code>DomPath</code>](./core.dompath.md) |  |
 
 <b>Returns:</b>
 

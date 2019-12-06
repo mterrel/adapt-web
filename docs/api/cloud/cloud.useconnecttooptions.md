@@ -10,7 +10,7 @@ parent_id: api/cloud/cloud
 
 ## UseConnectToOptions interface
 
-Options for 
+Options for `useConnectTo`
 
 <b>Signature:</b>
 
@@ -22,5 +22,5 @@ export interface UseConnectToOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [scope](./cloud.useconnecttooptions.scope.md) | <code>NetworkScope</code> | Scope from which returned connection information should be usable |
-|  [xform](./cloud.useconnecttooptions.xform.md) | <code>(e: Environment) =&gt; Environment</code> | A function that will transform each environment before it is merged |
+|  [scope](./cloud.useconnecttooptions.scope.md) | [<code>NetworkScope</code>](./cloud.networkscope.md) | Scope from which returned connection information should be usable |
+|  [xform](./cloud.useconnecttooptions.xform.md) | <code>(e: </code>[<code>Environment</code>](./cloud.environment.md)<code>) =&gt; </code>[<code>Environment</code>](./cloud.environment.md) | A function that will transform each environment before it is merged |

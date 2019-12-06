@@ -20,8 +20,8 @@ export declare function isDomErrorElement(element: AdaptElement): element is Ada
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  element | <code>AdaptElement</code> |  |
+|  element | [<code>AdaptElement</code>](./core.adaptelement.md) |  |
 
 <b>Returns:</b>
 
-`element is AdaptElement<DomErrorProps>`
+`element is `[`AdaptElement`](./core.adaptelement.md)`<DomErrorProps>`

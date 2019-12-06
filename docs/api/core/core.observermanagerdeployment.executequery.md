@@ -20,9 +20,9 @@ executeQuery<R = any>(observer: ObserverNameHolder, q: Query, vars?: Variables):
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  observer | <code>ObserverNameHolder</code> |  |
+|  observer | [<code>ObserverNameHolder</code>](./core.observernameholder.md) |  |
 |  q | <code>Query</code> |  |
-|  vars | <code>Variables</code> |  |
+|  vars | [<code>Variables</code>](./core.variables.md) |  |
 
 <b>Returns:</b>
 

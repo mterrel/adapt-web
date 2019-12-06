@@ -20,8 +20,8 @@ abstract build(helpers: BuildHelpers): AdaptElementOrNull | Promise<AdaptElement
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  helpers | <code>BuildHelpers</code> |  |
+|  helpers | [<code>BuildHelpers</code>](./core.buildhelpers.md) |  |
 
 <b>Returns:</b>
 
-`AdaptElementOrNull | Promise<AdaptElementOrNull>`
+[`AdaptElementOrNull`](./core.adaptelementornull.md)` | Promise<`[`AdaptElementOrNull`](./core.adaptelementornull.md)`>`

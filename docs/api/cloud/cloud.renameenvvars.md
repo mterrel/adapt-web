@@ -24,11 +24,11 @@ export declare function renameEnvVars(e: Environment, mapping: {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  e | <code>Environment</code> | [Environment](./cloud.environment.md) to rename |
+|  e | [<code>Environment</code>](./cloud.environment.md) | [Environment](./cloud.environment.md) to rename |
 |  mapping | <code>{</code><br/><code>    [orig: string]: string;</code><br/><code>}</code> | Object with <code>(key, value)</code> pairs that are <code>(originalName, newName)</code> pairs. |
 
 <b>Returns:</b>
 
-`Environment`
+[`Environment`](./cloud.environment.md)
 
 A new [Environment](./cloud.environment.md) object with all variables renamed according to `mapping`

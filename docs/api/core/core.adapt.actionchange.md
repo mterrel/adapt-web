@@ -18,14 +18,14 @@ Describes the effect an Action has on a specific Element
 export interface ActionChange 
 ```
 
+## Remarks
+
+type and detail here explain how the Action affects this specific element, which may or may not be different than the action. For example, an Action that performs a modify on a CloudFormation stack may cause certain Elements to be created and deleted within that Action.
+
 ## Properties
 
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [detail](./core.adapt.actionchange.detail.md) | <code>string</code> |  |
-|  [element](./core.adapt.actionchange.element.md) | <code>FinalDomElement</code> |  |
+|  [element](./core.adapt.actionchange.element.md) | [<code>FinalDomElement</code>](./core.finaldomelement.md) |  |
 |  [type](./core.adapt.actionchange.type.md) | <code>ChangeType</code> |  |
-
-## Remarks
-
-type and detail here explain how the Action affects this specific element, which may or may not be different than the action. For example, an Action that performs a modify on a CloudFormation stack may cause certain Elements to be created and deleted within that Action.

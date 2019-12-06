@@ -1,6 +1,6 @@
 ---
 id: cloud.redis.testredis
-title: "redis.TestRedis namespace"
+title: "redis.TestRedis() function"
 hide_title: true
 parent_id: api/cloud/cloud.redis
 ---
@@ -8,16 +8,28 @@ parent_id: api/cloud/cloud.redis
 
 [Cloud API Overview](overview) &gt; [@adpt/cloud](./cloud.md) &gt; [redis](./cloud.redis.md) &gt; [TestRedis](./cloud.redis.testredis.md)
 
-## redis.TestRedis namespace
+## redis.TestRedis() function
+
+Deploys a [Redis](https://redis.io) container suitable for testing
 
 <b>Signature:</b>
 
 ```typescript
-export declare namespace TestRedis 
+export declare function TestRedis(props: SFCDeclProps<TestRedisProps, typeof testRedisDefaultProps>): Adapt.AdaptElement<Adapt.AnyProps>;
 ```
 
-## Variables
+## Parameters
 
-|  Variable | Description |
-|  --- | --- |
-|  [defaultProps](./cloud.redis.testredis.defaultprops.md) |  |
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  props | <code>SFCDeclProps&lt;TestRedisProps, typeof testRedisDefaultProps&gt;</code> |  |
+
+<b>Returns:</b>
+
+`Adapt.AdaptElement<Adapt.AnyProps>`
+
+## Remarks
+
+Uses an abstract [Service](./cloud.service.md)<!-- -->, [NetworkService](./cloud.networkservice.md)<!-- -->, and [Container](./cloud.container.md) component that must be substituted in a style sheet.
+
+\* See [redis.TestRedisProps](./cloud.redis.testredisprops.md)<!-- -->.

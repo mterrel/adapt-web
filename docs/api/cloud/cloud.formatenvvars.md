@@ -22,7 +22,7 @@ export declare function formatEnvVars(env: Environment): string;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  env | <code>Environment</code> | The environment to be printed. |
+|  env | [<code>Environment</code>](./cloud.environment.md) | The environment to be printed. |
 
 <b>Returns:</b>
 

@@ -22,11 +22,11 @@ export declare function updateEnvVars(e: Environment, upd: (name: string, value:
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  e | <code>Environment</code> | The source [Environment](./cloud.environment.md) |
-|  upd | <code>(name: string, value: string) =&gt; EnvPair &#124; undefined</code> | Updated function that returns an EnvPair with the new name and value of the variable |
+|  e | [<code>Environment</code>](./cloud.environment.md) | The source [Environment](./cloud.environment.md) |
+|  upd | <code>(name: string, value: string) =&gt; </code>[<code>EnvPair</code>](./cloud.envpair.md)<code> &#124;</code><br/><code>undefined</code> | Updated function that returns an EnvPair with the new name and value of the variable |
 
 <b>Returns:</b>
 
-`Environment`
+[`Environment`](./cloud.environment.md)
 
 - A new [Environment](./cloud.environment.md) that is identical to `e` except for the updates done by `upd`

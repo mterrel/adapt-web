@@ -20,8 +20,8 @@ new (props: P & Partial<BuiltinProps>): PrimitiveComponent<P>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  props | <code>P &amp; Partial&lt;BuiltinProps&gt;</code> |  |
+|  props | <code>P &amp; Partial&lt;</code>[<code>BuiltinProps</code>](./core.builtinprops.md)<code>&gt;</code> |  |
 
 <b>Returns:</b>
 
-`PrimitiveComponent<P>`
+[`PrimitiveComponent`](./core.primitivecomponent.md)`<P>`

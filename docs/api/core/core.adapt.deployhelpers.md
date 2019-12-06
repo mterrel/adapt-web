@@ -20,6 +20,6 @@ export interface DeployHelpers
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [dependsOn](./core.adapt.deployhelpers.dependson.md) | <code>(dep: Handle &#124; Handle[]) =&gt; Relation</code> |  |
-|  [elementStatus](./core.adapt.deployhelpers.elementstatus.md) | <code>&lt;S extends Status = Status&gt;(handle: Handle) =&gt; Promise&lt;S &#124; Status &#124; undefined&gt;</code> |  |
+|  [dependsOn](./core.adapt.deployhelpers.dependson.md) | <code>(dep: </code>[<code>Handle</code>](./core.handle.md)<code> &#124;</code><br/><code></code>[<code>Handle</code>](./core.handle.md)<code>[]) =&gt; Relation</code> |  |
+|  [elementStatus](./core.adapt.deployhelpers.elementstatus.md) | <code>&lt;S extends </code>[<code>Status</code>](./core.status.md)<code> = </code>[<code>Status</code>](./core.status.md)<code>&gt;(handle: </code>[<code>Handle</code>](./core.handle.md)<code>) =&gt; Promise&lt;S &#124;</code><br/><code></code>[<code>Status</code>](./core.status.md)<code> &#124;</code><br/><code>undefined&gt;</code> |  |
 |  [isDeployed](./core.adapt.deployhelpers.isdeployed.md) | <code>IsDeployedFunc</code> |  |

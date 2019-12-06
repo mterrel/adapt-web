@@ -18,27 +18,27 @@ Props for the [Container](./cloud.container.md) component.
 export interface ContainerProps 
 ```
 
+## Remarks
+
+See the [Docker API Reference](https://docs.docker.com/engine/api/v1.40/#operation/ContainerCreate) for more information.
+
 ## Properties
 
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [autoRemove](./cloud.containerprops.autoremove.md) | <code>boolean</code> |  |
-|  [command](./cloud.containerprops.command.md) | <code>Command</code> |  |
+|  [command](./cloud.containerprops.command.md) | [<code>Command</code>](./cloud.command.md) |  |
 |  [dockerHost](./cloud.containerprops.dockerhost.md) | <code>string</code> |  |
-|  [entrypoint](./cloud.containerprops.entrypoint.md) | <code>Command</code> |  |
-|  [environment](./cloud.containerprops.environment.md) | <code>Environment</code> |  |
-|  [image](./cloud.containerprops.image.md) | <code>ImageId</code> |  |
-|  [imagePullPolicy](./cloud.containerprops.imagepullpolicy.md) | <code>&quot;Always&quot; &#124; &quot;Never&quot; &#124; &quot;IfNotPresent&quot;</code> |  |
-|  [links](./cloud.containerprops.links.md) | <code>Links</code> |  |
+|  [entrypoint](./cloud.containerprops.entrypoint.md) | [<code>Command</code>](./cloud.command.md) |  |
+|  [environment](./cloud.containerprops.environment.md) | [<code>Environment</code>](./cloud.environment.md) |  |
+|  [image](./cloud.containerprops.image.md) | [<code>ImageId</code>](./cloud.imageid.md) |  |
+|  [imagePullPolicy](./cloud.containerprops.imagepullpolicy.md) | <code>&quot;Always&quot; &#124;</code><br/><code>&quot;Never&quot; &#124;</code><br/><code>&quot;IfNotPresent&quot;</code> |  |
+|  [links](./cloud.containerprops.links.md) | [<code>Links</code>](./cloud.links.md) |  |
 |  [name](./cloud.containerprops.name.md) | <code>string</code> |  |
-|  [portBindings](./cloud.containerprops.portbindings.md) | <code>PortBinding</code> |  |
-|  [ports](./cloud.containerprops.ports.md) | <code>PortDescription[]</code> |  |
-|  [restartPolicy](./cloud.containerprops.restartpolicy.md) | <code>RestartPolicy</code> | The behavior to apply when the container exits. |
+|  [portBindings](./cloud.containerprops.portbindings.md) | [<code>PortBinding</code>](./cloud.portbinding.md) |  |
+|  [ports](./cloud.containerprops.ports.md) | [<code>PortDescription</code>](./cloud.portdescription.md)<code>[]</code> |  |
+|  [restartPolicy](./cloud.containerprops.restartpolicy.md) | [<code>RestartPolicy</code>](./cloud.restartpolicy.md) | The behavior to apply when the container exits. |
 |  [stdinOpen](./cloud.containerprops.stdinopen.md) | <code>boolean</code> |  |
 |  [stopSignal](./cloud.containerprops.stopsignal.md) | <code>string</code> |  |
 |  [tty](./cloud.containerprops.tty.md) | <code>boolean</code> |  |
 |  [workingDir](./cloud.containerprops.workingdir.md) | <code>string</code> |  |
-
-## Remarks
-
-See the [Docker API Reference](https://docs.docker.com/engine/api/v1.40/#operation/ContainerCreate) for more information.

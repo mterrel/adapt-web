@@ -11,14 +11,6 @@ hide_title: true
 
 Various Adapt Components based on [nginx](https://nginx.org)
 
-<b>Signature:</b>
-
-```typescript
-export * from "./HttpServer";
-export * from "./UrlRouter";
-//# sourceMappingURL=index.d.ts.map
-```
-
 ## Functions
 
 |  Function | Description |

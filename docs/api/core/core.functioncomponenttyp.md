@@ -20,4 +20,4 @@ export interface FunctionComponentTyp<P> extends ComponentStatic<P>
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [status](./core.functioncomponenttyp.status.md) | <code>(props: P, observe: ObserveForStatus, buildData: BuildData) =&gt; Promise&lt;unknown&gt;</code> |  |
+|  [status](./core.functioncomponenttyp.status.md) | <code>(props: P, observe: </code>[<code>ObserveForStatus</code>](./core.observeforstatus.md)<code>, buildData: </code>[<code>BuildData</code>](./core.builddata.md)<code>) =&gt; Promise&lt;unknown&gt;</code> |  |

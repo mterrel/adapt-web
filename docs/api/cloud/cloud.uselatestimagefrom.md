@@ -25,7 +25,7 @@ export declare function useLatestImageFrom(source: ImageId): string | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  source | <code>ImageId</code> |  |
+|  source | [<code>ImageId</code>](./cloud.imageid.md) |  |
 
 <b>Returns:</b>
 

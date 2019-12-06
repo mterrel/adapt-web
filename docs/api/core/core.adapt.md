@@ -9,37 +9,6 @@ hide_title: true
 
 ## Adapt namespace
 
-<b>Signature:</b>
-
-```typescript
-export { AnyMethods, callFirstInstanceWithMethod, callInstanceMethod, callNextInstanceMethod, callNextInstanceWithMethod, hasInstanceMethod, SetState, HookStateUpdater, useAsync, useBuildHelpers, useDependsOn, useDeployedWhen, UseDeployedWhenOptions, useImperativeMethods, useInstanceValue, useMethod, useMethodFrom, useState, UseStateInit, } from "./hooks";
-export * from "./jsx_namespace";
-export { childrenToArray, cloneElement, createElement, Component, DeferredComponent, PrimitiveComponent, AdaptDeferredElement, AdaptElement, AdaptMountedElement, AdaptMountedPrimitiveElement, AdaptElementOrNull, AdaptPrimitiveElement, AnyProps, AnyState, BuildHelpers, ClassComponentTyp, ComponentStatic, ComponentType, defaultDeployedWhen, DeferredClassComponentTyp, DeployInfo, ElementID, FinalDomElement, FunctionComponentTyp, GenericInstance, GenericInstanceMethods, KeyPath, BuiltinProps, ElementPredicate, PartialFinalDomElement, isApplyStyle, isFinalDomElement, isElement, isPartialFinalDomElement, isMountedElement, isMountedPrimitiveElement, isDeferredElement, isPrimitiveElement, WithChildren, PrimitiveChildType, PrimitiveClassComponentTyp, PropsType, SFC, SFCBuildProps, SFCDeclProps, } from "./jsx";
-export * from "./builtin_components";
-export * from "./deploy";
-export { build, BuildData, buildOnce, BuildOptions, BuildOutput, BuildOutputBase, BuildOutputError, BuildOutputPartial, BuildOutputSuccess, DomPath, ProcessStateUpdates, } from "./dom";
-export { AdaptComponentConstructor, AbstractComponentCtor, BuildOverride, concatStyles, Style, StyleBuildInfo, StyleList, StyleProps, StyleRule, rule, Rule, ruleNoRematch, findElementsInDom, findPathsInDom } from "./css";
-export { serializeDom, SerializeOptions, } from "./dom_serialize";
-export * from "./dom_build_data_recorder";
-export * from "./dom_utils";
-export { BuildNotImplemented, ProjectBuildError, ProjectCompileError, ProjectRunError, } from "./error";
-export { BuildId, handle, Handle, HandleInstanceType, isHandle, } from "./handle";
-export { ElementKey, isDefaultKey } from "./keys";
-export { Consumer, ConsumerProps, Context, createContext, Provider, ProviderProps, useContext } from "./context";
-export { stack, } from "./stack";
-export { createStateStore, StateNamespace, StateStore, StateUpdater, } from "./state";
-export * from "./ops";
-export { registerObserver, gql, Observer, ObserverManagerDeployment, ObserverPlugin, ObserverProps, ObserverResponse, ObserverNameHolder, ObserverNeedsData, ExecutedQuery, throwObserverErrors, Variables, } from "./observers";
-export { DeployOpID, } from "./server";
-export { defaultChildStatus, errorToNoStatus, gqlGetOriginalErrors, mergeDefaultChildStatus, NoStatus, noStatusOnError, noTransform, ObserveForStatus, Status, } from "./status";
-export { Children, ChildType, } from "./type_support";
-export { Constructor, Logger, Message, MessageLogger, } from "@adpt/utils";
-export { deepFilterElemsToPublic } from "./utils/dom-filter";
-import * as internal from "./internal";
-export { internal, };
-//# sourceMappingURL=exports.d.ts.map
-```
-
 ## Classes
 
 |  Class | Description |
@@ -152,8 +121,11 @@ export { internal, };
 |  --- | --- |
 |  [And](./core.adapt.and.md) |  |
 |  [defaultDomDiffId](./core.adapt.defaultdomdiffid.md) |  |
+|  [DeployOpStatus](./core.adapt.deployopstatus.md) |  |
+|  [DeployStatusExt](./core.adapt.deploystatusext.md) |  |
 |  [Edge](./core.adapt.edge.md) |  |
 |  [False](./core.adapt.false.md) |  |
+|  [GoalStatus](./core.adapt.goalstatus.md) |  |
 |  [Identity](./core.adapt.identity.md) |  |
 |  [isDependsOn](./core.adapt.isdependson.md) |  |
 |  [Not](./core.adapt.not.md) |  |

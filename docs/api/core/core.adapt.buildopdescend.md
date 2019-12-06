@@ -20,6 +20,6 @@ export interface BuildOpDescend
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [descendFrom](./core.adapt.buildopdescend.descendfrom.md) | <code>AdaptElement</code> |  |
-|  [descendTo](./core.adapt.buildopdescend.descendto.md) | <code>AdaptElement</code> |  |
+|  [descendFrom](./core.adapt.buildopdescend.descendfrom.md) | [<code>AdaptElement</code>](./core.adaptelement.md) |  |
+|  [descendTo](./core.adapt.buildopdescend.descendto.md) | [<code>AdaptElement</code>](./core.adaptelement.md) |  |
 |  [type](./core.adapt.buildopdescend.type.md) | <code>&quot;descend&quot;</code> |  |

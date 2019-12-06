@@ -24,12 +24,12 @@ export interface ContainerStatus
 |  --- | --- | --- |
 |  [AppArmorProfile](./cloud.containerstatus.apparmorprofile.md) | <code>string</code> |  |
 |  [Args](./cloud.containerstatus.args.md) | <code>string[]</code> |  |
-|  [Config](./cloud.containerstatus.config.md) | <code>Config</code> |  |
+|  [Config](./cloud.containerstatus.config.md) | [<code>Config</code>](./cloud.config.md) |  |
 |  [Created](./cloud.containerstatus.created.md) | <code>string</code> |  |
 |  [Driver](./cloud.containerstatus.driver.md) | <code>string</code> |  |
 |  [ExecIDs](./cloud.containerstatus.execids.md) | <code>string</code> |  |
 |  [GraphDriver](./cloud.containerstatus.graphdriver.md) | <code>FIXME_NeedsProperType</code> |  |
-|  [HostConfig](./cloud.containerstatus.hostconfig.md) | <code>HostConfigStatus</code> |  |
+|  [HostConfig](./cloud.containerstatus.hostconfig.md) | [<code>HostConfigStatus</code>](./cloud.hostconfigstatus.md) |  |
 |  [HostnamePath](./cloud.containerstatus.hostnamepath.md) | <code>string</code> |  |
 |  [HostsPath](./cloud.containerstatus.hostspath.md) | <code>string</code> |  |
 |  [Id](./cloud.containerstatus.id.md) | <code>string</code> |  |
@@ -37,7 +37,7 @@ export interface ContainerStatus
 |  [MountLabel](./cloud.containerstatus.mountlabel.md) | <code>string</code> |  |
 |  [Mounts](./cloud.containerstatus.mounts.md) | <code>FIXME_NeedsProperType[]</code> |  |
 |  [Name](./cloud.containerstatus.name.md) | <code>string</code> |  |
-|  [NetworkSettings](./cloud.containerstatus.networksettings.md) | <code>ContainerNetworkSettings</code> |  |
+|  [NetworkSettings](./cloud.containerstatus.networksettings.md) | [<code>ContainerNetworkSettings</code>](./cloud.containernetworksettings.md) |  |
 |  [Node](./cloud.containerstatus.node.md) | <code>FIXME_NeedsProperType</code> |  |
 |  [Path](./cloud.containerstatus.path.md) | <code>string</code> |  |
 |  [ProcessLabel](./cloud.containerstatus.processlabel.md) | <code>string</code> |  |
@@ -45,4 +45,4 @@ export interface ContainerStatus
 |  [RestartCount](./cloud.containerstatus.restartcount.md) | <code>number</code> |  |
 |  [SizeRootFs](./cloud.containerstatus.sizerootfs.md) | <code>number</code> |  |
 |  [SizeRw](./cloud.containerstatus.sizerw.md) | <code>number</code> |  |
-|  [State](./cloud.containerstatus.state.md) | <code>ContainerState</code> |  |
+|  [State](./cloud.containerstatus.state.md) | [<code>ContainerState</code>](./cloud.containerstate.md) |  |

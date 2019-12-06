@@ -20,7 +20,7 @@ connectEnv(_scope?: NetworkScope): undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  \_scope | <code>NetworkScope</code> |  |
+|  \_scope | [<code>NetworkScope</code>](./cloud.networkscope.md) |  |
 
 <b>Returns:</b>
 

@@ -20,7 +20,7 @@ export declare function useImperativeMethods<T extends object = AnyMethods>(crea
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  create | <code>() =&gt; T &amp; GenericInstance</code> |  |
+|  create | <code>() =&gt; T &amp; </code>[<code>GenericInstance</code>](./core.genericinstance.md) |  |
 
 <b>Returns:</b>
 

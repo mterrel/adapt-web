@@ -12,15 +12,6 @@ original_id: cloud.postgres
 
 The [Postgres](https://www.postgresql.org) library for Adapt.
 
-<b>Signature:</b>
-
-```typescript
-export * from "./Postgres";
-export * from "./TestPostgres";
-export * from "./PreloadedPostgresImage";
-//# sourceMappingURL=index.d.ts.map
-```
-
 ## Functions
 
 |  Function | Description |

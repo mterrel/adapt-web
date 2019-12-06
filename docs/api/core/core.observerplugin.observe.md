@@ -20,8 +20,8 @@ observe(possibleQueries: ExecutedQuery[]): Promise<ObserverResponse<D, C>>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  possibleQueries | <code>ExecutedQuery[]</code> |  |
+|  possibleQueries | [<code>ExecutedQuery</code>](./core.executedquery.md)<code>[]</code> |  |
 
 <b>Returns:</b>
 
-`Promise<ObserverResponse<D, C>>`
+`Promise<`[`ObserverResponse`](./core.observerresponse.md)`<D, C>>`

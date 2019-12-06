@@ -20,7 +20,7 @@ export interface BuildOpStep
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [newElem](./core.adapt.buildopstep.newelem.md) | <code>AdaptElement &#124; null</code> |  |
-|  [oldElem](./core.adapt.buildopstep.oldelem.md) | <code>AdaptElement</code> |  |
-|  [style](./core.adapt.buildopstep.style.md) | <code>StyleRule</code> |  |
+|  [newElem](./core.adapt.buildopstep.newelem.md) | [<code>AdaptElement</code>](./core.adaptelement.md)<code> &#124; null</code> |  |
+|  [oldElem](./core.adapt.buildopstep.oldelem.md) | [<code>AdaptElement</code>](./core.adaptelement.md) |  |
+|  [style](./core.adapt.buildopstep.style.md) | [<code>StyleRule</code>](./core.stylerule.md) |  |
 |  [type](./core.adapt.buildopstep.type.md) | <code>&quot;step&quot;</code> |  |

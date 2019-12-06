@@ -17,4 +17,4 @@ build(): Promise<AdaptElement | null>;
 ```
 <b>Returns:</b>
 
-`Promise<AdaptElement | null>`
+`Promise<`[`AdaptElement`](./core.adaptelement.md)` | null>`

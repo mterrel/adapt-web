@@ -24,4 +24,4 @@ export interface RegistryDockerImageProps
 |  --- | --- | --- |
 |  [imageSrc](./cloud.docker.registrydockerimageprops.imagesrc.md) | <code>Handle&lt;DockerPushableImageInstance&gt;</code> | Handle for image source |
 |  [newTag](./cloud.docker.registrydockerimageprops.newtag.md) | <code>string</code> | Tag to use for the image in the registry. |
-|  [registryUrl](./cloud.docker.registrydockerimageprops.registryurl.md) | <code>string &#124; DockerSplitRegistryInfo</code> | URL or string for the registry where the image should be pushed and pulled |
+|  [registryUrl](./cloud.docker.registrydockerimageprops.registryurl.md) | <code>string &#124;</code><br/><code>DockerSplitRegistryInfo</code> | URL or string for the registry where the image should be pushed and pulled |

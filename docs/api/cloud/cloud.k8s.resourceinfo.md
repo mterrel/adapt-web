@@ -23,7 +23,7 @@ export interface ResourceInfo
 |  --- | --- | --- |
 |  [apiName](./cloud.k8s.resourceinfo.apiname.md) | <code>string</code> |  |
 |  [kind](./cloud.k8s.resourceinfo.kind.md) | <code>Kind</code> |  |
-|  [statusQuery](./cloud.k8s.resourceinfo.statusquery.md) | <code>(props: ResourceProps, observe: ObserveForStatus, buildData: BuildData) =&gt; unknown &#124; Promise&lt;unknown&gt;</code> |  |
+|  [statusQuery](./cloud.k8s.resourceinfo.statusquery.md) | <code>(props: ResourceProps, observe: ObserveForStatus, buildData: BuildData) =&gt; unknown &#124;</code><br/><code>Promise&lt;unknown&gt;</code> |  |
 
 ## Methods
 

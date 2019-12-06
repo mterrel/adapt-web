@@ -29,7 +29,7 @@ original_id: cloud
 
 |  Function | Description |
 |  --- | --- |
-|  [isContainerElement(el)](./cloud.iscontainerelement.md) | Function to check whether an  is an abstract [Container](./cloud.container.md)<!-- -->. |
+|  [isContainerElement(el)](./cloud.iscontainerelement.md) | Function to check whether an <code>@adpt/core#AdaptElement</code> is an abstract [Container](./cloud.container.md)<!-- -->. |
 |  [isNetworkServiceElement(el)](./cloud.isnetworkserviceelement.md) | Type assertion that tests an element to see if it is a [NetworkService](./cloud.networkservice.md) |
 |  [lookupEnvVar(e, name)](./cloud.lookupenvvar.md) | Find the value of an environment variable in an [Environment](./cloud.environment.md) |
 |  [mergeEnvPairs(envs)](./cloud.mergeenvpairs.md) | Combine multiple [Environment](./cloud.environment.md) objects into a single array of [EnvPair](./cloud.envpair.md) objects. Returns <code>undefined</code> if there are no <code>Environment</code> objects provided. |
@@ -61,7 +61,7 @@ original_id: cloud
 |  [NetworkServiceProps](./cloud.networkserviceprops.md) | Props for the [NetworkService](./cloud.networkservice.md) element |
 |  [PortBinding](./cloud.portbinding.md) | A set of ports to be bound for a [Container](./cloud.container.md)<!-- -->. |
 |  [ServiceProps](./cloud.serviceprops.md) | Props for [Service](./cloud.service.md) |
-|  [UseConnectToOptions](./cloud.useconnecttooptions.md) | Options for  |
+|  [UseConnectToOptions](./cloud.useconnecttooptions.md) | Options for <code>useConnectTo</code> |
 
 ## Namespaces
 

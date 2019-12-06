@@ -21,7 +21,7 @@ export interface BuildData extends BuildId
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [deployID](./core.builddata.deployid.md) | <code>string</code> |  |
-|  [deployOpID](./core.builddata.deployopid.md) | <code>DeployOpID</code> |  |
+|  [deployOpID](./core.builddata.deployopid.md) | [<code>DeployOpID</code>](./core.deployopid.md) |  |
 |  [id](./core.builddata.id.md) | <code>string</code> |  |
-|  [origChildren](./core.builddata.origchildren.md) | <code>(AdaptMountedElement &#124; null &#124; unknown)[]</code> |  |
-|  [successor](./core.builddata.successor.md) | <code>AdaptMountedElement &#124; null</code> |  |
+|  [origChildren](./core.builddata.origchildren.md) | <code>(</code>[<code>AdaptMountedElement</code>](./core.adaptmountedelement.md)<code> &#124;</code><br/><code>null &#124;</code><br/><code>unknown)[]</code> |  |
+|  [successor](./core.builddata.successor.md) | [<code>AdaptMountedElement</code>](./core.adaptmountedelement.md)<code> &#124; null</code> |  |

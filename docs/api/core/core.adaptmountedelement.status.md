@@ -20,7 +20,7 @@ status<T extends Status>(o?: ObserveForStatus): Promise<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  o | <code>ObserveForStatus</code> |  |
+|  o | [<code>ObserveForStatus</code>](./core.observeforstatus.md) |  |
 
 <b>Returns:</b>
 

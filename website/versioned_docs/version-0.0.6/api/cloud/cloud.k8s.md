@@ -12,19 +12,6 @@ original_id: cloud.k8s
 
 Adapt components for Kubernetes
 
-<b>Signature:</b>
-
-```typescript
-export * from "./Container";
-export * from "./Resource";
-export * from "./Pod";
-export * from "./Service";
-export * from "./ServiceDeployment";
-export * from "./common";
-export { K8sPlugin, createK8sPlugin, resourceElementToName, registerResourceKind } from "./k8s_plugin";
-//# sourceMappingURL=index.d.ts.map
-```
-
 ## Classes
 
 |  Class | Description |
@@ -41,7 +28,7 @@ export { K8sPlugin, createK8sPlugin, resourceElementToName, registerResourceKind
 |  [computeNamespaceFromMetadata(metadata)](./cloud.k8s.computenamespacefrommetadata.md) |  |
 |  [Container(props)](./cloud.k8s.container.md) | Component that implements the abstract [Container](./cloud.container.md) interface and translates to a Kubernetes-specific [k8s.K8sContainer](./cloud.k8s.k8scontainer.md)<!-- -->. |
 |  [isK8sContainerElement(x)](./cloud.k8s.isk8scontainerelement.md) | Tests whether an element is a [k8s.K8sContainer](./cloud.k8s.k8scontainer.md) element |
-|  [isResourceFinalElement(e)](./cloud.k8s.isresourcefinalelement.md) | Type assertion to see if an element is both a [Resource](./cloud.k8s.resource.md) and a  |
+|  [isResourceFinalElement(e)](./cloud.k8s.isresourcefinalelement.md) | Type assertion to see if an element is both a [Resource](./cloud.k8s.resource.md) and a <code>@adpt/core#FinalElement</code> |
 |  [k8sContainerProps(abstractProps, k8sProps)](./cloud.k8s.k8scontainerprops.md) | Low level utility function to translate from the abstract [Container](./cloud.container.md) component props ([ContainerProps](./cloud.containerprops.md)<!-- -->) to [k8s.K8sContainerProps](./cloud.k8s.k8scontainerprops.md) to be used in a [k8s.K8sContainer](./cloud.k8s.k8scontainer.md)<!-- -->. |
 |  [Service(propsIn)](./cloud.k8s.service.md) | Native Kubernetes Service resource |
 

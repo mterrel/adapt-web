@@ -22,10 +22,10 @@ export interface BuildOptions
 |  --- | --- | --- |
 |  [buildOnce](./core.buildoptions.buildonce.md) | <code>boolean</code> |  |
 |  [deployID](./core.buildoptions.deployid.md) | <code>string</code> |  |
-|  [deployOpID](./core.buildoptions.deployopid.md) | <code>DeployOpID</code> |  |
+|  [deployOpID](./core.buildoptions.deployopid.md) | [<code>DeployOpID</code>](./core.deployopid.md) |  |
 |  [depth](./core.buildoptions.depth.md) | <code>number</code> |  |
 |  [maxBuildPasses](./core.buildoptions.maxbuildpasses.md) | <code>number</code> |  |
-|  [observerManager](./core.buildoptions.observermanager.md) | <code>ObserverManagerDeployment</code> |  |
+|  [observerManager](./core.buildoptions.observermanager.md) | [<code>ObserverManagerDeployment</code>](./core.observermanagerdeployment.md) |  |
 |  [recorder](./core.buildoptions.recorder.md) | <code>BuildListener</code> |  |
 |  [shallow](./core.buildoptions.shallow.md) | <code>boolean</code> |  |
-|  [stateStore](./core.buildoptions.statestore.md) | <code>StateStore</code> |  |
+|  [stateStore](./core.buildoptions.statestore.md) | [<code>StateStore</code>](./core.statestore.md) |  |

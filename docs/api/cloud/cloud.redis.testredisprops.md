@@ -10,7 +10,7 @@ parent_id: api/cloud/cloud.redis
 
 ## redis.TestRedisProps interface
 
-Props for .
+Props for [redis.TestRedis()](./cloud.redis.testredis.md)<!-- -->.
 
 <b>Signature:</b>
 
@@ -23,5 +23,5 @@ export interface TestRedisProps
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [image](./cloud.redis.testredisprops.image.md) | <code>string</code> | Image to use for container, defaults to redis:buster |
-|  [imagePullPolicy](./cloud.redis.testredisprops.imagepullpolicy.md) | <code>&quot;Always&quot; &#124; &quot;IfNotPresent&quot; &#124; &quot;Never&quot; &#124; undefined</code> | Specifies when to pull image, defaults to <code>&quot;Always&quot;</code> |
+|  [imagePullPolicy](./cloud.redis.testredisprops.imagepullpolicy.md) | <code>&quot;Always&quot; &#124;</code><br/><code>&quot;IfNotPresent&quot; &#124;</code><br/><code>&quot;Never&quot; &#124;</code><br/><code>undefined</code> | Specifies when to pull image, defaults to <code>&quot;Always&quot;</code> |
 |  [port](./cloud.redis.testredisprops.port.md) | <code>number</code> | Port on which the Redis service is exposed |

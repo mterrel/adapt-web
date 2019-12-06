@@ -21,4 +21,4 @@ export interface ExecutedQuery
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [query](./core.executedquery.query.md) | <code>Query</code> |  |
-|  [variables](./core.executedquery.variables.md) | <code>Variables</code> |  |
+|  [variables](./core.executedquery.variables.md) | [<code>Variables</code>](./core.variables.md) |  |

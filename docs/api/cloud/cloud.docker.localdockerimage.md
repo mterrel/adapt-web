@@ -18,6 +18,10 @@ Locally builds a docker image
 export declare class LocalDockerImage extends Action<LocalDockerImageProps, LocalDockerImageState> implements DockerPushableImageInstance 
 ```
 
+## Remarks
+
+See [docker.LocalDockerImageProps](./cloud.docker.localdockerimageprops.md)<!-- -->.
+
 ## Constructors
 
 |  Constructor | Modifiers | Description |
@@ -28,7 +32,7 @@ export declare class LocalDockerImage extends Action<LocalDockerImageProps, Loca
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [defaultProps](./cloud.docker.localdockerimage.defaultprops.md) | <code>static</code> | <code>{</code><br/><code>        options: {</code><br/><code>            dockerHost: string &#124; undefined;</code><br/><code>            forceRm: boolean;</code><br/><code>        };</code><br/><code>    }</code> |  |
+|  [defaultProps](./cloud.docker.localdockerimage.defaultprops.md) | <code>static</code> | <code>{</code><br/><code>        options: {</code><br/><code>            dockerHost: string &#124;</code><br/><code>undefined;</code><br/><code>            forceRm: boolean;</code><br/><code>        };</code><br/><code>    }</code> |  |
 |  [deployedWhenIsTrivial](./cloud.docker.localdockerimage.deployedwhenistrivial.md) |  | <code>boolean</code> |  |
 
 ## Methods
@@ -41,7 +45,3 @@ export declare class LocalDockerImage extends Action<LocalDockerImageProps, Loca
 |  [latestImage()](./cloud.docker.localdockerimage.latestimage.md) |  |  |
 |  [pushTo(registryUrl, newTag)](./cloud.docker.localdockerimage.pushto.md) |  |  |
 |  [ready()](./cloud.docker.localdockerimage.ready.md) |  |  |
-
-## Remarks
-
-See [docker.LocalDockerImageProps](./cloud.docker.localdockerimageprops.md)<!-- -->.

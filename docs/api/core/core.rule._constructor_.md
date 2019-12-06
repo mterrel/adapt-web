@@ -22,4 +22,4 @@ constructor(override: BuildOverride<P>);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  override | <code>BuildOverride&lt;P&gt;</code> |  |
+|  override | [<code>BuildOverride</code>](./core.buildoverride.md)<code>&lt;P&gt;</code> |  |

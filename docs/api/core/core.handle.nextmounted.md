@@ -20,8 +20,8 @@ nextMounted(pred?: ElementPredicate): AdaptMountedElement | null | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  pred | <code>ElementPredicate</code> |  |
+|  pred | [<code>ElementPredicate</code>](./core.elementpredicate.md) |  |
 
 <b>Returns:</b>
 
-`AdaptMountedElement | null | undefined`
+[`AdaptMountedElement`](./core.adaptmountedelement.md)` | null | undefined`

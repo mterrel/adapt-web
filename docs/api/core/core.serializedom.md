@@ -20,8 +20,8 @@ export declare function serializeDom(root: AdaptElementOrNull, options?: Partial
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  root | <code>AdaptElementOrNull</code> |  |
-|  options | <code>Partial&lt;SerializeOptions&gt;</code> |  |
+|  root | [<code>AdaptElementOrNull</code>](./core.adaptelementornull.md) |  |
+|  options | <code>Partial&lt;</code>[<code>SerializeOptions</code>](./core.serializeoptions.md)<code>&gt;</code> |  |
 
 <b>Returns:</b>
 

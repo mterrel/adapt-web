@@ -20,8 +20,8 @@ start(prevDom: AdaptElementOrNull, dom: AdaptElementOrNull, options: PluginManag
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  prevDom | <code>AdaptElementOrNull</code> |  |
-|  dom | <code>AdaptElementOrNull</code> |  |
+|  prevDom | [<code>AdaptElementOrNull</code>](./core.adaptelementornull.md) |  |
+|  dom | [<code>AdaptElementOrNull</code>](./core.adaptelementornull.md) |  |
 |  options | <code>PluginManagerStartOptions</code> |  |
 
 <b>Returns:</b>

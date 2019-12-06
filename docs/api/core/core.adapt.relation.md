@@ -18,16 +18,6 @@ Relations are used to describe the logic of when an object will be ready.
 export interface Relation 
 ```
 
-## Properties
-
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [description](./core.adapt.relation.description.md) | <code>string</code> |  |
-|  [inverse](./core.adapt.relation.inverse.md) | <code>(relatesTo: Relation[]) =&gt; Relation</code> |  |
-|  [ready](./core.adapt.relation.ready.md) | <code>(relatesTo: Relation[]) =&gt; true &#124; Waiting &#124; Waiting[]</code> |  |
-|  [relatesTo](./core.adapt.relation.relatesto.md) | <code>Relation[]</code> |  |
-|  [toString](./core.adapt.relation.tostring.md) | <code>(indent?: string) =&gt; string</code> |  |
-
 ## Remarks
 
 Relations are primarily used to describe deployment dependencies in Adapt. They can be combined together to express boolean logic, so you can express things like "A is ready when B and C are ready":
@@ -37,3 +27,13 @@ Relations should usually be created using the supplied library functions. The mo
 Examples of the more commonly used high-level Relation functions are: - `Only()` - Creates a `Relation` that is ready when a single dependency has been deployed. - `AllOf()` - Creates a `Relation` that's ready when all of a given set of dependencies have been deployed. - `AnyOf()` - Creates a `Relation` that's ready when any of a given set of dependencies have been deployed.
 
 Examples of low-level Relation functions are: - `True()` - Creates a `Relation` that's always ready. - `False()` - Creates a `Relation` will never be ready. - `And()` - Creates a `Relation` that becomes ready when all of its arguments are ready. - `Edge()` - Creates a `Relation` that checks the deployment status of an object to determine readiness.
+
+## Properties
+
+|  Property | Type | Description |
+|  --- | --- | --- |
+|  [description](./core.adapt.relation.description.md) | <code>string</code> |  |
+|  [inverse](./core.adapt.relation.inverse.md) | <code>(relatesTo: Relation[]) =&gt; Relation</code> |  |
+|  [ready](./core.adapt.relation.ready.md) | <code>(relatesTo: Relation[]) =&gt; true &#124;</code><br/><code>Waiting &#124;</code><br/><code>Waiting[]</code> |  |
+|  [relatesTo](./core.adapt.relation.relatesto.md) | <code>Relation[]</code> |  |
+|  [toString](./core.adapt.relation.tostring.md) | <code>(indent?: string) =&gt; string</code> |  |

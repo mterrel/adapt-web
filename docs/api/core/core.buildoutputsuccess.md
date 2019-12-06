@@ -21,7 +21,7 @@ export interface BuildOutputSuccess extends BuildOutputBase
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [buildErr](./core.buildoutputsuccess.builderr.md) | <code>false</code> |  |
-|  [builtElements](./core.buildoutputsuccess.builtelements.md) | <code>AdaptMountedElement[]</code> |  |
-|  [contents](./core.buildoutputsuccess.contents.md) | <code>FinalDomElement &#124; null</code> |  |
+|  [builtElements](./core.buildoutputsuccess.builtelements.md) | [<code>AdaptMountedElement</code>](./core.adaptmountedelement.md)<code>[]</code> |  |
+|  [contents](./core.buildoutputsuccess.contents.md) | [<code>FinalDomElement</code>](./core.finaldomelement.md)<code> &#124; null</code> |  |
 |  [partialBuild](./core.buildoutputsuccess.partialbuild.md) | <code>false</code> |  |
-|  [processStateUpdates](./core.buildoutputsuccess.processstateupdates.md) | <code>ProcessStateUpdates</code> |  |
+|  [processStateUpdates](./core.buildoutputsuccess.processstateupdates.md) | [<code>ProcessStateUpdates</code>](./core.processstateupdates.md) |  |

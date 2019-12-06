@@ -25,7 +25,7 @@ export declare function callInstanceMethod<T = any>(hand: Handle, def: T, method
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  hand | <code>Handle</code> |  |
+|  hand | [<code>Handle</code>](./core.handle.md) |  |
 |  def | <code>T</code> |  |
 |  methodName | <code>string</code> |  |
 |  args | <code>any[]</code> |  |
@@ -40,4 +40,4 @@ The return value of the called instance method if `hand` is associated and there
 
 If an Element is found that satisfies the search, but method `methodName` does not exist on the Element's instance, an error is thrown.
 
-The exact check that is currently used when searching the handle chain is for mounted Elements that satisfy the predicate . In practice, this only selects Elements that are both mounted and built.
+The exact check that is currently used when searching the handle chain is for mounted Elements that satisfy the predicate `notReplacedByStyle`<!-- -->. In practice, this only selects Elements that are both mounted and built.

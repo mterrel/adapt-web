@@ -24,4 +24,4 @@ export declare function errorToNoStatus(err: any): Status;
 
 <b>Returns:</b>
 
-`Status`
+[`Status`](./core.status.md)

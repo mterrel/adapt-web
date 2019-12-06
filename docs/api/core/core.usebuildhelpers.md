@@ -17,4 +17,4 @@ export declare function useBuildHelpers(): BuildHelpers;
 ```
 <b>Returns:</b>
 
-`BuildHelpers`
+[`BuildHelpers`](./core.buildhelpers.md)

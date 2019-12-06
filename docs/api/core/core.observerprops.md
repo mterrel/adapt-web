@@ -20,7 +20,7 @@ export interface ObserverProps<QueryData extends object>
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [build](./core.observerprops.build.md) | <code>(error: Error &#124; null, props: QueryData &#124; undefined) =&gt; AdaptElementOrNull &#124; Promise&lt;AdaptElementOrNull&gt;</code> |  |
-|  [observer](./core.observerprops.observer.md) | <code>ObserverNameHolder</code> |  |
+|  [build](./core.observerprops.build.md) | <code>(error: Error &#124;</code><br/><code>null, props: QueryData &#124;</code><br/><code>undefined) =&gt; </code>[<code>AdaptElementOrNull</code>](./core.adaptelementornull.md)<code> &#124;</code><br/><code>Promise&lt;</code>[<code>AdaptElementOrNull</code>](./core.adaptelementornull.md)<code>&gt;</code> |  |
+|  [observer](./core.observerprops.observer.md) | [<code>ObserverNameHolder</code>](./core.observernameholder.md) |  |
 |  [query](./core.observerprops.query.md) | <code>GraphQLDocument</code> |  |
 |  [variables](./core.observerprops.variables.md) | <code>{</code><br/><code>        [name: string]: any;</code><br/><code>    }</code> |  |

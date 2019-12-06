@@ -11,21 +11,6 @@ hide_title: true
 
 Docker library for Adapt.
 
-<b>Signature:</b>
-
-```typescript
-export * from "./DockerImage";
-export * from "./DockerContainer";
-export * from "./NetworkService";
-export * from "./labels";
-export * from "./LocalDockerImage";
-export * from "./LocalDockerRegistry";
-export * from "./RegistryDockerImage";
-export * from "./ServiceContainerSet";
-export * from "./types";
-//# sourceMappingURL=index.d.ts.map
-```
-
 ## Classes
 
 |  Class | Description |
@@ -35,7 +20,7 @@ export * from "./types";
 |  [DockerImage](./cloud.docker.dockerimage.md) | <b><i>(BETA)</i></b> Abstract component representing a [Docker](https://docker.com) image that can be used to create containers. |
 |  [LocalDockerImage](./cloud.docker.localdockerimage.md) | Locally builds a docker image |
 |  [RegistryDockerImage](./cloud.docker.registrydockerimage.md) | Represents a Docker image in a registry. |
-|  [ServiceContainerSet](./cloud.docker.servicecontainerset.md) | A component for mapping a group of abstract [Container](./cloud.container.md)<!-- -->s and [NetworkService](./cloud.networkservice.md)<!-- -->s to Docker [DockerContainer](./cloud.docker.dockercontainer.md)<!-- -->s and s. |
+|  [ServiceContainerSet](./cloud.docker.servicecontainerset.md) | A component for mapping a group of abstract [Container](./cloud.container.md)<!-- -->s and [NetworkService](./cloud.networkservice.md)<!-- -->s to Docker [DockerContainer](./cloud.docker.dockercontainer.md)<!-- -->s and [docker.NetworkService()](./cloud.docker.networkservice.md)<!-- -->s. |
 
 ## Functions
 
@@ -64,12 +49,6 @@ export * from "./types";
 |  [RegistryDockerImageProps](./cloud.docker.registrydockerimageprops.md) | Props for [docker.RegistryDockerImage](./cloud.docker.registrydockerimage.md) |
 |  [ServiceContainerSetProps](./cloud.docker.servicecontainersetprops.md) | Props for [docker.ServiceContainerSet](./cloud.docker.servicecontainerset.md) |
 |  [Stage](./cloud.docker.stage.md) | A stage to be added to a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/)<!-- -->. |
-
-## Namespaces
-
-|  Namespace | Description |
-|  --- | --- |
-|  [NetworkService](./cloud.docker.networkservice.md) |  |
 
 ## Type Aliases
 

@@ -20,4 +20,4 @@ export interface GroupProps
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [children](./core.adapt.groupprops.children.md) | <code>AdaptElementOrNull[] &#124; AdaptElementOrNull</code> |  |
+|  [children](./core.adapt.groupprops.children.md) | [<code>AdaptElementOrNull</code>](./core.adaptelementornull.md)<code>[] &#124;</code><br/><code></code>[<code>AdaptElementOrNull</code>](./core.adaptelementornull.md) |  |

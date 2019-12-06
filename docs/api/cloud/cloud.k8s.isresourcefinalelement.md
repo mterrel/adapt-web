@@ -10,7 +10,7 @@ parent_id: api/cloud/cloud.k8s
 
 ## k8s.isResourceFinalElement() function
 
-Type assertion to see if an element is both a [Resource](./cloud.k8s.resource.md) and a 
+Type assertion to see if an element is both a [Resource](./cloud.k8s.resource.md) and a `@adpt/core#FinalElement`
 
 <b>Signature:</b>
 

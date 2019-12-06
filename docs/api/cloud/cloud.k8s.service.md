@@ -22,7 +22,7 @@ export declare function Service(propsIn: SFCDeclProps<ServiceProps, typeof defau
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  propsIn | <code>SFCDeclProps&lt;ServiceProps, typeof defaultProps&gt;</code> |  |
+|  propsIn | <code>SFCDeclProps&lt;</code>[<code>ServiceProps</code>](./cloud.serviceprops.md)<code>, typeof defaultProps&gt;</code> |  |
 
 <b>Returns:</b>
 

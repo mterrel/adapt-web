@@ -20,8 +20,8 @@ export interface AdaptMountedPrimitiveElement<P extends object = AnyProps> exten
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [componentType](./core.adaptmountedprimitiveelement.componenttype.md) | <code>PrimitiveClassComponentTyp&lt;P&gt;</code> |  |
-|  [props](./core.adaptmountedprimitiveelement.props.md) | <code>P &amp; Required&lt;BuiltinProps&gt;</code> |  |
+|  [componentType](./core.adaptmountedprimitiveelement.componenttype.md) | [<code>PrimitiveClassComponentTyp</code>](./core.primitiveclasscomponenttyp.md)<code>&lt;P&gt;</code> |  |
+|  [props](./core.adaptmountedprimitiveelement.props.md) | <code>P &amp; Required&lt;</code>[<code>BuiltinProps</code>](./core.builtinprops.md)<code>&gt;</code> |  |
 
 ## Methods
 

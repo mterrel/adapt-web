@@ -15,18 +15,6 @@ original_id: cloud.aws
 
 AWS library for Adapt.
 
-<b>Signature:</b>
-
-```typescript
-export * from "./CFResource";
-export * from "./credentials";
-export { CFStack, CFStackProps, CFStackStatus, } from "./CFStack";
-export * from "./EC2Instance";
-export * from "./EIPAssociation";
-export { createAwsPlugin } from "./aws_plugin";
-//# sourceMappingURL=index.d.ts.map
-```
-
 ## Classes
 
 |  Class | Description |

@@ -20,8 +20,8 @@ setElementState(elem: StateNamespace, data: AnyState | undefined): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  elem | <code>StateNamespace</code> |  |
-|  data | <code>AnyState &#124; undefined</code> |  |
+|  elem | [<code>StateNamespace</code>](./core.statenamespace.md) |  |
+|  data | [<code>AnyState</code>](./core.anystate.md)<code> &#124; undefined</code> |  |
 
 <b>Returns:</b>
 

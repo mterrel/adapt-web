@@ -20,8 +20,8 @@ new (props: P & Partial<BuiltinProps>): DeferredComponent<P, S>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  props | <code>P &amp; Partial&lt;BuiltinProps&gt;</code> |  |
+|  props | <code>P &amp; Partial&lt;</code>[<code>BuiltinProps</code>](./core.builtinprops.md)<code>&gt;</code> |  |
 
 <b>Returns:</b>
 
-`DeferredComponent<P, S>`
+[`DeferredComponent`](./core.deferredcomponent.md)`<P, S>`

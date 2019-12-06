@@ -27,7 +27,7 @@ export declare abstract class WidgetPlugin<WidgetElem extends AdaptElement, Widg
 |  [deployID\_](./core.adapt.widgetplugin.deployid_.md) |  | <code>string</code> |  |
 |  [deployID](./core.adapt.widgetplugin.deployid.md) |  | <code>string</code> |  |
 |  [destroyWidget](./core.adapt.widgetplugin.destroywidget.md) |  | <code>(domain: QDomain, deployID: string, resource: WidgetPair&lt;WidgetElem, WidgetObs&gt;) =&gt; Promise&lt;void&gt;</code> |  |
-|  [findElems](./core.adapt.widgetplugin.findelems.md) |  | <code>(dom: AdaptElementOrNull) =&gt; WidgetElem[]</code> |  |
+|  [findElems](./core.adapt.widgetplugin.findelems.md) |  | <code>(dom: </code>[<code>AdaptElementOrNull</code>](./core.adaptelementornull.md)<code>) =&gt; WidgetElem[]</code> |  |
 |  [getElemQueryDomain](./core.adapt.widgetplugin.getelemquerydomain.md) |  | <code>(el: WidgetElem) =&gt; QDomain</code> |  |
 |  [getObservations](./core.adapt.widgetplugin.getobservations.md) |  | <code>(domain: QDomain, deployID: string, elemsInQDomain: WidgetChange&lt;WidgetElem&gt;[]) =&gt; Promise&lt;WidgetObs[]&gt;</code> |  |
 |  [getWidgetIdFromElem](./core.adapt.widgetplugin.getwidgetidfromelem.md) |  | <code>(el: WidgetElem) =&gt; WidgetId</code> |  |

@@ -17,4 +17,4 @@ build(): AdaptElementOrNull;
 ```
 <b>Returns:</b>
 
-`AdaptElementOrNull`
+[`AdaptElementOrNull`](./core.adaptelementornull.md)

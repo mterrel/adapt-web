@@ -25,7 +25,7 @@ export declare function callFirstInstanceWithMethod<T = any>(hand: Handle, def: 
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  hand | <code>Handle</code> |  |
+|  hand | [<code>Handle</code>](./core.handle.md) |  |
 |  def | <code>T</code> |  |
 |  methodName | <code>string</code> |  |
 |  args | <code>any[]</code> |  |

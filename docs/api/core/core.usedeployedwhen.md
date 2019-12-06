@@ -23,7 +23,7 @@ export declare function useDeployedWhen(deployedWhen: DeployedWhenMethod, option
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  deployedWhen | <code>DeployedWhenMethod</code> |  |
-|  options | <code>UseDeployedWhenOptions</code> |  |
+|  options | [<code>UseDeployedWhenOptions</code>](./core.usedeployedwhenoptions.md) |  |
 
 <b>Returns:</b>
 

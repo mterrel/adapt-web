@@ -28,7 +28,7 @@ export declare class Resource extends Action<ResourceProps>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [deployedWhen](./cloud.k8s.resource.deployedwhen.md) |  | <code>(goalStatus: Adapt.GoalStatus, helpers: Adapt.DeployHelpers) =&gt; Promise&lt;true &#124; Adapt.Waiting &#124; Adapt.Waiting[]&gt;</code> |  |
+|  [deployedWhen](./cloud.k8s.resource.deployedwhen.md) |  | <code>(goalStatus: Adapt.GoalStatus, helpers: Adapt.DeployHelpers) =&gt; Promise&lt;true &#124;</code><br/><code>Adapt.Waiting &#124;</code><br/><code>Adapt.Waiting[]&gt;</code> |  |
 |  [manifest\_](./cloud.k8s.resource.manifest_.md) |  | <code>Manifest</code> |  |
 
 ## Methods

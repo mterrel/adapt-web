@@ -22,12 +22,12 @@ export declare function ruleNoRematch(info: StyleBuildInfo, elem: AdaptElement):
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  info | <code>StyleBuildInfo</code> | The second argument to a rule callback function. This indicates which rule to ignore matches of. |
-|  elem | <code>AdaptElement</code> | The element that should not match the specified rule. |
+|  info | [<code>StyleBuildInfo</code>](./core.stylebuildinfo.md) | The second argument to a rule callback function. This indicates which rule to ignore matches of. |
+|  elem | [<code>AdaptElement</code>](./core.adaptelement.md) | The element that should not match the specified rule. |
 
 <b>Returns:</b>
 
-`AdaptElement<AnyProps>`
+[`AdaptElement`](./core.adaptelement.md)`<`[`AnyProps`](./core.anyprops.md)`>`
 
 `elem` is returned as a convenience
 

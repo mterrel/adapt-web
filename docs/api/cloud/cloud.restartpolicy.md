@@ -18,13 +18,13 @@ The behavior to apply when the container exits.
 export interface RestartPolicy 
 ```
 
+## Remarks
+
+See the [Docker API Reference](https://docs.docker.com/engine/api/v1.40/#operation/ContainerCreate) for more information.
+
 ## Properties
 
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [maximumRetryCount](./cloud.restartpolicy.maximumretrycount.md) | <code>number</code> | If <code>OnFailure</code> is used, the number of times to retry before giving up |
-|  [name](./cloud.restartpolicy.name.md) | <code>RestartPolicyName</code> | The type of behavior to apply |
-
-## Remarks
-
-See the [Docker API Reference](https://docs.docker.com/engine/api/v1.40/#operation/ContainerCreate) for more information.
+|  [name](./cloud.restartpolicy.name.md) | [<code>RestartPolicyName</code>](./cloud.restartpolicyname.md) | The type of behavior to apply |

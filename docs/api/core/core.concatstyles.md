@@ -22,10 +22,10 @@ export declare function concatStyles(...styles: AdaptElement[]): AdaptElement;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  styles | <code>AdaptElement[]</code> | Zero or more Style elements, each containing style rules. |
+|  styles | [<code>AdaptElement</code>](./core.adaptelement.md)<code>[]</code> | Zero or more Style elements, each containing style rules. |
 
 <b>Returns:</b>
 
-`AdaptElement`
+[`AdaptElement`](./core.adaptelement.md)
 
 A new Style element containing the concatenation of all of the rules from the passed in Style elements.

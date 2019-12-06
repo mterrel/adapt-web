@@ -21,8 +21,8 @@ export interface ExecutionPlanOptions
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [actions](./core.adapt.executionplanoptions.actions.md) | <code>Action[]</code> |  |
-|  [builtElements](./core.adapt.executionplanoptions.builtelements.md) | <code>AdaptMountedElement[]</code> |  |
+|  [builtElements](./core.adapt.executionplanoptions.builtelements.md) | [<code>AdaptMountedElement</code>](./core.adaptmountedelement.md)<code>[]</code> |  |
 |  [deployment](./core.adapt.executionplanoptions.deployment.md) | <code>Deployment</code> |  |
-|  [deployOpID](./core.adapt.executionplanoptions.deployopid.md) | <code>DeployOpID</code> |  |
+|  [deployOpID](./core.adapt.executionplanoptions.deployopid.md) | [<code>DeployOpID</code>](./core.deployopid.md) |  |
 |  [diff](./core.adapt.executionplanoptions.diff.md) | <code>DomDiff</code> |  |
 |  [goalStatus](./core.adapt.executionplanoptions.goalstatus.md) | <code>GoalStatus</code> |  |

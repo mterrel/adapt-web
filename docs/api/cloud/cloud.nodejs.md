@@ -11,15 +11,6 @@ hide_title: true
 
 The library for [Node.js](https://nodejs.org) for Adapt.
 
-<b>Signature:</b>
-
-```typescript
-export * from "./NodeService";
-export * from "./LocalNodeImage";
-export * from "./ReactApp";
-//# sourceMappingURL=index.d.ts.map
-```
-
 ## Functions
 
 |  Function | Description |

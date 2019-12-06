@@ -20,4 +20,4 @@ export interface ConsumerProps<T>
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [children](./core.consumerprops.children.md) | <code>(value: T) =&gt; AdaptElementOrNull</code> |  |
+|  [children](./core.consumerprops.children.md) | <code>(value: T) =&gt; </code>[<code>AdaptElementOrNull</code>](./core.adaptelementornull.md) |  |

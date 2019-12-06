@@ -1,6 +1,6 @@
 ---
 id: core.adapt.deployopstatus
-title: "Adapt.DeployOpStatus type"
+title: "Adapt.DeployOpStatus variable"
 hide_title: true
 parent_id: api/core/core.adapt
 ---
@@ -8,10 +8,20 @@ parent_id: api/core/core.adapt
 
 [Core API Overview](overview) &gt; [@adpt/core](./core.md) &gt; [Adapt](./core.adapt.md) &gt; [DeployOpStatus](./core.adapt.deployopstatus.md)
 
-## Adapt.DeployOpStatus type
+## Adapt.DeployOpStatus variable
 
 <b>Signature:</b>
 
 ```typescript
-export declare type DeployOpStatus = DeployStatus | DeployOpStatusExt;
+DeployOpStatus: {
+    [x: number]: string;
+    StateChanged: DeployOpStatusExt.StateChanged;
+    Initial: DeployStatus.Initial;
+    Waiting: DeployStatus.Waiting;
+    Deploying: DeployStatus.Deploying;
+    Destroying: DeployStatus.Destroying;
+    Deployed: DeployStatus.Deployed;
+    Failed: DeployStatus.Failed;
+    Destroyed: DeployStatus.Destroyed;
+}
 ```

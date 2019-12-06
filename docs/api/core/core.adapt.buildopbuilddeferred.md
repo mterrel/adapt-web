@@ -20,5 +20,5 @@ export interface BuildOpBuildDeferred
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [elem](./core.adapt.buildopbuilddeferred.elem.md) | <code>AdaptElement</code> |  |
+|  [elem](./core.adapt.buildopbuilddeferred.elem.md) | [<code>AdaptElement</code>](./core.adaptelement.md) |  |
 |  [type](./core.adapt.buildopbuilddeferred.type.md) | <code>&quot;buildDeferred&quot;</code> |  |

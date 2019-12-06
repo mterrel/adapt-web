@@ -22,11 +22,11 @@ export declare function mergeEnvSimple(...envs: (Environment | undefined)[]): En
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  envs | <code>(Environment &#124; undefined)[]</code> |  |
+|  envs | <code>(</code>[<code>Environment</code>](./cloud.environment.md)<code> &#124; undefined)[]</code> |  |
 
 <b>Returns:</b>
 
-`EnvSimple | undefined`
+[`EnvSimple`](./cloud.envsimple.md)` | undefined`
 
 ## Remarks
 

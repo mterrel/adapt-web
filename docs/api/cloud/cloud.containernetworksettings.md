@@ -34,7 +34,7 @@ export interface ContainerNetworkSettings
 |  [LinkLocalIPv6Address](./cloud.containernetworksettings.linklocalipv6address.md) | <code>string</code> |  |
 |  [LinkLocalIPv6PrefixLen](./cloud.containernetworksettings.linklocalipv6prefixlen.md) | <code>number</code> |  |
 |  [MacAddress](./cloud.containernetworksettings.macaddress.md) | <code>string</code> |  |
-|  [Networks](./cloud.containernetworksettings.networks.md) | <code>{</code><br/><code>        [name: string]: ContainerNetwork;</code><br/><code>    }</code> |  |
+|  [Networks](./cloud.containernetworksettings.networks.md) | <code>{</code><br/><code>        [name: string]: </code>[<code>ContainerNetwork</code>](./cloud.containernetwork.md)<code>;</code><br/><code>    }</code> |  |
 |  [Ports](./cloud.containernetworksettings.ports.md) | <code>FIXME_NeedsProperType</code> |  |
 |  [SandboxID](./cloud.containernetworksettings.sandboxid.md) | <code>string</code> |  |
 |  [SandboxKey](./cloud.containernetworksettings.sandboxkey.md) | <code>string</code> |  |

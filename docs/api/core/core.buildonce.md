@@ -20,10 +20,10 @@ export declare function buildOnce(root: AdaptElement, styles: AdaptElement | nul
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  root | <code>AdaptElement</code> |  |
-|  styles | <code>AdaptElement &#124; null</code> |  |
-|  options | <code>BuildOptions</code> |  |
+|  root | [<code>AdaptElement</code>](./core.adaptelement.md) |  |
+|  styles | [<code>AdaptElement</code>](./core.adaptelement.md)<code> &#124; null</code> |  |
+|  options | [<code>BuildOptions</code>](./core.buildoptions.md) |  |
 
 <b>Returns:</b>
 
-`Promise<BuildOutput>`
+`Promise<`[`BuildOutput`](./core.buildoutput.md)`>`

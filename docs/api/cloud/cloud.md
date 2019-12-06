@@ -29,7 +29,7 @@ hide_title: true
 |  Function | Description |
 |  --- | --- |
 |  [formatEnvVars(env)](./cloud.formatenvvars.md) | Formats an [Environment](./cloud.environment.md) for printing in human-readable format. |
-|  [isContainerElement(el)](./cloud.iscontainerelement.md) | Function to check whether an  is an abstract [Container](./cloud.container.md)<!-- -->. |
+|  [isContainerElement(el)](./cloud.iscontainerelement.md) | Function to check whether an <code>@adpt/core#AdaptElement</code> is an abstract [Container](./cloud.container.md)<!-- -->. |
 |  [isNetworkServiceElement(el)](./cloud.isnetworkserviceelement.md) | Type assertion that tests an element to see if it is a [NetworkService](./cloud.networkservice.md) |
 |  [lookupEnvVar(e, name)](./cloud.lookupenvvar.md) | Find the value of an environment variable in an [Environment](./cloud.environment.md) |
 |  [mergeEnvPairs(envs)](./cloud.mergeenvpairs.md) | Combine multiple [Environment](./cloud.environment.md) objects into a single array of [EnvPair](./cloud.envpair.md) objects. Returns <code>undefined</code> if there are no <code>Environment</code> objects provided. |
@@ -66,7 +66,7 @@ hide_title: true
 |  [RestartPolicy](./cloud.restartpolicy.md) | The behavior to apply when the container exits. |
 |  [RestartPolicyStatus](./cloud.restartpolicystatus.md) | Restart policy status for [ContainerStatus](./cloud.containerstatus.md) |
 |  [ServiceProps](./cloud.serviceprops.md) | Props for [Service](./cloud.service.md) |
-|  [UseConnectToOptions](./cloud.useconnecttooptions.md) | Options for  |
+|  [UseConnectToOptions](./cloud.useconnecttooptions.md) | Options for <code>useConnectTo</code> |
 
 ## Namespaces
 

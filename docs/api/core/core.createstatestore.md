@@ -24,4 +24,4 @@ export declare function createStateStore(json?: string): StateStore;
 
 <b>Returns:</b>
 
-`StateStore`
+[`StateStore`](./core.statestore.md)

@@ -24,4 +24,4 @@ export declare function isMountedElement<P extends object = AnyProps>(val: any):
 
 <b>Returns:</b>
 
-`val is AdaptMountedElement<P>`
+`val is `[`AdaptMountedElement`](./core.adaptmountedelement.md)`<P>`

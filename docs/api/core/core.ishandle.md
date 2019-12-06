@@ -24,4 +24,4 @@ export declare function isHandle<I extends object = GenericInstance>(val: unknow
 
 <b>Returns:</b>
 
-`val is Handle<I>`
+`val is `[`Handle`](./core.handle.md)`<I>`

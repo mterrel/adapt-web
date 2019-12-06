@@ -24,4 +24,4 @@ export declare function childrenToArray<T>(propsChildren: T | undefined): Primit
 
 <b>Returns:</b>
 
-`PrimitiveChildType<T>[]`
+[`PrimitiveChildType`](./core.primitivechildtype.md)`<T>[]`

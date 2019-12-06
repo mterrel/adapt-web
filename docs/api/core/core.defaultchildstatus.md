@@ -21,9 +21,9 @@ export declare function defaultChildStatus<P extends object, S = unknown>(props:
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  props | <code>P</code> |  |
-|  mgr | <code>ObserveForStatus</code> |  |
-|  data | <code>BuildData</code> |  |
+|  mgr | [<code>ObserveForStatus</code>](./core.observeforstatus.md) |  |
+|  data | [<code>BuildData</code>](./core.builddata.md) |  |
 
 <b>Returns:</b>
 
-`Promise<Status>`
+`Promise<`[`Status`](./core.status.md)`>`

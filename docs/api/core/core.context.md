@@ -20,5 +20,5 @@ export interface Context<T>
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [Consumer](./core.context.consumer.md) | <code>Consumer&lt;T&gt;</code> |  |
-|  [Provider](./core.context.provider.md) | <code>Provider&lt;T&gt;</code> |  |
+|  [Consumer](./core.context.consumer.md) | [<code>Consumer</code>](./core.consumer.md)<code>&lt;T&gt;</code> |  |
+|  [Provider](./core.context.provider.md) | [<code>Provider</code>](./core.provider.md)<code>&lt;T&gt;</code> |  |

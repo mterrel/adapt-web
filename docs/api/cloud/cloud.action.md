@@ -11,15 +11,6 @@ hide_title: true
 
 Action library for implementing simple primitive components.
 
-<b>Signature:</b>
-
-```typescript
-export * from "./Action";
-export * from "./Command";
-export { ActionPlugin, createActionPlugin } from "./action_plugin";
-//# sourceMappingURL=index.d.ts.map
-```
-
 ## Classes
 
 |  Class | Description |

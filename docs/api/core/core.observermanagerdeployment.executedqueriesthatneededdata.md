@@ -20,5 +20,5 @@ executedQueriesThatNeededData(): {
 <b>Returns:</b>
 
 `{
-        [name: string]: ExecutedQuery[];
+        [name: string]: `[`ExecutedQuery`](./core.executedquery.md)`[];
     }`

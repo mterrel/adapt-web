@@ -10,7 +10,7 @@ parent_id: api/cloud/cloud
 
 ## isContainerElement() function
 
-Function to check whether an  is an abstract [Container](./cloud.container.md)<!-- -->.
+Function to check whether an `@adpt/core#AdaptElement` is an abstract [Container](./cloud.container.md)<!-- -->.
 
 <b>Signature:</b>
 
@@ -26,4 +26,4 @@ export declare function isContainerElement(el: AdaptElement): el is AdaptElement
 
 <b>Returns:</b>
 
-`el is AdaptElement<ContainerProps>`
+`el is AdaptElement<`[`ContainerProps`](./cloud.containerprops.md)`>`

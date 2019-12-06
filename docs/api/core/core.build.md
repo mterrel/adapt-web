@@ -20,10 +20,10 @@ export declare function build(root: AdaptElement, styles: AdaptElementOrNull, op
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  root | <code>AdaptElement</code> |  |
-|  styles | <code>AdaptElementOrNull</code> |  |
-|  options | <code>BuildOptions</code> |  |
+|  root | [<code>AdaptElement</code>](./core.adaptelement.md) |  |
+|  styles | [<code>AdaptElementOrNull</code>](./core.adaptelementornull.md) |  |
+|  options | [<code>BuildOptions</code>](./core.buildoptions.md) |  |
 
 <b>Returns:</b>
 
-`Promise<BuildOutput>`
+`Promise<`[`BuildOutput`](./core.buildoutput.md)`>`

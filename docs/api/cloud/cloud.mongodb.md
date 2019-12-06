@@ -11,14 +11,6 @@ hide_title: true
 
 The library for [MongoDB](https://www.mongodb.com/) for Adapt.
 
-<b>Signature:</b>
-
-```typescript
-export * from "./MongoDB";
-export * from "./TestMongoDB";
-//# sourceMappingURL=index.d.ts.map
-```
-
 ## Classes
 
 |  Class | Description |
@@ -35,10 +27,4 @@ export * from "./TestMongoDB";
 
 |  Interface | Description |
 |  --- | --- |
-|  [TestMongoDBProps](./cloud.mongodb.testmongodbprops.md) | Props for  |
-
-## Namespaces
-
-|  Namespace | Description |
-|  --- | --- |
-|  [TestMongoDB](./cloud.mongodb.testmongodb.md) |  |
+|  [TestMongoDBProps](./cloud.mongodb.testmongodbprops.md) | Props for [mongodb.TestMongoDB()](./cloud.mongodb.testmongodb.md) |

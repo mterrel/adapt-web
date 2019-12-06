@@ -21,8 +21,8 @@ export declare function stack(stackName: string, root: AdaptElementOrNull | Prom
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  stackName | <code>string</code> |  |
-|  root | <code>AdaptElementOrNull &#124; Promise&lt;AdaptElementOrNull&gt;</code> |  |
-|  style | <code>AdaptElementOrNull &#124; Promise&lt;AdaptElementOrNull&gt;</code> |  |
+|  root | [<code>AdaptElementOrNull</code>](./core.adaptelementornull.md)<code> &#124;</code><br/><code>Promise&lt;</code>[<code>AdaptElementOrNull</code>](./core.adaptelementornull.md)<code>&gt;</code> |  |
+|  style | [<code>AdaptElementOrNull</code>](./core.adaptelementornull.md)<code> &#124;</code><br/><code>Promise&lt;</code>[<code>AdaptElementOrNull</code>](./core.adaptelementornull.md)<code>&gt;</code> |  |
 
 <b>Returns:</b>
 

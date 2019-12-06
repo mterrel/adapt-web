@@ -11,14 +11,6 @@ hide_title: true
 
 The [Redis](https://redis.io/) library for Adapt.
 
-<b>Signature:</b>
-
-```typescript
-export * from "./Redis";
-export * from "./TestRedis";
-//# sourceMappingURL=index.d.ts.map
-```
-
 ## Classes
 
 |  Class | Description |
@@ -35,10 +27,4 @@ export * from "./TestRedis";
 
 |  Interface | Description |
 |  --- | --- |
-|  [TestRedisProps](./cloud.redis.testredisprops.md) | Props for . |
-
-## Namespaces
-
-|  Namespace | Description |
-|  --- | --- |
-|  [TestRedis](./cloud.redis.testredis.md) |  |
+|  [TestRedisProps](./cloud.redis.testredisprops.md) | Props for [redis.TestRedis()](./cloud.redis.testredis.md)<!-- -->. |

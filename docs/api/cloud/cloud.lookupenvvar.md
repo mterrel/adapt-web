@@ -22,7 +22,7 @@ export declare function lookupEnvVar(e: Environment, name: string): string | und
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  e | <code>Environment</code> | [Environment](./cloud.environment.md) to search |
+|  e | [<code>Environment</code>](./cloud.environment.md) | [Environment](./cloud.environment.md) to search |
 |  name | <code>string</code> | variable to search for |
 
 <b>Returns:</b>

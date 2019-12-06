@@ -22,11 +22,11 @@ connectEnv(scope?: NetworkScope): Environment | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  scope | <code>NetworkScope</code> | Scope for which connection information is desired |
+|  scope | [<code>NetworkScope</code>](./cloud.networkscope.md) | Scope for which connection information is desired |
 
 <b>Returns:</b>
 
-`Environment | undefined`
+[`Environment`](./cloud.environment.md)` | undefined`
 
 Environment with connection information, undefined if info not yet ready.
 

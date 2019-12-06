@@ -20,5 +20,5 @@ export interface BuildOpDone
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [root](./core.adapt.buildopdone.root.md) | <code>AdaptElement &#124; null</code> |  |
+|  [root](./core.adapt.buildopdone.root.md) | [<code>AdaptElement</code>](./core.adaptelement.md)<code> &#124; null</code> |  |
 |  [type](./core.adapt.buildopdone.type.md) | <code>&quot;done&quot;</code> |  |

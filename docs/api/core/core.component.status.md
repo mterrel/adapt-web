@@ -20,8 +20,8 @@ status(observeForStatus: ObserveForStatus, buildData: BuildData): Promise<unknow
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  observeForStatus | <code>ObserveForStatus</code> |  |
-|  buildData | <code>BuildData</code> |  |
+|  observeForStatus | [<code>ObserveForStatus</code>](./core.observeforstatus.md) |  |
+|  buildData | [<code>BuildData</code>](./core.builddata.md) |  |
 
 <b>Returns:</b>
 

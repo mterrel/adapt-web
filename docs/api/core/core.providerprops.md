@@ -20,5 +20,5 @@ export interface ProviderProps<T>
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [children](./core.providerprops.children.md) | <code>AdaptElementOrNull</code> |  |
+|  [children](./core.providerprops.children.md) | [<code>AdaptElementOrNull</code>](./core.adaptelementornull.md) |  |
 |  [value](./core.providerprops.value.md) | <code>T</code> |  |

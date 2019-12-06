@@ -11,16 +11,6 @@ hide_title: true
 
 The [Postgres](https://www.postgresql.org) library for Adapt.
 
-<b>Signature:</b>
-
-```typescript
-export * from "./Postgres";
-export * from "./TestPostgres";
-export * from "./PreloadedPostgresImage";
-export * from "./PostgresProvider";
-//# sourceMappingURL=index.d.ts.map
-```
-
 ## Functions
 
 |  Function | Description |

@@ -20,8 +20,8 @@ analyze(oldDom: AdaptElementOrNull, dom: AdaptElementOrNull, obs: Observed<Widge
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  oldDom | <code>AdaptElementOrNull</code> |  |
-|  dom | <code>AdaptElementOrNull</code> |  |
+|  oldDom | [<code>AdaptElementOrNull</code>](./core.adaptelementornull.md) |  |
+|  dom | [<code>AdaptElementOrNull</code>](./core.adaptelementornull.md) |  |
 |  obs | <code>Observed&lt;WidgetObs&gt;</code> |  |
 
 <b>Returns:</b>

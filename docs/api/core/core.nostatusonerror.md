@@ -20,8 +20,8 @@ export declare function noStatusOnError(f: () => unknown | Promise<unknown>): Pr
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  f | <code>() =&gt; unknown &#124; Promise&lt;unknown&gt;</code> |  |
+|  f | <code>() =&gt; unknown &#124;</code><br/><code>Promise&lt;unknown&gt;</code> |  |
 
 <b>Returns:</b>
 
-`Promise<Status>`
+`Promise<`[`Status`](./core.status.md)`>`

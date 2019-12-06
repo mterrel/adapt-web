@@ -20,4 +20,4 @@ export interface AdaptDeferredElement<P extends object = AnyProps> extends Adapt
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [componentType](./core.adaptdeferredelement.componenttype.md) | <code>PrimitiveClassComponentTyp&lt;P&gt;</code> |  |
+|  [componentType](./core.adaptdeferredelement.componenttype.md) | [<code>PrimitiveClassComponentTyp</code>](./core.primitiveclasscomponenttyp.md)<code>&lt;P&gt;</code> |  |

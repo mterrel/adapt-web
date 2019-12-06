@@ -12,19 +12,6 @@ original_id: cloud.docker
 
 Docker library for Adapt.
 
-<b>Signature:</b>
-
-```typescript
-export * from "./DockerImage";
-export * from "./DockerContainer";
-export * from "./labels";
-export * from "./LocalDockerImage";
-export * from "./LocalDockerRegistry";
-export * from "./RegistryDockerImage";
-export * from "./types";
-//# sourceMappingURL=index.d.ts.map
-```
-
 ## Classes
 
 |  Class | Description |

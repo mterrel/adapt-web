@@ -11,16 +11,6 @@ hide_title: true
 
 Adapt components for HTTP
 
-<b>Signature:</b>
-
-```typescript
-export * from "./files";
-export * from "./HttpServer";
-export * from "./http_server_types";
-export * from "./UrlRouter";
-//# sourceMappingURL=index.d.ts.map
-```
-
 ## Classes
 
 |  Class | Description |

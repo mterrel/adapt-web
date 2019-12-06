@@ -22,10 +22,10 @@ export declare function mergeDefaultChildStatus<P extends object, S extends obje
 |  --- | --- | --- |
 |  props | <code>P</code> |  |
 |  parentStatus | <code>object &#124; Promise&lt;object&gt;</code> |  |
-|  mgr | <code>ObserveForStatus</code> |  |
-|  data | <code>BuildData</code> |  |
+|  mgr | [<code>ObserveForStatus</code>](./core.observeforstatus.md) |  |
+|  data | [<code>BuildData</code>](./core.builddata.md) |  |
 |  transformParentStatus | <code>typeof noTransform</code> |  |
 
 <b>Returns:</b>
 
-`Promise<Status>`
+`Promise<`[`Status`](./core.status.md)`>`

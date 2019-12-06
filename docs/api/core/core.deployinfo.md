@@ -21,4 +21,4 @@ export interface DeployInfo
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [deployID](./core.deployinfo.deployid.md) | <code>string</code> |  |
-|  [deployOpID](./core.deployinfo.deployopid.md) | <code>DeployOpID</code> |  |
+|  [deployOpID](./core.deployinfo.deployopid.md) | [<code>DeployOpID</code>](./core.deployopid.md) |  |

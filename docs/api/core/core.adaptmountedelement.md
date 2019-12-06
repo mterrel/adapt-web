@@ -22,15 +22,15 @@ export interface AdaptMountedElement<P extends object = AnyProps> extends AdaptE
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [buildData](./core.adaptmountedelement.builddata.md) | <code>BuildData</code> |  |
+|  [buildData](./core.adaptmountedelement.builddata.md) | [<code>BuildData</code>](./core.builddata.md) |  |
 |  [dependsOn](./core.adaptmountedelement.dependson.md) | <code>DependsOnMethod</code> |  |
 |  [deployedWhen](./core.adaptmountedelement.deployedwhen.md) | <code>DeployedWhenMethod</code> |  |
 |  [deployedWhenIsTrivial](./core.adaptmountedelement.deployedwhenistrivial.md) | <code>boolean</code> | True if the Element's <code>deployedWhen</code> is considered trivial. |
-|  [id](./core.adaptmountedelement.id.md) | <code>ElementID</code> |  |
-|  [instance](./core.adaptmountedelement.instance.md) | <code>GenericInstance</code> |  |
-|  [keyPath](./core.adaptmountedelement.keypath.md) | <code>KeyPath</code> |  |
+|  [id](./core.adaptmountedelement.id.md) | [<code>ElementID</code>](./core.elementid.md) |  |
+|  [instance](./core.adaptmountedelement.instance.md) | [<code>GenericInstance</code>](./core.genericinstance.md) |  |
+|  [keyPath](./core.adaptmountedelement.keypath.md) | [<code>KeyPath</code>](./core.keypath.md) |  |
 |  [path](./core.adaptmountedelement.path.md) | <code>string</code> |  |
-|  [props](./core.adaptmountedelement.props.md) | <code>P &amp; Required&lt;BuiltinProps&gt;</code> |  |
+|  [props](./core.adaptmountedelement.props.md) | <code>P &amp; Required&lt;</code>[<code>BuiltinProps</code>](./core.builtinprops.md)<code>&gt;</code> |  |
 
 ## Methods
 

@@ -23,11 +23,11 @@ export declare function useConnectTo(connectTo: Handle | Handle[], xform?: (e: E
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  connectTo | <code>Handle &#124; Handle[]</code> | A handle or array of handles that point to components that implement [ConnectToInstance](./cloud.connecttoinstance.md) |
-|  xform | <code>(e: Environment) =&gt; Environment</code> | A method that can transform the provided environment before it is returned |
+|  xform | <code>(e: </code>[<code>Environment</code>](./cloud.environment.md)<code>) =&gt; </code>[<code>Environment</code>](./cloud.environment.md) | A method that can transform the provided environment before it is returned |
 
 <b>Returns:</b>
 
-`Environment | undefined`
+[`Environment`](./cloud.environment.md)` | undefined`
 
 Merged [Environment](./cloud.environment.md) with variables provided by `connectTo` components, or undefined
 

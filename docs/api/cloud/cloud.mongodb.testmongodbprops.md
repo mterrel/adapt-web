@@ -10,7 +10,7 @@ parent_id: api/cloud/cloud.mongodb
 
 ## mongodb.TestMongoDBProps interface
 
-Props for 
+Props for [mongodb.TestMongoDB()](./cloud.mongodb.testmongodb.md)
 
 <b>Signature:</b>
 
@@ -23,5 +23,5 @@ export interface TestMongoDBProps
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [image](./cloud.mongodb.testmongodbprops.image.md) | <code>string</code> | Image used for TestMongoDB container, defaults to mongo:latest |
-|  [imagePullPolicy](./cloud.mongodb.testmongodbprops.imagepullpolicy.md) | <code>&quot;Always&quot; &#124; &quot;IfNotPresent&quot; &#124; &quot;Never&quot; &#124; undefined</code> | Specifies when to pull image, defaults to <code>&quot;Always&quot;</code> |
+|  [imagePullPolicy](./cloud.mongodb.testmongodbprops.imagepullpolicy.md) | <code>&quot;Always&quot; &#124;</code><br/><code>&quot;IfNotPresent&quot; &#124;</code><br/><code>&quot;Never&quot; &#124;</code><br/><code>undefined</code> | Specifies when to pull image, defaults to <code>&quot;Always&quot;</code> |
 |  [port](./cloud.mongodb.testmongodbprops.port.md) | <code>number</code> | Port on which the Mongo DB service is exposed |

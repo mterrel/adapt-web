@@ -24,4 +24,4 @@ export declare function createContext<T>(defaultValue: T): Context<T>;
 
 <b>Returns:</b>
 
-`Context<T>`
+[`Context`](./core.context.md)`<T>`

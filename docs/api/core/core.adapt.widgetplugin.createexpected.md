@@ -20,8 +20,8 @@ createExpected(oldDom: AdaptElementOrNull, newDom: AdaptElementOrNull, createQue
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  oldDom | <code>AdaptElementOrNull</code> |  |
-|  newDom | <code>AdaptElementOrNull</code> |  |
+|  oldDom | [<code>AdaptElementOrNull</code>](./core.adaptelementornull.md) |  |
+|  newDom | [<code>AdaptElementOrNull</code>](./core.adaptelementornull.md) |  |
 |  createQueryDomains | <code>boolean</code> |  |
 
 <b>Returns:</b>

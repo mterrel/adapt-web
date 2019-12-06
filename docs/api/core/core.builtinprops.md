@@ -20,5 +20,5 @@ export interface BuiltinProps
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [handle](./core.builtinprops.handle.md) | <code>Handle</code> |  |
+|  [handle](./core.builtinprops.handle.md) | [<code>Handle</code>](./core.handle.md) |  |
 |  [key](./core.builtinprops.key.md) | <code>string</code> |  |

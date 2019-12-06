@@ -18,12 +18,12 @@ Components that provide a service, such as a database service or API service, ca
 export interface ConnectToInstance 
 ```
 
+## Remarks
+
+Currently, the only method supported for providing connection information is via environment variables. However, additional formats for providing connection information will be added as needs arise.
+
 ## Methods
 
 |  Method | Description |
 |  --- | --- |
 |  [connectEnv(scope)](./cloud.connecttoinstance.connectenv.md) | Supplies the set of environment variables that have all the information needed for a consumer of a service to connect to the provider. |
-
-## Remarks
-
-Currently, the only method supported for providing connection information is via environment variables. However, additional formats for providing connection information will be added as needs arise.

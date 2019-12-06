@@ -25,4 +25,4 @@ status(observe: ObserveForStatus, buildData: BuildData): Promise<NoStatus | Cont
 
 <b>Returns:</b>
 
-`Promise<NoStatus | ContainerStatus>`
+`Promise<NoStatus | `[`ContainerStatus`](./cloud.containerstatus.md)`>`

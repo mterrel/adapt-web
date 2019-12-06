@@ -20,10 +20,10 @@ export declare function cloneElement(element: AdaptElement, props: AnyProps, ...
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  element | <code>AdaptElement</code> |  |
-|  props | <code>AnyProps</code> |  |
+|  element | [<code>AdaptElement</code>](./core.adaptelement.md) |  |
+|  props | [<code>AnyProps</code>](./core.anyprops.md) |  |
 |  children | <code>any[]</code> |  |
 
 <b>Returns:</b>
 
-`AdaptElement`
+[`AdaptElement`](./core.adaptelement.md)

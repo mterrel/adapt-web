@@ -20,9 +20,9 @@ export interface ActOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [builtElements](./core.adapt.actoptions.builtelements.md) | <code>AdaptMountedElement[]</code> |  |
+|  [builtElements](./core.adapt.actoptions.builtelements.md) | [<code>AdaptMountedElement</code>](./core.adaptmountedelement.md)<code>[]</code> |  |
 |  [concurrency](./core.adapt.actoptions.concurrency.md) | <code>number</code> |  |
-|  [deployOpID](./core.adapt.actoptions.deployopid.md) | <code>DeployOpID</code> |  |
+|  [deployOpID](./core.adapt.actoptions.deployopid.md) | [<code>DeployOpID</code>](./core.deployopid.md) |  |
 |  [dryRun](./core.adapt.actoptions.dryrun.md) | <code>boolean</code> |  |
 |  [goalStatus](./core.adapt.actoptions.goalstatus.md) | <code>GoalStatus</code> |  |
 |  [pollDelayMs](./core.adapt.actoptions.polldelayms.md) | <code>number</code> |  |

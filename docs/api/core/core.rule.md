@@ -20,8 +20,8 @@ export declare function rule<P = AnyProps>(override?: BuildOverride<P>): Rule<P>
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  override | <code>BuildOverride&lt;P&gt;</code> |  |
+|  override | [<code>BuildOverride</code>](./core.buildoverride.md)<code>&lt;P&gt;</code> |  |
 
 <b>Returns:</b>
 
-`Rule<P>`
+[`Rule`](./core.rule.md)`<P>`

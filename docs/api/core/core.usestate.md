@@ -20,8 +20,8 @@ export declare function useState<ItemState>(init: UseStateInit<ItemState>): [Ite
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  init | <code>UseStateInit&lt;ItemState&gt;</code> |  |
+|  init | [<code>UseStateInit</code>](./core.usestateinit.md)<code>&lt;ItemState&gt;</code> |  |
 
 <b>Returns:</b>
 
-`[ItemState, SetState<ItemState>]`
+`[ItemState, `[`SetState`](./core.setstate.md)`<ItemState>]`

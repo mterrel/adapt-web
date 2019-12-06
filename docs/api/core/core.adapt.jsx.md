@@ -10,12 +10,6 @@ parent_id: api/core/core.adapt
 
 ## Adapt.JSX namespace
 
-<b>Signature:</b>
-
-```typescript
-export declare namespace JSX 
-```
-
 ## Interfaces
 
 |  Interface | Description |

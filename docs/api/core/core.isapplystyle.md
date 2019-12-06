@@ -20,7 +20,7 @@ export declare function isApplyStyle(el: AdaptElement): boolean;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  el | <code>AdaptElement</code> |  |
+|  el | [<code>AdaptElement</code>](./core.adaptelement.md) |  |
 
 <b>Returns:</b>
 

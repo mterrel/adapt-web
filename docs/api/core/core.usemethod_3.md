@@ -24,7 +24,7 @@ export declare function useMethod<OverrideReturn>(hand: Handle | null, initial: 
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  hand | <code>Handle &#124; null</code> |  |
+|  hand | [<code>Handle</code>](./core.handle.md)<code> &#124; null</code> |  |
 |  initial | <code>OverrideReturn</code> |  |
 |  method | <code>string</code> |  |
 |  args | <code>any[]</code> |  |

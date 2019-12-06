@@ -20,8 +20,8 @@ export declare function isPrimitiveElement<P extends object>(elem: AdaptElement<
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  elem | <code>AdaptElement&lt;P&gt;</code> |  |
+|  elem | [<code>AdaptElement</code>](./core.adaptelement.md)<code>&lt;P&gt;</code> |  |
 
 <b>Returns:</b>
 
-`elem is AdaptPrimitiveElement<P>`
+`elem is `[`AdaptPrimitiveElement`](./core.adaptprimitiveelement.md)`<P>`

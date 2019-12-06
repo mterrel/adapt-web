@@ -21,5 +21,5 @@ export interface BuildOpStart
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [buildPass](./core.adapt.buildopstart.buildpass.md) | <code>number</code> |  |
-|  [root](./core.adapt.buildopstart.root.md) | <code>AdaptElement</code> |  |
+|  [root](./core.adapt.buildopstart.root.md) | [<code>AdaptElement</code>](./core.adaptelement.md) |  |
 |  [type](./core.adapt.buildopstart.type.md) | <code>&quot;start&quot;</code> |  |

@@ -22,10 +22,10 @@ export declare function targetPort(elemOrProps: NetworkServiceProps | AdaptEleme
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  elemOrProps | <code>NetworkServiceProps &#124; AdaptElement</code> | a [NetworkService](./cloud.networkservice.md) element or its props |
+|  elemOrProps | [<code>NetworkServiceProps</code>](./cloud.networkserviceprops.md)<code> &#124;</code><br/><code>AdaptElement</code> | a [NetworkService](./cloud.networkservice.md) element or its props |
 
 <b>Returns:</b>
 
-`ServicePort`
+[`ServicePort`](./cloud.serviceport.md)
 
 The target port of the [NetworkService](./cloud.networkservice.md) object

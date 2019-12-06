@@ -22,5 +22,5 @@ export interface StyleBuildInfo extends BuildId
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [origBuild](./core.stylebuildinfo.origbuild.md) | <code>SFC</code> |  |
+|  [origBuild](./core.stylebuildinfo.origbuild.md) | [<code>SFC</code>](./core.sfc.md) |  |
 |  [origElement](./core.stylebuildinfo.origelement.md) | <code>any</code> |  |

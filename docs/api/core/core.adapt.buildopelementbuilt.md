@@ -20,6 +20,6 @@ export interface BuildOpElementBuilt
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [newElem](./core.adapt.buildopelementbuilt.newelem.md) | <code>AdaptElement &#124; null</code> |  |
-|  [oldElem](./core.adapt.buildopelementbuilt.oldelem.md) | <code>AdaptElement</code> |  |
+|  [newElem](./core.adapt.buildopelementbuilt.newelem.md) | [<code>AdaptElement</code>](./core.adaptelement.md)<code> &#124; null</code> |  |
+|  [oldElem](./core.adapt.buildopelementbuilt.oldelem.md) | [<code>AdaptElement</code>](./core.adaptelement.md) |  |
 |  [type](./core.adapt.buildopelementbuilt.type.md) | <code>&quot;elementBuilt&quot;</code> |  |

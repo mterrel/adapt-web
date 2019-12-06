@@ -20,8 +20,8 @@ export declare function isDeferredElement<P extends object = AnyProps>(val: Adap
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  val | <code>AdaptElement&lt;P&gt;</code> |  |
+|  val | [<code>AdaptElement</code>](./core.adaptelement.md)<code>&lt;P&gt;</code> |  |
 
 <b>Returns:</b>
 
-`val is AdaptDeferredElement<P>`
+`val is `[`AdaptDeferredElement`](./core.adaptdeferredelement.md)`<P>`

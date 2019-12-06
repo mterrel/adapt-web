@@ -9,11 +9,3 @@ parent_id: api/core/core.adapt
 [Core API Overview](overview) &gt; [@adpt/core](./core.md) &gt; [Adapt](./core.adapt.md) &gt; [internal](./core.adapt.internal.md)
 
 ## Adapt.internal namespace
-
-<b>Signature:</b>
-
-```typescript
-export { reanimateDom, } from "./reanimate";
-export { makeObserverManagerDeployment, observe, patchInNewQueries, simplifyNeedsData } from "./observers";
-//# sourceMappingURL=internal.d.ts.map
-```

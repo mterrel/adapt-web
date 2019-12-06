@@ -20,7 +20,7 @@ export declare function isDefaultKey(props: AnyProps & ElementKey): boolean;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  props | <code>AnyProps &amp; ElementKey</code> |  |
+|  props | [<code>AnyProps</code>](./core.anyprops.md)<code> &amp; </code>[<code>ElementKey</code>](./core.elementkey.md) |  |
 
 <b>Returns:</b>
 

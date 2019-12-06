@@ -25,7 +25,7 @@ export declare function useInstanceValue<T>(hand: Handle, initial: T, field: str
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  hand | <code>Handle</code> |  |
+|  hand | [<code>Handle</code>](./core.handle.md) |  |
 |  initial | <code>T</code> |  |
 |  field | <code>string</code> |  |
 

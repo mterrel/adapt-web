@@ -20,9 +20,9 @@ registerSchema(name: ObserverNameHolder, schema: GraphQLSchema, observations: Ob
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  name | <code>ObserverNameHolder</code> |  |
+|  name | [<code>ObserverNameHolder</code>](./core.observernameholder.md) |  |
 |  schema | <code>GraphQLSchema</code> |  |
-|  observations | <code>ObserverResponse</code> |  |
+|  observations | [<code>ObserverResponse</code>](./core.observerresponse.md) |  |
 
 <b>Returns:</b>
 

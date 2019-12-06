@@ -26,7 +26,7 @@ export declare function isNetworkServiceElement(el: AdaptElement): el is AdaptEl
 
 <b>Returns:</b>
 
-`el is AdaptElement<NetworkServiceProps>`
+`el is AdaptElement<`[`NetworkServiceProps`](./cloud.networkserviceprops.md)`>`
 
 `true` if `el` is a NetworkService, `false` otherwise
 

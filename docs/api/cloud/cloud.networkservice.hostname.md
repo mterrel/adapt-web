@@ -22,7 +22,7 @@ hostname(scope: NetworkScope): string | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  scope | <code>NetworkScope</code> |  |
+|  scope | [<code>NetworkScope</code>](./cloud.networkscope.md) |  |
 
 <b>Returns:</b>
 

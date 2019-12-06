@@ -20,8 +20,8 @@ replaceTarget(child: AdaptElement | null, buildId: BuildId): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  child | <code>AdaptElement &#124; null</code> |  |
-|  buildId | <code>BuildId</code> |  |
+|  child | [<code>AdaptElement</code>](./core.adaptelement.md)<code> &#124; null</code> |  |
+|  buildId | [<code>BuildId</code>](./core.buildid.md) |  |
 
 <b>Returns:</b>
 

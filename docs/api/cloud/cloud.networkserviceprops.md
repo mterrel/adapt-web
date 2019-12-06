@@ -25,7 +25,7 @@ export interface NetworkServiceProps extends WithChildren
 |  [endpoint](./cloud.networkserviceprops.endpoint.md) | <code>Handle</code> | Endpoint that provides the service |
 |  [ip](./cloud.networkserviceprops.ip.md) | <code>string</code> | IP address of the network service |
 |  [name](./cloud.networkserviceprops.name.md) | <code>string</code> | Name of the network service |
-|  [port](./cloud.networkserviceprops.port.md) | <code>ServicePort</code> | Port on which clients connect to this service |
+|  [port](./cloud.networkserviceprops.port.md) | [<code>ServicePort</code>](./cloud.serviceport.md) | Port on which clients connect to this service |
 |  [protocol](./cloud.networkserviceprops.protocol.md) | <code>string</code> | Protocol used by the network service |
-|  [scope](./cloud.networkserviceprops.scope.md) | <code>NetworkServiceScope</code> | Scope of the service |
-|  [targetPort](./cloud.networkserviceprops.targetport.md) | <code>ServicePort</code> | Port on the endpoint that provides this service |
+|  [scope](./cloud.networkserviceprops.scope.md) | [<code>NetworkServiceScope</code>](./cloud.networkservicescope.md) | Scope of the service |
+|  [targetPort](./cloud.networkserviceprops.targetport.md) | [<code>ServicePort</code>](./cloud.serviceport.md) | Port on the endpoint that provides this service |

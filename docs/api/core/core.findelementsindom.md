@@ -20,9 +20,9 @@ export declare function findElementsInDom(stylesIn: StyleList | AdaptElement | n
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  stylesIn | <code>StyleList &#124; AdaptElement &#124; null</code> |  |
-|  dom | <code>AdaptElementOrNull</code> |  |
+|  stylesIn | [<code>StyleList</code>](./core.stylelist.md)<code> &#124;</code><br/><code></code>[<code>AdaptElement</code>](./core.adaptelement.md)<code> &#124;</code><br/><code>null</code> |  |
+|  dom | [<code>AdaptElementOrNull</code>](./core.adaptelementornull.md) |  |
 
 <b>Returns:</b>
 
-`AdaptElement[]`
+[`AdaptElement`](./core.adaptelement.md)`[]`

@@ -10,19 +10,13 @@ parent_id: api/cloud/cloud.docker
 
 ## docker.ServiceContainerSet class
 
-A component for mapping a group of abstract [Container](./cloud.container.md)<!-- -->s and [NetworkService](./cloud.networkservice.md)<!-- -->s to Docker [DockerContainer](./cloud.docker.dockercontainer.md)<!-- -->s and s.
+A component for mapping a group of abstract [Container](./cloud.container.md)<!-- -->s and [NetworkService](./cloud.networkservice.md)<!-- -->s to Docker [DockerContainer](./cloud.docker.dockercontainer.md)<!-- -->s and [docker.NetworkService()](./cloud.docker.networkservice.md)<!-- -->s.
 
 <b>Signature:</b>
 
 ```typescript
 export declare class ServiceContainerSet extends DeferredComponent<ServiceContainerSetProps> 
 ```
-
-## Methods
-
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [build(helpers)](./cloud.docker.servicecontainerset.build.md) |  |  |
 
 ## Remarks
 
@@ -56,4 +50,10 @@ An example style rule to do this is:
 })}
 
 ```
-Currently,  implements the [NetworkServiceInstance](./cloud.networkserviceinstance.md) interface, but does not deploy a network proxy component. So the Docker ServiceContainerSet component applies the network port configuration specified by the [NetworkService](./cloud.networkservice.md)<!-- -->s to their target [DockerContainer](./cloud.docker.dockercontainer.md)<!-- -->s.
+Currently, [docker.NetworkService()](./cloud.docker.networkservice.md) implements the [NetworkServiceInstance](./cloud.networkserviceinstance.md) interface, but does not deploy a network proxy component. So the Docker ServiceContainerSet component applies the network port configuration specified by the [NetworkService](./cloud.networkservice.md)<!-- -->s to their target [DockerContainer](./cloud.docker.dockercontainer.md)<!-- -->s.
+
+## Methods
+
+|  Method | Modifiers | Description |
+|  --- | --- | --- |
+|  [build(helpers)](./cloud.docker.servicecontainerset.build.md) |  |  |

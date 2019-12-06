@@ -22,4 +22,4 @@ constructor(props: Props & Partial<BuiltinProps>);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  props | <code>Props &amp; Partial&lt;BuiltinProps&gt;</code> |  |
+|  props | <code>Props &amp; Partial&lt;</code>[<code>BuiltinProps</code>](./core.builtinprops.md)<code>&gt;</code> |  |

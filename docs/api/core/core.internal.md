@@ -8,11 +8,3 @@ hide_title: true
 [Core API Overview](overview) &gt; [@adpt/core](./core.md) &gt; [internal](./core.internal.md)
 
 ## internal namespace
-
-<b>Signature:</b>
-
-```typescript
-export { reanimateDom, } from "./reanimate";
-export { makeObserverManagerDeployment, observe, patchInNewQueries, simplifyNeedsData } from "./observers";
-//# sourceMappingURL=internal.d.ts.map
-```

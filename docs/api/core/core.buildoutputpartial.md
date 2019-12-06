@@ -21,5 +21,5 @@ export interface BuildOutputPartial extends BuildOutputBase
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [buildErr](./core.buildoutputpartial.builderr.md) | <code>boolean</code> |  |
-|  [contents](./core.buildoutputpartial.contents.md) | <code>PartialFinalDomElement &#124; null</code> |  |
+|  [contents](./core.buildoutputpartial.contents.md) | [<code>PartialFinalDomElement</code>](./core.partialfinaldomelement.md)<code> &#124; null</code> |  |
 |  [partialBuild](./core.buildoutputpartial.partialbuild.md) | <code>true</code> |  |

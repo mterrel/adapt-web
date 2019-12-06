@@ -21,4 +21,4 @@ export interface BuildOutputBase
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [messages](./core.buildoutputbase.messages.md) | <code>Message[]</code> |  |
-|  [mountedOrig](./core.buildoutputbase.mountedorig.md) | <code>AdaptMountedElement &#124; null</code> |  |
+|  [mountedOrig](./core.buildoutputbase.mountedorig.md) | [<code>AdaptMountedElement</code>](./core.adaptmountedelement.md)<code> &#124; null</code> |  |

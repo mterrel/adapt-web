@@ -20,7 +20,7 @@ export declare function registerObserver(obs: ObserverPlugin, nameIn?: string): 
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  obs | <code>ObserverPlugin</code> |  |
+|  obs | [<code>ObserverPlugin</code>](./core.observerplugin.md) |  |
 |  nameIn | <code>string</code> |  |
 
 <b>Returns:</b>

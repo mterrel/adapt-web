@@ -22,4 +22,4 @@ constructor(props: ObserverProps<QueryData>);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  props | <code>ObserverProps&lt;QueryData&gt;</code> |  |
+|  props | [<code>ObserverProps</code>](./core.observerprops.md)<code>&lt;QueryData&gt;</code> |  |

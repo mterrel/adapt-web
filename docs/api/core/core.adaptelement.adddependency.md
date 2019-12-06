@@ -22,7 +22,7 @@ addDependency(dependencies: Handle | Handle[]): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  dependencies | <code>Handle &#124; Handle[]</code> |  |
+|  dependencies | [<code>Handle</code>](./core.handle.md)<code> &#124; </code>[<code>Handle</code>](./core.handle.md)<code>[]</code> |  |
 
 <b>Returns:</b>
 

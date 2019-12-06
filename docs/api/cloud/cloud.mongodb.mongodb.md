@@ -18,14 +18,14 @@ Abstract MongoDB component
 export declare abstract class MongoDB extends PrimitiveComponent implements ConnectToInstance 
 ```
 
+## Remarks
+
+This component is used to denote a needed [MongoDB](https://www.mongodb.com) service. Users should use a style sheet to subsitute a concrete MongoDB instance that provides the service. [mongodb.TestMongoDB()](./cloud.mongodb.testmongodb.md) is such a component, suitable for test environments.
+
+All implementations of this component should implmenent [ConnectToInstance](./cloud.connecttoinstance.md) that provides a `MONGODB_URI` variable of the form `mongodb://<hostname>:<port>`<!-- -->.
+
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [connectEnv(\_scope)](./cloud.mongodb.mongodb.connectenv.md) |  |  |
-
-## Remarks
-
-This component is used to denote a needed [MongoDB](https://www.mongodb.com) service. Users should use a style sheet to subsitute a concrete MongoDB instance that provides the service.  is such a component, suitable for test environments.
-
-All implementations of this component should implmenent [ConnectToInstance](./cloud.connecttoinstance.md) that provides a `MONGODB_URI` variable of the form `mongodb://<hostname>:<port>`<!-- -->.

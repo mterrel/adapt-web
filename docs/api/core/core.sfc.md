@@ -21,4 +21,4 @@ export interface SFC<Props extends object = AnyProps>
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [defaultProps](./core.sfc.defaultprops.md) | <code>Partial&lt;Props&gt;</code> |  |
-|  [status](./core.sfc.status.md) | <code>(props: Props &amp; BuiltinProps, observe: ObserveForStatus, buildData: BuildData) =&gt; Promise&lt;unknown&gt;</code> |  |
+|  [status](./core.sfc.status.md) | <code>(props: Props &amp;</code><br/><code></code>[<code>BuiltinProps</code>](./core.builtinprops.md)<code>, observe: </code>[<code>ObserveForStatus</code>](./core.observeforstatus.md)<code>, buildData: </code>[<code>BuildData</code>](./core.builddata.md)<code>) =&gt; Promise&lt;unknown&gt;</code> |  |

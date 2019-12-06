@@ -20,8 +20,8 @@ analyze(prevDom: AdaptElementOrNull, dom: AdaptElementOrNull, obs: Observations)
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  prevDom | <code>AdaptElementOrNull</code> |  |
-|  dom | <code>AdaptElementOrNull</code> |  |
+|  prevDom | [<code>AdaptElementOrNull</code>](./core.adaptelementornull.md) |  |
+|  dom | [<code>AdaptElementOrNull</code>](./core.adaptelementornull.md) |  |
 |  obs | <code>Observations</code> |  |
 
 <b>Returns:</b>

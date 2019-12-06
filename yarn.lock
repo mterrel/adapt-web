@@ -968,10 +968,10 @@
     "@types/unist" "*"
     "@types/vfile-message" "*"
 
-"@unboundedsystems/docusaurus@1.12.0-unb.7":
-  version "1.12.0-unb.7"
-  resolved "https://registry.yarnpkg.com/@unboundedsystems/docusaurus/-/docusaurus-1.12.0-unb.7.tgz#09aeb98554381b0e7473f6df9478a5fdb9fc0ffe"
-  integrity sha512-6Ha7eTE2u4fvThTB23BzhiKiXLNwPW18DVONMgAVSImNUQHDOYyyXz/3zzPxiTI5+CFYaf9ebESagdr7nOAoJQ==
+"@unboundedsystems/docusaurus@1.12.0-unb.8":
+  version "1.12.0-unb.8"
+  resolved "https://registry.yarnpkg.com/@unboundedsystems/docusaurus/-/docusaurus-1.12.0-unb.8.tgz#9592369a8e97d0d9a2a7c7300e7323092776b869"
+  integrity sha512-mE4KNffWdpGSw8u9C+XV4KXMQXuhTeE0i7wxlGZdASmmlJrR3qAX778gwAkyHi4vQqabIBF+X5xsLvUCMveJ7Q==
   dependencies:
     "@babel/core" "^7.5.5"
     "@babel/plugin-proposal-class-properties" "^7.5.5"

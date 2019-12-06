@@ -1,6 +1,6 @@
 ---
 id: cloud.mongodb.testmongodb
-title: "mongodb.TestMongoDB namespace"
+title: "mongodb.TestMongoDB() function"
 hide_title: true
 parent_id: api/cloud/cloud.mongodb
 ---
@@ -8,16 +8,28 @@ parent_id: api/cloud/cloud.mongodb
 
 [Cloud API Overview](overview) &gt; [@adpt/cloud](./cloud.md) &gt; [mongodb](./cloud.mongodb.md) &gt; [TestMongoDB](./cloud.mongodb.testmongodb.md)
 
-## mongodb.TestMongoDB namespace
+## mongodb.TestMongoDB() function
+
+Test [MongoDB](https://www.mongodb.com) Service
 
 <b>Signature:</b>
 
 ```typescript
-export declare namespace TestMongoDB 
+export declare function TestMongoDB(props: SFCDeclProps<TestMongoDBProps, typeof testMongoDefaultProps>): Adapt.AdaptElement<Adapt.AnyProps>;
 ```
 
-## Variables
+## Parameters
 
-|  Variable | Description |
-|  --- | --- |
-|  [defaultProps](./cloud.mongodb.testmongodb.defaultprops.md) |  |
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  props | <code>SFCDeclProps&lt;TestMongoDBProps, typeof testMongoDefaultProps&gt;</code> |  |
+
+<b>Returns:</b>
+
+`Adapt.AdaptElement<Adapt.AnyProps>`
+
+## Remarks
+
+Uses an abstract [Service](./cloud.service.md)<!-- -->, [NetworkService](./cloud.networkservice.md)<!-- -->, and [Container](./cloud.container.md) component that must be substituted in a style sheet.
+
+See [mongodb.TestMongoDBProps](./cloud.mongodb.testmongodbprops.md)<!-- -->.
