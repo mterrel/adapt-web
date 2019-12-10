@@ -1,7 +1,7 @@
 ---
-id: version-0.0.6-cleanup
-title: Clean Up
-original_id: cleanup
+id: "version-0.0.6-cleanup"
+title: "Clean Up"
+original_id: "cleanup"
 ---
 <!-- DOCTOC SKIP -->
 

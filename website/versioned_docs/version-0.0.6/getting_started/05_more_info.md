@@ -1,7 +1,7 @@
 ---
-id: version-0.0.6-more_info
-title: More Information
-original_id: more_info
+id: "version-0.0.6-more_info"
+title: "More Information"
+original_id: "more_info"
 ---
 <!-- DOCTOC SKIP -->
 

@@ -1,7 +1,7 @@
 ---
-id: version-0.0.6-updating
-title: Updating your deployment
-original_id: updating
+id: "version-0.0.6-updating"
+title: "Updating your deployment"
+original_id: "updating"
 ---
 <!-- DOCTOC SKIP -->
 

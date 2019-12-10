@@ -1,7 +1,7 @@
 ---
-id: version-0.0.6-spec
-title: Describing your app
-original_id: spec
+id: "version-0.0.6-spec"
+title: "Describing your app"
+original_id: "spec"
 ---
 <!-- DOCTOC SKIP -->
 

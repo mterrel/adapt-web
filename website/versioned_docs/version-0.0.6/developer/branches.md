@@ -1,7 +1,7 @@
 ---
-id: version-0.0.6-branches
-title: Branches & Versions
-original_id: branches
+id: "version-0.0.6-branches"
+title: "Branches & Versions"
+original_id: "branches"
 ---
 
 <!-- DOCTOC SKIP -->

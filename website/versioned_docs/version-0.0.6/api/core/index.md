@@ -1,7 +1,7 @@
 ---
-id: version-0.0.6-overview
-title: Adapt Core API Overview
-original_id: overview
+id: "version-0.0.6-overview"
+title: "Adapt Core API Overview"
+original_id: "overview"
 ---
 
 This overview is a short summary of the most often-used APIs from the Adapt Core library.

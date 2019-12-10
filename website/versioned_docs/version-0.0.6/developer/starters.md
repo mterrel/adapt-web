@@ -1,7 +1,7 @@
 ---
-id: version-0.0.6-starters
-title: Developing for the Adapt starters
-original_id: starters
+id: "version-0.0.6-starters"
+title: "Developing for the Adapt starters"
+original_id: "starters"
 ---
 
 <!-- DOCTOC SKIP -->

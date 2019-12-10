@@ -1,7 +1,7 @@
 ---
-id: version-0.0.6-project
-title: Creating your new project
-original_id: project
+id: "version-0.0.6-project"
+title: "Creating your new project"
+original_id: "project"
 ---
 <!-- DOCTOC SKIP -->
 

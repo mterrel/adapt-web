@@ -1,7 +1,7 @@
 ---
-id: version-0.0.6-style
-title: Styling your app
-original_id: style
+id: "version-0.0.6-style"
+title: "Styling your app"
+original_id: "style"
 ---
 <!-- DOCTOC SKIP -->
 

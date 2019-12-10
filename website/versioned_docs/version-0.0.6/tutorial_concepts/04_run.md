@@ -1,7 +1,7 @@
 ---
-id: version-0.0.6-run
-title: Running your project
-original_id: run
+id: "version-0.0.6-run"
+title: "Running your project"
+original_id: "run"
 ---
 <!-- DOCTOC SKIP -->
 

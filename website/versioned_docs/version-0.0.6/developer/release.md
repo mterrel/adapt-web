@@ -1,7 +1,7 @@
 ---
-id: version-0.0.6-release
-title: Publishing a Release
-original_id: release
+id: "version-0.0.6-release"
+title: "Publishing a Release"
+original_id: "release"
 ---
 
 <!-- DOCTOC SKIP -->

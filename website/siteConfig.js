@@ -158,8 +158,8 @@ const siteConfig = {
     'https://code.jquery.com/jquery-1.11.0.min.js',
     'https://code.jquery.com/jquery-migrate-1.2.1.min.js',
     'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js',
-    'https://buttons.github.io/buttons.js',
-    '/js/common.js'
+    '/js/github.js',
+    '/js/common.js',
   ],
 
   // On page navigation for the current documentation page.

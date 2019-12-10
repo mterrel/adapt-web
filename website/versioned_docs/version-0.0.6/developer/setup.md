@@ -1,7 +1,7 @@
 ---
-id: version-0.0.6-setup
-title: Adapt Developer Setup - Building, Testing, and CI
-original_id: setup
+id: "version-0.0.6-setup"
+title: "Adapt Developer Setup - Building, Testing, and CI"
+original_id: "setup"
 ---
 
 <!-- DOCTOC SKIP -->
