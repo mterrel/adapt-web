@@ -1,7 +1,7 @@
 ---
-id: version-0.0.6-index
-title: Welcome to Adapt
-original_id: index
+id: "version-0.0.6-index"
+title: "Welcome to Adapt"
+original_id: "index"
 ---
 <!-- DOCTOC SKIP -->
 

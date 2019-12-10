@@ -1,7 +1,7 @@
 ---
-id: version-0.0.6-update
-title: Add Code and Update - MovieDB App
-original_id: update
+id: "version-0.0.6-update"
+title: "Add Code and Update - MovieDB App"
+original_id: "update"
 ---
 
 <!-- DOCTOC SKIP -->

@@ -1,7 +1,7 @@
 ---
-id: version-0.0.6-writing-docs
-title: Adapt Developer: Writing Docs
-original_id: writing-docs
+id: "version-0.0.6-writing-docs"
+title: "Adapt Developer: Writing Docs"
+original_id: "writing-docs"
 ---
 
 <!-- DOCTOC SKIP -->

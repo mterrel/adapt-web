@@ -1,7 +1,7 @@
 ---
-id: version-0.0.6-destroying
-title: Destroying your deployment
-original_id: destroying
+id: "version-0.0.6-destroying"
+title: "Destroying your deployment"
+original_id: "destroying"
 ---
 <!-- DOCTOC SKIP -->
 

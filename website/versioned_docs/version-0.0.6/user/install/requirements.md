@@ -1,7 +1,7 @@
 ---
-id: version-0.0.6-requirements
-title: Installing & Updating Requirements for Adapt
-original_id: requirements
+id: "version-0.0.6-requirements"
+title: "Installing & Updating Requirements for Adapt"
+original_id: "requirements"
 ---
 <!-- DOCTOC SKIP -->
 

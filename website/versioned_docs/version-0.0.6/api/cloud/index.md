@@ -1,7 +1,7 @@
 ---
-id: version-0.0.6-overview
-title: Adapt Cloud API Overview
-original_id: overview
+id: "version-0.0.6-overview"
+title: "Adapt Cloud API Overview"
+original_id: "overview"
 ---
 
 The Adapt Cloud library is a collection of Adapt Components, Hooks,

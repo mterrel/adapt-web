@@ -1,7 +1,7 @@
 ---
-id: version-0.0.6-install
-title: Install Adapt
-original_id: install
+id: "version-0.0.6-install"
+title: "Install Adapt"
+original_id: "install"
 ---
 
 <!-- DOCTOC SKIP -->

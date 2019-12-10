@@ -1,7 +1,7 @@
 ---
-id: version-0.0.6-connect
-title: Connecting components to each other
-original_id: connect
+id: "version-0.0.6-connect"
+title: "Connecting components to each other"
+original_id: "connect"
 ---
 
 <!-- DOCTOC SKIP -->

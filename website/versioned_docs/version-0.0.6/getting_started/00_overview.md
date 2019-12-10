@@ -1,7 +1,7 @@
 ---
-id: version-0.0.6-overview
-title: MovieDB App Overview
-original_id: overview
+id: "version-0.0.6-overview"
+title: "MovieDB App Overview"
+original_id: "overview"
 ---
 
 <!-- DOCTOC SKIP -->
