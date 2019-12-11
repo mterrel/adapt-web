@@ -46,6 +46,7 @@ sup {
 
 .inline-button {
     vertical-align: middle;
+    display: inline-block;
 }
 
 .center-block {
