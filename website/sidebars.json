@@ -20,8 +20,7 @@
       "tutorial_concepts/style",
       "tutorial_concepts/run",
       "tutorial_concepts/connect",
-      "tutorial_concepts/updating",
-      "tutorial_concepts/destroying"
+      "tutorial_concepts/updating"
     ],
     "Core API Reference": [
       "api/core/overview",
