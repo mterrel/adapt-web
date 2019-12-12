@@ -87,7 +87,7 @@ function Help(props) {
           Get involved and keep up with the latest Adapt news:
           <ul>
             <li>Give Adapt a <GitHubStar config={siteConfig} className="inline-button" /> on GitHub</li>
-            <li>Read the <a href="https://unbounded.systems/blog">Unbounded Blog</a></li>
+            <li>Read the <a href="/blog/">Adapt Blog</a></li>
             <li>Follow <a href="https://twitter.com/adaptjs">@adaptjs</a> on Twitter</li>
           </ul>
         </div>
