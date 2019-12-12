@@ -32,6 +32,7 @@ hide_title: true
 |  [isContainerElement(el)](./cloud.iscontainerelement.md) | Function to check whether an <code>@adpt/core#AdaptElement</code> is an abstract [Container](./cloud.container.md)<!-- -->. |
 |  [isNetworkServiceElement(el)](./cloud.isnetworkserviceelement.md) | Type assertion that tests an element to see if it is a [NetworkService](./cloud.networkservice.md) |
 |  [lookupEnvVar(e, name)](./cloud.lookupenvvar.md) | Find the value of an environment variable in an [Environment](./cloud.environment.md) |
+|  [makeResourceName(invalidChars, maxLen, sep)](./cloud.makeresourcename.md) | Creates a function for generating unique names for Adapt Elements. |
 |  [mergeEnvPairs(envs)](./cloud.mergeenvpairs.md) | Combine multiple [Environment](./cloud.environment.md) objects into a single array of [EnvPair](./cloud.envpair.md) objects. Returns <code>undefined</code> if there are no <code>Environment</code> objects provided. |
 |  [mergeEnvSimple(envs)](./cloud.mergeenvsimple.md) | Combine multiple [Environment](./cloud.environment.md) objects into a single [EnvSimple](./cloud.envsimple.md) object. Returns <code>undefined</code> if there are no <code>Environment</code> objects provided. |
 |  [renameEnvVars(e, mapping)](./cloud.renameenvvars.md) | Renames all variables in <code>e</code> based on <code>mapping</code> |
