@@ -20,8 +20,7 @@
       "tutorial_concepts/style",
       "tutorial_concepts/run",
       "tutorial_concepts/connect",
-      "tutorial_concepts/updating",
-      "tutorial_concepts/destroying"
+      "tutorial_concepts/updating"
     ],
     "Core API Reference": [
       "api/core/overview",
@@ -42,7 +41,8 @@
       "api/cloud/cloud.redis"
     ],
     "Advanced Guides": [
-      "comparing_react/index"
+      "comparing_react/index",
+      "tutorial-action/index"
     ],
     "Contributing to Adapt": [
       "developer/setup",
