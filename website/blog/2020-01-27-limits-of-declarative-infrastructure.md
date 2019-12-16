@@ -128,5 +128,5 @@ We should have a system where we can write simple declarative snippets for when 
 We can stitch these snippets together with an imperative language and a structured component-based approach.
 And then we can make it easy to specify the state machine that controls what happens when new code is pushed, how to recover from errors, bring up new availability zones, and other operational tasks.
 
-I’ll explain in more detail what the infrastructure community can learn from web developers about how to mix a declarative and programmatic approach in [this article](xxx).
+I’ll explain in more detail what the infrastructure community can learn from web developers about how to mix a declarative and programmatic approach in [this article](./what-react-devs-know).
 Or you can just skip to an implementation of that approach in the open source [Adapt.js](https://adaptjs.org) project.
