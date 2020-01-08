@@ -57,7 +57,7 @@ node_modules/.update-from-adapt-success: $(ADAPT_DOCS_FILES) $(ADAPT_DOCS_UPDATE
 	rm -rf docs/
 	mkdir docs
 	cp -R $(REPO_ROOT)/*/build/docs/* docs/
-	cp -R $(REPO_ROOT)/docs/* docs/
+	tar -cv -f- -X $(REPO_ROOT)/docs/.copy_exclude -C $(REPO_ROOT)/docs . | tar -xv -C docs
 	mkdir -p node_modules
 	touch $@
 

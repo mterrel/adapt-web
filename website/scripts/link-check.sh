@@ -137,6 +137,7 @@ checkLinkCommand() {
         --skip-tls-verification
         --exclude localhost:8080
         --exclude localhost:3000
+        --exclude gitlab.com/unboundedsystems/adapt/pipelines/new
         "http://${SERVER_NAME}:${SERVER_PORT}"
     )
     echo Running: ${CHECKER[@]} ${CHECKER_ARGS[@]}
