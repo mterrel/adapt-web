@@ -1,0 +1,54 @@
+{
+  "version-0.1.0-docs": {
+    "Overview": [
+      "version-0.1.0-index"
+    ],
+    "Getting Started": [
+      "version-0.1.0-getting_started/index",
+      "version-0.1.0-getting_started/overview",
+      "version-0.1.0-getting_started/install",
+      "version-0.1.0-getting_started/run",
+      "version-0.1.0-getting_started/update",
+      "version-0.1.0-getting_started/cleanup",
+      "version-0.1.0-getting_started/more_info"
+    ],
+    "Tutorial: Adapt Concepts": [
+      "version-0.1.0-tutorial_concepts/index",
+      "version-0.1.0-tutorial_concepts/setup",
+      "version-0.1.0-tutorial_concepts/project",
+      "version-0.1.0-tutorial_concepts/spec",
+      "version-0.1.0-tutorial_concepts/style",
+      "version-0.1.0-tutorial_concepts/run",
+      "version-0.1.0-tutorial_concepts/connect",
+      "version-0.1.0-tutorial_concepts/updating"
+    ],
+    "Core API Reference": [
+      "version-0.1.0-api/core/overview",
+      "version-0.1.0-api/core/core"
+    ],
+    "Cloud API Reference": [
+      "version-0.1.0-api/cloud/overview",
+      "version-0.1.0-api/cloud/cloud",
+      "version-0.1.0-api/cloud/cloud.action",
+      "version-0.1.0-api/cloud/cloud.aws",
+      "version-0.1.0-api/cloud/cloud.docker",
+      "version-0.1.0-api/cloud/cloud.http",
+      "version-0.1.0-api/cloud/cloud.k8s",
+      "version-0.1.0-api/cloud/cloud.mongodb",
+      "version-0.1.0-api/cloud/cloud.nginx",
+      "version-0.1.0-api/cloud/cloud.nodejs",
+      "version-0.1.0-api/cloud/cloud.postgres",
+      "version-0.1.0-api/cloud/cloud.redis"
+    ],
+    "Advanced Guides": [
+      "version-0.1.0-comparing_react/index",
+      "version-0.1.0-tutorial-action/index"
+    ],
+    "Contributing to Adapt": [
+      "version-0.1.0-developer/setup",
+      "version-0.1.0-developer/writing-docs",
+      "version-0.1.0-developer/branches",
+      "version-0.1.0-developer/release"
+    ]
+  }
+}
