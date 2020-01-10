@@ -22,10 +22,11 @@ Before we can do this, though, we have to install some software and set up your 
 
 In this example we are going to deploy to a Google Kubernetes Engine (GKE) cluster on Google Cloud Platform.
 To do this we're going to need a few tools.
-If you don't already have the [Google Cloud SDK](https://cloud.google.com/sdk/) (`gcloud` command) and [Docker](https://docker.com) installed, you'll need to install them first:
+If you don't already have the [Google Cloud SDK](https://cloud.google.com/sdk/) (`gcloud` command) and [Docker](https://docker.com) installed, you'll need to install them first, along with [Node.js](https://nodejs.org) and [Yarn](https://yarnpkg.com):
 
 - Google Cloud SDK ([installation instructions](https://cloud.google.com/sdk/docs/quickstarts))
 - Docker ([installation instructions](https://docs.docker.com/install/#supported-platforms))
+- Node.js and Yarn ([installation instructions](https://adaptjs.org/docs/user/install/requirements))
 
 Next, installing Adapt is the easy part, just do:
 
