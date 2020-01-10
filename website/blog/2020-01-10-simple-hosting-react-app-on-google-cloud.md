@@ -33,6 +33,10 @@ Next, installing Adapt is the easy part, just do:
 ```bash
 npm install -g @adpt/cli
 ```
+> **Tip**
+>
+> If you get an `EACCES` error from `npm install`, retry the command as administrator (e.g. `sudo npm install -g @adpt/cli`).
+> Or, you can use `npx` as explained at the bottom of [this page](https://adaptjs.org/docs/getting_started/install)
 
 ## Setting up Your Project
 
