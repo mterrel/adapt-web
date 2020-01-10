@@ -80,7 +80,6 @@ const Block = ({ background, children, id, layout }) => (
   </Container>
 );
 
-
 /*
  * HomeSplash
  */

@@ -904,6 +904,16 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
+"@types/jquery@^1.10.35":
+  version "1.10.35"
+  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-1.10.35.tgz#4e5c2b1e5b3bf0b863efb8c5e70081f52e6c9518"
+  integrity sha512-SVtqEcudm7yjkTwoRA1gC6CNMhGDdMx4Pg8BPdiqI7bXXdCn1BPmtxgeWYQOgDxrq53/5YTlhq5ULxBEAlWIBg==
+
+"@types/js-cookie@^2.2.4":
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/@types/js-cookie/-/js-cookie-2.2.4.tgz#f79720b4755aa197c2e15e982e2f438f5748e348"
+  integrity sha512-WTfSE1Eauak/Nrg6cA9FgPTFvVawejsai6zXoq0QYTQ3mxONeRtGhKxa7wMlUzWWmzrmTeV+rwLjHgsCntdrsA==
+
 "@types/minimatch@*":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
@@ -968,10 +978,10 @@
     "@types/unist" "*"
     "@types/vfile-message" "*"
 
-"@unboundedsystems/docusaurus@1.12.0-unb.9":
-  version "1.12.0-unb.9"
-  resolved "https://registry.yarnpkg.com/@unboundedsystems/docusaurus/-/docusaurus-1.12.0-unb.9.tgz#81930e040c9e6856a603f79904562da59702f6a6"
-  integrity sha512-oJ9chl1RHXFvwOlmbEiobhVOA01Pa/18mPM6CzfPftor0lP/ux9z+TzowgsAh7pUauYxKMmuVn3jniTvh/cmpA==
+"@unboundedsystems/docusaurus@1.12.0-unb.10":
+  version "1.12.0-unb.10"
+  resolved "https://registry.yarnpkg.com/@unboundedsystems/docusaurus/-/docusaurus-1.12.0-unb.10.tgz#c4fce4a80fe306c13277ca63b1549546b7fcbf5f"
+  integrity sha512-dxoL+2OTAAQitjwyX7Idc+Q0vUgEWRgQ3GMsl40Xbo1LEeOrpoAl4I6/5fsQhfkuHmF15oQ0rvW7wzljaj5qpQ==
   dependencies:
     "@babel/core" "^7.5.5"
     "@babel/plugin-proposal-class-properties" "^7.5.5"

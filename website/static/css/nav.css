@@ -4,10 +4,55 @@
 
 .fixedHeaderContainer {
     background: white;
+    position: static;
 }
 
 .fixedHeaderContainer a {
     color: $primaryColor;
+}
+
+#fixedHeader {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+/*
+ * Announcement bar
+ */
+.announcementWrapper {
+    position: relative;
+    font-size: 16px;
+    line-height: 120%;
+    background-color: #ade1f5;
+    color: #565656;
+}
+
+.announcement {
+    font-weight: 600;
+    padding: 0.4em 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.announcement.dismissed {
+    display: none;
+}
+
+.announcement p {
+    margin-bottom: 0.5em;
+}
+
+.announcement a {
+    color: #384ec7;
+}
+
+.closeButton {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 /* Version number text */
