@@ -143,8 +143,8 @@ const siteConfig = {
     'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'
   ],
 
-  // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Unbounded Systems`,
+  // This copyright info is used in blog RSS/Atom feeds.
+  copyright: `Copyright © 2019-${new Date().getFullYear()} Unbounded Systems`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.

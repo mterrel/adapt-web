@@ -26,7 +26,7 @@ const Credits = () => (
     </div>
     <div className="unbounded">
       <div className="copyright">
-        Copyright © {new Date().getFullYear()}
+        Copyright © 2019-{new Date().getFullYear()}
         <br/>
         <a href="https://unbounded.systems">Unbounded&nbsp;Systems</a>
       </div>
