@@ -9,7 +9,7 @@
 // site configuration options.
 
 const React = require('react');
-const { GitHubLogo, GitHubStar } = require('adapt-web-components');
+const { Announcement, GitHubLogo, GitHubStar } = require('adapt-web-components');
 
 // List of projects/orgs using your project for the users page.
 const users = [
@@ -143,8 +143,8 @@ const siteConfig = {
     'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'
   ],
 
-  // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Unbounded Systems`,
+  // This copyright info is used in blog RSS/Atom feeds.
+  copyright: `Copyright © 2019-${new Date().getFullYear()} Unbounded Systems`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
@@ -158,6 +158,7 @@ const siteConfig = {
     'https://code.jquery.com/jquery-1.11.0.min.js',
     'https://code.jquery.com/jquery-migrate-1.2.1.min.js',
     'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js',
+    'https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js',
     '/js/github.js',
     '/js/common.js',
   ],
@@ -212,6 +213,7 @@ const siteConfig = {
   },
   issueUrl,
   forkUrl,
+  announcement: SiteAnnounce(),
 };
 
 function githubHeader(config) {
@@ -220,6 +222,23 @@ function githubHeader(config) {
       React.createElement(GitHubLogo, { config, key: 'logo' })]),
     React.createElement(GitHubStar, { config, key: 'github', count: true, large: true })
   ]);
+}
+
+function SiteAnnounce() {
+  return React.createElement(Announcement, {
+    announceId: "v010",
+    content: React.createElement("div", {}, [
+      React.createElement("p", { key: "0" }, [
+        React.createElement("i", { key: "0", className: "om om-party-popper om-lg" }),
+        React.createElement("i", { key: "1", className: "om om-party-popper om-lg" }),
+        " Adapt v0.1.0 with Google Kubernetes Engine and local Docker support is here! ",
+        React.createElement("a", { key: "2", className: "announcement-link", href: "/blog/2020/01/09/adapt-release-0-1-0" }, [
+          // \xA0 is &nbsp;
+          "Read\xA0more..."
+        ]),
+      ])
+    ])
+  });
 }
 
 module.exports = siteConfig;

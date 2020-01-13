@@ -80,7 +80,6 @@ const Block = ({ background, children, id, layout }) => (
   </Container>
 );
 
-
 /*
  * HomeSplash
  */
@@ -379,7 +378,6 @@ const techLogos = [
   {
     alt: 'Google Cloud',
     file: 'google_cloud.png',
-    soon: true,
   },
   {
     alt: 'JavaScript',
@@ -393,6 +391,10 @@ const techLogos = [
   {
     alt: 'Redis',
     file: 'redis.png',
+  },
+  {
+    alt: 'Google Kubernetes Engine',
+    file: 'gke.svg',
   },
   {
     alt: 'MongoDB',

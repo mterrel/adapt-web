@@ -1,3 +1,4 @@
+export * from "./Announcement";
 export * from "./CodeWindow";
 export * from "./GridBlock";
 export * from "./LogoShowcase";
