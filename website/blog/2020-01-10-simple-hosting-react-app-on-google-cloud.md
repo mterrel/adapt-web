@@ -33,10 +33,11 @@ Next, installing Adapt is the easy part, just do:
 ```bash
 npm install -g @adpt/cli
 ```
-> **Tip**
->
-> If you get an `EACCES` error from `npm install`, retry the command as administrator (e.g. `sudo npm install -g @adpt/cli`).
-> Or, you can use `npx` as explained at the bottom of [this page](https://adaptjs.org/docs/getting_started/install)
+
+:::note
+If you get an `EACCES` error from `npm install`, retry the command as administrator (e.g. `sudo npm install -g @adpt/cli`).
+Or, you can use `npx` as explained at the bottom of [this page](https://adaptjs.org/docs/getting_started/install)
+:::
 
 ## Setting up Your Project
 
@@ -89,9 +90,9 @@ I'll assume you haven't set up Google Cloud before, so you may be able to omit s
     gcloud projects create --set-as-default your_project_id
     ```
 
-    > **Tip**
-    >
-    > If you get an error that says the project ID you specified is already in use, just pick a new ID and run the command again.
+    :::tip
+    If you get an error that says the project ID you specified is already in use, just pick a new ID and run the command again.
+    :::
 
     Now, set a variable with the project name you chose so we can use it in later steps. Again, replace `your_project_id` with the one you chose.
 
@@ -110,16 +111,16 @@ I'll assume you haven't set up Google Cloud before, so you may be able to omit s
     gcloud services enable container.googleapis.com
     ```
 
-    > **Tip**
-    >
-    > If you get a **Billing must be enabled** error, follow the link provided in the error to enable billing, then re-run the command.
+    :::tip
+    If you get a **Billing must be enabled** error, follow the link provided in the error to enable billing, then re-run the command.
+    :::
 
 1. Create a Kubernetes cluster
 
-    > **Note**
-    >
-    > This is where Google will start charging you.
-    > Don't worry, we'll clean everything up at the end.
+    :::warning
+    This is where Google will start charging you.
+    Don't worry, we'll clean everything up at the end.
+    :::
 
     Now create a Kubernetes cluster called `mycluster`.
     For this tutorial, we'll create a small, single node, non-production cluster to keep the cost down.

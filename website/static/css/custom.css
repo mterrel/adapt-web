@@ -8,6 +8,12 @@ code {
     font-family: $codeFont;
 }
 
+/* Remove the default blockquote styling that Docusaurus provides */
+blockquote {
+    background-color: inherit;
+    border: none;
+}
+
 .caption {
     padding-left: 15%;
     padding-right: 15%;
