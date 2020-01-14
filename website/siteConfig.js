@@ -10,6 +10,7 @@
 
 const React = require('react');
 const { Announcement, GitHubLogo, GitHubStar } = require('adapt-web-components');
+const admonitions = require('remarkable-admonitions');
 
 // List of projects/orgs using your project for the users page.
 const users = [
@@ -195,6 +196,9 @@ const siteConfig = {
   markdownOptions: {
     html: true,
   },
+  markdownPlugins: [
+    admonitions({ icon: 'svg-inline' }),
+  ],
 
   commentSystem: {
     type: "commento",
