@@ -1,15 +1,17 @@
 ---
 title: "Deploying and Hosting a React App and its Back-end on Google Cloud with Adapt.js"
-author: Manish Vachharajani
+author: Mark Terrel
 authorTitle: Co-founder, Unbounded Systems
-authorURL: https://twitter.com/mvachhar
-authorTwitter: mvachhar
-authorImageURL: /img/profiles/manish.jpg
+authorURL: https://twitter.com/mterrel
+authorTwitter: mterrel
+authorImageURL: /img/profiles/mark.jpg
 image: blog/assets/react-node-gcp-gke.png
 description: "A simple way to deploy, host, and manage a full-stack React App and Node.js Express API back-end using Google Cloud."
 ---
 
 ![React Node.js GKE GCP](assets/react-node-gcp-gke.png)
+
+*Co-authored with [Manish Vachharajani](https://twitter.com/mvachhar)*
 
 With all the different cloud service offerings, hosting solutions, and automation tools, figuring out how to get your app up and running in the cloud can be quite a challenge.
 In this article, I'll show you how to host your React front-end, Node.js back-end, and database on Google Cloud Platform (GCP) using a single command from an open source tool called [Adapt](https://adaptjs.org).
@@ -29,10 +31,12 @@ If you don't already have the [Google Cloud SDK](https://cloud.google.com/sdk/) 
 - Node.js and Yarn ([installation instructions](https://adaptjs.org/docs/user/install/requirements))
 
 Next, installing Adapt is the easy part, just do:
+<!-- doctest command -->
 
 ```bash
 npm install -g @adpt/cli
 ```
+<!-- doctest output { matchRegex: "\\+ @adpt/cli@" } -->
 
 :::note
 If you get an `EACCES` error from `npm install`, retry the command as administrator (e.g. `sudo npm install -g @adpt/cli`).
@@ -50,6 +54,7 @@ Adapt provides a starter template that you can use to quickly set up a new proje
 For this example, we are going to use the [`hello-react-node-postgres` starter](https://gitlab.com/adpt/starters/hello-react-node-postgres).  
 There are [other starters](https://gitlab.com/adpt/starters) as well, or you can write your own, any git URL will work.
 To set up our starter, simply type:
+<!-- doctest command -->
 
 ```bash
 adapt new hello-react-node-postgres ./myapp
@@ -106,6 +111,8 @@ I'll assume you haven't set up Google Cloud before, so you may be able to omit s
     The second command to enable the API may take quite a while, so be patient.
     Google says it can take "several minutes".
 
+    <!-- doctest command -->
+
     ```bash
     gcloud config set compute/zone us-central1-b
     gcloud services enable container.googleapis.com
@@ -125,8 +132,10 @@ I'll assume you haven't set up Google Cloud before, so you may be able to omit s
     Now create a Kubernetes cluster called `mycluster`.
     For this tutorial, we'll create a small, single node, non-production cluster to keep the cost down.
 
+    <!-- doctest command -->
+
     ```bash
-    gcloud container clusters create mycluster --enable-ip-alias --machine-type "g1-small" --disk-size "30" --num-nodes "1" --no-enable-cloud-monitoring --no-enable-cloud-logging
+    gcloud container clusters create mycluster --enable-ip-alias --machine-type g1-small --disk-size 30 --num-nodes 1 --no-enable-stackdriver-kubernetes
     ```
 
     It will take a few minutes before the cluster is up, but the command will give you some status along the way.  
@@ -136,14 +145,18 @@ I'll assume you haven't set up Google Cloud before, so you may be able to omit s
     Now, we have to set up credentials for the Kubernetes cluster and Docker.  
     Just run the following commands, answer yes when it asks you if it is OK to update your configuration.
 
+    <!-- doctest command -->
+
     ```bash
     gcloud container clusters get-credentials mycluster
-    gcloud auth configure-docker
+    gcloud auth configure-docker --quiet
     ```
 
 ## Creating a Deployment for your App
 
 Now that we have a running Kubernetes cluster, we are ready to deploy our app!
+
+<!-- doctest command -->
 
 ```bash
 cd myapp/deploy
@@ -223,14 +236,18 @@ If you don't have an existing database, you can create one using a service like 
 
 First, destroy the app components that Adapt deployed to the GKE cluster:
 
+<!-- doctest command -->
+
 ```bash
 adapt destroy app-test
 ```
 
 Then destroy the GKE cluster:
 
+<!-- doctest command -->
+
 ```bash
-gcloud container clusters delete mycluster  # This will take a while
+gcloud container clusters delete mycluster --quiet # This will take a while
 ```
 
 You can delete images pushed to the Google Container Registry in the Google Cloud Console:
