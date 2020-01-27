@@ -5,11 +5,11 @@ authorTitle: Co-founder, Unbounded Systems
 authorURL: https://twitter.com/mvachhar
 authorTwitter: mvachhar
 authorImageURL: /img/profiles/manish.jpg
-image: blog/assets/annie-spratt-9VpI3gQ1iUo-unsplash.jpg
+image: blog/assets/annie-spratt-9VpI3gQ1iUo-unsplash-1280.jpg
 description: "Declarative specifications are all the rage for DevOps, but the web has been declarative since day one.  What can DevOps learn from web development today?"
 ---
 
-![Helping Up](assets/annie-spratt-9VpI3gQ1iUo-unsplash.jpg)
+![Helping Up](assets/annie-spratt-9VpI3gQ1iUo-unsplash-1280.jpg)
 
 Declarative specifications are all the rage in infrastructure today, the more declarative the better.
 In [the article linked here](/blog/2020/01/27/limits-of-declarative-infrastructure), I talk about why this approach falls short.
