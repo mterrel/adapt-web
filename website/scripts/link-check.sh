@@ -138,6 +138,7 @@ checkLinkCommand() {
         --exclude localhost:8080
         --exclude localhost:3000
         --exclude gitlab.com/unboundedsystems/adapt/pipelines/new
+        --exclude www.amazon.com/s
         "http://${SERVER_NAME}:${SERVER_PORT}"
     )
     echo Running: ${CHECKER[@]} ${CHECKER_ARGS[@]}
