@@ -80,8 +80,7 @@ const analytics =
   // Only insert Google Analytics in Netlify production builds
   process.env.CONTEXT === 'production' ?
     {
-      gaTrackingId: "UA-83531203-3",
-      gaGtag: true,
+      gtmContainerId: "GTM-5HBPRVX"
     } :
     {};
 
@@ -156,6 +155,7 @@ const siteConfig = {
 
   // Add custom scripts here that would be placed in <script> tags.
   scripts: [
+    '/js/riveted.min.js',
     'https://code.jquery.com/jquery-1.11.0.min.js',
     'https://code.jquery.com/jquery-migrate-1.2.1.min.js',
     'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js',
