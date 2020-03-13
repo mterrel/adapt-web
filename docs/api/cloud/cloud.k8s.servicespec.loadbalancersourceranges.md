@@ -10,7 +10,7 @@ parent_id: api/cloud/cloud.k8s
 
 ## k8s.ServiceSpec.loadBalancerSourceRanges property
 
-If specified and supported by the platform, this will restrict traffic through the cloud-provider load-balancer will be restricted to the specified client IPs.
+If specified and supported by the platform, this will restrict traffic through the cloud provider load balancer to the specified client IPs.
 
 <b>Signature:</b>
 
@@ -20,4 +20,6 @@ loadBalancerSourceRanges?: string[];
 
 ## Remarks
 
-This field will be ignored if the cloud-provider does not support the feature." More info: [https://kubernetes.io/docs/tasks/access-application-cluster/configure-cloud-provider-firewall/](https://kubernetes.io/docs/tasks/access-application-cluster/configure-cloud-provider-firewall/)
+This field will be ignored if the cloud provider does not support the feature.
+
+For more information, see the [Kubernetes documentation](https://kubernetes.io/docs/tasks/access-application-cluster/configure-cloud-provider-firewall/)<!-- -->.

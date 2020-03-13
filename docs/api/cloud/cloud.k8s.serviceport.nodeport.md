@@ -20,4 +20,6 @@ nodePort?: number;
 
 ## Remarks
 
-Usually assigned by the system.If specified, it will be allocated to the service if unused or else creation of the service will fail.Default is to auto - allocate a port if the ServiceType of this Service requires one.More info: [https://kubernetes.io/docs/concepts/services-networking/service/\#type-nodeport](https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport)
+Usually assigned by the system. If specified, it will be allocated to the service if unused or else creation of the service will fail.
+
+For more information, see the [Kubernetes documentation](https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport)<!-- -->.

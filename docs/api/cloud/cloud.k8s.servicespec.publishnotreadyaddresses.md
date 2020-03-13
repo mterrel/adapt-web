@@ -10,7 +10,7 @@ parent_id: api/cloud/cloud.k8s
 
 ## k8s.ServiceSpec.publishNotReadyAddresses property
 
-publishNotReadyAddresses, when set to true, indicates that DNS implementations must publish the notReadyAddresses of subsets for the Endpoints associated with the Service.
+When set to true, indicates that DNS implementations must publish the notReadyAddresses of subsets for the Endpoints associated with the Service.
 
 <b>Signature:</b>
 

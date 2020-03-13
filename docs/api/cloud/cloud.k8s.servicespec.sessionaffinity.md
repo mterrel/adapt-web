@@ -10,7 +10,7 @@ parent_id: api/cloud/cloud.k8s
 
 ## k8s.ServiceSpec.sessionAffinity property
 
-Used to maintain session affinity
+Used to maintain session affinity.
 
 <b>Signature:</b>
 
@@ -20,4 +20,10 @@ sessionAffinity?: string;
 
 ## Remarks
 
-Supports "ClientIP" and "None".Used to maintain session affinity. Enable client IP based session affinity.Must be ClientIP or None.Defaults to None.More info: [https://kubernetes.io/docs/concepts/services-networking/service/\#virtual-ips-and-service-proxies](https://kubernetes.io/docs/concepts/services-networking/service/#virtual-ips-and-service-proxies)
+Possible values are:
+
+- `"ClientIP"`<!-- -->: Enables client IP based session affinity.
+
+- `"None"`<!-- -->: Disables session affinity.
+
+For more information, see the [Kubernetes documentation](https://kubernetes.io/docs/concepts/services-networking/service/#virtual-ips-and-service-proxies)<!-- -->.
