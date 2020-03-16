@@ -21,4 +21,4 @@ ports?: ServicePort[];
 
 ## Remarks
 
-More info: [https://kubernetes.io/docs/concepts/services-networking/service/\#virtual-ips-and-service-proxies](https://kubernetes.io/docs/concepts/services-networking/service/#virtual-ips-and-service-proxies) patch strategy: merge patch merge key: port
+For more information, see the [Kubernetes documentation](https://kubernetes.io/docs/concepts/services-networking/service/#virtual-ips-and-service-proxies)<!-- -->.

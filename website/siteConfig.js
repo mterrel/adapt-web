@@ -230,13 +230,13 @@ function githubHeader(config) {
 
 function SiteAnnounce() {
   return React.createElement(Announcement, {
-    announceId: "v010",
+    announceId: "v020",
     content: React.createElement("div", {}, [
       React.createElement("p", { key: "0" }, [
         React.createElement("i", { key: "0", className: "om om-party-popper om-lg" }),
         React.createElement("i", { key: "1", className: "om om-party-popper om-lg" }),
-        " Adapt v0.1.0 with Google Kubernetes Engine and local Docker support is here! ",
-        React.createElement("a", { key: "2", className: "announcement-link", href: "/blog/2020/01/09/adapt-release-0-1-0" }, [
+        " Adapt v0.2.0: now with Node.js v12 and v13 support, easier installs, and more! ",
+        React.createElement("a", { key: "2", className: "announcement-link", href: "/blog/2020/03/16/adapt-release-0-2-0" }, [
           // \xA0 is &nbsp;
           "Read\xA0more..."
         ]),
