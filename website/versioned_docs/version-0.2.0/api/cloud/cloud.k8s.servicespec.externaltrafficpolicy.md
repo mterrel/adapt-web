@@ -11,7 +11,7 @@ original_id: "cloud.k8s.servicespec.externaltrafficpolicy"
 
 ## k8s.ServiceSpec.externalTrafficPolicy property
 
-externalTrafficPolicy denotes if this Service desires to route external traffic to node-local or cluster-wide endpoints.
+Denotes if this Service desires to route external traffic to node-local or cluster-wide endpoints.
 
 <b>Signature:</b>
 

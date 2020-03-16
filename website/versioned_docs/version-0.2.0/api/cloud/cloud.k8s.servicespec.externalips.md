@@ -11,7 +11,7 @@ original_id: "cloud.k8s.servicespec.externalips"
 
 ## k8s.ServiceSpec.externalIPs property
 
-externalIPs is a list of IP addresses for which nodes in the cluster will also accept traffic for this service.
+A list of IP addresses for which nodes in the cluster will also accept traffic for this service.
 
 <b>Signature:</b>
 
@@ -21,4 +21,4 @@ externalIPs?: string[];
 
 ## Remarks
 
-These IPs are not managed by Kubernetes. The user is responsible for ensuring that traffic arrives at a node with this IP. A common example is external load-balancers that are not part of the Kubernetes system.
+These IPs are not managed by Kubernetes. The user is responsible for ensuring that traffic arrives at a node with this IP. A common example is external load balancers that are not part of the Kubernetes system.

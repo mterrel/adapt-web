@@ -11,7 +11,7 @@ original_id: "cloud.k8s.servicespec.type"
 
 ## k8s.ServiceSpec.type property
 
-type determines how the Service is exposed.
+Determines how the Service is exposed.
 
 <b>Signature:</b>
 
@@ -21,4 +21,14 @@ type?: string;
 
 ## Remarks
 
-Defaults to ClusterIP. Valid options are ExternalName, ClusterIP, NodePort, and LoadBalancer. "ExternalName" maps to the specified externalName. "ClusterIP" allocates a cluster - internal IP address for load - balancing to endpoints.Endpoints are determined by the selector or if that is not specified, by manual construction of an Endpoints object.If clusterIP is "None", no virtual IP is allocated and the endpoints are published as a set of endpoints rather than a stable IP. "NodePort" builds on ClusterIP and allocates a port on every node which routes to the clusterIP. "LoadBalancer" builds on NodePort and creates an external load - balancer (if supported in the current cloud) which routes to the clusterIP. More info: [https://kubernetes.io/docs/concepts/services-networking/service/\#publishing-services\-\-\-service-types](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services---service-types)
+Valid options are:
+
+- `"ExternalName"`<!-- -->: maps to the specified externalName.
+
+- `"ClusterIP"`<!-- -->: allocates a cluster-internal IP address for load balancing to endpoints. Endpoints are determined by the selector or if that is not specified, by manual construction of an Endpoints object. If clusterIP is "None", no virtual IP is allocated and the endpoints are published as a set of endpoints rather than a stable IP.
+
+- `"NodePort"`<!-- -->: Builds on ClusterIP and allocates a port on every node which routes to the clusterIP.
+
+- `"LoadBalancer"`<!-- -->: Builds on NodePort and creates an external load balancer (if supported in the current cloud) which routes to the clusterIP.
+
+For more information, see the [Kubernetes documentation](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services---service-types)<!-- -->.
