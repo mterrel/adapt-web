@@ -40,7 +40,7 @@ Adapt components for Kubernetes
 |  [ClusterInfo](./cloud.k8s.clusterinfo.md) | Holds the information needed to connect, authenticate, and run code in a kuberenetes cluster |
 |  [ContainerPort](./cloud.k8s.containerport.md) |  |
 |  [ContainerProps](./cloud.k8s.containerprops.md) | Props for [k8s.Container()](./cloud.k8s.container.md)<!-- -->. |
-|  [ContainerSpec](./cloud.k8s.containerspec.md) | Resource spec for a Kubernetes container. See the Kubernetes [API docs](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#container-v1-core) for more details. |
+|  [ContainerSpec](./cloud.k8s.containerspec.md) | Resource spec for a Kubernetes container. See the Kubernetes [API docs](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/#container-v1-core) for more details. |
 |  [CRSpec](./cloud.k8s.crspec.md) |  |
 |  [EnvVarFrom](./cloud.k8s.envvarfrom.md) |  |
 |  [EnvVarSimple](./cloud.k8s.envvarsimple.md) |  |
