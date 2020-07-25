@@ -10,7 +10,7 @@ parent_id: api/cloud/cloud.k8s
 
 ## k8s.ContainerSpec interface
 
-Resource spec for a Kubernetes container. See the Kubernetes [API docs](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#container-v1-core) for more details.
+Resource spec for a Kubernetes container. See the Kubernetes [API docs](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/#container-v1-core) for more details.
 
 <b>Signature:</b>
 

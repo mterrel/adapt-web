@@ -22,4 +22,4 @@ loadBalancerSourceRanges?: string[];
 
 This field will be ignored if the cloud provider does not support the feature.
 
-For more information, see the [Kubernetes documentation](https://kubernetes.io/docs/tasks/access-application-cluster/configure-cloud-provider-firewall/)<!-- -->.
+For more information, see the [Kubernetes documentation](https://v1-16.docs.kubernetes.io/docs/tasks/access-application-cluster/configure-cloud-provider-firewall/)<!-- -->.
