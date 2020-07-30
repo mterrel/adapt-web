@@ -33,6 +33,7 @@ Docker library for Adapt.
 
 |  Interface | Description |
 |  --- | --- |
+|  [BindMount](./cloud.docker.bindmount.md) | Describes bind mount filesystems to be mounted in a container. |
 |  [DockerBuildOptions](./cloud.docker.dockerbuildoptions.md) | Options for performing Docker image builds. |
 |  [DockerContainerProps](./cloud.docker.dockercontainerprops.md) | Props for [docker.DockerContainer](./cloud.docker.dockercontainer.md) |
 |  [DockerContainerStatus](./cloud.docker.dockercontainerstatus.md) |  |
@@ -56,6 +57,7 @@ Docker library for Adapt.
 |  --- | --- |
 |  [ImageIdString](./cloud.docker.imageidstring.md) | Docker image ID, in the form <code>algorithm:hex</code>. |
 |  [ImageNameString](./cloud.docker.imagenamestring.md) | A string reference to a Docker image that contains a repo name, and may contain an optional registry and optionally either a tag or a repo digest. |
+|  [Mount](./cloud.docker.mount.md) | Describes filesystems to be mounted in a container. |
 |  [NameTagString](./cloud.docker.nametagstring.md) | A string reference to a Docker image that contains a repo name, and may contain an optional registry and optional tag. |
 |  [RegistryString](./cloud.docker.registrystring.md) | A string that references a Docker registry that contains a hostname and may optionally contain a port and/or path. |
 |  [RepoDigestString](./cloud.docker.repodigeststring.md) | A string that contains both a Docker repo and a registry digest. |

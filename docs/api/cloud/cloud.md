@@ -59,6 +59,7 @@ hide_title: true
 |  [EnvSimple](./cloud.envsimple.md) | A set of environment variables for a [Container](./cloud.container.md)<!-- -->, expressed as a single object with keys and associated values. |
 |  [HostConfigStatus](./cloud.hostconfigstatus.md) | HostConfig for [ContainerStatus](./cloud.containerstatus.md) |
 |  [Links](./cloud.links.md) | Network links to create for a [Container](./cloud.container.md)<!-- -->. |
+|  [MountStatus](./cloud.mountstatus.md) | Mount information for [ContainerStatus](./cloud.containerstatus.md) |
 |  [NetworkServiceInstance](./cloud.networkserviceinstance.md) | <b><i>(BETA)</i></b> Interface for components that expose Network Services via hostname and port |
 |  [NetworkServiceProps](./cloud.networkserviceprops.md) | Props for the [NetworkService](./cloud.networkservice.md) element |
 |  [PortBinding](./cloud.portbinding.md) | A set of ports to be bound for a [Container](./cloud.container.md)<!-- -->. |

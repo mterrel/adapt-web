@@ -35,7 +35,7 @@ export interface ContainerStatus
 |  [Id](./cloud.containerstatus.id.md) | <code>string</code> |  |
 |  [Image](./cloud.containerstatus.image.md) | <code>string</code> |  |
 |  [MountLabel](./cloud.containerstatus.mountlabel.md) | <code>string</code> |  |
-|  [Mounts](./cloud.containerstatus.mounts.md) | <code>FIXME_NeedsProperType[]</code> |  |
+|  [Mounts](./cloud.containerstatus.mounts.md) | [<code>MountStatus</code>](./cloud.mountstatus.md)<code>[]</code> |  |
 |  [Name](./cloud.containerstatus.name.md) | <code>string</code> |  |
 |  [NetworkSettings](./cloud.containerstatus.networksettings.md) | [<code>ContainerNetworkSettings</code>](./cloud.containernetworksettings.md) |  |
 |  [Node](./cloud.containerstatus.node.md) | <code>FIXME_NeedsProperType</code> |  |

@@ -13,5 +13,5 @@ parent_id: api/cloud/cloud.containerstatus
 <b>Signature:</b>
 
 ```typescript
-Mounts: FIXME_NeedsProperType[];
+Mounts: MountStatus[];
 ```

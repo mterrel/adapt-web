@@ -22,5 +22,6 @@ export interface HostConfigStatus
 
 |  Property | Type | Description |
 |  --- | --- | --- |
+|  [Binds](./cloud.hostconfigstatus.binds.md) | <code>string[] &#124; null</code> |  |
 |  [PortBindings](./cloud.hostconfigstatus.portbindings.md) | [<code>PortBindingsStatus</code>](./cloud.portbindingsstatus.md) |  |
 |  [RestartPolicy](./cloud.hostconfigstatus.restartpolicy.md) | [<code>RestartPolicyStatus</code>](./cloud.restartpolicystatus.md) |  |
