@@ -235,11 +235,12 @@ function SiteAnnounce() {
       React.createElement("p", { key: "0" }, [
         React.createElement("i", { key: "0", className: "om om-party-popper om-lg" }),
         React.createElement("i", { key: "1", className: "om om-party-popper om-lg" }),
-        " Adapt v0.2.0: now with Node.js v12 and v13 support, easier installs, and more! ",
-        React.createElement("a", { key: "2", className: "announcement-link", href: "/blog/2020/03/16/adapt-release-0-2-0" }, [
-          // \xA0 is &nbsp;
-          "Read\xA0more..."
-        ]),
+
+        " Adapt v0.3.0: now with ",
+        React.createElement("a", { key: "2", className: "announcement-link", href: "/docs/api/cloud/cloud.gcloud" }, [
+          "Google Cloud Run"
+          ]),
+        " support!",
       ])
     ])
   });
