@@ -32,6 +32,7 @@
       "api/cloud/cloud.action",
       "api/cloud/cloud.aws",
       "api/cloud/cloud.docker",
+      "api/cloud/cloud.gcloud",
       "api/cloud/cloud.http",
       "api/cloud/cloud.k8s",
       "api/cloud/cloud.mongodb",
