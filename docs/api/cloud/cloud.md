@@ -77,6 +77,7 @@ hide_title: true
 |  [action](./cloud.action.md) | Action library for implementing simple primitive components. |
 |  [aws](./cloud.aws.md) | <b><i>(BETA)</i></b> AWS library for Adapt. |
 |  [docker](./cloud.docker.md) | Docker library for Adapt. |
+|  [gcloud](./cloud.gcloud.md) | Google Cloud Platform library for Adapt. |
 |  [http](./cloud.http.md) | Adapt components for HTTP |
 |  [k8s](./cloud.k8s.md) | Adapt components for Kubernetes |
 |  [mongodb](./cloud.mongodb.md) | The library for [MongoDB](https://www.mongodb.com/) for Adapt. |
