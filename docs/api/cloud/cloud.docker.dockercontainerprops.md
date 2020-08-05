@@ -27,3 +27,4 @@ export interface DockerContainerProps extends DockerGlobalOptions, Pick<Containe
 |  [labels](./cloud.docker.dockercontainerprops.labels.md) | [<code>ContainerLabels</code>](./cloud.containerlabels.md) | Labels to apply to the container. |
 |  [mounts](./cloud.docker.dockercontainerprops.mounts.md) | <code>Mount[]</code> | Filesystems to be mounted in the container. |
 |  [networks](./cloud.docker.dockercontainerprops.networks.md) | <code>string[]</code> | Networks to connect the container to |
+|  [privileged](./cloud.docker.dockercontainerprops.privileged.md) | <code>boolean</code> | Enables the container to run in privileged mode. |

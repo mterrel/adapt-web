@@ -24,4 +24,5 @@ export interface HostConfigStatus
 |  --- | --- | --- |
 |  [Binds](./cloud.hostconfigstatus.binds.md) | <code>string[] &#124; null</code> |  |
 |  [PortBindings](./cloud.hostconfigstatus.portbindings.md) | [<code>PortBindingsStatus</code>](./cloud.portbindingsstatus.md) |  |
+|  [Privileged](./cloud.hostconfigstatus.privileged.md) | <code>boolean</code> |  |
 |  [RestartPolicy](./cloud.hostconfigstatus.restartpolicy.md) | [<code>RestartPolicyStatus</code>](./cloud.restartpolicystatus.md) |  |

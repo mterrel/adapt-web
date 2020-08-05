@@ -15,5 +15,6 @@ parent_id: api/cloud/cloud.docker
 ```typescript
 static defaultProps: {
         dockerHost: string | undefined;
+        privileged: boolean;
     };
 ```
